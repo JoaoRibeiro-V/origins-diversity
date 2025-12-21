@@ -1,0 +1,11 @@
+{
+  "name": "Gentle Giant",
+  "description": "You have extra health.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:panda_extra_hearts",
+    "attribute": "minecraft:generic.max_health",
+    "amount": 6.0,
+    "operation": "ADD_VALUE"
+  }
+}

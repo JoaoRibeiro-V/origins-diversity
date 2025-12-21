@@ -1,0 +1,14 @@
+{
+  "name": "Cow",
+  "description": "A sturdy herbivore with a slow pace and a unique ability.",
+  "icon": { "id": "minecraft:milk_bucket" },
+
+  "powers": [
+    "origins-diversity:cow/knockback_resistance",
+    "origins-diversity:cow/slow_movement",
+    "origins-diversity:cow/ravenous",
+    "origins-diversity:cow/self_milk",
+    "origins-diversity:cow/milkable"
+  ],
+  "impact": 1
+}

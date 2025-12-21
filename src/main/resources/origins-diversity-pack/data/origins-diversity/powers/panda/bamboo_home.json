@@ -1,0 +1,19 @@
+{
+    "name": "Bamboo Homeland",
+    "description": "You feel stronger in bamboo jungles, bamboo forests, and sparse jungles. Eating bamboo also grants additional buffs in these biomes.",
+    "type": "apoli:conditioned_attribute",
+    "modifier": {
+        "id": "origins-diversity:panda_bamboo_home_attack_damage",
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "ADD_VALUE",
+        "amount": 2.0
+    },
+    "condition": {
+        "type": "apoli:biome",
+        "biomes": [
+            "minecraft:bamboo_jungle",
+            "minecraft:jungle",
+            "minecraft:sparse_jungle"
+        ]
+    }
+}

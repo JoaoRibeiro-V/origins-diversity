@@ -1,0 +1,11 @@
+{
+  "name": "Slowpoke Strikes",
+  "description": "Due to being a lazy animal, your attack speed is reduced.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:panda_slow_attacks",
+    "attribute": "minecraft:generic.attack_speed",
+    "amount": -0.1,
+    "operation": "ADD_MULTIPLIED_TOTAL"
+  }
+}

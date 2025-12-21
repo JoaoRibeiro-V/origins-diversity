@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "origins": [
+    "origins-diversity-pack:origins-diversity/panda",
+    "origins-diversity-pack:origins-diversity/cow"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Sturdy Build",
+  "description": "Your sturdy build grants you increased resistance to knockback.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:cow_knockback_resistance",
+    "attribute": "minecraft:generic.knockback_resistance",
+    "amount": 0.125,
+    "operation": "ADD_VALUE"
+  }
+}

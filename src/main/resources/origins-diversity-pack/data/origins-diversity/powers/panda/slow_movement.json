@@ -1,0 +1,11 @@
+{
+  "name": "Lazy",
+  "description": "Due to being a lazy animal, your movement speed is reduced.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:panda_slow_movement",
+    "attribute": "minecraft:generic.movement_speed",
+    "amount": -0.075,
+    "operation": "ADD_MULTIPLIED_TOTAL"
+  }
+}

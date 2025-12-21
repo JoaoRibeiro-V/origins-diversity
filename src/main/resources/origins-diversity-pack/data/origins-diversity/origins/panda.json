@@ -1,0 +1,16 @@
+{
+  "name": "Panda",
+  "description": "A gentle giant. Tough, slow, and not built for fighting.",
+  "icon": {
+    "id": "minecraft:bamboo"
+  },
+  "impact": 1,
+  "powers": [
+    "origins-diversity:panda/extra_hearts",
+    "origins-diversity:panda/slow_movement",
+    "origins-diversity:panda/slow_attacks",
+    "origins-diversity:panda/bamboo_home",
+    "origins-diversity:panda/bamboo_eater",
+    "origins-diversity:panda/bamboo_prevent"
+  ]
+}
