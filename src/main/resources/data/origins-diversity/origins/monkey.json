@@ -1,0 +1,14 @@
+{
+  "name": "Monkey",
+  "description": "A playful and agile monkey that thrives among the trees, interacting with the environment in clever ways.",
+  "icon": { "id": "minecraft:jungle_leaves" },
+
+  "powers": [
+    "origins-diversity:monkey/agile_leap",
+    "origins-diversity:monkey/nimble_movement",
+    "origins-diversity:monkey/leaf_camouflage",
+    "origins-diversity:monkey/tree_acrobat",
+    "origins-diversity:monkey/natural_balance"
+  ],
+  "impact": 1
+}

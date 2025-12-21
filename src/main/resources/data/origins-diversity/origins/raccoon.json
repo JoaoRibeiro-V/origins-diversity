@@ -1,0 +1,12 @@
+{
+  "name": "Raccoon",
+  "description": "A clever and agile nocturnal animal.",
+  "icon": { "id": "minecraft:sweet_berries" },
+
+  "powers": [
+    "origins-diversity:raccoon/night_vision",
+    "origins-diversity:raccoon/climbing_boost",
+    "origins-diversity:raccoon/quick_dash"
+  ],
+  "impact": 1
+}

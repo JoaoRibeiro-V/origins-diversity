@@ -1,0 +1,75 @@
+{
+  "name": "Milkable",
+  "description": "Others can milk you with a bucket.",
+  "type": "apoli:action_on_being_used",
+  "bientity_action": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:actor_action",
+        "action": {
+          "type": "apoli:and",
+          "actions": [
+            {
+              "type": "apoli:equipped_item_action",
+              "equipment_slot": "mainhand",
+              "item_action": {
+                "type": "apoli:consume",
+                "amount": 1
+              }
+            },
+            {
+              "type": "apoli:give",
+              "stack": {
+                "id": "minecraft:milk_bucket",
+                "count": 1
+              }
+            },
+            {
+              "type": "apoli:apply_effect",
+              "effect": {
+                "id": "minecraft:regeneration",
+                "duration": 100,
+                "amplifier": 0
+              }
+            },
+            {
+              "type": "apoli:play_sound",
+              "sound": "minecraft:entity.cow.milk",
+              "volume": 1.0,
+              "pitch": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "type": "apoli:target_action",
+        "action": {
+          "type": "apoli:apply_effect",
+          "effect": {
+            "id": "minecraft:regeneration",
+            "duration": 100,
+            "amplifier": 0
+          }
+        }
+      }
+    ]
+  },
+  "bientity_condition": {
+    "type": "apoli:actor_condition",
+    "condition": {
+      "type": "apoli:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "apoli:ingredient",
+        "ingredient": {
+          "item": "minecraft:bucket"
+        }
+      }
+    }
+  },
+  "cooldown": 60,
+  "hud_render": {
+    "should_render": true
+  }
+}

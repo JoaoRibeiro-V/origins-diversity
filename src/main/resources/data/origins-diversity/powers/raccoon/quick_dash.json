@@ -1,0 +1,16 @@
+{
+  "name": "Quick Dash",
+  "description": "Perform a short burst of speed forward.",
+  "type": "apoli:active_self",
+  "entity_action": {
+    "type": "apoli:add_velocity",
+    "space": "local",
+    "z": 1.0
+  },
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  },
+  "cooldown": 400,
+  "hud_render": { "should_render": true }
+}

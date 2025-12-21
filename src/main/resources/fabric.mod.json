@@ -17,18 +17,8 @@
 	"entrypoints": {
 		"main": [
 			"com.origins_diversity.OriginsDiversity"
-		],
-		"client": [
-			"com.origins_diversity.OriginsDiversityClient"
 		]
 	},
-	"mixins": [
-		"origins-diversity.mixins.json",
-		{
-			"config": "origins-diversity.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.18.3",
 		"minecraft": "~1.21.1",

@@ -1,0 +1,19 @@
+{
+  "name": "Leaf Camouflage",
+  "description": "You are harder to detect by mobs when you are in leaves.",
+  "type": "origins:modify_attribute",
+  "attribute": "additionalentityattributes:generic.mob_detection_range",
+  "modifier": {
+    "amount": -0.5,
+    "operation": "add_base_early",
+    "name": "origins-diversity:monkey_leaf_camouflage",
+    "resource": "origins-diversity:monkey/leaf_camouflage"
+  },
+  "condition": {
+    "type": "origins:on_block",
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "minecraft:leaves"
+    }
+  }
+}

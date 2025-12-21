@@ -1,0 +1,13 @@
+{
+  "name": "Platypus",
+  "description": "A platypus?",
+  "icon": { "id": "minecraft:trident" },
+
+  "powers": [
+    "origins-diversity:platypus/swim_speed",
+    "origins-diversity:platypus/minor_melee_resistance",
+    "origins-diversity:platypus/shallow_water_regeneration",
+    "origins-diversity:platypus/electroshock"
+  ],
+  "impact": 1
+}

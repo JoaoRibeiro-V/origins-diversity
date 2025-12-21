@@ -1,0 +1,39 @@
+{
+  "name": "Tree Acrobat",
+  "description": "Despite taking fall damage, you can't die from it, landing on a tree will give you some health back.",
+  "type": "origins:prevent_death",
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:on_block",
+      "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "minecraft:leaves"
+      }
+    },
+    "if_action": {
+      "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:apply_effect",
+            "effects": [
+              {
+                "id": "minecraft:instant_health",
+                "amplifier": 1,
+                "duration": 1
+              },
+              {
+                "id": "minecraft:absorption",
+                "amplifier": 0,
+                "duration": 100
+              }
+            ]
+          }
+        ]
+    }
+  },
+  "damage_condition": {
+    "type": "origins:in_tag",
+    "tag": "minecraft:is_fall"
+  }
+}

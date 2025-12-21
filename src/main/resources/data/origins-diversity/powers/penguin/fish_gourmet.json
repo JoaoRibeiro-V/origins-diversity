@@ -1,0 +1,21 @@
+{
+  "name": "Fish Gourmet",
+  "description": "You gain extra nourishment from eating fish.",
+  "type": "origins:modify_food",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "tag": "minecraft:fishes"
+    }
+  },
+  "food_modifier": {
+    "name": "Increased food points",
+    "operation": "add_base_early",
+    "amount": 3.0
+  },
+  "saturation_modifier": {
+    "name": "Increased saturation points",
+    "operation": "add_base_early",
+    "amount": 2.5
+  }
+}

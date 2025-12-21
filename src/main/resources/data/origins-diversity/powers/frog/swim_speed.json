@@ -1,0 +1,11 @@
+{
+  "name": "Aquatic Agility",
+  "description": "You swim slightly faster.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:frog_swim_speed",
+    "attribute": "minecraft:generic.water_movement_efficiency",
+    "amount": 0.25,
+    "operation": "ADD_VALUE"
+  }
+}

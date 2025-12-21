@@ -1,0 +1,11 @@
+{
+  "name": "Camouflage",
+  "description": "You are less likely to be targeted by mobs.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:reptile_camouflage",
+    "attribute": "additionalentityattributes:generic.mob_detection_range",
+    "amount": -0.2,
+    "operation": "ADD_VALUE"
+  }
+}

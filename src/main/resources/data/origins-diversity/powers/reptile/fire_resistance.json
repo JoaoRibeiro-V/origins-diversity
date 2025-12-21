@@ -1,0 +1,11 @@
+{
+  "name": "Fire Resistance",
+  "description": "You have a natural resistance to fire damage.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:reptile_fire_resistance",
+    "attribute": "minecraft:generic.burning_time",
+    "amount": -0.125,
+    "operation": "ADD_MULTIPLIED_TOTAL"
+  }
+}

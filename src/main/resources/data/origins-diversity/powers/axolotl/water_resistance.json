@@ -1,0 +1,11 @@
+{
+  "name": "Gills",
+  "description": "You can hold your breath longer underwater.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:axolotl_water_resistance",
+    "attribute": "minecraft:generic.oxygen_bonus",
+    "amount": 1.5,
+    "operation": "ADD_VALUE"
+  }
+}

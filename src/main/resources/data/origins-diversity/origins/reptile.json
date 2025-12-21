@@ -1,0 +1,13 @@
+{
+  "name": "Reptile",
+  "description": "A stealthy creature that blends into its surroundings.",
+  "icon": { "id": "minecraft:slime_block" },
+
+  "powers": [
+    "origins-diversity:reptile/camouflage",
+    "origins-diversity:reptile/fire_resistance",
+    "origins-diversity:reptile/scales",
+    "origins-diversity:reptile/agility"
+  ],
+  "impact": 1
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Waterborne Agility",
+  "description": "You swim faster underwater.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:penguin_swim_boost",
+    "attribute": "minecraft:generic.water_movement_efficiency",
+    "amount": 0.1,
+    "operation": "ADD_VALUE"
+  }
+}

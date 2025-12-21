@@ -1,0 +1,50 @@
+{
+  "name": "Healing Splash",
+  "description": "Those who swim with you shall be blessed. Grant regeneration to those nearby you when used underwater.",
+  "type": "apoli:active_self",
+  "entity_action": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:play_sound",
+        "sound": "minecraft:entity.axolotl.splash",
+        "volume": 1.0,
+        "pitch": 1.0
+      },
+      {
+        "type": "apoli:spawn_particles",
+        "particle": "minecraft:happy_villager",
+        "count": 20,
+        "spread": { "x": 1.0, "y": 1.0, "z": 1.0 },
+        "speed": 0.1
+      },
+      {
+        "type": "apoli:area_of_effect",
+        "radius": 6,
+        "bientity_action": {
+          "type": "origins:target_action",
+          "action": {
+            "type": "apoli:apply_effect",
+            "effect": {
+              "id": "minecraft:regeneration",
+              "duration": 300,
+              "amplifier": 0
+            }
+          }
+        }
+      }
+    ]
+  },
+  "condition": {
+    "type": "origins:fluid_height",
+    "fluid": "minecraft:water",
+    "comparison": ">=",
+    "compare_to": 0.1
+  },
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  },
+  "cooldown": 1200,
+  "hud_render": { "should_render": true }
+}

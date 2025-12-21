@@ -1,0 +1,13 @@
+{
+  "name": "Frog",
+  "description": "A small amphibian that jumps high and swims well.",
+  "icon": { "id": "minecraft:slime_ball" },
+
+  "powers": [
+    "origins-diversity:frog/jump_boost",
+    "origins-diversity:frog/swim_speed",
+    "origins-diversity:frog/short_leap",
+    "origins-diversity:frog/fall_damage_resistance"
+  ],
+  "impact": 1
+}

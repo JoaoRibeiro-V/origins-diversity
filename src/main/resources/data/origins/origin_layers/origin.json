@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "origins": [
+    "origins-diversity:panda",
+    "origins-diversity:cow",
+    "origins-diversity:platypus",
+    "origins-diversity:axolotl",
+    "origins-diversity:frog",
+    "origins-diversity:reptile",
+    "origins-diversity:raccoon",
+    "origins-diversity:penguin",
+    "origins-diversity:monkey"
+  ]
+}

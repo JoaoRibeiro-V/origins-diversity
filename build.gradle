@@ -11,12 +11,36 @@ base {
 }
 
 repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
+	mavenCentral()
+
+	// Fabric
+	maven { url = "https://maven.fabricmc.net/" }
+
+	// Ladysnake (Origins, Apoli, Calio)
+	maven { url = "https://maven.ladysnake.org/releases" }
+
+	// Cloth Config
+	maven { url = "https://maven.shedaniel.me/" }
+
+	// Mod Menu
+	maven { url = "https://maven.terraformersmc.com/releases/" }
+
+	// Modrinth Maven (Additional Entity Attributes)
+	maven { url = "https://api.modrinth.com/maven" }
+
+	// Quilt (JSON parsers)
+	maven { url = "https://maven.quiltmc.org/repository/release/" }
+
+	maven {
+		name = "Modrinth"
+		url = "https://api.modrinth.com/maven"
+	}
+
+
 }
+
+
+
 
 loom {
 	splitEnvironmentSourceSets()
@@ -31,15 +55,21 @@ loom {
 }
 
 dependencies {
-	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings loom.officialMojangMappings()
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-
-	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
+
+	// Apoli (Fabric)
+	modImplementation "io.github.apace100:apoli:2.12.0-pre.1+mc.1.21.1"
+
+	// Origins (Fabric)
+	modImplementation("io.github.apace100:origins-fabric:1.13.0-pre.1+mc.1.21.1") {
+		exclude group: "carpet", module: "fabric-carpet"
+	}
+
 }
+
 
 processResources {
 	inputs.property "version", project.version

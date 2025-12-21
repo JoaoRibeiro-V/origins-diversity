@@ -1,0 +1,11 @@
+{
+  "name": "Agile",
+  "description": "You move slightly faster.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:reptile_agility",
+    "attribute": "minecraft:generic.movement_speed",
+    "amount": 0.125,
+    "operation": "ADD_MULTIPLIED_TOTAL"
+  }
+}

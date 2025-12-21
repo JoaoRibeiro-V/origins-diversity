@@ -1,0 +1,27 @@
+{
+  "name": "Shallow Water Regeneration",
+  "description": "You regenerate health quickly while in shallow water.",
+  "type": "apoli:action_over_time",
+  "interval": 180,
+  "entity_action": {
+    "type": "apoli:heal",
+    "amount": 2
+  },
+  "condition": {
+    "type": "apoli:and",
+    "conditions": [
+      {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": "<=",
+        "compare_to": 1
+      },
+      {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": ">=",
+        "compare_to": 0.25
+      }
+    ]
+  }
+}

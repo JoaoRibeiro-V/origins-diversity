@@ -1,0 +1,16 @@
+{
+  "name": "Water Blessing",
+  "description": "You regenerate health quickly while in water.",
+  "type": "apoli:action_over_time",
+  "interval": 100,
+  "entity_action": {
+    "type": "apoli:heal",
+    "amount": 2
+  },
+  "condition": {
+    "type": "origins:fluid_height",
+    "fluid": "minecraft:water",
+    "comparison": ">=",
+    "compare_to": 1.0
+  }
+}

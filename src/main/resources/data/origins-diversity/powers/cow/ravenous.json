@@ -1,0 +1,10 @@
+{
+  "name": "Ravenous",
+  "description": "Your body requires far more food than a normal human.",
+  "type": "apoli:action_over_time",
+  "interval": 240,
+  "entity_action": {
+    "type": "apoli:exhaust",
+    "amount": 0.6
+  }
+}

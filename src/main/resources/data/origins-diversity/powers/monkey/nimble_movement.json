@@ -1,0 +1,11 @@
+{
+  "name": "Nimble Movement",
+  "description": "You move significantly faster.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:monkey_nimble_movement",
+    "attribute": "minecraft:generic.movement_speed",
+    "amount": 0.0035,
+    "operation": "ADD_VALUE"
+  }
+}

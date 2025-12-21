@@ -1,14 +1,11 @@
 {
-	"required": true,
-	"package": "com.origins_diversity.mixin",
+	"required": false,
 	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
-	],
 	"injectors": {
 		"defaultRequire": 1
 	},
 	"overwrites": {
 		"requireAnnotations": true
-	}
+	},
+	"package": ""
 }
