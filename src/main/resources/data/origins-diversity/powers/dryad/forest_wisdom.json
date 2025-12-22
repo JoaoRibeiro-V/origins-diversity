@@ -1,0 +1,31 @@
+{
+  "name": "Forest Wisdom",
+  "description": "Your understanding of the woods accelerates your growth — gain extra experience when exploring forests and jungles.",
+  "type": "origins:conditioned_attribute",
+  "modifier": {
+    "id": "origins-diversity:dryad_forest_wisdom",
+    "attribute": "puffish_attributes:experience",
+    "amount": 0.25,
+    "operation": "ADD_MULTIPLIED_TOTAL"
+  },
+  "tick-rate": 40,
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:biome",
+        "condition": {
+          "type": "origins:in_tag",
+          "tag": "minecraft:is_forest"
+        }
+      },
+      {
+        "type": "origins:biome",
+        "condition": {
+          "type": "origins:in_tag",
+          "tag": "minecraft:is_jungle"
+        }
+      }
+    ]
+  }
+}

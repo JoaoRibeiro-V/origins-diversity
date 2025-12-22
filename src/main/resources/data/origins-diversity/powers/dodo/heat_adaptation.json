@@ -1,0 +1,17 @@
+{
+  "name": "Heat Adaptation",
+  "description": "Your body has adapted to extreme heat, toughening your skin against harm.",
+  "type": "origins:multiple",
+  "heat_armor": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:dodo_heat_armor",
+      "attribute": "minecraft:generic.armor",
+      "amount": 1.5,
+      "operation": "ADD_VALUE"
+    }
+  },
+  "fire_immunity": {
+    "type": "origins:fire_immunity"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Slow Learner",
+  "description": "Your simple-minded nature makes it harder to learn from experience, causing you to gain less experience overall.",
+  "type": "origins:modify_xp_gain",
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": -0.325,
+    "resource": "dodo_slow_learner"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "name": "Environmental Adaptability",
+  "description": "Your physiology responds directly to environmental stressors:\n\n§6🔥 Hot Biomes§7 — Prolonged heat causes your body to retain moisture and harden skin layers, increasing natural protection.\n\n§b❄ Cold Biomes§7 — Low temperatures trigger muscle tightening and energy conservation, reducing hunger loss and increasing physical strength.\n\n§3🌊 Ocean Biomes§7 — Increased lung efficiency and buoyancy improve underwater breathing, swimming speed, and stability in water.\n\n§a🌿 Plains§7 — Stable, open terrain promotes balanced endurance and sustained activity.\n\n§2🪵 Swamps§7 — Constant exposure to toxins strengthens internal resistance and improves balance in unstable ground.\n\n§7⛰ Mountains§7 — Thin air and steep terrain condition your body to resist falls, projectiles, and altitude strain.",
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:temperature",
+            "comparison": ">",
+            "compare_to": 1
+          }
+        },
+        "if_action": {
+          "type": "origins:grant_power",
+          "power": "origins-diversity:dodo/heat_adaptation",
+          "source": "origins-diversity:dodo_biome_adaptation"
+        },
+        "else_action": {
+          "type": "origins:revoke_power",
+          "power": "origins-diversity:dodo/heat_adaptation",
+          "source": "origins-diversity:dodo_biome_adaptation"
+        }
+      },
+      {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:temperature",
+            "comparison": "<=",
+            "compare_to": 0.05
+          }
+        },
+        "if_action": {
+          "type": "origins:grant_power",
+          "power": "origins-diversity:dodo/cold_endurance",
+          "source": "origins-diversity:dodo_biome_adaptation"
+        },
+        "else_action": {
+          "type": "origins:revoke_power",
+          "power": "origins-diversity:dodo/cold_endurance",
+          "source": "origins-diversity:dodo_biome_adaptation"
+        }
+      },
+      {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:is_ocean"
+          }
+        },
+        "if_action": {
+          "type": "origins:grant_power",
+          "power": "origins-diversity:dodo/coastal_adaptation",
+          "source": "origins-diversity:dodo_biome_adaptation"
+        },
+        "else_action": {
+          "type": "origins:revoke_power",
+          "power": "origins-diversity:dodo/coastal_adaptation",
+          "source": "origins-diversity:dodo_biome_adaptation"
+        }
+      },
+
+      {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:in_tag",
+            "tag": "has_structure/village_plains"
+          }
+        },
+        "if_action": {
+          "type": "origins:grant_power",
+          "power": "origins-diversity:dodo/plains_endurance",
+          "source": "origins-diversity:dodo_biome_adaptation"
+        },
+        "else_action": {
+          "type": "origins:revoke_power",
+          "power": "origins-diversity:dodo/plains_endurance",
+          "source": "origins-diversity:dodo_biome_adaptation"
+        }
+      },
+      {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:biome",
+              "condition": {
+                "type": "origins:in_tag",
+                "tag": "has_structure/ruined_portal_swamp"
+              }
+            },
+            {
+              "type": "origins:biome",
+              "condition": {
+                "type": "origins:in_tag",
+                "tag": "has_closer_water_fog"
+              }
+            }
+          ]
+        },
+        "if_action": {
+          "type": "origins:grant_power",
+          "power": "origins-diversity:dodo/swamp_resilience",
+          "source": "origins-diversity:dodo_biome_adaptation"
+        },
+        "else_action": {
+          "type": "origins:revoke_power",
+          "power": "origins-diversity:dodo/swamp_resilience",
+          "source": "origins-diversity:dodo_biome_adaptation"
+        }
+      },
+      {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:biome",
+          "condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:is_mountain"
+          }
+        },
+        "if_action": {
+          "type": "origins:grant_power",
+          "power": "origins-diversity:dodo/mountain_adaptation",
+          "source": "origins-diversity:dodo_biome_adaptation"
+        },
+        "else_action": {
+          "type": "origins:revoke_power",
+          "power": "origins-diversity:dodo/mountain_adaptation",
+          "source": "origins-diversity:dodo_biome_adaptation"
+        }
+      }
+    ]
+  }
+}

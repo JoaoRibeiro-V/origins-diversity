@@ -1,0 +1,19 @@
+{
+  "name": "Scavenger",
+  "description": "You're more likely to get rarer drops from chests and killing mobs, your fishing is also greatly enhanced.",
+  "type": "origins:attribute",
+  "modifiers": [
+    {
+      "id": "origins-diversity:raccoon_scavenger",
+      "attribute": "additionalentityattributes:player.bonus_rare_loot_rolls",
+      "amount": 5,
+      "operation": "ADD_VALUE"
+    },
+    {
+      "id": "origins-diversity:raccoon_scavenger",
+      "attribute": "minecraft:generic.luck",
+      "amount": 10,
+      "operation": "ADD_VALUE"
+    }
+  ]
+}

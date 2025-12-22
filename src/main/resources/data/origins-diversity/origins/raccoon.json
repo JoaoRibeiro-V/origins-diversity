@@ -6,7 +6,8 @@
   "powers": [
     "origins-diversity:raccoon/night_vision",
     "origins-diversity:raccoon/climbing_boost",
-    "origins-diversity:raccoon/quick_dash"
+    "origins-diversity:raccoon/quick_dash",
+    "origins-diversity:raccoon/scavenger"
   ],
   "impact": 1
 }

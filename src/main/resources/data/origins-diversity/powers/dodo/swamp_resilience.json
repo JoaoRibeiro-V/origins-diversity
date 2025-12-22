@@ -1,0 +1,24 @@
+{
+  "name": "Bog Resilience",
+  "description": "Mud, rot, and toxins have little effect on you.",
+  "type": "origins:multiple",
+    "effect_immunity": {
+      "type": "origins:effect_immunity",
+      "effects": [
+        "minecraft:poison",
+        "minecraft:hunger"
+      ]
+    },
+
+    "swamp_knockback": {
+      "type": "origins:attribute",
+      "modifier": {
+        "id": "origins-diversity:dodo_swamp_knockback",
+        "attribute": "minecraft:generic.knockback_resistance",
+        "amount": 0.2,
+        "operation": "ADD_VALUE"
+      }
+    }
+
+
+}

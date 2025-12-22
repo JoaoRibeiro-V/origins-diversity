@@ -7,7 +7,8 @@
     "origins-diversity:frog/jump_boost",
     "origins-diversity:frog/swim_speed",
     "origins-diversity:frog/short_leap",
-    "origins-diversity:frog/fall_damage_resistance"
+    "origins-diversity:frog/fall_damage_resistance",
+    "origins-diversity:frog/slippery"
   ],
   "impact": 1
 }

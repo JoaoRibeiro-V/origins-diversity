@@ -1,0 +1,23 @@
+{
+  "name": "Slow on the Draw",
+  "description": "Limited threat assessment and delayed motor response lead to poorly timed defensive postures - getting hit while using a shield deals more damage",
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:attacker",
+    "entity_condition": {
+      "type": "origins:using_item",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "origins:shields"
+        }
+
+      }
+    }
+  },
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": -0.25,
+    "resource": "dodo_vulnerability"
+  }
+}

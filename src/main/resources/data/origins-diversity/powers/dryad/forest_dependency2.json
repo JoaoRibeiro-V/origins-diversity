@@ -1,0 +1,18 @@
+{
+  "hidden": true,
+  "type": "origins:attribute",
+  "modifiers": [
+    {
+      "id": "origins-diversity:dryad_forest_dependency2_res",
+      "attribute": "puffish_attributes:resistance",
+      "amount": -0.1,
+      "operation": "ADD_MULTIPLIED_TOTAL"
+    },
+    {
+      "id": "origins-diversity:dryad_forest_dependency2_health",
+      "attribute": "minecraft:generic.max_health",
+      "amount": -3.0,
+      "operation": "ADD_VALUE"
+    }
+  ]
+}

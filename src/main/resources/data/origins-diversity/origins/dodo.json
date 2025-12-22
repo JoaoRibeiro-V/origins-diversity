@@ -1,0 +1,12 @@
+{
+  "name": "Dodo Bird",
+  "description": "A quirky, flightless bird with curious instincts and playful movements.",
+  "icon": { "id": "minecraft:feather" },
+  "powers": [
+    "origins-diversity:dodo/slow_fall",
+    "origins-diversity:dodo/biome_controller",
+    "origins-diversity:dodo/simple",
+    "origins-diversity:dodo/vulnerable"
+  ],
+  "impact": 1
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Coastal Adaptation",
+  "description": "You breathe efficiently underwater and move more naturally through water.",
+  "type": "origins:multiple",
+    "oxygen_bonus": {
+      "type": "origins:attribute",
+      "modifier": {
+        "id": "origins-diversity:dodo_oxygen_bonus",
+        "attribute": "minecraft:generic.oxygen_bonus",
+        "amount": 4.0,
+        "operation": "ADD_VALUE"
+      }
+    },
+    "swim_speed": {
+      "type": "origins:attribute",
+      "modifier": {
+        "id": "origins-diversity:dodo_swim_speed",
+        "attribute": "additionalentityattributes:generic.water_speed",
+        "amount": 0.2,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      }
+    },
+    "water_stability": {
+      "type": "origins:attribute",
+      "modifier": {
+        "id": "origins-diversity:dodo_water_knockback",
+        "attribute": "minecraft:generic.knockback_resistance",
+        "amount": 0.35,
+        "operation": "ADD_VALUE"
+      }
+    }
+
+}

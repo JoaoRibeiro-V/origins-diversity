@@ -1,0 +1,28 @@
+{
+  "name": "Endurance Traveler",
+  "description": "Open terrain lets you reposition quickly after striking an enemy.\nWide open lands favor your efficient movement and stamina.",
+  "type": "origins:multiple",
+
+    "speed_on_hit": {
+      "type": "origins:action_on_hit",
+      "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:speed",
+          "duration": 40,
+          "amplifier": 0,
+          "show_particles": false,
+          "show_icon": false
+        }
+      },
+      "cooldown": 60
+    },
+    "modify_exhaustion": {
+      "type": "origins:modify_exhaustion",
+      "modifier": {
+        "operation": "multiply_total_multiplicative",
+        "amount": -0.15,
+        "resource": "plains_endurance"
+      }
+    }
+}

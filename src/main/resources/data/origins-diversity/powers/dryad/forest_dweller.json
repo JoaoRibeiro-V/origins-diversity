@@ -1,0 +1,44 @@
+{
+  "name": "Forest Dweller",
+  "description": "Thriving in forests and jungles, you strike faster, hit harder, and move swifter — but away from the woods, your power and resilience falter.",
+  "type": "origins:conditioned_attribute",
+  "modifiers": [
+    {
+      "id": "origins-diversity:dryad_forest_dweller_attackspeed",
+      "attribute": "minecraft:generic.attack_speed",
+      "amount": 0.1,
+      "operation": "ADD_MULTIPLIED_TOTAL"
+    },
+    {
+      "id": "origins-diversity:dryad_forest_dweller_attackdamage",
+      "attribute": "minecraft:generic.attack_damage",
+      "amount": 0.075,
+      "operation": "ADD_MULTIPLIED_TOTAL"
+    },{
+      "id": "origins-diversity:dryad_forest_dweller_movementspeed",
+      "attribute": "minecraft:generic.movement_speed",
+      "amount": 0.125,
+      "operation": "ADD_MULTIPLIED_TOTAL"
+    }
+  ],
+  "tick-rate": 40,
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:biome",
+        "condition": {
+          "type": "origins:in_tag",
+          "tag": "minecraft:is_forest"
+        }
+      },
+      {
+        "type": "origins:biome",
+        "condition": {
+          "type": "origins:in_tag",
+          "tag": "minecraft:is_jungle"
+        }
+      }
+    ]
+  }
+}

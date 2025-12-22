@@ -1,0 +1,11 @@
+{
+  "name": "Slippery",
+  "description": "Your slippery skin makes it harder for ranged attacks to hit. You take reduced damage from projectiles.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:frog_slippery",
+    "attribute": "puffish_attributes:ranged_resistance",
+    "amount": 0.2,
+    "operation": "ADD_MULTIPLIED_TOTAL"
+  }
+}
