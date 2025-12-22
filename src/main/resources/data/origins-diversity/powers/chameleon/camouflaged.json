@@ -1,0 +1,79 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+    "invisibility": {
+      "type": "origins:invisibility",
+      "render_armor": false
+    },
+    "partial_resistance": {
+      "type": "origins:modify_damage_taken",
+      "modifier": {
+        "operation": "multiply_total_multiplicative",
+        "amount": -0.25,
+        "resource": "chameleon_skin_shift"
+      }
+    },
+    "particles": {
+      "type": "origins:action_over_time",
+      "interval": 200,
+      "entity_action": {
+        "type": "origins:spawn_particles",
+        "particle": "minecraft:cloud",
+
+        "count": 2,
+        "spread": { "x": 0.3, "y": 0.3, "z": 0.3 }
+      }
+    },
+  "stealth": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:chameleon_stealth",
+      "attribute": "puffish_attributes:stealth",
+      "amount": 15.0,
+      "operation": "ADD_VALUE"
+    }
+  },
+  "surprise_strike": {
+    "hidden": true,
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+      "operation": "add_base_late",
+      "amount": 2.0,
+      "resource": "surprise_strike"
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        { "type": "origins:living" },
+        { "type": "origins:power", "power": "origins-diversity:chameleon/camouflaged" }
+      ]
+    },
+    "self_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+            "type": "origins:remove_power",
+            "power": "origins-diversity:chameleon/camouflaged"
+            },
+            {
+            "type": "origins:trigger_cooldown",
+            "power": "origins-diversity:chameleon/camouflage_cooldown",
+              "duration": 100
+            }
+        ]
+    },
+    "target_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "id": "minecraft:weakness",
+            "duration": 100,
+            "amplifier": 0
+          }
+        }
+      ]
+    }
+  }
+}

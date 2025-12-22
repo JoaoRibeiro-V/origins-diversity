@@ -1,0 +1,21 @@
+{
+  "hidden": true,
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:sneaking"
+    },
+    "if_action": {
+      "type": "origins:grant_power",
+      "power": "origins-diversity:chameleon/camouflaged",
+      "source": "origins-diversity:chameleon_camouflage"
+    },
+    "else_action": {
+      "type": "origins:revoke_power",
+      "power": "origins-diversity:chameleon/camouflage_sneak_timer",
+      "source": "origins-diversity:chameleon_camouflage"
+    }
+  }
+}

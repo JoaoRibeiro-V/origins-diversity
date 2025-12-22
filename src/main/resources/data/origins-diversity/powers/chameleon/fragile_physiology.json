@@ -1,0 +1,11 @@
+{
+  "name": "Ectothermic Fragility",
+  "description": "Your thin musculature and low-density tissue are optimized for concealment rather than endurance, reducing your maximum health.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:chameleon_fragile",
+    "attribute": "minecraft:generic.max_health",
+    "amount": -4.0,
+    "operation": "ADD_VALUE"
+  }
+}

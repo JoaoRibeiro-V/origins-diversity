@@ -1,0 +1,24 @@
+{
+  "name": "Cold-Blooded",
+  "description": "As an ectotherm, low temperatures slow your metabolism, reducing mobility in cold environments.",
+  "type": "origins:stacking_status_effect",
+  "min_stacks": 0,
+  "max_stacks": 1,
+  "duration_per_stack": 40,
+  "effects": [
+    {
+      "id": "minecraft:slowness",
+      "amplifier": 0,
+      "show_particles": false,
+      "show_icon": true
+    }
+  ],
+  "condition": {
+    "type": "origins:biome",
+    "condition": {
+      "type": "origins:temperature",
+      "comparison": "<=",
+      "compare_to": 0.15
+    }
+  }
+}

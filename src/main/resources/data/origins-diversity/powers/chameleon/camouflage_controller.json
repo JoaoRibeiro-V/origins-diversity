@@ -1,0 +1,58 @@
+{
+  "name": "Adaptive Camouflage",
+  "description": "§7By crouching for §a2 seconds§7, you trigger your skin's rapid §echromatophore response§7, rendering you partially invisible.\n\n§7While camouflaged:\n§a- You take §e15% reduced damage§a.\n§a- Emit subtle §bparticles§a to blend with the environment.\n§a- Attacking applies §cSurprise Strike§a, dealing bonus damage and briefly weakening your target.\n\n§7Attacking normally or getting hit breaks the effect, initiating a §ccooldown§7.",
+  "type": "origins:action_over_time",
+  "interval": 10,
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:sneaking"
+    },
+    "if_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:power",
+            "power": "origins-diversity:chameleon/camouflaged",
+            "inverted": true
+          },
+          {
+            "type": "origins:resource",
+            "resource": "origins-diversity:chameleon/camouflage_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+          }
+        ]
+      },
+      "if_action": {
+        "type": "origins:grant_power",
+        "power": "origins-diversity:chameleon/camouflaged",
+        "source": "origins-diversity:chameleon_camouflage"
+      }
+    },
+    "else_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:power",
+        "power": "origins-diversity:chameleon/camouflaged"
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:revoke_power",
+            "power": "origins-diversity:chameleon/camouflaged",
+            "source": "origins-diversity:chameleon_camouflage"
+          },
+          {
+            "type": "origins:trigger_cooldown",
+            "power": "origins-diversity:chameleon/camouflage_cooldown",
+            "duration": 100
+          }
+        ]
+      }
+    }
+  }
+}
