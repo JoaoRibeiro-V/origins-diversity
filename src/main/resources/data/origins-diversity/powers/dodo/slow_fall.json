@@ -1,6 +1,6 @@
 {
   "name": "Tail Feather Flap",
-  "description": "Your tail feathers slow your fall, preventing painful crashes. (Sneak to activate)",
+  "description": "§7Your tail feathers §aslow§7 your fall, preventing painful crashes. (Sneak to activate)",
   "type": "origins:modify_falling",
   "velocity": 0.05,
   "take_fall_damage": false,

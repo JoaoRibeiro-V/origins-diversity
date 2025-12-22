@@ -1,6 +1,6 @@
 {
   "name": "Endurance Traveler",
-  "description": "Open terrain lets you reposition quickly after striking an enemy.\nWide open lands favor your efficient movement and stamina.",
+  "description": "§7Open terrain lets you reposition quickly after striking an enemy.\nWide open lands §afavor§7 your movement and stamina.",
   "type": "origins:multiple",
 
     "speed_on_hit": {

@@ -1,6 +1,6 @@
 {
   "name": "Bamboo Feast",
-  "description": "Eating bamboo empowers you in bamboo-rich biomes.",
+  "description": "§7Eating bamboo §aempowers§7 you in §nbamboo-rich§r§7 biomes.",
   "type": "apoli:active_self",
   "entity_action": {
     "type": "apoli:and",

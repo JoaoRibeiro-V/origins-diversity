@@ -1,6 +1,6 @@
 {
   "name": "Cold-Blooded",
-  "description": "As an ectotherm, low temperatures slow your metabolism, reducing mobility in cold environments.",
+  "description": "§7As an ectotherm, low temperatures slow your metabolism, §creducing§7 mobility in cold environments.",
   "type": "origins:stacking_status_effect",
   "min_stacks": 0,
   "max_stacks": 1,

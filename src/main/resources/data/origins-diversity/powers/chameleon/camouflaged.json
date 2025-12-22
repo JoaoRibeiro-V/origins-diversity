@@ -18,7 +18,7 @@
       "interval": 200,
       "entity_action": {
         "type": "origins:spawn_particles",
-        "particle": "minecraft:cloud",
+        "particle": "minecraft:end_rod",
 
         "count": 2,
         "spread": { "x": 0.3, "y": 0.3, "z": 0.3 }

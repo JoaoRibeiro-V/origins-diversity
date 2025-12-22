@@ -1,6 +1,6 @@
 {
     "name": "Bamboo Homeland",
-    "description": "You feel stronger in bamboo jungles, bamboo forests, and sparse jungles. Eating bamboo also grants additional buffs in these biomes.",
+    "description": "§7You feel §astronger§7 in bamboo jungles, bamboo forests, and sparse jungles. Eating bamboo also grants §aadditional§7 buffs in these biomes.",
     "type": "apoli:conditioned_attribute",
     "modifier": {
         "id": "origins-diversity:panda_bamboo_home_attack_damage",

@@ -1,6 +1,6 @@
 {
   "name": "Self Milking",
-  "description": "Use a bucket to milk yourself.",
+  "description": "§7Use a bucket to §fmilk§7 yourself.",
   "type": "apoli:active_self",
   "entity_action": {
     "type": "apoli:and",

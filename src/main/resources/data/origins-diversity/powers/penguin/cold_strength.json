@@ -1,6 +1,6 @@
 {
   "name": "Cold Strength",
-  "description": "You deal more damage in cold biomes.",
+  "description": "§7You deal §amore§7 damage in §bcold§7 biomes.",
   "type": "origins:conditioned_attribute",
   "modifier": {
     "id": "origins-diversity:frog_swim_speed",

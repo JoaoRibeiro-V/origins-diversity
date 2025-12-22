@@ -1,6 +1,6 @@
 {
   "name": "Slippery",
-  "description": "Your slippery skin makes it harder for ranged attacks to hit. You take reduced damage from projectiles.",
+  "description": "§7Your slippery skin makes it harder for ranged attacks to hit. You take §areduced§7 damage from projectiles.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:frog_slippery",

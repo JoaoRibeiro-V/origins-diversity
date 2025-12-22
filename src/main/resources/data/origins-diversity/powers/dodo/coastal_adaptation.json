@@ -1,6 +1,6 @@
 {
   "name": "Coastal Adaptation",
-  "description": "You breathe efficiently underwater and move more naturally through water.",
+  "description": "§7You breathe efficiently and move more naturally through §nwater§r§7.",
   "type": "origins:multiple",
     "oxygen_bonus": {
       "type": "origins:attribute",

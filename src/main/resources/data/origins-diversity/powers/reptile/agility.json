@@ -1,6 +1,6 @@
 {
   "name": "Agile",
-  "description": "You move slightly faster.",
+  "description": "§7You move §aslightly§7 faster.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:reptile_agility",

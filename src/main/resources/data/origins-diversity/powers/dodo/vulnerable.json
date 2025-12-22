@@ -1,6 +1,6 @@
 {
   "name": "Slow on the Draw",
-  "description": "Limited threat assessment and delayed motor response lead to poorly timed defensive postures - getting hit while using a shield deals more damage",
+  "description": "§7Limited threat assessment and delayed motor response lead to poorly timed defensive postures - getting hit while using a shield deals §cmore§7 damage",
   "type": "origins:modify_damage_taken",
   "damage_condition": {
     "type": "origins:attacker",

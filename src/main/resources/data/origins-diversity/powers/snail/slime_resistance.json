@@ -1,0 +1,9 @@
+{
+  "name": "Slime Resistance",
+  "description": "§aYou are immune§7 to §cslowness§7 and §cpoison§7 effects.",
+  "type": "origins:effect_immunity",
+  "effects": [
+    "minecraft:slowness",
+    "minecraft:poison"
+  ]
+}

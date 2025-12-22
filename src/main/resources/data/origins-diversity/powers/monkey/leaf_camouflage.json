@@ -1,6 +1,6 @@
 {
   "name": "Leaf Camouflage",
-  "description": "You are harder to detect by mobs when you are in leaves.",
+  "description": "§7You are harder to detect by mobs when you are in §nleaves§r§7.",
   "type": "origins:modify_attribute",
   "attribute": "additionalentityattributes:generic.mob_detection_range",
   "modifier": {

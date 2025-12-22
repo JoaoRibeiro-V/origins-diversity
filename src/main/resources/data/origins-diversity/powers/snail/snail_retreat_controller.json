@@ -1,0 +1,43 @@
+{
+
+  "name": "Retreat Shell",
+  "description": "§7Getting hit while crouching will make you rapidly withdraw into your shell.\n- Grants §aadditional§7 temporary armor and damage reduction.\n- Movement is §cslowed§7 while active.\nEffect ends when you stop crouching.",
+"type": "origins:self_action_when_hit",
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:sneaking"
+        },
+        {
+          "type": "origins:resource",
+          "resource": "origins-diversity:snail/retreat_cooldown",
+          "comparison": "==",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:power",
+          "power": "origins-diversity:snail/shell_armor_temp",
+          "inverted": true
+        }
+      ]
+    },
+    "if_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:grant_power",
+          "power": "origins-diversity:snail/shell_armor_temp",
+          "source": "origins-diversity:snail_retreat"
+        },
+        {
+          "type": "origins:trigger_cooldown",
+          "power": "origins-diversity:snail/retreat_cooldown",
+          "duration": 100
+        }
+      ]
+    }
+  }
+}

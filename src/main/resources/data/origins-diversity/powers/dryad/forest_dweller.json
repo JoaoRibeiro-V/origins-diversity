@@ -1,6 +1,6 @@
 {
   "name": "Forest Dweller",
-  "description": "Thriving in forests and jungles, you strike faster, hit harder, and move swifter — but away from the woods, your power and resilience falter.",
+  "description": "§7Thriving in forests and jungles, you strike §afaster§7, hit §aharder§7, and move §aswifter§7 — but away from the woods, your power and resilience §cfalter§7.",
   "type": "origins:conditioned_attribute",
   "modifiers": [
     {

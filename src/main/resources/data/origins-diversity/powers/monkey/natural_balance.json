@@ -1,6 +1,6 @@
 {
   "name": "Natural Balance",
-  "description": "You have increased knockback resistance while standing on leaves.",
+  "description": "§7You have §aincreased§7 knockback resistance while §nstanding on leaves§r§7.",
   "type": "origins:conditioned_attribute",
   "modifier": {
     "id": "origins-diversity:monkey_natural_balance",

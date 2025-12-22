@@ -1,6 +1,6 @@
 {
   "name": "Bog Resilience",
-  "description": "Mud, rot, and toxins have little effect on you.",
+  "description": "§7§nMud, rot, and toxins§r§7 have §alittle§7 effect on you.",
   "type": "origins:multiple",
     "effect_immunity": {
       "type": "origins:effect_immunity",

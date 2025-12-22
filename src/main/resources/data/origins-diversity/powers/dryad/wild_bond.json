@@ -1,6 +1,6 @@
 {
   "name": "Wild Bond",
-  "description": "Your bond with the creatures of the forest empowers them — tamed animals deal increased damage.",
+  "description": "§7Your bond with the creatures of the forest §nempowers§r§7 them — tamed animals deal §aincreased§7 damage.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:dryad_wild_bond",

@@ -1,6 +1,6 @@
 {
   "name": "Slow Learner",
-  "description": "Your simple-minded nature makes it harder to learn from experience, causing you to gain less experience overall.",
+  "description": "§7Your simple-minded nature makes it harder to learn from experience, causing you to gain §cless§7 experience overall.",
   "type": "origins:modify_xp_gain",
   "modifier": {
     "operation": "multiply_total_multiplicative",

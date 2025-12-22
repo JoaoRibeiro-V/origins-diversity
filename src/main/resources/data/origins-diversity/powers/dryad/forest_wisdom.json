@@ -1,6 +1,6 @@
 {
   "name": "Forest Wisdom",
-  "description": "Your understanding of the woods accelerates your growth — gain extra experience when exploring forests and jungles.",
+  "description": "§7Your understanding of the woods accelerates your growth — gain §aextra§7 experience when exploring forests and jungles.",
   "type": "origins:conditioned_attribute",
   "modifier": {
     "id": "origins-diversity:dryad_forest_wisdom",

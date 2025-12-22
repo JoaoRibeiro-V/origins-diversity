@@ -1,0 +1,19 @@
+{
+  "name": "Snail Shell Armor",
+  "description": "§7Your sturdy shell provides you with §aadditional§7 armor and toughness.",
+  "type": "origins:attribute",
+  "modifiers":[
+    {
+      "id": "origins-diversity:snail_shell_armor",
+      "attribute": "minecraft:generic.armor",
+      "amount": 3.0,
+      "operation": "ADD_VALUE"
+    },
+    {
+      "id": "origins-diversity:snail_shell_toughness",
+      "attribute": "minecraft:generic.armor_toughness",
+      "amount": 2.0,
+      "operation": "ADD_VALUE"
+    }
+  ]
+}

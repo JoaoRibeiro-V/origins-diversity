@@ -1,6 +1,6 @@
 {
   "name": "Gentle Giant",
-  "description": "You have extra health.",
+  "description": "§7You have §aextra§7 health.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:panda_extra_hearts",

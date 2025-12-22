@@ -1,6 +1,6 @@
 {
   "name": "Aquatic Agility",
-  "description": "You swim slightly faster.",
+  "description": "§7You swim slightly §afaster§7.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:frog_swim_speed",

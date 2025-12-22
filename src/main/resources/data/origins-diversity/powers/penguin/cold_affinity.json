@@ -1,6 +1,6 @@
 {
   "name": "Cold Affinity",
-  "description": "You take reduced damage while in snowy biomes.",
+  "description": "§7You take §areduced§7 damage while in §n§bsnowy§7 biomes§r§7.",
   "type": "origins:modify_damage_taken",
   "condition": {
     "type": "origins:biome",

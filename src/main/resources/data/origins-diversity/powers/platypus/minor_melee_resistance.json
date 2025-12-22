@@ -1,6 +1,6 @@
 {
   "name": "Minor Melee Resistance",
-  "description": "You have a minor increase to your armor, making you slightly more resistant",
+  "description": "§7You have a minor §aincrease§7 to your armor, making you slightly more §nresistant§r§7.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:platypus_minor_melee_resistance",

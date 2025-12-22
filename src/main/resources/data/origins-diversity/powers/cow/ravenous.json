@@ -1,6 +1,6 @@
 {
   "name": "Ravenous",
-  "description": "Your body requires far more food than a normal human.",
+  "description": "§7Your body requires far more food than a normal human, you have §cincreased§7 hunger loss.",
   "type": "apoli:action_over_time",
   "interval": 240,
   "entity_action": {
