@@ -1,0 +1,40 @@
+{
+  "hidden": true,
+  "type": "origins:action_on_callback",
+  "entity_action_lost": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:revoke_power",
+        "power": "origins-diversity:dodo/cold_endurance",
+        "source": "origins-diversity:dodo_biome_adaptation"
+      },
+
+      {
+        "type": "origins:revoke_power",
+        "power": "origins-diversity:dodo/heat_adaptation",
+        "source": "origins-diversity:dodo_biome_adaptation"
+      },
+      {
+        "type": "origins:revoke_power",
+        "power": "origins-diversity:dodo/coastal_adaptation",
+        "source": "origins-diversity:dodo_biome_adaptation"
+      },
+      {
+        "type": "origins:revoke_power",
+        "power": "origins-diversity:dodo/mountain_adaptation",
+        "source": "origins-diversity:dodo_biome_adaptation"
+      },{
+        "type": "origins:revoke_power",
+        "power": "origins-diversity:dodo/plains_endurance",
+        "source": "origins-diversity:dodo_biome_adaptation"
+      },
+      {
+        "type": "origins:revoke_power",
+        "power": "origins-diversity:dodo/swamp_resilience",
+        "source": "origins-diversity:dodo_biome_adaptation"
+      }
+    ]
+  },
+  "execute_chosen_when_orb": true
+}

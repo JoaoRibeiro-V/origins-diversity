@@ -1,4 +1,6 @@
 {
+  "name": "Vegetarian",
+  "description": "You can't digest any meat.",
   "type": "origins:prevent_item_use",
   "item_condition": {
     "type": "origins:and",
@@ -11,9 +13,6 @@
             "ingredient": {
               "tag": "origins:meat"
             }
-          },
-          {
-            "type": "origins:meat"
           }
         ]
       },

@@ -2,7 +2,7 @@
   "name": "High Altitude Adaptation",
   "description": "Thin air and steep terrain no longer hinder you - gain §aadditional§7 projectile protection, §adecreased§7 fall damage and knockback §aresistance§7.",
   "type": "origins:multiple",
-  "remove_on_death": true,
+
   "mountain_fall_damage": {
     "type": "origins:modify_damage_taken",
     "modifier": {
@@ -13,8 +13,8 @@
     "damage_condition": {
       "type": "origins:in_tag",
       "tag": "minecraft:is_fall"
-    },
-    "remove_on_death": true
+    }
+
 
   },
   "knockback_resistance": {
@@ -24,8 +24,8 @@
       "attribute": "minecraft:generic.knockback_resistance",
       "amount": 0.25,
       "operation": "ADD_VALUE"
-    },
-    "remove_on_death": true
+    }
+
 
   },
   "projectile_resistance": {
@@ -37,8 +37,8 @@
     },
     "damage_condition": {
       "type": "origins:projectile"
-    },
-    "remove_on_death": true
+    }
+
 
   },
   "jump_buff": {
@@ -48,8 +48,8 @@
       "attribute": "minecraft:generic.jump_strength",
       "amount": 0.15,
       "operation": "ADD_MULTIPLIED_TOTAL"
-    },
-    "remove_on_death": true
+    }
+
 
   }
 }
