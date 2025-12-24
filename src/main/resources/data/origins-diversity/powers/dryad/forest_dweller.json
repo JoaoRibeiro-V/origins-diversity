@@ -6,7 +6,7 @@
     {
       "id": "origins-diversity:dryad_forest_dweller_attackspeed",
       "attribute": "minecraft:generic.attack_speed",
-      "amount": 0.1,
+      "amount": 0.15,
       "operation": "ADD_MULTIPLIED_TOTAL"
     },
     {

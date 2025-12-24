@@ -2,30 +2,32 @@
   "name": "High Altitude Adaptation",
   "description": "Thin air and steep terrain no longer hinder you - gain §aadditional§7 projectile protection, §adecreased§7 fall damage and knockback §aresistance§7.",
   "type": "origins:multiple",
-
-    "mountain_fall_damage": {
-      "type": "origins:modify_damage_taken",
-      "modifier": {
-        "operation": "multiply_total_multiplicative",
-        "amount": -0.25,
-        "resource": "mountain_fall_damage"
-      },
-      "damage_condition": {
-        "type": "origins:in_tag",
-        "tag": "minecraft:is_fall"
-      }
-    }
-,
-
-    "knockback_resistance": {
-      "type": "origins:attribute",
-      "modifier": {
-        "id": "origins-diversity:dodo_mountain_knockback",
-        "attribute": "minecraft:generic.knockback_resistance",
-        "amount": 0.25,
-        "operation": "ADD_VALUE"
-      }
+  "remove_on_death": true,
+  "mountain_fall_damage": {
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": -0.25,
+      "resource": "mountain_fall_damage"
     },
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "minecraft:is_fall"
+    },
+    "remove_on_death": true
+
+  },
+  "knockback_resistance": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:dodo_mountain_knockback",
+      "attribute": "minecraft:generic.knockback_resistance",
+      "amount": 0.25,
+      "operation": "ADD_VALUE"
+    },
+    "remove_on_death": true
+
+  },
   "projectile_resistance": {
     "type": "origins:modify_damage_taken",
     "modifier": {
@@ -35,7 +37,9 @@
     },
     "damage_condition": {
       "type": "origins:projectile"
-    }
+    },
+    "remove_on_death": true
+
   },
   "jump_buff": {
     "type": "origins:attribute",
@@ -44,9 +48,8 @@
       "attribute": "minecraft:generic.jump_strength",
       "amount": 0.15,
       "operation": "ADD_MULTIPLIED_TOTAL"
-    }
+    },
+    "remove_on_death": true
+
   }
-
-
-
 }

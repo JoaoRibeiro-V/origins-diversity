@@ -9,7 +9,9 @@
         "operation": "multiply_total_multiplicative",
         "amount": -0.2,
         "resource": "cold_endurance"
-      }
+      },
+      "remove_on_death": true
+
     },
 
    "cold_strength": {
@@ -19,8 +21,12 @@
         "attribute": "minecraft:generic.attack_damage",
         "amount": 1.0,
         "operation": "ADD_VALUE"
-      }
-    }
+      },
+     "remove_on_death": true
+
+   },
+  "remove_on_death": true
+
 
 
 }
