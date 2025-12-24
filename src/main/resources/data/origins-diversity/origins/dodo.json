@@ -6,7 +6,8 @@
     "origins-diversity:dodo/slow_fall",
     "origins-diversity:dodo/biome_controller",
     "origins-diversity:dodo/simple",
-    "origins-diversity:dodo/vulnerable"
+    "origins-diversity:dodo/vulnerable",
+    "origins-diversity:dodo/remove_adaptations"
   ],
   "impact": 1
 }
