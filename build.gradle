@@ -83,6 +83,11 @@ dependencies {
 
     modCompileOnly "maven.modrinth:FCFcFw09:8lqoMfo7"
     modRuntimeOnly "maven.modrinth:FCFcFw09:8lqoMfo7"
+    modCompileOnly "maven.modrinth:Adega8YN:d1TKoLnB"
+    modRuntimeOnly "maven.modrinth:Adega8YN:d1TKoLnB"
+    modCompileOnly "maven.modrinth:twkfQtEc:XAvedFDj"
+    modRuntimeOnly "maven.modrinth:twkfQtEc:XAvedFDj"
+
 
 }
 

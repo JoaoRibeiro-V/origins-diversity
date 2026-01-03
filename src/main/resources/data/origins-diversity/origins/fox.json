@@ -1,0 +1,16 @@
+{
+  "name": "Fox",
+  "description": "Agile nocturnal opportunistic hunters that rely on cunning and speed.",
+  "icon": {
+    "id": "minecraft:sweet_berries"
+  },
+  "impact": 2,
+  "powers": [
+    "origins-diversity:fox/opportunist_strike",
+    "origins-diversity:fox/carnivore",
+    "origins-diversity:fox/lightweight_frame",
+    "origins-diversity:fox/nocturnal_controller",
+    "origins-diversity:fox/weak_paws",
+    "origins-diversity:fox/remove_passives"
+  ]
+}

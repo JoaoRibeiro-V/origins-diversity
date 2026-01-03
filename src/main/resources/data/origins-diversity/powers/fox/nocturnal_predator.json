@@ -1,0 +1,30 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "night_vision": {
+    "type": "origins:night_vision",
+    "strength": 0.6
+  },
+  "velvet_steps": {
+    "type": "origins:prevent_game_event",
+    "event": "minecraft:step"
+  },
+  "nocturnal_agility": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:fox_nocturnal_attack_speed",
+      "attribute": "minecraft:generic.attack_speed",
+      "amount": 0.2,
+      "operation": "ADD_MULTIPLIED_TOTAL"
+    }
+  },
+  "nocturnal_speed": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:panda_slow_movement",
+      "attribute": "minecraft:generic.movement_speed",
+      "amount": 0.125,
+      "operation": "ADD_MULTIPLIED_TOTAL"
+    }
+  }
+}

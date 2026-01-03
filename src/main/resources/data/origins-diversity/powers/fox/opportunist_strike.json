@@ -1,0 +1,21 @@
+{
+  "name": "Opportunistic Strike",
+  "description": "§7Striking an enemy that is §6not focused on you§7 deals §cbonus damage§7. Has a short cooldown.",
+  "type": "origins:action_on_hit",
+  "bientity_action": {
+    "type": "origins:damage",
+    "damage_type": "player_attack",
+    "amount": 5
+  },
+  "bientity_condition": {
+    "type": "origins:relative_rotation",
+    "actor_rotation": "body",
+    "target_rotation": "head",
+    "comparison": ">=",
+    "compare_to": 0.4
+  },
+  "cooldown": 80,
+  "hud_render": {
+    "should_render": true
+  }
+}

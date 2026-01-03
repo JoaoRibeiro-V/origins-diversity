@@ -1,0 +1,36 @@
+{
+  "name": "Carnivore Diet",
+  "description": "§7Your body is adapted to a §ccarnivorous§7 lifestyle, and §aberries§7, for some reason.",
+  "type": "origins:prevent_item_use",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:ingredient",
+            "ingredient": { "tag": "origins:meat" }
+          },
+          {
+            "type": "origins:ingredient",
+            "ingredient": { "item": "minecraft:sweet_berries" }
+          },
+          {
+            "type": "origins:ingredient",
+            "ingredient": { "item": "minecraft:glow_berries" }
+          }
+        ],
+        "inverted": true
+      },
+      {
+        "type": "origins:food"
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": { "tag": "origins:ignore_diet" },
+        "inverted": true
+      }
+    ]
+  }
+}
