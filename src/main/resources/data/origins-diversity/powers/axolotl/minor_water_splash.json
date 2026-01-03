@@ -46,5 +46,9 @@
     "continuous": false
   },
   "cooldown": 1200,
-  "hud_render": { "should_render": true }
+  "hud_render": { "should_render": true,
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+    "bar_index": 9,
+    "icon_index": 0
+  }
 }

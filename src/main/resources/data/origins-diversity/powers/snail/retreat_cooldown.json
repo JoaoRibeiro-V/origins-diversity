@@ -2,5 +2,9 @@
   "hidden": true,
   "type": "origins:cooldown",
   "cooldown": 400,
-  "hud_render": { "should_render": true }
+  "hud_render": { "should_render": true,
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+    "bar_index": 0,
+    "icon_index": 0
+  }
 }

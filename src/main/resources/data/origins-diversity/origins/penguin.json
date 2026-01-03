@@ -7,7 +7,8 @@
     "origins-diversity:penguin/cold_affinity",
     "origins-diversity:penguin/swim_boost",
     "origins-diversity:penguin/fish_gourmet",
-    "origins-diversity:penguin/cold_strength"
+    "origins-diversity:penguin/cold_strength",
+    "origins-diversity:penguin/height"
   ],
   "impact": 1
 }

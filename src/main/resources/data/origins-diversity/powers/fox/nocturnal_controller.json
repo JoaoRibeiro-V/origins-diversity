@@ -1,6 +1,6 @@
 {
   "name": "Nocturnal Predator",
-  "description": "§7You thrive in the §9dark§7.\n§7At §9night§7 you gain §bNight Vision§7, §7increased §cattack speed§7, and faster §amovement§7.\n§7These bonuses fade in §edaylight§7.\n",
+  "description": "§7You thrive in the §9dark§7.\n§7At §9night§7 you gain §bNight Vision§7, §7increased §cattack speed§7, and faster §amovement§7.\n§7These bonuses fade in §edaylight§7.",
   "type": "origins:action_over_time",
   "interval": 20,
   "entity_action": {
