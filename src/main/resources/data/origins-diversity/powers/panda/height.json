@@ -1,6 +1,6 @@
 {
   "name": "Bulky Build",
-  "description": "§7You have a §cbigger body§7, making you easier to hit",
+  "description": "§rYou have a §cbigger body§r, making you easier to hit",
   "type": "origins:action_on_callback",
   "entity_action_lost": {
     "type": "origins:and",

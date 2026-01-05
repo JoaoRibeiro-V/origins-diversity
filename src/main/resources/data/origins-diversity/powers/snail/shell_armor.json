@@ -1,6 +1,6 @@
 {
   "name": "Snail Shell Armor",
-  "description": "§7Your sturdy shell provides you with §aadditional§7 armor and toughness.",
+  "description": "§rYour sturdy shell provides you with §aadditional§r armor and toughness.",
   "type": "origins:attribute",
   "modifiers":[
     {

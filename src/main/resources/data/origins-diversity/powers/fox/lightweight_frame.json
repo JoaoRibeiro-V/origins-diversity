@@ -1,6 +1,6 @@
 {
   "name": "Lightweight Frame",
-  "description": "§7Due to being lightweight and agile-based, you have §creduced§7 health.",
+  "description": "§rDue to being lightweight and agile-based, you have §creduced§r health.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:panda_extra_hearts",

@@ -1,6 +1,6 @@
 {
   "name": "Forest Wisdom",
-  "description": "§7Your attachment with the woods makes it more difficult to cause any harm to it - chopping trees now takes longer.",
+  "description": "§rYour attachment with the woods makes it more difficult to cause any harm to it - chopping trees now takes longer.",
   "type": "origins:conditioned_attribute",
   "modifier": {
     "id": "origins-diversity:dryad_forest_wisdom",

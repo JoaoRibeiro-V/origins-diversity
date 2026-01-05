@@ -1,6 +1,6 @@
 {
     "name": "Bamboo Homeland",
-    "description": "§7You feel §astronger§7 in bamboo jungles, bamboo forests, and sparse jungles.",
+    "description": "§rYou feel §astronger§r in bamboo jungles, bamboo forests, and sparse jungles.",
     "type": "apoli:conditioned_attribute",
     "modifier": {
         "id": "origins-diversity:panda_bamboo_home_attack_damage",

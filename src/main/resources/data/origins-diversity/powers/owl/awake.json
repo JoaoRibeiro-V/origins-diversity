@@ -1,0 +1,5 @@
+{
+  "name": "Imsomnia",
+  "description": "§rYou can't sleep.",
+  "type": "origins:prevent_sleep"
+}

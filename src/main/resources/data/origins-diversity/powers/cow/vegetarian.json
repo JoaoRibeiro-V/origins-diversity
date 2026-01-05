@@ -1,6 +1,6 @@
 {
   "name": "Vegetarian",
-  "description": "§7You §ccan't§7 digest any meat.",
+  "description": "§rYou §ccan't§r digest any meat.",
   "type": "origins:prevent_item_use",
   "item_condition": {
     "type": "origins:and",

@@ -1,6 +1,6 @@
 {
   "name": "Fish Gourmet",
-  "description": "§7You gain §aextra§7 nourishment from eating fish.",
+  "description": "§rYou gain §aextra§r nourishment from eating fish.",
   "type": "origins:modify_food",
   "item_condition": {
     "type": "origins:ingredient",

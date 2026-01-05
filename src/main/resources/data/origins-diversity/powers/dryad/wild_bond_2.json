@@ -1,0 +1,13 @@
+{
+  "name": "Animal Leader",
+  "description": "§rTamed animals will take §cless§r damage from your attacks.",
+  "type": "origins:modify_damage_dealt",
+  "bientity_condition": {
+    "type": "origins:owner"
+  },
+  "modifier": {
+    "resource": "origins-diversity:wild_bond_2",
+    "operation": "multiply_total_multiplicative",
+    "amount": -0.5
+  }
+}

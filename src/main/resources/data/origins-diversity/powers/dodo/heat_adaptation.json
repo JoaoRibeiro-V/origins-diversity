@@ -1,6 +1,6 @@
 {
   "name": "Heat Adaptation",
-  "description": "§7Your body has adapted to extreme heat, §atoughening§7 your skin against harm.",
+  "description": "§rYour body has adapted to extreme heat, §atoughening§r your skin against harm.",
   "type": "origins:multiple",
   "heat_armor": {
     "type": "origins:attribute",

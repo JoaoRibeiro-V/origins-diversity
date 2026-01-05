@@ -1,0 +1,12 @@
+{
+  "hidden": true,
+  "type": "origins:cooldown",
+  "cooldown": 400,
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_points_01.png",
+    "bar_index": 2,
+    "inverted": true,
+    "icon_index": 0
+  }
+}

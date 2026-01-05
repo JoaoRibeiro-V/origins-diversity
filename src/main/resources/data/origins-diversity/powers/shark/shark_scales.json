@@ -1,0 +1,11 @@
+{
+  "name": "Tough Skin",
+  "description": "§rYour skin gives you §aenhanced§r resistance.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:shark_tough_skin",
+    "attribute": "minecraft:generic.armor",
+    "amount": 5.0,
+    "operation": "ADD_VALUE"
+  }
+}

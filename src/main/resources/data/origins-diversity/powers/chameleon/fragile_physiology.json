@@ -1,6 +1,6 @@
 {
   "name": "Ectothermic Fragility",
-  "description": "§7Your thin musculature and low-density tissue are optimized for concealment rather than endurance, §creducing§7 your maximum health.",
+  "description": "§rYour thin musculature and low-density tissue are optimized for concealment rather than endurance, §creducing§r your maximum health.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:chameleon_fragile",

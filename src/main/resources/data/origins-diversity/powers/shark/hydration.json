@@ -1,0 +1,15 @@
+{
+  "name": "Hydration",
+  "description": "§rDrinking water temporarily keeps your skin moist, allowing you to function on land.",
+  "type": "origins:action_on_item_use",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:potion"
+    }
+  },
+  "entity_action": {
+    "type": "origins:trigger_cooldown",
+    "power": "origins-diversity:shark/hydrated"
+  }
+}

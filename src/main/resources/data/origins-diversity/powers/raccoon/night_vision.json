@@ -1,6 +1,6 @@
 {
   "name": "Night Vision",
-  "description": "§7You can see §nclearly§r§7 in the dark.",
+  "description": "§rYou can see §nclearly§r§r in the dark.",
   "type": "apoli:action_over_time",
   "interval": 20,
   "entity_action": {
@@ -18,7 +18,7 @@
       {
         "type": "origins:time_of_day",
         "comparison": ">=",
-        "compare_to": 14000
+        "compare_to": 13000
       },
       {
         "type": "origins:time_of_day",

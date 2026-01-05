@@ -1,0 +1,78 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "glow_entities": {
+    "type": "origins:entity_glow",
+    "red": 1.0,
+    "green": 0.1,
+    "blue": 0.1,
+    "bientity_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:can_see"
+        }
+      ]
+    },
+    "entity_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:relative_health",
+          "comparison": "<=",
+          "compare_to": 0.35
+        }
+      ]
+    }
+  },
+  "armor_pen": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:shark_armor_pen",
+      "attribute": "puffish_attributes:resistance_shred",
+      "amount": 0.2,
+      "operation": "ADD_MULTIPLIED_TOTAL"
+    }
+  },
+  "swim_speed": {
+    "type": "origins:modify_swim_speed",
+    "modifier": {
+      "id": "origins-diversity:shark_swim_speed",
+      "operation": "ADD_MULTIPLIED_TOTAL",
+      "amount": 0.3
+    }
+  },
+  "feed_on_hit": {
+    "type": "origins:self_action_on_hit",
+    "cooldown": 200,
+    "entity_action": {
+      "type": "origins:feed",
+      "food": 2,
+      "saturation": 2,
+      "nutrition": 2
+    },
+    "damage_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:in_tag",
+          "tag": "minecraft:is_player_attack"
+        },{
+          "type": "origins:projectile",
+          "inverted": true
+        }
+      ]
+    },
+    "entity_condition": {
+      "type": "origins:relative_health",
+      "comparison": "<=",
+      "compare_to": 0.5
+    },
+    "hud_render": {
+      "should_render": true,
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+      "bar_index": 5,
+      "icon_index": 0
+    }
+  }
+}

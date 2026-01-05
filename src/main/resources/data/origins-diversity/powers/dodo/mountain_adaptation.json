@@ -1,6 +1,6 @@
 {
   "name": "High Altitude Adaptation",
-  "description": "Thin air and steep terrain no longer hinder you - gain §aadditional§7 projectile protection, §adecreased§7 fall damage and knockback §aresistance§7.",
+  "description": "Thin air and steep terrain no longer hinder you - gain §aadditional§r projectile protection, §adecreased§r fall damage and knockback §aresistance§r.",
   "type": "origins:multiple",
 
   "mountain_fall_damage": {

@@ -1,0 +1,36 @@
+{
+  "name": "Ram Ventilation",
+  "description": "§rYour gills rely on constant water flow.\n\n§rWhile swimming, you breathe normally.\n§rStopping underwater causes you to §csuffocate§r.",
+  "type": "origins:action_over_time",
+  "interval": 10,
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        { "type": "origins:submerged_in", "fluid": "minecraft:water" },
+        { "type": "origins:swimming"}
+      ]
+    },
+    "if_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:grant_power",
+          "power": "origins-diversity:shark/ram_ventilation_active",
+          "source": "origins-diversity:shark_ram_ventilation"
+        }
+      ]
+    },
+    "else_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:revoke_power",
+          "power": "origins-diversity:shark/ram_ventilation_active",
+          "source": "origins-diversity:shark_ram_ventilation"
+        }
+      ]
+    }
+  }
+}

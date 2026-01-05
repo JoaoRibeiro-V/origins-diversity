@@ -1,6 +1,6 @@
 {
   "name": "Forest Dweller",
-  "description": "§7Thriving in forests and jungles, you strike §afaster§7, hit §aharder§7, and move §aswifter§7 — but away from the woods, your power and resilience §cfalter§7.",
+  "description": "§rThriving in forests and jungles, you strike §afaster§r, hit §aharder§r, and move §aswifter§r — but away from the woods, your power and resilience §cfalter§r.",
   "type": "origins:conditioned_attribute",
   "modifiers": [
     {

@@ -1,6 +1,6 @@
 {
   "name": "Gills",
-  "description": "§7You can hold your breath §alonger§7 underwater.",
+  "description": "§rYou can hold your breath §alonger§r underwater.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:axolotl_water_resistance",

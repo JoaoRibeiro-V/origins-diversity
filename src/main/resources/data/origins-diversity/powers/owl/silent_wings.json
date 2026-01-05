@@ -1,0 +1,7 @@
+{
+  "name": "Owl Wings",
+  "description": "§rYou are granted Owl Wings.",
+  "type": "origins:elytra_flight",
+  "render_elytra": true,
+  "texture_location": "origins-diversity:textures/elytra_owl.png"
+}

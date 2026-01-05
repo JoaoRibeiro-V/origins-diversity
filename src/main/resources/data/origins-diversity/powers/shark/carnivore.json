@@ -1,0 +1,28 @@
+{
+  "name": "Carnivore Diet",
+  "description": "§rYour body is adapted to a §ccarnivorous§r lifestyle.",
+  "type": "origins:prevent_item_use",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:ingredient",
+            "ingredient": { "tag": "origins:meat" }
+          }
+        ],
+        "inverted": true
+      },
+      {
+        "type": "origins:food"
+      },
+      {
+        "type": "origins:ingredient",
+        "ingredient": { "tag": "origins:ignore_diet" },
+        "inverted": true
+      }
+    ]
+  }
+}

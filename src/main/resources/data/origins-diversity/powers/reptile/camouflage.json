@@ -1,6 +1,6 @@
 {
   "name": "Camouflage",
-  "description": "§7You are §aless§7 likely to be targeted by mobs.",
+  "description": "§rYou are §aless§r likely to be targeted by mobs.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:reptile_camouflage",

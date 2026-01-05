@@ -1,0 +1,19 @@
+{
+  "name": "Brittle Bones",
+  "description": "§rYou take §cmore§r damage from hitting walls while flying",
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:type",
+        "damage_type": "minecraft:fly_into_wall"
+      }
+    ]
+  },
+  "modifier": {
+    "id": "origins-diversity:owl_punish",
+    "operation": "multiply_total_multiplicative",
+    "amount": 0.5
+  }
+}

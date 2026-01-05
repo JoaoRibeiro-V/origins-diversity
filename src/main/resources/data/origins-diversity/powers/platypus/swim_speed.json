@@ -1,6 +1,6 @@
 {
   "name": "Waterborne Agility",
-  "description": "§7You swim §afaster§7 underwater.",
+  "description": "§rYou swim §afaster§r underwater.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:frog_swim_speed",

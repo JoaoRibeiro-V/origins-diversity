@@ -1,6 +1,6 @@
 {
   "name": "Reptile Scales",
-  "description": "§7Your tough, scaly skin provides you with §aincreased§7 toughness.",
+  "description": "§rYour tough, scaly skin provides you with §aincreased§r toughness.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:reptile_scales_armor_toughness",

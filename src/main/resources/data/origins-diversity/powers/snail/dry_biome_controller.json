@@ -1,7 +1,7 @@
 {
 
   "name": "Desiccation Sensitivity",
-  "description": "§7In dry or hot environments, your body loses moisture rapidly.\n§7You become dried out, §creducing§7 your §ndamage effectiveness§r§7 until you return to a humid biome.",
+  "description": "§rIn dry or hot environments, your body loses moisture rapidly.\n§rYou become dried out, §creducing§r your §ndamage effectiveness§r§r until you return to a humid biome.",
 
 "type": "origins:action_over_time",
   "interval": 20,

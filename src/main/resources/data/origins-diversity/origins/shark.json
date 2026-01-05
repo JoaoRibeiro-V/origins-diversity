@@ -1,0 +1,19 @@
+{
+  "name": "Shark",
+  "description": "Relentless ocean predators built for constant motion, brutal attacks, and underwater dominance. Sharks thrive in the depths, but struggle to survive on land.",
+  "icon": {
+    "id": "minecraft:prismarine_shard"
+  },
+  "impact": 2,
+
+  "powers": [
+    "origins-diversity:shark/ram_ventilation",
+    "origins-diversity:shark/suffocation",
+    "origins-diversity:shark/blood_in_water",
+    "origins-diversity:shark/shark_scales",
+    "origins-diversity:shark/hydration",
+    "origins-diversity:shark/hydrated",
+    "origins-diversity:shark/beached",
+    "origins-diversity:shark/carnivore"
+  ]
+}

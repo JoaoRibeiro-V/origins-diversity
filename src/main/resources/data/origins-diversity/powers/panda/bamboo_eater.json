@@ -1,6 +1,6 @@
 {
   "name": "Bamboo Feast",
-  "description": "§7You can eat bamboo to §aregain§7 health. Eating bamboo §aempowers§7 you in §nbamboo-rich§r§7 biomes.",
+  "description": "§rYou can eat bamboo to §aregain§r health. Eating bamboo §aempowers§r you in §nbamboo-rich§r§r biomes.",
   "type": "apoli:active_self",
   "entity_action": {
     "type": "apoli:and",

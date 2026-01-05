@@ -1,6 +1,6 @@
 {
   "name": "Aquatic Grace",
-  "description": "§7You swim §afaster§7.",
+  "description": "§rYou swim §afaster§r.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:axolotl_swim_speed",

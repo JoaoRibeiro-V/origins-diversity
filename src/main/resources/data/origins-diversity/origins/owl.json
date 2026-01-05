@@ -1,0 +1,17 @@
+{
+  "name": "Owl",
+  "description": "§7Silent nocturnal hunters with unmatched perception.",
+  "icon": {
+    "id": "minecraft:feather"
+  },
+  "impact": 2,
+  "powers": [
+    "origins-diversity:owl/silent_wings",
+    "origins-diversity:owl/silent_movement",
+    "origins-diversity:owl/night_watcher",
+    "origins-diversity:owl/wings_active",
+    "origins-diversity:owl/awake",
+    "origins-diversity:owl/fragile",
+    "origins-diversity:owl/air_punish"
+  ]
+}

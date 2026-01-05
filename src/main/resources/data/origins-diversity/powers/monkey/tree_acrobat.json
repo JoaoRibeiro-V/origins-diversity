@@ -1,6 +1,6 @@
 {
   "name": "Tree Acrobat",
-  "description": "§7Despite taking fall damage, you §ncan't die from it§r§7 - landing on a tree will give you some health back.",
+  "description": "§rDespite taking fall damage, you §ncan't die from it§r§r - landing on a tree will give you some health back.",
   "type": "origins:prevent_death",
   "entity_action": {
     "type": "origins:if_else",

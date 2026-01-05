@@ -1,6 +1,6 @@
 {
   "name": "Fire Resistance",
-  "description": "§7You have a natural §aresistance§7 to §6fire§7 damage.",
+  "description": "§rYou have a natural §aresistance§r to §6fire§r damage.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:reptile_fire_resistance",

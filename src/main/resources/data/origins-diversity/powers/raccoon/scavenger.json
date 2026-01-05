@@ -1,6 +1,6 @@
 {
   "name": "Scavenger",
-  "description": "§7You're §amore§7 likely to get rarer drops from chests and killing mobs, your fishing is also §agreatly§7 enhanced.",
+  "description": "§rYou're §amore§r likely to get rarer drops from chests and killing mobs, your fishing is also §agreatly§r enhanced.",
   "type": "origins:attribute",
   "modifiers": [
     {

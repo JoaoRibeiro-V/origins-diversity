@@ -1,6 +1,6 @@
 {
   "name": "Milkable",
-  "description": "§7Others can §fmilk§7 you with a bucket.",
+  "description": "§rOthers can §fmilk§r you with a bucket.",
   "type": "apoli:action_on_being_used",
   "bientity_action": {
     "type": "apoli:and",

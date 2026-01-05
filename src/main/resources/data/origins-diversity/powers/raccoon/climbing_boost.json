@@ -1,6 +1,6 @@
 {
   "name": "Steady Feet",
-  "description": "§7You take §aless§7 fall damage.",
+  "description": "§rYou take §aless§r fall damage.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:raccoon_fall_damage_reduction",

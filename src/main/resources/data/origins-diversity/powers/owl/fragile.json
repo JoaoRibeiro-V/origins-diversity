@@ -1,0 +1,11 @@
+{
+  "name": "Fragile Body",
+  "description": "§rYou have §cless§r health.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:owl_fragility",
+    "attribute": "minecraft:generic.max_health",
+    "amount": -5.0,
+    "operation": "ADD_VALUE"
+  }
+}

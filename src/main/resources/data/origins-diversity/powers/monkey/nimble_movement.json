@@ -1,6 +1,6 @@
 {
   "name": "Nimble Movement",
-  "description": "§7You move significantly §afaster§7.",
+  "description": "§rYou move significantly §afaster§r.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:monkey_nimble_movement",

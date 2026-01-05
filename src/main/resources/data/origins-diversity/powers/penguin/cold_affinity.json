@@ -1,6 +1,6 @@
 {
   "name": "Cold Affinity",
-  "description": "§7You take §areduced§7 damage while in §n§bsnowy§7 biomes§r§7.",
+  "description": "§rYou take §areduced§r damage while in §n§bsnowy§r biomes§r§r.",
   "type": "origins:modify_damage_taken",
   "condition": {
     "type": "origins:biome",

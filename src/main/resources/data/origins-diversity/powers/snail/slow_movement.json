@@ -1,6 +1,6 @@
 {
   "name": "Slow Movement",
-  "description": "§7Your movement speed is significantly §creduced§7, reflecting the slow nature of snails.",
+  "description": "§rYour movement speed is significantly §creduced§r, reflecting the slow nature of snails.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:snail_slow_movement",

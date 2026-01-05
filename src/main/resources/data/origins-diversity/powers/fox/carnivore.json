@@ -1,6 +1,6 @@
 {
   "name": "Carnivore Diet",
-  "description": "§7Your body is adapted to a §ccarnivorous§7 lifestyle, and §aberries§7, for some reason.",
+  "description": "§rYour body is adapted to a §ccarnivorous§r lifestyle, and §aberries§r, for some reason.",
   "type": "origins:prevent_item_use",
   "item_condition": {
     "type": "origins:and",

@@ -1,0 +1,28 @@
+{
+  "name": "Blood In Water",
+  "description": "§rUnderwater, you are the predator.\nA §cwounded§r prey reveals itself to you. Enemies at under a certain health threshold §cglow§r through the water, allowing you to hunt them down.\n\nWhile hunting a prey, you gain §agreater§r swim speed, §cshred§r enemy defenses, and can §cfeed§r when striking weakened targets.",
+  "type": "origins:action_over_time",
+  "interval": 20,
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:submerged_in",
+          "fluid": "minecraft:water"
+        }
+      ]
+    },
+    "if_action": {
+      "type": "origins:grant_power",
+      "power": "origins-diversity:shark/blood_in_water_active",
+      "source": "origins-diversity:shark_blood_in_water"
+    },
+    "else_action": {
+      "type": "origins:revoke_power",
+      "power": "origins-diversity:shark/blood_in_water_active",
+      "source": "origins-diversity:shark_blood_in_water"
+    }
+  }
+}

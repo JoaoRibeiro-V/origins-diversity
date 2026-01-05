@@ -1,6 +1,6 @@
 {
   "name": "Opportunistic Strike",
-  "description": "§7Striking an enemy that is §6not focused on you§7 deals §cbonus damage§7. Has a short cooldown.",
+  "description": "§rStriking an enemy that is §6not focused on you§r deals §cbonus damage§r. Has a short cooldown.",
   "type": "origins:action_on_hit",
   "bientity_action": {
     "type": "origins:damage",

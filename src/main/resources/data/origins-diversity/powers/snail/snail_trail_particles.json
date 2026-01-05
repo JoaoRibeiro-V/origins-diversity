@@ -1,7 +1,7 @@
 {
 
   "name": "Slimu",
-  "description": "§7You leave behind a glistening sticky trail.",
+  "description": "§rYou leave behind a glistening sticky trail.",
 
 
 "type": "origins:action_over_time",

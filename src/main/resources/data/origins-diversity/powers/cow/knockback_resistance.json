@@ -1,6 +1,6 @@
 {
   "name": "Sturdy Build",
-  "description": "§7Your sturdy build grants you §aincreased§7 resistance to knockback.",
+  "description": "§rYour sturdy build grants you §aincreased§r resistance to knockback.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:cow_knockback_resistance",

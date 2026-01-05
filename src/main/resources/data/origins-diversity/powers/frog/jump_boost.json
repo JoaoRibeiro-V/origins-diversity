@@ -1,6 +1,6 @@
 {
   "name": "Jump Boost",
-  "description": "§7You can jump §ahigher§7 than normal.",
+  "description": "§rYou can jump §ahigher§r than normal.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:frog_jump_boost",

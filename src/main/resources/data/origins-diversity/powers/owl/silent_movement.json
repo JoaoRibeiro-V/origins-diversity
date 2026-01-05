@@ -1,0 +1,6 @@
+{
+  "name": "Silent Movement",
+  "description": "§rYour movement produces almost no sound.\n§rYou do not emit §bfootstep§7 vibrations, making you extremely hard to track.",
+  "type": "origins:prevent_game_event",
+  "event": "minecraft:step"
+}

@@ -1,6 +1,6 @@
 {
   "name": "Cold Endurance",
-  "description": "§7Cold climates harden your muscles and slow your metabolism - gain §aincreased§7 damage and §areduced§7 hunger loss.",
+  "description": "§rCold climates harden your muscles and slow your metabolism - gain §aincreased§r damage and §areduced§r hunger loss.",
   "type": "origins:multiple",
 
     "modify_exhaustion": {

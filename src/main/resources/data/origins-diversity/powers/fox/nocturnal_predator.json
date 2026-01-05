@@ -21,7 +21,7 @@
   "nocturnal_speed": {
     "type": "origins:attribute",
     "modifier": {
-      "id": "origins-diversity:panda_slow_movement",
+      "id": "origins-diversity:fox_agile_speed",
       "attribute": "minecraft:generic.movement_speed",
       "amount": 0.125,
       "operation": "ADD_MULTIPLIED_TOTAL"
