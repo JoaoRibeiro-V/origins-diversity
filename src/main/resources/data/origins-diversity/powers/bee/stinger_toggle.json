@@ -1,0 +1,22 @@
+{
+  "name": "Stinger",
+  "description": "§rExtend your §6stinger§r, making your attacks §cdeadly§r at a cost.\n§rHitting enemies drains hunger and leaves you §eexhausted§r.",
+  "type": "origins:toggle",
+  "active_by_default": false,
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  },
+  "retain_state": false,
+  "condition": {
+    "type": "origins:food_level",
+    "comparison": ">",
+    "compare_to": 3
+  },
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+    "bar_index": 6,
+    "icon_index": 2
+  }
+}

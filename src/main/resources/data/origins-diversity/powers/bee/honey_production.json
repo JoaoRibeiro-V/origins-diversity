@@ -1,0 +1,72 @@
+{
+  "name": "§rHoney Production",
+  "description": "§rWith enough nectar, you can generate §ehoney§r by sneaking and using a glass bottle.\nThis §ehoney§r has §aspecial§r properties for those who drink it.",
+  "type": "apoli:active_self",
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:resource",
+        "resource": "origins-diversity:bee/honey_storage",
+        "comparison": ">",
+        "compare_to": 0
+      },
+      {
+        "type": "apoli:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "apoli:ingredient",
+          "ingredient": {
+            "item": "minecraft:glass_bottle"
+          }
+        }
+      },
+      {
+        "type": "origins:sneaking"
+      }
+    ]
+  },
+  "entity_action": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:equipped_item_action",
+        "equipment_slot": "mainhand",
+        "item_action": {
+          "type": "apoli:consume",
+          "amount": 1
+        }
+      },
+      {
+        "type": "apoli:give",
+        "stack": {
+          "id": "minecraft:honey_bottle",
+          "count": 1,
+          "tag": "{BeeHoney:1b}"
+        },
+        "item_action": {
+          "type": "origins:modify",
+          "modifier": "honey_potion"
+        }
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "origins-diversity:bee/honey_storage",
+        "change": -1
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:block.brewing_stand.brew"
+      },
+      {
+        "type": "origins:spawn_particles",
+        "particle": "minecraft:falling_honey",
+        "count": 8
+      }
+    ]
+  },
+  "key": {
+    "key": "key.use",
+    "continuous": false
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "hidden": true,
+  "type": "origins:action_over_time",
+  "interval": 5,
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:bee/stinger_toggle"
+    },
+
+    "if_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:power",
+        "power": "origins-diversity:bee/stinger_active",
+        "inverted": true
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:set_resource",
+            "resource": "origins-diversity:bee/stinger_indicator",
+            "value": 1
+          },
+          {
+            "type": "origins:grant_power",
+            "power": "origins-diversity:bee/stinger_active",
+            "source": "origins-diversity:bee_stinger_controller"
+          },
+
+          {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.bee.sting"
+          }
+        ]
+      }
+    },
+
+    "else_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:power",
+        "power": "origins-diversity:bee/stinger_active"
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:revoke_power",
+            "power": "origins-diversity:bee/stinger_active",
+            "source": "origins-diversity:bee_stinger_controller"
+          },
+          {
+            "type": "origins:set_resource",
+            "resource": "origins-diversity:bee/stinger_indicator",
+            "value": 0
+          },
+          {
+            "type": "origins:play_sound",
+            "sound": "minecraft:block.cobweb.break"
+          }
+        ]
+      }
+    }
+  }
+}
+

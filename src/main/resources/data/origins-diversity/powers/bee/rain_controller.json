@@ -1,0 +1,26 @@
+{
+  "hidden": true,
+  "type": "origins:action_over_time",
+  "interval": 10,
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        { "type": "origins:in_rain" },
+        { "type": "origins:submerged_in", "fluid": "minecraft:water" },
+        { "type": "origins:in_thunderstorm" }
+      ]
+    },
+    "if_action": {
+      "type": "origins:grant_power",
+      "power": "origins-diversity:bee/grounded",
+      "source": "origins-diversity:bee_grounding"
+    },
+    "else_action": {
+      "type": "origins:revoke_power",
+      "power": "origins-diversity:bee/grounded",
+      "source": "origins-diversity:bee_grounding"
+    }
+  }
+}

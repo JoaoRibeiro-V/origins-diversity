@@ -22,6 +22,45 @@
       "power": "origins-diversity:fox/focus_cooldown",
       "inverted": true
     }
+  },
+  "back_stab": {
+    "type": "origins:modify_damage_dealt",
+    "self_action": {
+      "type": "origins:play_sound",
+      "sound": "minecraft:block.small_amethyst_bud.break",
+      "volume": 0.5,
+      "pitch": 1.2
+    },
+    "bientity_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:actor_condition",
+          "condition": {
+            "type": "origins:power_active",
+            "power": "origins-diversity:fox/focus_cooldown",
+            "inverted": true
+          }
+        },
+        {
+          "type": "origins:relative_rotation",
+          "actor_rotation": "body",
+          "target_rotation": "head",
+          "comparison": ">=",
+          "compare_to": 0.4
+        }
+      ]
+    },
+    "modifiers": [
+      {
+        "operation": "add_base_early",
+        "amount": 1.0
+      },
+      {
+        "operation": "multiply_total_multiplicative",
+        "amount": 0.15
+      }
+    ]
   }
 
 }

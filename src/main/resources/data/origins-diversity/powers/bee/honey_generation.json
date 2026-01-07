@@ -1,0 +1,51 @@
+{
+  "name": "Nectar Gathering",
+  "description": "§rWhile standing next to flowers, you periodically generate enough §enectar§r to store.",
+  "type": "origins:action_over_time",
+  "interval": 3000,
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:block_in_radius",
+          "radius": 12,
+          "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:flowers"
+          },
+          "shape": "sphere",
+          "comparison": ">=",
+          "compare_to": 2
+        },
+        {
+          "type": "origins:food_level",
+          "comparison": ">=",
+          "compare_to": 14
+        },
+        {
+          "type": "origins:resource",
+          "resource": "origins-diversity:bee/honey_storage",
+          "comparison": "<=",
+          "compare_to": 6
+        }
+      ]
+    },
+    "if_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:block.honey_block.place"
+        },
+        {
+          "type": "origins:change_resource",
+          "resource": "origins-diversity:bee/honey_storage",
+          "change": 1
+        }
+      ]
+
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Pollinator",
+  "description": "§rYour body is tuned for flowers, not feasts.\n§rYou regain hunger only when near §eflowers§r.\n\n§rStanding near flowers:\n§r- Gradually restores §ahunger§r.\n§r- Briefly boosts §amovement speed§r.",
+  "type": "origins:action_over_time",
+  "interval": 60,
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:block_in_radius",
+      "radius": 6,
+      "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "minecraft:flowers"
+      },
+      "shape": "sphere",
+      "comparison": ">=",
+      "compare_to": 2
+    },
+    "if_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:feed",
+          "food": 2,
+          "saturation": 0.5,
+          "nutrition": 2
+        },
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "id": "minecraft:speed",
+            "duration": 80,
+            "amplifier": 0,
+            "show_particles": false
+          }
+        },
+        {
+          "type": "origins:spawn_particles",
+          "particle": "minecraft:falling_nectar",
+          "count": 2
+        }
+      ]
+    }
+  }
+}

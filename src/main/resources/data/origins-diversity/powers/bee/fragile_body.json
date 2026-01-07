@@ -1,0 +1,11 @@
+{
+  "name": "Fragile Body",
+  "description": "§rYou have §creduced§r health.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:bee_health",
+    "attribute": "minecraft:generic.max_health",
+    "amount": -10.0,
+    "operation": "ADD_VALUE"
+  }
+}

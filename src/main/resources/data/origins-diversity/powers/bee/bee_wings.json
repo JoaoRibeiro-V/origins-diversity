@@ -1,0 +1,7 @@
+{
+  "name": "Delicate Wings",
+  "description": "§rYour wings allow you to §afly§r freely through the air.\n\n§rHowever, they are fragile and struggle in harsh conditions.",
+  "type": "origins:elytra_flight",
+  "render_elytra": true,
+  "texture_location": "origins-diversity:textures/elytra_bee.png"
+}

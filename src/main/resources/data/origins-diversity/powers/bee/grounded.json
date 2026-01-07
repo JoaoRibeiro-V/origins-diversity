@@ -1,0 +1,30 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "soaked_wings": {
+    "type": "origins:prevent_elytra_flight"
+  },
+  "slowed_movement": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:bee_slow_movement",
+      "attribute": "minecraft:generic.movement_speed",
+      "amount": -0.1,
+      "operation": "ADD_MULTIPLIED_TOTAL"
+    }
+  },
+  "soaking_wet_particles": {
+    "type": "origins:particle",
+    "particle": "minecraft:dripping_water",
+    "frequency": 4
+  },
+  "slow_attacks": {
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:bee_slow_attack_speed",
+    "attribute": "minecraft:generic.attack_speed",
+    "amount": -0.1,
+    "operation": "ADD_MULTIPLIED_TOTAL"
+  }
+}
+}

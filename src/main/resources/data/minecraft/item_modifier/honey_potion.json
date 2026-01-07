@@ -1,0 +1,6 @@
+{
+  "function": "apoli:add_power",
+  "power": "origins-diversity:bee/honey_potion",
+  "slot": "mainhand",
+  "negative": false
+}

@@ -9,9 +9,5 @@
   "owl_fall": {
     "type": "origins:prevent_game_event",
     "event": "minecraft:hit_ground"
-  },
-  "owl_silent_wings": {
-    "type": "origins:prevent_game_event",
-    "event": "minecraft:elytra_free_fall"
   }
 }

@@ -1,0 +1,25 @@
+{
+  "name": "Bee",
+  "description": "A tiny, buzzing ball of energy.\nLives for flowers and occasionally makes very bad combat decisions.",
+  "icon": {
+    "id": "minecraft:honeycomb"
+  },
+  "impact": 2,
+  "powers": [
+    "origins-diversity:bee/color",
+    "origins-diversity:bee/height",
+    "origins-diversity:bee/bee_wings",
+    "origins-diversity:bee/rain_controller",
+    "origins-diversity:bee/thunderstorm_scary",
+    "origins-diversity:bee/remove_passives",
+    "origins-diversity:bee/fragile_body",
+    "origins-diversity:bee/stinger_toggle",
+    "origins-diversity:bee/stinger_indicator",
+    "origins-diversity:bee/stinger_controller",
+    "origins-diversity:bee/pollination",
+    "origins-diversity:bee/meal_restriction",
+    "origins-diversity:bee/honey_generation",
+    "origins-diversity:bee/honey_storage",
+    "origins-diversity:bee/honey_production"
+  ]
+}

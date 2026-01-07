@@ -1,0 +1,35 @@
+{
+  "hidden": true,
+  "type": "origins:action_on_callback",
+  "entity_action_lost": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "scale reset @s"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale persist reset @s"
+      }
+    ]
+  },
+  "entity_action_added": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:base 1.1 @s"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:motion 0.9 @s"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale persist set true @s"
+      }
+    ]
+  },
+  "execute_chosen_when_orb": true
+}

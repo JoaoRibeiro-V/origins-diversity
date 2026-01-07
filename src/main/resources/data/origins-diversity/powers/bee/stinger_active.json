@@ -1,0 +1,53 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "damage_boost": {
+    "type": "origins:modify_damage_dealt",
+    "modifiers": [
+      {
+        "operation": "add_base_early",
+        "amount": 1.0
+      },
+      {
+        "operation": "multiply_total_multiplicative",
+        "amount": 0.25
+      }
+    ]
+  },
+  "poison": {
+    "type": "origins:target_action_on_hit",
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:poison",
+        "duration": 40,
+        "amplifier": 1
+      }
+    }
+  },
+  "consequence": {
+    "hidden": true,
+    "type": "origins:self_action_on_hit",
+    "cooldown": 10,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:feed",
+          "food": -2,
+          "nutrition": -2,
+          "saturation": -1
+        },
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "id": "minecraft:weakness",
+            "duration": 60,
+            "amplifier": 0,
+            "show_particles": false
+          }
+        }
+      ]
+    }
+  }
+}

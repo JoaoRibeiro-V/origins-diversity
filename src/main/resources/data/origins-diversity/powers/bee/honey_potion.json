@@ -1,0 +1,17 @@
+{
+  "name": "Sweet Honey",
+  "hidden": true,
+  "type": "origins:action_on_item_use",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {"item": "minecraft:honey_bottle"}
+  },
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "id": "minecraft:regeneration",
+      "duration": 80,
+      "amplifier": 0
+    }
+  }
+}
