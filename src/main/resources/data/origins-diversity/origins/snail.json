@@ -10,6 +10,8 @@
     "origins-diversity:snail/snail_trail_particles",
     "origins-diversity:snail/dry_biome_controller",
     "origins-diversity:snail/slow_movement",
-    "origins-diversity:snail/slime_resistance"
+    "origins-diversity:snail/slime_resistance",
+    "origins-diversity:snail/turtle_shell",
+    "origins-diversity:snail/remove_passives"
   ]
 }

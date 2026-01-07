@@ -1,6 +1,17 @@
 {
   "name": "Silent Movement",
   "description": "§rYour movement produces almost no sound.\n§rYou do not emit §bfootstep§7 vibrations, making you extremely hard to track.",
-  "type": "origins:prevent_game_event",
-  "event": "minecraft:step"
+  "type": "origins:multiple",
+  "owl_step": {
+    "type": "origins:prevent_game_event",
+    "event": "minecraft:step"
+  },
+  "owl_fall": {
+    "type": "origins:prevent_game_event",
+    "event": "minecraft:hit_ground"
+  },
+  "owl_silent_wings": {
+    "type": "origins:prevent_game_event",
+    "event": "minecraft:elytra_free_fall"
+  }
 }

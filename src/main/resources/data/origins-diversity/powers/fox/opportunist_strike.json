@@ -1,11 +1,13 @@
 {
   "name": "Opportunistic Strike",
-  "description": "§rStriking an enemy that is §6not focused on you§r deals §cbonus damage§r. Has a short cooldown.",
+  "description": "§rStriking an enemy that is §6not focused on you§r grants §cfocus§r, enhancing your physical abilities temporarily. Has a short cooldown.",
   "type": "origins:action_on_hit",
   "bientity_action": {
-    "type": "origins:damage",
-    "damage_type": "player_attack",
-    "amount": 5
+    "type": "origins:actor_action",
+    "action": {
+      "type": "origins:trigger_cooldown",
+      "power": "origins-diversity:fox/focus_cooldown"
+    }
   },
   "bientity_condition": {
     "type": "origins:relative_rotation",
@@ -14,7 +16,7 @@
     "comparison": ">=",
     "compare_to": 0.4
   },
-  "cooldown": 80,
+  "cooldown": 200,
   "hud_render": {
     "should_render": true,
     "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",

@@ -1,6 +1,6 @@
 {
   "name": "Adaptive Camouflage",
-  "description": "§rBy crouching for §a2 seconds§r, you trigger your skin's rapid §echromatophore response§r, rendering you partially invisible.\n\n§rWhile camouflaged:\n§a- You take §e15% reduced damage§a.\n§a- Emit subtle §bparticles§a to blend with the environment.\n§a- Attacking applies §cSurprise Strike§a, dealing bonus damage and briefly weakening your target.\n\n§rAttacking normally or getting hit breaks the effect, initiating a §ccooldown§r.",
+  "description": "§rBy crouching for §a2 seconds§r, you trigger your skin's rapid §echromatophore response§r, rendering you partially invisible.\nEmit subtle §bparticles§a to blend with the environment.\n\n§rAttacking normally or getting hit breaks the effect, initiating a §ccooldown§r.",
   "type": "origins:action_over_time",
   "interval": 10,
   "entity_action": {

@@ -1,0 +1,27 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "fox_focus": {
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+      {
+        "attribute": "puffish_attributes:melee_damage",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": 0.12,
+        "id": "origins-diversity:fox_attribute_1"
+      },
+      {
+        "attribute": "minecraft:generic.attack_speed",
+        "operation": "ADD_MULTIPLIED_TOTAL",
+        "amount": 0.05,
+        "id": "origins-diversity:fox_attribute_2"
+      }
+    ],
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:fox/focus_cooldown",
+      "inverted": true
+    }
+  }
+
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Shell Dependency",
+  "description": "§rYou find it difficult to use shields...",
+  "type": "origins:prevent_item_use",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "tag": "origins:shields"
+    }
+  }
+}

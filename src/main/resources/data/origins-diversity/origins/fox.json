@@ -12,6 +12,8 @@
     "origins-diversity:fox/nocturnal_controller",
     "origins-diversity:fox/weak_paws",
     "origins-diversity:fox/height",
+    "origins-diversity:fox/fox_focus",
+    "origins-diversity:fox/focus_cooldown",
     "origins-diversity:fox/remove_passives"
   ]
 }

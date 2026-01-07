@@ -9,6 +9,7 @@
     "origins-diversity:chameleon/camouflage_break_on_attack",
     "origins-diversity:chameleon/camouflage_cooldown",
     "origins-diversity:chameleon/fragile_physiology",
-    "origins-diversity:chameleon/cold_blooded"
+    "origins-diversity:chameleon/cold_blooded",
+    "origins-diversity:chameleon/chameleon_attributes"
   ]
 }

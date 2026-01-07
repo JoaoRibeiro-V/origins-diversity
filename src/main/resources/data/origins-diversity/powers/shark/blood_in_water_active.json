@@ -39,7 +39,7 @@
     "modifier": {
       "id": "origins-diversity:shark_swim_speed",
       "operation": "ADD_MULTIPLIED_TOTAL",
-      "amount": 0.3
+      "amount": 0.45
     }
   },
   "feed_on_hit": {
