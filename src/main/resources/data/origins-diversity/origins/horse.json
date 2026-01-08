@@ -12,7 +12,8 @@
     "origins-diversity:horse/momentum_strike",
     "origins-diversity:horse/tiny_steed",
     "origins-diversity:horse/vegetarian",
-    "origins-diversity:horse/fatigue_regain"
+    "origins-diversity:horse/fatigue_regain",
+    "origins-diversity:horse/on_hit"
   ],
   "impact": 1
 }
