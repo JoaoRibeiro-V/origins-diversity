@@ -1,7 +1,0 @@
-{
-  "hidden": true,
-  "type": "origins:shaking",
-  "condition": {
-    "type": "origins:in_thunderstorm"
-  }
-}
