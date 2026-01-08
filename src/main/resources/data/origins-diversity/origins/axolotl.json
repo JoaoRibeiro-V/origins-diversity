@@ -4,10 +4,15 @@
   "icon": { "id": "minecraft:axolotl_bucket" },
 
   "powers": [
+    "origins-diversity:axolotl/healing_aid",
     "origins-diversity:axolotl/swim_speed",
     "origins-diversity:axolotl/regeneration_in_water",
     "origins-diversity:axolotl/water_resistance",
-    "origins-diversity:axolotl/minor_water_splash"
+    "origins-diversity:axolotl/minor_water_splash",
+    "origins-diversity:axolotl/pacific",
+    "origins-diversity:axolotl/on_hit",
+    "origins-diversity:axolotl/set_color",
+    "origins-diversity:axolotl/height"
   ],
   "impact": 1
 }

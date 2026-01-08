@@ -1,0 +1,12 @@
+{
+  "name": "Pacifist",
+  "description": "§rYou deal §cless§r damage to living creatures.",
+  "type": "origins:modify_damage_dealt",
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": -0.325
+  },
+  "target_condition": {
+    "type": "origins:living"
+  }
+}

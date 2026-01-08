@@ -1,6 +1,6 @@
 {
   "name": "Water Blessing",
-  "description": "§rYou §aregenerate health§r quickly while in water.",
+  "description": "§rYou §aregenerate health§r while in water.",
   "type": "apoli:action_over_time",
   "interval": 100,
   "entity_action": {

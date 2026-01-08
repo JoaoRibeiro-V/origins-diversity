@@ -3,9 +3,9 @@
   "description": "§rYou swim §afaster§r underwater.",
   "type": "origins:attribute",
   "modifier": {
-    "id": "origins-diversity:frog_swim_speed",
+    "id": "origins-diversity:platypus_swim_speed",
     "attribute": "minecraft:generic.water_movement_efficiency",
-    "amount": 0.2,
-    "operation": "ADD_VALUE"
+    "amount": 0.275,
+    "operation": "ADD_MULTIPLIED_TOTAL"
   }
 }

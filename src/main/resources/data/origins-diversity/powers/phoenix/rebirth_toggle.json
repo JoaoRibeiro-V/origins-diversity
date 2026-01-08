@@ -2,7 +2,7 @@
   "name": "Burning Rebirth",
   "description": "§rEnter a state of §6rebirth§r, if killed during it, come back from ashes with all your might.\nYou are §cexhausted§r after coming back from death, granting you weakness for some time.",
   "type": "origins:active_self",
-  "cooldown": 1200,
+  "cooldown": 2000,
   "key": {
     "key": "key.origins.primary_active",
     "continuous": false

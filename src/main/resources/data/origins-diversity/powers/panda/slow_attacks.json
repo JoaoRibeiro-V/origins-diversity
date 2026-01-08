@@ -1,6 +1,6 @@
 {
   "name": "Slowpoke Strikes",
-  "description": "§rDue to being a lazy animal, your attack speed is §creduced§r.",
+  "description": "§rYour attack speed is §creduced§r.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:panda_slow_attacks",

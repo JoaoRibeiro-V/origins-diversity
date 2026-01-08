@@ -1,0 +1,27 @@
+{
+  "hidden": true,
+  "type": "origins:action_on_item_use",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": { "item": "minecraft:bamboo" }
+  },
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:biome",
+      "biomes": [
+        "minecraft:bamboo_jungle",
+        "minecraft:jungle",
+        "minecraft:sparse_jungle"
+      ]
+    },
+    "if_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:strength",
+        "duration": 200,
+        "show_particles": false
+      }
+    }
+  }
+}

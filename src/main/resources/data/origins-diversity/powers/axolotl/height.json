@@ -1,0 +1,36 @@
+{
+  "name": "Smol",
+  "description": "§rYou have a §asmaller body§r, making you harder to hit",
+  "type": "origins:action_on_callback",
+  "entity_action_lost": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "scale reset @s"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale persist reset @s"
+      }
+    ]
+  },
+  "entity_action_added": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:base 0.725 @s"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:motion 1.375 @s"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale persist set true @s"
+      }
+    ]
+  },
+  "execute_chosen_when_orb": true
+}

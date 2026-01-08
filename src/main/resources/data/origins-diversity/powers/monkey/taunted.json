@@ -1,0 +1,55 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "taunteffect1": {
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": 0.125
+    },
+    "target_condition": {
+      "type": "origins:origin",
+      "origin": "origins-diversity:monkey"
+    }
+  },
+  "taunteffect2": {
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": 0.15
+    },
+    "actor_condition": {
+      "type": "origins:origin",
+      "origin": "origins-diversity:monkey"
+    }
+  },
+  "removeondeath": {
+    "type": "origins:action_on_death",
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "origins:remove_power",
+        "power": "origins-diversity:monkey/taunted"
+      }
+    }
+  },
+  "tauntedbar": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 10,
+    "start_value": 10,
+    "min_action": {
+      "type": "origins:remove_power",
+      "power": "origins-diversity:monkey/taunted"
+    }
+  },
+  "tauntedtimer": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "origins-diversity:monkey/taunted_tauntedbar",
+      "change": -1
+    }
+  }
+}

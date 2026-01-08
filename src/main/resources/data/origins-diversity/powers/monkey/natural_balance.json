@@ -5,8 +5,8 @@
   "modifier": {
     "id": "origins-diversity:monkey_natural_balance",
     "attribute": "minecraft:generic.knockback_resistance",
-    "operation": "ADD_VALUE",
-    "amount": 0.15
+    "operation": "ADD_MULTIPLIED_TOTAL",
+    "amount": 0.4
   },
   "tick_rate": 20,
   "condition": {

@@ -1,0 +1,36 @@
+{
+  "name": "Taunt",
+  "description": "§rUpon hitting enemies, theres a chance to apply §4taunt§r.\nWhile taunted, enemies deal more damage torwards you but also take more damage themselves.",
+  "type": "origins:target_action_on_hit",
+  "condition": {
+    "type": "origins:resource",
+    "resource": "origins-diversity:monkey/taunt_cooldown",
+    "comparison": ">",
+    "compare_to": 0,
+    "inverted": true
+  },
+  "entity_action": {
+    "type": "origins:chance",
+    "chance": 0.125,
+    "action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:trigger_cooldown",
+          "power": "origins-diversity:monkey/taunt_cooldown"
+        },{
+          "type": "origins:grant_power",
+          "power": "origins-diversity:monkey/taunted",
+          "source": "origins-diversity:monkey_taunt"
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.villager.celebrate",
+          "pitch": 1.5,
+          "volume": 1.2
+        }
+      ]
+
+    }
+  }
+}

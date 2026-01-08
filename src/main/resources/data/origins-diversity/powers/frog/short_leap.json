@@ -12,7 +12,7 @@
     "key": "key.origins.primary_active",
     "continuous": false
   },
-  "cooldown": 480,
+  "cooldown": 780,
   "hud_render": { "should_render": true,
     "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
     "bar_index": 3,

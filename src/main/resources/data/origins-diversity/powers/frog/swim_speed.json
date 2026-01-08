@@ -5,7 +5,7 @@
   "modifier": {
     "id": "origins-diversity:frog_swim_speed",
     "attribute": "minecraft:generic.water_movement_efficiency",
-    "amount": 0.1,
+    "amount": 0.05,
     "operation": "ADD_VALUE"
   }
 }

@@ -1,0 +1,13 @@
+{
+  "name": "Overexertion",
+  "description": "§rRepeated attacks quickly exhaust you, getting hit in combat has a chance to drain your §chunger§r.",
+  "type": "origins:self_action_when_hit",
+  "entity_action": {
+    "type": "origins:chance",
+    "action": {
+      "type": "origins:exhaust",
+      "amount": 0.925
+    },
+    "chance": 0.3
+  }
+}

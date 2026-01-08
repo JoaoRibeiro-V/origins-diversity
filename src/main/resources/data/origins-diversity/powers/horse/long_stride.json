@@ -1,0 +1,27 @@
+{
+  "name": "Long Stride",
+  "description": "§rWhile running, jump higher.",
+  "type": "origins:modify_jump",
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": 0.4
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:resource",
+        "resource": "origins-diversity:horse/fatigue",
+        "comparison": ">",
+        "compare_to": 0
+      },
+      {
+        "type": "origins:sprinting"
+      },
+      {
+        "type": "origins:power",
+        "power": "origins-diversity:horse/sprinting"
+      }
+    ]
+  }
+}

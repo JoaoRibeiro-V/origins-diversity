@@ -6,8 +6,13 @@
   "powers": [
     "origins-diversity:platypus/swim_speed",
     "origins-diversity:platypus/minor_melee_resistance",
-    "origins-diversity:platypus/shallow_water_regeneration",
-    "origins-diversity:platypus/electroshock"
+    "origins-diversity:platypus/electroreception_trigger",
+    "origins-diversity:platypus/electroreception_controller",
+    "origins-diversity:platypus/electroreception_bar",
+    "origins-diversity:platypus/river_forager",
+    "origins-diversity:platypus/river_forager2",
+    "origins-diversity:platypus/venom",
+    "origins-diversity:platypus/remove_passives"
   ],
   "impact": 1
 }

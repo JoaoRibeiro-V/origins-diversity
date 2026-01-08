@@ -1,0 +1,31 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "buff": {
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": 0.12
+    }
+  },
+  "resbuff": {
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": 0.1
+    }
+  },
+  "exhaustionbuff": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": -0.35
+    }
+  },
+  "particles": {
+    "type": "origins:particle",
+    "frequency": 50,
+    "count": 1,
+    "particle": "minecraft:falling_water"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Swift Stride",
+  "description": "§rYou run much §afaster§r than any other creature",
+  "type": "origins:conditioned_attribute",
+  "modifier": {
+    "attribute": "minecraft:generic.movement_speed",
+    "operation": "ADD_MULTIPLIED_TOTAL",
+    "amount": 0.425,
+    "id": "origins-diversity:horse_sprint"
+  },
+  "tick_rate": 5,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:resource",
+        "resource": "origins-diversity:horse/fatigue",
+        "comparison": ">",
+        "compare_to": 0
+      },
+      {
+        "type": "origins:sprinting"
+      }
+    ]
+  }
+}

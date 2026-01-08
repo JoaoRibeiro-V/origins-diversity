@@ -1,0 +1,45 @@
+{
+  "name": "Fatigue",
+  "description": "§rYou have a §nfatigue bar§r, limiting the amount of time u can run faster for.",
+  "type": "origins:resource",
+  "hud_render": {
+    "should_render": true,
+    "bar_index": 4,
+    "icon_index": 1,
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png"
+  },
+  "min": 0,
+  "max": 400,
+  "start_value": 400,
+  "min_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effects": [
+          {
+            "id": "minecraft:nausea",
+            "duration": 200,
+            "amplifier": 255,
+            "show_particles": false
+          },
+          {
+            "id": "minecraft:slowness",
+            "duration": 100,
+            "show_particles": false
+          }
+        ]
+      },
+      {
+        "type": "origins:revoke_power",
+        "power": "origins-diversity:horse/sprinting",
+        "source": "origins-diversity:sprint_toggle_horse"
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.horse.angry"
+      }
+    ]
+
+  }
+}

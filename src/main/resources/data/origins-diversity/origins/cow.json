@@ -9,7 +9,8 @@
     "origins-diversity:cow/ravenous",
     "origins-diversity:cow/self_milk",
     "origins-diversity:cow/milkable",
-    "origins-diversity:cow/vegetarian"
+    "origins-diversity:cow/vegetarian",
+    "origins-diversity:cow/on_hit"
   ],
   "impact": 1
 }

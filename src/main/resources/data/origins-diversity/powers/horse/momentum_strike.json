@@ -1,0 +1,54 @@
+{
+  "name": "Momentum",
+  "description": "§rStriking enemies close enough while sprinting procs a §nMomentum Strike§r, increasing damage and applying nausea on them.",
+  "type": "origins:modify_damage_dealt",
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": 0.2
+  },
+  "target_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "id": "minecraft:nausea",
+      "duration": 180,
+      "amplifier": 1,
+      "show_particles": false
+    }
+  },
+  "self_action": {
+    "type": "origins:change_resource",
+    "resource": "origins-diversity:horse/fatigue",
+    "change": -10
+  },
+  "bientity_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:distance",
+        "comparison": "<=",
+        "compare_to": 2
+      },
+      {
+        "type": "origins:actor_condition",
+        "condition": {
+          "type": "origins:and",
+          "conditions": [
+            {
+              "type": "origins:resource",
+              "resource": "origins-diversity:horse/fatigue",
+              "comparison": ">",
+              "compare_to": 0
+            },
+            {
+              "type": "origins:sprinting"
+            },
+            {
+              "type": "origins:power",
+              "power": "origins-diversity:horse/sprinting"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

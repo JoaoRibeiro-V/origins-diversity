@@ -1,10 +1,9 @@
 {
   "name": "Agile Leap",
-    "description": "§rYou can jump §ahigher§r than normal.",
+  "description": "§rYou can jump §ahigher§r than normal.",
   "type": "origins:modify_jump",
   "modifier": {
-    "operation": "add_total_early",
-    "amount": 0.5,
-    "resource": "origins-diversity:jumping"
+    "operation": "multiply_total_multiplicative",
+    "amount": 0.2
   }
 }

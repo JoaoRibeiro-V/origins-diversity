@@ -1,0 +1,16 @@
+{
+  "name": "Weak Venom",
+  "description": "§rYou have a chance to inflict §upoison§r on hit.",
+  "type": "origins:target_action_on_hit",
+  "entity_action": {
+    "type": "origins:chance",
+    "chance": 0.125,
+    "action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:poison",
+        "duration": 100
+      }
+    }
+  }
+}

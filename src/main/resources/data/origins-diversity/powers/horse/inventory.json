@@ -1,0 +1,8 @@
+{
+  "name": "Packed Gear",
+  "description": "You can store items.",
+  "type": "origins:inventory",
+  "container_type": "chest",
+  "title": "Packed Gear",
+  "drop_on_death": true
+}

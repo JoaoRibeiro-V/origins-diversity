@@ -1,0 +1,24 @@
+{
+  "name": "Little Buddy",
+  "description": "A tiny penguin’s favorite way to travel is on someone else’s shoulders.\nRight click a player to mount them!",
+  "type": "origins:action_on_entity_use",
+  "bientity_action": {
+    "type": "origins:mount"
+  },
+  "bientity_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:attacker",
+        "inverted": true
+      },
+      {
+        "type": "origins:target_condition",
+        "condition": {
+          "type": "origins:entity_type",
+          "entity_type": "minecraft:player"
+        }
+      }
+    ]
+  }
+}

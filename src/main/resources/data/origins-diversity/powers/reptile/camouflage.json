@@ -4,8 +4,8 @@
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:reptile_camouflage",
-    "attribute": "additionalentityattributes:generic.mob_detection_range",
-    "amount": -0.2,
-    "operation": "ADD_VALUE"
+    "attribute": "puffish_attributes:stealth",
+    "amount": 0.35,
+    "operation": "ADD_MULTIPLIED_TOTAL"
   }
 }

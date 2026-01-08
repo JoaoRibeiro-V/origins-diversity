@@ -1,13 +1,15 @@
 {
   "name": "Penguin",
-  "description": "A cold-adapted aquatic bird that thrives in icy regions and enjoys fish.",
+  "description": "A cold-adapted aquatic cute bird.",
   "icon": { "id": "minecraft:blue_ice" },
 
   "powers": [
+    "origins-diversity:penguin/huddle_warmth",
     "origins-diversity:penguin/cold_affinity",
     "origins-diversity:penguin/swim_boost",
     "origins-diversity:penguin/fish_gourmet",
     "origins-diversity:penguin/cold_strength",
+    "origins-diversity:penguin/mount",
     "origins-diversity:penguin/height"
   ],
   "impact": 1

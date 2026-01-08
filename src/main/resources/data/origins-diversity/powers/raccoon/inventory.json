@@ -1,0 +1,7 @@
+{
+  "name": "Scavenger's Purse",
+  "description": "You can stash items in hidden pockets.",
+  "type": "origins:inventory",
+  "container_type": "hopper",
+  "title": "Scavenger's Purse"
+}

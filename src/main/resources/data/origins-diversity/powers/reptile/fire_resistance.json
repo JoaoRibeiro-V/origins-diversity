@@ -1,11 +1,13 @@
 {
   "name": "Fire Resistance",
   "description": "§rYou have a natural §aresistance§r to §6fire§r damage.",
-  "type": "origins:attribute",
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:in_tag",
+    "tag": "minecraft:is_fire"
+  },
   "modifier": {
-    "id": "origins-diversity:reptile_fire_resistance",
-    "attribute": "minecraft:generic.burning_time",
-    "amount": -0.125,
-    "operation": "ADD_MULTIPLIED_TOTAL"
+    "operation": "multiply_total_multiplicative",
+    "amount": -0.5
   }
 }

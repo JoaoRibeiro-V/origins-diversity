@@ -4,10 +4,13 @@
   "icon": { "id": "minecraft:sweet_berries" },
 
   "powers": [
+    "origins-diversity:raccoon/inventory",
     "origins-diversity:raccoon/night_vision",
     "origins-diversity:raccoon/climbing_boost",
     "origins-diversity:raccoon/quick_dash",
-    "origins-diversity:raccoon/scavenger"
+    "origins-diversity:raccoon/fragile",
+    "origins-diversity:raccoon/scavenger",
+    "origins-diversity:raccoon/stealthy"
   ],
   "impact": 1
 }

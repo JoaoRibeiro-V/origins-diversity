@@ -5,7 +5,7 @@
   "modifier": {
     "id": "origins-diversity:axolotl_swim_speed",
     "attribute": "minecraft:generic.water_movement_efficiency",
-    "amount": 0.5,
+    "amount": 0.3,
     "operation": "ADD_VALUE"
   }
 }

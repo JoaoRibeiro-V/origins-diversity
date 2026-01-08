@@ -1,6 +1,6 @@
 {
   "name": "Lazy",
-  "description": "§rDue to being a lazy animal, your movement speed is §creduced§r.",
+  "description": "§rYour movement speed is §creduced§r.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:panda_slow_movement",

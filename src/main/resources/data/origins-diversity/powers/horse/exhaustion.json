@@ -1,0 +1,12 @@
+{
+  "type": "origins:modify_exhaustion",
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": 0.175
+  },
+  "condition": {
+    "type": "origins:sprinting"
+  },
+  "name": "Fast Metabolism",
+  "description": "§rRunning consumes energy rapidly.\n§cYou get hungry faster while running."
+}

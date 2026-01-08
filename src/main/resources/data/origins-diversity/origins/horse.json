@@ -1,0 +1,18 @@
+{
+  "name": "Horse",
+  "description": "A swift, powerful creature built for mobility and endurance.",
+  "icon": { "id": "minecraft:saddle" },
+
+  "powers": [
+    "origins-diversity:horse/sprint_toggle",
+    "origins-diversity:horse/fatigue",
+    "origins-diversity:horse/exhaustion",
+    "origins-diversity:horse/long_stride",
+    "origins-diversity:horse/inventory",
+    "origins-diversity:horse/momentum_strike",
+    "origins-diversity:horse/tiny_steed",
+    "origins-diversity:horse/vegetarian",
+    "origins-diversity:horse/fatigue_regain"
+  ],
+  "impact": 1
+}

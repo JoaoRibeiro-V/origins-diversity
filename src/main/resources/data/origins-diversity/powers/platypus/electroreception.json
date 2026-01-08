@@ -1,0 +1,17 @@
+{
+  "hidden": true,
+  "type": "origins:entity_glow",
+  "entity_condition": {
+      "type": "origins:submerged_in",
+      "fluid": "minecraft:water"
+  },
+  "bientity_condition": {
+    "type": "origins:distance",
+    "comparison": "<=",
+    "compare_to": 60
+  },
+  "use_teams": false,
+  "red": 0.0,
+  "green": 1.0,
+  "blue": 1.0
+}

@@ -5,7 +5,7 @@
   "modifier": {
     "id": "origins-diversity:cow_knockback_resistance",
     "attribute": "minecraft:generic.knockback_resistance",
-    "amount": 0.125,
-    "operation": "ADD_VALUE"
+    "amount": 0.25,
+    "operation": "ADD_MULTIPLIED_TOTAL"
   }
 }

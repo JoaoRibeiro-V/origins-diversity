@@ -6,7 +6,6 @@
     "type": "origins:owner"
   },
   "modifier": {
-    "resource": "origins-diversity:wild_bond_2",
     "operation": "multiply_total_multiplicative",
     "amount": -0.5
   }

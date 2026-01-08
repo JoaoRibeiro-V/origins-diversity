@@ -1,0 +1,37 @@
+{
+  "hidden": true,
+  "type": "origins:action_over_time",
+  "interval": 5,
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "origins-diversity:horse/fatigue",
+          "comparison": ">",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:sprinting"
+        },
+        {
+          "type": "origins:power",
+          "power": "origins-diversity:horse/sprinting"
+        }
+      ]
+    },
+    "if_action": {
+      "type": "origins:change_resource",
+      "resource": "origins-diversity:horse/fatigue",
+      "change": -4
+    },
+    "else_action": {
+      "type": "origins:change_resource",
+      "resource": "origins-diversity:horse/fatigue",
+      "change": 1
+    }
+
+  }
+}

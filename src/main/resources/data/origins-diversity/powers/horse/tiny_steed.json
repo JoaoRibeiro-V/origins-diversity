@@ -1,0 +1,29 @@
+{
+  "name": "Tiny Steed",
+  "description": "§rOther players can hop on your back.",
+  "type": "origins:action_on_being_used",
+  "bientity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:target_action",
+        "action": {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.horse.saddle"
+        }
+      },
+      {
+        "type": "origins:mount"
+      }
+    ]
+  },
+  "bientity_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:attacker",
+        "inverted": true
+      }
+    ]
+  }
+}

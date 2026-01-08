@@ -1,12 +1,10 @@
 {
     "name": "Bamboo Homeland",
     "description": "§rYou feel §astronger§r in bamboo jungles, bamboo forests, and sparse jungles.",
-    "type": "apoli:conditioned_attribute",
+    "type": "origins:modify_damage_dealt",
     "modifier": {
-        "id": "origins-diversity:panda_bamboo_home_attack_damage",
-        "attribute": "minecraft:generic.attack_damage",
-        "operation": "ADD_VALUE",
-        "amount": 2.0
+        "operation": "multiply_total_multiplicative",
+        "amount": 0.115
     },
     "condition": {
         "type": "apoli:biome",

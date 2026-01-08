@@ -1,0 +1,47 @@
+{
+  "name": "Molting",
+  "description": "§rYou can §qshed§r your skin, removing §aall§r status effects affecting you and healing a tiny amount of health.",
+  "type": "origins:active_self",
+  "cooldown": 600,
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:clear_effect"
+      },
+      {
+        "type": "origins:extinguish"
+      },
+      {
+        "type": "origins:heal",
+        "amount": 3
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:block.honey_block.slide"
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.cat.hiss",
+        "volume": 0.4,
+        "pitch": 1.4
+      },
+      {
+        "type": "origins:spawn_particles",
+        "particle": {
+          "type": "minecraft:item",
+          "params": {
+            "item": "minecraft:green_concrete_powder"
+          }
+        },
+        "count": 4,
+        "spread": {"x": 0.5, "y": 1, "z": 0.5}
+      }
+    ]
+  },
+  "hud_render": { "should_render": true,
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+    "bar_index": 22,
+    "icon_index": 0
+  }
+}

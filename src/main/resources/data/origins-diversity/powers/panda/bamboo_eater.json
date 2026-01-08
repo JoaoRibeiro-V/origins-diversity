@@ -1,96 +1,20 @@
 {
   "name": "Bamboo Feast",
-  "description": "§rYou can eat bamboo to §aregain§r health. Eating bamboo §aempowers§r you in §nbamboo-rich§r§r biomes.",
-  "type": "apoli:active_self",
+  "description": "§rYou can eat bamboo to §aregain§r hunger. Eating bamboo §aempowers§r you in §nbamboo-rich§r§r biomes.",
+  "type": "origins:edible_item",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": { "item": "minecraft:bamboo"}
+  },
+  "food_component": {
+    "hunger": 4,
+    "nutrition": 4,
+    "saturation": 6
+  },
   "entity_action": {
-    "type": "apoli:and",
-    "actions": [
-      {
-        "type": "apoli:equipped_item_action",
-        "equipment_slot": "mainhand",
-        "item_action": {
-          "type": "apoli:consume",
-          "amount": 1
-        }
-      },
-      {
-        "type": "apoli:play_sound",
-        "sound": "minecraft:entity.generic.eat",
-        "volume": 1.0,
-        "pitch": 1.0
-      },
-      {
-        "type": "apoli:heal",
-        "amount": 4
-      },
-      {
-        "type": "apoli:spawn_particles",
-        "particle": {
-          "type": "minecraft:item",
-          "params": { "item": "minecraft:bamboo" }
-        },
-        "count": 12,
-        "speed": 0.1,
-        "offset_x": 0.3,
-        "offset_y": 0.5,
-        "offset_z": 0.3
-      },
-      {
-        "type": "apoli:if_else",
-        "condition": {
-          "type": "apoli:or",
-          "conditions": [
-            {
-              "type": "apoli:biome",
-              "biome": "minecraft:bamboo_jungle"
-            },
-            {
-              "type": "apoli:biome",
-              "biome": "minecraft:jungle"
-            }
-          ]
-        },
-        "if_action": {
-          "type": "apoli:and",
-          "actions": [
-            {
-              "type": "apoli:apply_effect",
-              "effect": {
-                "id": "minecraft:strength",
-                "duration": 200,
-                "amplifier": 0,
-                "show_particles": true,
-                "show_icon": true
-              }
-            },
-            {
-              "type": "apoli:heal",
-              "amount": 2
-            }
-          ]
-        }
-      }
-    ]
-  },
-  "condition": {
-    "type": "apoli:equipped_item",
-    "equipment_slot": "mainhand",
-    "item_condition": {
-      "type": "apoli:ingredient",
-      "ingredient": {
-        "item": "minecraft:bamboo"
-      }
-    }
-  },
-  "key": {
-    "key": "key.use",
-    "continuous": false
-  },
-  "cooldown": 480,
-  "hud_render": {
-    "should_render": true,
-    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
-    "bar_index": 12,
-    "icon_index": 0
+    "type": "origins:play_sound",
+    "sound": "minecraft:entity.panda.eat",
+    "volume": 1.25
   }
 }
+

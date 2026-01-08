@@ -1,0 +1,9 @@
+{
+  "name": "Stealthy",
+  "description": "§rGo slightly invisible when sneaking.",
+  "type": "origins:model_color",
+  "alpha": 0.2,
+  "condition": {
+    "type": "origins:sneaking"
+  }
+}

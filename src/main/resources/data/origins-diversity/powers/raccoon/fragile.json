@@ -1,0 +1,11 @@
+{
+  "name": "Thin Fur",
+  "description": "§rArmor is §cless§r efficient when worn.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:raccoon_armor_reduction",
+    "attribute": "minecraft:generic.armor",
+    "amount": -0.325,
+    "operation": "ADD_MULTIPLIED_TOTAL"
+  }
+}

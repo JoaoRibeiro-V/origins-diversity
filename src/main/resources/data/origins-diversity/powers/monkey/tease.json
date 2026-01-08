@@ -1,0 +1,11 @@
+{
+  "name": "Tease",
+  "description": "§rMobs aggro onto you more often.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:monkey_nimble_movement",
+    "attribute": "puffish_attributes:stealth",
+    "amount": -0.4,
+    "operation": "ADD_MULTIPLIED_TOTAL"
+  }
+}

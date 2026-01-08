@@ -6,6 +6,6 @@
     "id": "origins-diversity:raccoon_fall_damage_reduction",
     "attribute": "minecraft:generic.fall_damage_multiplier",
     "amount": -0.25,
-    "operation": "ADD_VALUE"
+    "operation": "ADD_MULTIPLIED_TOTAL"
   }
 }

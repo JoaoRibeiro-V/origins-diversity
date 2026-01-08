@@ -1,0 +1,27 @@
+{
+  "hidden": true,
+  "type": "origins:action_over_time",
+  "interval": 60,
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:in_rain"
+        },
+        {
+          "type": "origins:fluid_height",
+          "fluid": "minecraft:water",
+          "comparison": ">",
+          "compare_to": 0
+        }
+      ]
+    },
+    "if_action": {
+      "type": "origins:change_resource",
+      "resource": "origins-diversity:frog/moisture_bar",
+      "change": 10
+    }
+  }
+}

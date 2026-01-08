@@ -1,0 +1,9 @@
+{
+  "name": "Curiosity",
+  "description": "§rYour curiosity makes it so you gain §amore§r experience.",
+  "type": "origins:modify_xp_gain",
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": 0.3
+  }
+}
