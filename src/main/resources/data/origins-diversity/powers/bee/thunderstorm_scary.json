@@ -1,17 +1,10 @@
 {
   "name": "Thunder Scares You!",
   "description": "§rYou are terrified of thunderstorms, you §ccan't§r sleep during them.",
-  "type": "origins:multiple",
-  "shakes": {
-    "type": "origins:shaking",
-    "condition": {
-      "type": "origins:in_thunderstorm"
-    }
-  },
-  "no_sleep": {
+
     "type": "origins:prevent_sleep",
     "condition": {
       "type": "origins:in_thunderstorm"
     }
-  }
+
 }
