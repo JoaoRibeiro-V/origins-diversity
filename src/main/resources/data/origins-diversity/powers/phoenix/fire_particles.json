@@ -1,0 +1,15 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+
+  "flame": {
+    "type": "origins:particle",
+    "particle": "minecraft:small_flame",
+    "frequency": 5
+  },
+  "ash": {
+    "type": "origins:particle",
+    "particle": "minecraft:ash",
+    "frequency": 5
+  }
+}

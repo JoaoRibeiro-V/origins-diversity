@@ -1,0 +1,22 @@
+{
+  "name": "Blizzard Barrage",
+  "description": "§rUnleash a wave of snowballs that §bslow§r and §fcontrol§r enemies.",
+  "type": "origins:fire_projectile",
+  "cooldown": 500,
+  "key": {
+    "key": "key.origins.primary_active"
+  },
+  "entity_type": "minecraft:snowball",
+  "count": 12,
+  "speed": 1.5,
+  "interval": 0.25,
+  "divergence": 15,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+    "bar_index": 12
+  },
+  "condition": {
+    "type": "origins:power_active",
+    "power": "origins-diversity:golem/snow_form_active"
+  }
+}

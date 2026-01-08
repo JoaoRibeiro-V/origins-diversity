@@ -1,0 +1,8 @@
+{
+  "type": "origins:active_self",
+  "name": "Shifting Skill",
+  "description": "§rDepending on the form you're in:\n§bSnow§r - Shoot a load of snowballs, slowing your opponents down.\n§fIron§r - Slam into the ground with all your strength, sending enemies up.",
+  "entity_action": {
+    "type": "origins:swing_hand"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "name": "Snow Golem Form",
+  "description": "§7A fragile but nimble body of snow.\n§bQuick§7 and tricky, but §cfragile§7.",
+  "type": "origins:multiple",
+
+  "speed": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:snow_golem_speed",
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "ADD_MULTIPLIED_TOTAL",
+      "amount": 0.02
+    }
+  },
+
+  "snow_particles": {
+    "type": "origins:particle",
+    "particle": "minecraft:snowflake",
+    "frequency": 6
+  },
+  "snowball_particles": {
+    "type": "origins:particle",
+    "particle": "minecraft:item_snowball",
+    "frequency": 3
+  },
+  "fire_vulnerability": {
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "minecraft:is_fire"
+    },
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": 0.75
+    }
+  },
+  "low_health": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:snow_golem_health",
+      "attribute": "minecraft:generic.max_health",
+      "operation": "ADD_VALUE",
+      "amount": -4
+    }
+  },
+
+  "snowball_hit": {
+    "type": "origins:target_action_on_hit",
+    "cooldown": 100,
+    "damage_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:projectile",
+          "projectile": "minecraft:snowball"
+        }
+      ]
+    },
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:slowness",
+        "duration": 60,
+        "amplifier": 1
+      }
+    }
+  },
+
+  "heat_weakness": {
+    "type": "origins:damage_over_time",
+    "interval": 40,
+    "damage": 1,
+    "damage_type": "minecraft:lava",
+    "condition": {
+      "type": "origins:biome",
+      "condition": {
+        "type": "origins:temperature",
+        "comparison": ">",
+        "compare_to": 0.9
+      }
+    }
+  }
+}

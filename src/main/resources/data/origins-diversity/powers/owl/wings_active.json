@@ -1,6 +1,6 @@
 {
   "name": "Wing Burst",
-  "description": "Use your wings to propel urself forwards.",
+  "description": "Use your wings to propel urself forwards while flying.",
   "type": "apoli:active_self",
   "entity_action": {
     "type": "apoli:add_velocity",

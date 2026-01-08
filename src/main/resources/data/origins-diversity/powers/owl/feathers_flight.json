@@ -1,0 +1,16 @@
+{
+  "type": "origins:particle",
+  "particle": {
+    "type": "origins-diversity:owl_feather"
+  },
+  "frequency": 40,
+  "count": 2,
+  "spread": {
+    "x": 2,
+    "y": 1,
+    "z": 1
+  },
+  "condition": {
+    "type": "origins:fall_flying"
+  }
+}

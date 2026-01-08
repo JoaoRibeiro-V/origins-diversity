@@ -1,0 +1,20 @@
+{
+  "hidden": true,
+  "type": "origins:edible_item",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "priority": 1,
+  "food_component": {
+    "hunger": 3,
+    "saturation": 3,
+    "nutrition": 3
+  },
+  "result_stack": {
+    "id": "minecraft:iron_nugget",
+    "amount": 1
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "hidden": true,
+  "type": "origins:action_over_time",
+  "interval": 5,
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:golem/form_toggle"
+    },
+    "if_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:grant_power",
+          "power": "origins-diversity:golem/snow_form_active",
+          "source": "origins-diversity:golem_controller"
+        },
+        {
+          "type": "origins:revoke_power",
+          "power": "origins-diversity:golem/iron_form_active",
+          "source": "origins-diversity:golem_controller"
+        }
+      ]
+    },
+    "else_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:grant_power",
+          "power": "origins-diversity:golem/iron_form_active",
+          "source": "origins-diversity:golem_controller"
+        },
+        {
+          "type": "origins:revoke_power",
+          "power": "origins-diversity:golem/snow_form_active",
+          "source": "origins-diversity:golem_controller"
+        }
+      ]
+    }
+  }
+}

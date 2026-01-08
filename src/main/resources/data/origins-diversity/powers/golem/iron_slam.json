@@ -1,0 +1,71 @@
+{
+  "hidden": true,
+  "type": "origins:active_self",
+  "cooldown": 600,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+    "bar_index": 2
+  },
+  "key": {
+    "key": "key.origins.primary_active"
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:power_active",
+        "power": "origins-diversity:golem/iron_form_active"
+      },
+      {
+        "type": "origins:on_block"
+      }
+    ]
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:spawn_particles",
+        "particle": "minecraft:explosion_emitter",
+        "count": 2
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:item.mace.smash_ground_heavy",
+        "volume": 1.3,
+        "pitch": 0.7
+      },
+      {
+        "type": "origins:area_of_effect",
+        "radius": 4,
+        "shape": "sphere",
+        "bientity_action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:damage",
+              "amount": 5,
+              "damage_type": "minecraft:sonic_boom"
+            },
+            {
+              "type": "origins:add_velocity",
+              "y": 0.8,
+              "horizontal": 0.6
+            },
+            {
+              "type": "origins:target_action",
+              "action": {
+                "type": "origins:apply_effect",
+                "effect": {
+                  "id": "minecraft:weakness",
+                  "duration": 40,
+                  "amplifier": 0
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

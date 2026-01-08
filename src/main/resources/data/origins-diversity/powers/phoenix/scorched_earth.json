@@ -1,0 +1,19 @@
+{
+  "type": "origins:conditioned_attribute",
+  "modifier": {
+    "id": "origins-diversity:phoenix_slow_movement",
+    "attribute": "minecraft:generic.movement_speed",
+    "amount": -0.12,
+    "operation": "ADD_MULTIPLIED_TOTAL"
+  },
+  "condition": {
+    "type": "origins:biome",
+    "condition": {
+      "type": "origins:temperature",
+      "comparison": "<=",
+      "compare_to": 0.05
+    }
+  },
+  "name": "Scorched Earth",
+  "description": "§rCold environments suppress your flames.\n§cYou move slower in cold biomes."
+}

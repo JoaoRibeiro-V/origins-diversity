@@ -1,0 +1,88 @@
+{
+  "name": "Iron Golem Form",
+  "description": "§7A towering body of iron.\n§aTanky§7, §cheavy§7, and devastating in melee.",
+  "type": "origins:multiple",
+
+  "health": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:golem_iron_form_resistance",
+      "attribute": "minecraft:generic.armor",
+      "operation": "ADD_VALUE",
+      "amount": 10
+    }
+  },
+
+  "height": {
+    "type": "origins:action_on_callback",
+    "entity_action_lost": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "scale reset @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale persist reset @s"
+        }
+      ]
+    },
+    "entity_action_added": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:base 1.3 @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale set pehkui:motion 0.7 @s"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "scale persist set true @s"
+        }
+      ]
+    },
+    "execute_chosen_when_orb": true
+  },
+  "melee": {
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "value": 0.525,
+      "amount": 0.525
+    }
+  },
+
+
+  "kb_resist": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:golem_iron_knockback_resistance",
+      "attribute": "minecraft:generic.knockback_resistance",
+      "operation": "ADD_VALUE",
+      "amount": 0.6
+    }
+  },
+
+  "slow": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:iron_golem_speed",
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "ADD_MULTIPLIED_TOTAL",
+      "amount": -0.3
+    }
+  },
+  "slow_attacks": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:iron_golem_atspeed",
+      "attribute": "minecraft:generic.attack_speed",
+      "operation": "ADD_MULTIPLIED_TOTAL",
+      "amount": -0.6
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Phoenix",
+  "description": "§7A legendary being born of §cfire§7 and §6rebirth§7.",
+  "icon": {
+    "id": "minecraft:fire_charge"
+  },
+  "impact": 2,
+  "powers": [
+    "origins-diversity:phoenix/rebirth_toggle",
+    "origins-diversity:phoenix/rebirth_duration_controller",
+    "origins-diversity:phoenix/rebirth_active",
+    "origins-diversity:phoenix/rebirth_spawn_handler",
+    "origins-diversity:phoenix/keep_inventory",
+    "origins-diversity:phoenix/fire_immunity",
+    "origins-diversity:phoenix/ashen_body",
+    "origins-diversity:phoenix/scorched_earth",
+    "origins-diversity:phoenix/burning_metabolism",
+    "origins-diversity:phoenix/fire_aspect",
+    "origins-diversity:phoenix/netherite_aversion",
+    "origins-diversity:phoenix/fire_particles"
+  ]
+}

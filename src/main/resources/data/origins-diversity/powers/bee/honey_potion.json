@@ -8,10 +8,17 @@
   },
   "entity_action": {
     "type": "origins:apply_effect",
-    "effect": {
-      "id": "minecraft:regeneration",
-      "duration": 80,
-      "amplifier": 0
-    }
+    "effects": [
+      {
+        "id": "minecraft:regeneration",
+        "duration": 80,
+        "amplifier": 0
+      },
+      {
+        "id": "minecraft:strength",
+        "duration": 200,
+        "amplifier": 0
+      }
+    ]
   }
 }

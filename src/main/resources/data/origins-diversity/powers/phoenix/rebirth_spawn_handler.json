@@ -1,0 +1,67 @@
+{
+  "hidden": true,
+  "type": "origins:prevent_death",
+  "condition": {
+    "type": "origins:resource",
+    "resource": "origins-diversity:phoenix/rebirth_active",
+    "comparison": ">=",
+    "compare_to": 1
+  },
+  "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:apply_effect",
+          "effects": [
+            {
+              "id": "minecraft:regeneration",
+              "duration": 80,
+              "amplifier": 4
+            },
+            {
+              "id": "minecraft:absorption",
+              "duration": 200,
+              "amplifier": 0
+            },
+            {
+              "id": "minecraft:weakness",
+              "duration": 600,
+              "amplifier": 0
+            },
+            {
+              "id": "minecraft:resistance",
+              "duration": 100,
+              "amplifier": 0
+            }
+          ]
+        },
+        {
+          "type": "origins:spawn_particles",
+          "particle": "minecraft:lava",
+          "count": 30,
+          "spread": { "x": 1, "y": 1, "z": 1 }
+        },
+
+        {
+          "type": "origins:spawn_particles",
+          "particle": "minecraft:firework",
+          "count": 20,
+          "speed": 0.25,
+          "spread": { "x": 1.5, "y": 1.5, "z": 1.5 }
+        },
+        {
+          "type": "origins:set_resource",
+          "resource": "origins-diversity:phoenix/rebirth_active",
+          "value": 0
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:item.totem.use"
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.firework_rocket.twinkle"
+        }
+      ]
+  }
+}

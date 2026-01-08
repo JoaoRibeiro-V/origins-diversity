@@ -1,0 +1,9 @@
+{
+  "name": "Reconfigure Body",
+  "description": "§rShift between §fIron§r and §bSnow§r golem forms.",
+  "type": "origins:toggle",
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  }
+}
