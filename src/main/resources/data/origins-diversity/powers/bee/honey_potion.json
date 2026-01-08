@@ -16,7 +16,7 @@
       },
       {
         "id": "minecraft:strength",
-        "duration": 200,
+        "duration": 400,
         "amplifier": 0
       }
     ]
