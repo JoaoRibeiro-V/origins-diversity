@@ -1,0 +1,36 @@
+{
+  "hidden": true,
+  "type": "origins:action_over_time",
+  "interval": 1,
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "origins-diversity:hellhound/scent_bar",
+      "comparison": ">",
+      "compare_to": 0
+    },
+    "if_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:power",
+        "power": "origins-diversity:hellhound/scent",
+        "inverted": true
+      },
+      "if_action": {
+        "type": "origins:grant_power",
+        "power": "origins-diversity:hellhound/scent",
+        "source": "origins-diversity:hellhound_scent_controller"
+      },
+      "else_action": {
+        "type": "origins:change_resource",
+        "resource": "origins-diversity:hellhound/scent_bar",
+        "change": -1
+      }
+    },
+    "else_action": {
+      "type": "origins:remove_power",
+      "power": "origins-diversity:hellhound/scent"
+    }
+  }
+}

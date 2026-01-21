@@ -1,0 +1,24 @@
+{
+  "type": "origins:resource",
+  "name": "Feral Rage",
+  "description": "Hunger and bloodshed fuel a rising feral fury.",
+  "min": 0,
+  "max": 100,
+  "start_value": 0,
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+    "bar_index": 5,
+    "icon_index": 0
+  },
+  "max_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.wolf.growl",
+        "pitch": 0.9
+      }
+    ]
+  }
+}

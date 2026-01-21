@@ -1,0 +1,29 @@
+{
+  "type": "origins:self_action_on_hit",
+  "name": "Blood Tease",
+  "description": "Landing quick strikes invigorates you.",
+  "cooldown": 300,
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "id": "minecraft:absorption",
+          "duration": 160,
+          "amplifier": 0,
+          "show_particles": false,
+          "show_icon": false
+        }
+      },
+      {
+          "type": "origins:feed",
+          "food": 2,
+          "saturation": 2,
+          "nutrition": 2
+
+      }
+    ]
+
+  }
+}

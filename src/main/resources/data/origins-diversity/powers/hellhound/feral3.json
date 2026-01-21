@@ -1,0 +1,17 @@
+{
+  "hidden": true,
+  "type": "origins:modify_damage_dealt",
+  "bientity_condition": {
+    "type": "origins:actor_condition",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "origins-diversity:hellhound/feral_rage",
+      "comparison": ">=",
+      "compare_to": 75
+    }
+  },
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": 0.325
+  }
+}

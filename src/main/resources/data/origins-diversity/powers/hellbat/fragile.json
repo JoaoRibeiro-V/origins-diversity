@@ -1,0 +1,11 @@
+{
+  "name": "Fragile",
+  "description": "Your hollow bones make your body extremely fragile.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:fox_hearts",
+    "attribute": "minecraft:generic.max_health",
+    "amount": -10.0,
+    "operation": "ADD_VALUE"
+  }
+}

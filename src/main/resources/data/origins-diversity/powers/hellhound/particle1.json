@@ -1,0 +1,16 @@
+{
+  "hidden": true,
+  "type": "origins:particle",
+  "particle": "minecraft:ash",
+  "frequency": 12,
+  "count": 2,
+  "speed": 0.01,
+  "spread": {
+    "x": 0.35,
+    "y": 0.6,
+    "z": 0.35
+  },
+  "offset_y": 0.1,
+  "visible_in_first_person": false,
+  "visible_while_invisible": false
+}

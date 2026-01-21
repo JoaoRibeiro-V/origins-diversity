@@ -1,0 +1,14 @@
+{
+  "type": "origins:modify_damage_dealt",
+  "name": "Wing Buffet",
+  "description": "Your weak strikes deal little damage, but the violent gust from your wings sends enemies flying.",
+  "bientity_action": {
+    "type": "origins:add_velocity",
+    "z": 3,
+    "y": 1.5
+  },
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": -0.65
+  }
+}

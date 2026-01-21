@@ -1,0 +1,36 @@
+{
+
+  "name": "Blood in the Maw",
+  "description": "Striking prey while hungry fuels your feral rage.",
+  "type": "origins:multiple",
+  "feral_gain": {
+    "type": "origins:self_action_on_hit",
+    "cooldown": 10,
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:food_level",
+            "comparison": "<=",
+            "compare_to": 14
+          }
+        ]
+      },
+      "if_action": {
+        "type": "origins:change_resource",
+        "resource": "origins-diversity:hellhound/feral_rage",
+        "change": 12
+      }
+    }
+  },
+  "feral_decay": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "origins-diversity:hellhound/feral_rage",
+      "change": -4
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "origins:multiple",
+  "nether_regen": {
+    "type": "origins:action_over_time",
+    "interval": 100,
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:regeneration",
+        "duration": 60,
+        "amplifier": 0,
+        "show_particles": false,
+        "show_icon": false
+      }
+    }
+  },
+  "nether_speed": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:netherbound_speed",
+      "attribute": "minecraft:generic.movement_speed",
+      "amount": 0.067,
+      "operation": "ADD_MULTIPLIED_TOTAL"
+    }
+  }
+}

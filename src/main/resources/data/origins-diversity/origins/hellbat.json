@@ -1,0 +1,25 @@
+{
+  "name": "Hellbat",
+  "description": "Born of the Nether’s skies, aerial predators that thrive in darkness.",
+  "icon": {
+    "id": "minecraft:ghast_tear"
+  },
+  "impact": 3,
+  "powers": [
+    "origins-diversity:hellbat/hellbat_wings",
+    "origins-diversity:hellbat/fire_immunity",
+    "origins-diversity:hellbat/knockback",
+    "origins-diversity:hellbat/shrill_screech",
+    "origins-diversity:hellbat/squeak",
+    "origins-diversity:hellbat/clingy_pest",
+    "origins-diversity:hellbat/blood_tease",
+    "origins-diversity:hellbat/blindness",
+    "origins-diversity:hellbat/nightvision",
+    "origins-diversity:hellbat/color",
+    "origins-diversity:hellbat/height",
+    "origins-diversity:hellbat/water_burn",
+    "origins-diversity:hellbat/fire_wings",
+    "origins-diversity:hellbat/fragile",
+    "origins-diversity:hellbat/squeal"
+  ]
+}

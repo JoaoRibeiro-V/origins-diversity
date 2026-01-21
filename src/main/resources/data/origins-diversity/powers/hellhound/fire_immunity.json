@@ -1,0 +1,30 @@
+{
+  "hidden": true,
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:fire"
+          },
+          {
+            "type": "origins:in_tag",
+            "tag": "minecraft:is_fire"
+          }
+        ]
+      },
+      {
+        "type": "origins:name",
+        "name": "lava",
+        "inverted": true
+      }
+    ]
+  },
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": -1
+  }
+}

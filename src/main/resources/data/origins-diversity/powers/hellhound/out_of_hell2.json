@@ -1,0 +1,16 @@
+{
+  "hidden": true,
+  "type": "origins:modify_damage_dealt",
+  "bientity_condition": {
+    "type": "origins:actor_condition",
+    "condition": {
+      "type": "origins:dimension",
+      "dimension": "minecraft:the_nether",
+      "inverted": true
+    }
+  },
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": -0.25
+  }
+}

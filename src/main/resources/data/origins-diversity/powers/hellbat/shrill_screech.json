@@ -1,0 +1,45 @@
+{
+  "type": "origins:active_self",
+  "name": "Shrill Screech",
+  "description": "You release a piercing screech that disorients nearby creatures.",
+  "cooldown": 600,
+  "hud_render": {
+    "should_render": true,
+    "bar_index": 2
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:area_of_effect",
+        "radius": 7,
+        "bientity_action": {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:apply_effect",
+            "effects": [
+              {
+                "id": "minecraft:nausea",
+                "duration": 200,
+                "amplifier": 0,
+                "show_particles": false
+              },
+              {
+                "id": "minecraft:darkness",
+                "duration": 100,
+                "amplifier": 0,
+                "show_particles": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.ghast.hurt",
+        "volume": 1.2,
+        "pitch": 2
+      }
+    ]
+  }
+}

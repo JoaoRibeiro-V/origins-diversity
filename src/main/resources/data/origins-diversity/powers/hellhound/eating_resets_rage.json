@@ -1,0 +1,14 @@
+{
+  "type": "origins:action_on_item_use",
+  "name": "Feeding Breaks the Frenzy",
+  "description": "Eating food calms your feral instincts, ending your rage.",
+  "item_condition": {
+    "type": "origins:food"
+  },
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "origins-diversity:hellhound/feral_rage",
+    "change": 0,
+    "operation": "set"
+  }
+}

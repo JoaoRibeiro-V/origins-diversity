@@ -1,0 +1,16 @@
+{
+  "hidden": true,
+  "type": "origins:conditioned_attribute",
+  "condition": {
+    "type": "origins:resource",
+    "resource": "origins-diversity:hellhound/feral_rage",
+    "comparison": ">=",
+    "compare_to": 50
+  },
+  "modifier": {
+    "id": "origins-diversity:feral2_speed",
+    "attribute": "minecraft:generic.attack_speed",
+    "amount": 0.3,
+    "operation": "ADD_MULTIPLIED_TOTAL"
+  }
+}

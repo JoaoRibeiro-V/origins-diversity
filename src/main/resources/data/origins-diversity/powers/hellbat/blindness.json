@@ -1,0 +1,35 @@
+{
+  "type": "origins:action_over_time",
+  "name": "Light Sensitivity",
+  "description": "Bright light overwhelms your heightened senses, leaving you disoriented and weak.",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "id": "minecraft:blindness",
+          "duration": 60,
+          "amplifier": 0,
+          "show_particles": false,
+          "show_icon": false
+        }
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "id": "minecraft:weakness",
+          "duration": 60,
+          "amplifier": 0,
+          "show_particles": false,
+          "show_icon": false
+        }
+      }
+    ]
+  },
+  "condition": {
+    "type": "origins:brightness",
+    "comparison": ">=",
+    "compare_to": 0.5
+  }
+}

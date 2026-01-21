@@ -1,0 +1,6 @@
+{
+  "type": "origins:night_vision",
+  "name": "Night Vision",
+  "description": "Your eyes are perfectly adapted to darkness, allowing you to see clearly where others cannot.",
+  "strength": 0.95
+}

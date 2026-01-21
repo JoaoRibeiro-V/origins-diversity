@@ -1,0 +1,31 @@
+{
+  "hidden": true,
+  "type": "origins:particle",
+  "particle": "minecraft:flame",
+  "frequency": 16,
+  "count": 1,
+  "speed": 0.02,
+  "spread": {
+    "x": 0.25,
+    "y": 0.4,
+    "z": 0.25
+  },
+  "offset_y": 0.2,
+  "visible_in_first_person": false,
+  "visible_while_invisible": false,
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:dimension",
+        "dimension": "minecraft:the_nether"
+      },
+      {
+        "type": "origins:resource",
+        "resource": "origins-diversity:hellhound/feral_rage",
+        "comparison": ">=",
+        "compare_to": 50
+      }
+    ]
+  }
+}

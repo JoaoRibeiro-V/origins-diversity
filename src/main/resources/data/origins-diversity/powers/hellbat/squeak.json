@@ -1,0 +1,18 @@
+{
+  "type": "origins:active_self",
+  "name": "Bat Squeak",
+  "description": "You can let out an annoying little squeak, just to assert dominance.",
+  "cooldown": 0,
+  "hud_render": {
+    "should_render": false
+  },
+  "key": {
+    "key": "key.origins.secondary_active"
+  },
+  "entity_action": {
+    "type": "origins:play_sound",
+    "sound": "minecraft:entity.bat.ambient",
+    "volume": 1.0,
+    "pitch": 1.3
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "origins:climbing",
+  "name": "Clingy Pest",
+  "description": "You can cling to walls and ceilings, slowing your fall and allowing you to skitter around like an annoying pest.",
+  "velocity": 0,
+  "take_fall_damage": false,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:sneaking"
+      },
+      {
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:block_collision",
+            "offset_x": 0.5,
+            "offset_y": 0.5,
+            "offset_z": 0.5
+          },
+          {
+            "type": "origins:block_collision",
+            "offset_x": -0.5,
+            "offset_y": -0.5,
+            "offset_z": -0.5
+          },
+          {
+            "type": "origins:collided_horizontally"
+          }
+        ]
+      }
+    ]
+  }
+}

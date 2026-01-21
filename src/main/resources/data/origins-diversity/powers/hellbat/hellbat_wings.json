@@ -1,0 +1,7 @@
+{
+  "name": "Wings of the Abyss",
+  "description": "Demonic wings allow you to fly.",
+  "type": "origins:elytra_flight",
+  "render_elytra": true,
+  "texture_location": "origins-diversity:textures/elytra_hellbat.png"
+}

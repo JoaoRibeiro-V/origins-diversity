@@ -47,9 +47,9 @@
     "cooldown": 200,
     "entity_action": {
       "type": "origins:feed",
-      "food": 2,
-      "saturation": 2,
-      "nutrition": 2
+      "food": 4,
+      "saturation": 3,
+      "nutrition": 3
     },
     "damage_condition": {
       "type": "origins:and",

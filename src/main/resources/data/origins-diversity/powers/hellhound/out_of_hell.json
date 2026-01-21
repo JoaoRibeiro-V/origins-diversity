@@ -1,0 +1,17 @@
+{
+  "name": "Out of Hell",
+  "description": "Away from the Nether, your body weakens and struggles to endure unfamiliar realms.",
+  "type": "origins:conditioned_attribute",
+  "attribute": "minecraft:generic.movement_speed",
+  "modifier": {
+    "id": "origins-diversity:netherbound_speed_flaw",
+    "attribute": "minecraft:generic.movement_speed",
+    "amount": -0.125,
+    "operation": "ADD_MULTIPLIED_TOTAL"
+  },
+  "condition": {
+    "type": "origins:dimension",
+    "dimension": "minecraft:the_nether",
+    "inverted": true
+  }
+}
