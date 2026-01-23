@@ -10,11 +10,13 @@
     "origins-diversity:withered_piglin/withered_kill",
     "origins-diversity:withered_piglin/rotten_appetite",
     "origins-diversity:withered_piglin/gold_obsessed",
+    "origins-diversity:withered_piglin/inventory",
     "origins-diversity:withered_piglin/withered_resistance",
     "origins-diversity:withered_piglin/withered_body",
     "origins-diversity:withered_piglin/gold_crafting",
     "origins-diversity:withered_piglin/rejected_by_kind",
     "origins-diversity:withered_piglin/starvation",
-    "origins-diversity:withered_piglin/unstable_flesh"
+    "origins-diversity:withered_piglin/unstable_flesh",
+    "origins-diversity:withered_piglin/on_hit"
   ]
 }

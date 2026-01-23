@@ -1,0 +1,9 @@
+{
+  "hidden": true,
+  "type": "origins:self_action_when_hit",
+  "entity_action": {
+    "type": "origins:play_sound",
+    "sound": "minecraft:entity.piglin.hurt",
+    "pitch": 0.85
+  }
+}

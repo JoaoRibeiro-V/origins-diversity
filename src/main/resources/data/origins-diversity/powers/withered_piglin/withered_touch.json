@@ -5,15 +5,25 @@
   "entity_action": {
     "type": "origins:chance",
     "action": {
-      "type": "origins:apply_effect",
-      "effect": {
-        "id": "minecraft:wither",
-        "duration": 80,
-        "amplifier": 1,
-        "show_particles": true,
-        "show_icon": true
-      }
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "id": "minecraft:wither",
+            "duration": 100,
+            "amplifier": 1,
+            "show_particles": true,
+            "show_icon": true
+          }
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.piglin_brute.angry",
+          "pitch": 0.925
+        }
+      ]
     },
-    "chance": 0.2
+    "chance": 0.325
   }
 }

@@ -26,7 +26,7 @@
             "effect": {
               "id": "minecraft:wither",
               "amplifier": 1,
-              "duration": 160
+              "duration": 120
             }
           }
         }

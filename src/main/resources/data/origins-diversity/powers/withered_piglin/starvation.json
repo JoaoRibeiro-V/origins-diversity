@@ -4,14 +4,25 @@
   "type": "origins:action_over_time",
   "interval": 600,
   "entity_action": {
-    "type": "origins:apply_effect",
-    "effect": {
-      "id": "minecraft:hunger",
-      "duration": 300,
-      "amplifier": 1,
-      "show_particles": false,
-      "show_icon": false
-    }
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.piglin.converted_to_zombified",
+        "volume": 0.4,
+        "pitch": 0.9
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "id": "minecraft:hunger",
+          "duration": 300,
+          "amplifier": 1,
+          "show_particles": false,
+          "show_icon": false
+        }
+      }
+    ]
   },
   "condition": {
     "type": "origins:dimension",
