@@ -1,0 +1,11 @@
+{
+  "name": "Withered Body",
+  "description": "You have reduced health.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:withered_piglin_health",
+    "attribute": "minecraft:generic.max_health",
+    "amount": -6.0,
+    "operation": "ADD_VALUE"
+  }
+}

@@ -2,7 +2,7 @@
   "hidden": true,
   "type": "origins:particle",
   "particle": {
-    "type": "minecraft:flame"
+    "type": "minecraft:small_flame"
   },
   "frequency": 10,
   "count": 2,

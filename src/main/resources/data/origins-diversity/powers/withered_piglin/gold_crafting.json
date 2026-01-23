@@ -1,0 +1,37 @@
+{
+  "name": "Gold Crafting",
+  "description": "You can craft gold ingots with 4 gold nuggets",
+  "type": "origins:multiple",
+  "goldennuggetreturn": {
+    "type": "origins:modify_crafting",
+    "recipe": "minecraft:gold_nugget",
+    "result": {
+      "id": "minecraft:gold_nugget",
+      "count": 4
+    }
+  },
+  "goldeningotcraft": {
+    "type": "origins:recipe",
+    "recipe": {
+      "id": "origins-diversity:withered_piglin/gold_crafting",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:gold_nugget"
+        },
+        {
+          "item": "minecraft:gold_nugget"
+        },
+        {
+          "item": "minecraft:gold_nugget"
+        },
+        {
+          "item": "minecraft:gold_nugget"
+        }
+      ],
+      "result": {
+        "id": "minecraft:gold_ingot"
+      }
+    }
+  }
+}

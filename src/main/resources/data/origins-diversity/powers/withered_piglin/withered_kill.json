@@ -1,0 +1,36 @@
+{
+  "name": "Decay Art",
+  "description": "Upon killing a creature, burst their body into a rotten and withered cloud, infecting nearby creatures.",
+  "type": "origins:self_action_on_kill",
+  "cooldown": 100,
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:spawn_effect_cloud",
+        "radius": 6.0,
+        "wait_time": 40,
+        "effect": {
+          "id": "minecraft:wither",
+          "amplifier": 3,
+          "duration": 40
+        },
+        "duration": 100
+      },{
+        "type": "origins:area_of_effect",
+        "radius": 8,
+        "bientity_action": {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:apply_effect",
+            "effect": {
+              "id": "minecraft:wither",
+              "amplifier": 1,
+              "duration": 160
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Fading Embers",
+  "description": "The Overworld offers no sustenance to your withered form. Away from the Nether, your body slowly starves, gnawed by an unending hunger.",
+  "type": "origins:action_over_time",
+  "interval": 600,
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "id": "minecraft:hunger",
+      "duration": 300,
+      "amplifier": 1,
+      "show_particles": false,
+      "show_icon": false
+    }
+  },
+  "condition": {
+    "type": "origins:dimension",
+    "dimension": "minecraft:the_nether",
+    "inverted": true
+  }
+}

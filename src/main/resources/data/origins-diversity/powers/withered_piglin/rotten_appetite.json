@@ -1,0 +1,95 @@
+{
+  "name": "Rotten Appetite",
+  "description": "Only spoiled and cursed food can sustain your decayed body.",
+  "type": "origins:multiple",
+  "modifyrottenflesh": {
+    "type": "origins:modify_food",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:rotten_flesh"
+      }
+    },
+    "food_modifier": {
+      "operation": "set_base",
+      "amount": 5.0
+    },
+    "saturation_modifier": {
+      "operation": "set_base",
+      "amount": 5.0
+    },
+    "prevent_effects": true
+  },
+  "modifyspidereye": {
+    "type": "origins:modify_food",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:spider_eye"
+      }
+    },
+    "food_modifier": {
+      "operation": "set_base",
+      "amount": 6.0
+    },
+    "saturation_modifier": {
+      "operation": "set_base",
+      "amount": 4.0
+    },
+    "prevent_effects": true,
+    "always_edible": true
+  },
+  "modifypoisonouspotato": {
+    "type": "origins:modify_food",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:poisonous_potato"
+      }
+    },
+    "food_modifier": {
+      "operation": "set_base",
+      "amount": 9.0
+    },
+    "saturation_modifier": {
+      "operation": "set_base",
+      "amount": 3.0
+    },
+    "prevent_effects": true
+  },
+  "preventfood": {
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:ingredient",
+          "ingredient": [
+            {
+              "item": "minecraft:rotten_flesh"
+            },
+            {
+              "item": "minecraft:spider_eye"
+            },
+            {
+              "item": "minecraft:poisonous_potato"
+            },
+            {
+              "item": "minecraft:golden_apple"
+            },
+            {
+              "item": "minecraft:enchanted_golden_apple"
+            },
+            {
+              "item": "minecraft:golden_carrot"
+            }
+          ],
+          "inverted": true
+        },
+        {
+          "type": "origins:food"
+        }
+      ]
+    }
+  }
+}

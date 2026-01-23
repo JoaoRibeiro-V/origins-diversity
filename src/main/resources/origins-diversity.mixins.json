@@ -1,11 +1,15 @@
 {
-	"required": false,
-	"compatibilityLevel": "JAVA_21",
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
-	},
-	"package": ""
+  "required": true,
+  "compatibilityLevel": "JAVA_21",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "package": "com.origins_diversity.Mixins",
+  "mixins": [
+    "LivingEntityMixin",
+    "PiglinAiMixin"
+  ]
 }

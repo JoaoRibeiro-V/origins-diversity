@@ -1,11 +1,14 @@
 {
-	"required": true,
-	"package": "com.origins-diversity.mixin.client",
-	"compatibilityLevel": "JAVA_21",
-	"client": [
-		"ExampleClientMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+  "required": false,
+  "compatibilityLevel": "JAVA_21",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "package": "com.origins_diversity.Mixins",
+  "mixins": [
+    "LivingEntityMixin"
+  ]
 }

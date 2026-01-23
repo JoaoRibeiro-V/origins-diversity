@@ -1,0 +1,9 @@
+{
+  "name": "Unstable Flesh",
+  "description": "Your body struggles to hold itself together, healing is way less effective.",
+  "type": "origins:modify_healing",
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": -0.65
+  }
+}
