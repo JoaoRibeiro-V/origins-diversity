@@ -1,5 +1,5 @@
 {
   "hidden": true,
   "type": "origins:shader",
-  "shader": "minecraft:shaders/post/love.json"
+  "shader": "origins-diversity:post_effects/hellhound_vision.json"
 }

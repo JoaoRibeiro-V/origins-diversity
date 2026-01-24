@@ -1,0 +1,14 @@
+{
+  "icon": { "id": "minecraft:obsidian" },
+  "name": "Abysswyrm",
+  "description": "Born of the void, its body thrums with unstable energy.",
+  "powers": [
+    "origins-diversity:abysswyrm/void_venom",
+    "origins-diversity:abysswyrm/sharp_fangs",
+    "origins-diversity:abysswyrm/hit_swap",
+    "origins-diversity:abysswyrm/fragile_scales",
+    "origins-diversity:abysswyrm/phase",
+    "origins-diversity:abysswyrm/confusion_active"
+  ],
+  "impact": 3
+}

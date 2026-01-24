@@ -1,0 +1,30 @@
+{
+  "name": "Mirror of the Abyss",
+  "description": "The abyss reaches into flesh and mind, inverting the motions of intruders as if they were marionettes of the void itself.",
+  "type": "origins:active_self",
+  "cooldown": 750,
+  "entity_action": {
+    "type": "origins:area_of_effect",
+    "include_actor": true,
+    "radius": 8.0,
+    "shape": "sphere",
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "origins:grant_power",
+        "power": "origins-diversity:abysswyrm/confusion",
+        "source": "origins-diversity:abysswyrm_confusion_active"
+      }
+    }
+  },
+  "hud_render": {
+    "should_render": true,
+    "bar_index": 9,
+    "icon_index": 2,
+    "inverted": true,
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png"
+  },
+  "key": {
+    "key": "key.origins.secondary_active"
+  }
+}

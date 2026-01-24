@@ -23,7 +23,8 @@
     ]
   },
   "mixins": [
-    "origins-diversity.mixins.json"
+    "origins-diversity.mixins.json",
+    "origins-diversity.client.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.18.3",

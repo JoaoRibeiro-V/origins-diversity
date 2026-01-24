@@ -1,0 +1,12 @@
+{
+  "name": "Fragile Scales",
+  "description": "Your scales shimmer with void energy, but they are brittle. Projectiles tear through them with ease, leaving you exposed.",
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:projectile"
+  },
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": 0.75
+  }
+}

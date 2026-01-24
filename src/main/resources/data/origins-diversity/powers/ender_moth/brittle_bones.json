@@ -1,0 +1,11 @@
+{
+  "name": "Brittle Body",
+  "description": "§rYou have §creduced§r health.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:ender_moth_health",
+    "attribute": "minecraft:generic.max_health",
+    "amount": -6.0,
+    "operation": "ADD_VALUE"
+  }
+}

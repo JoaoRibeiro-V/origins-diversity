@@ -1,0 +1,13 @@
+{
+  "name": "Sharp Fangs",
+  "description": "Your void imbued fangs enhance your close-ranged attacks.",
+  "type": "origins:modify_damage_dealt",
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": 0.3
+  },
+  "damage_condition": {
+    "type": "origins:projectile",
+    "inverted": true
+  }
+}

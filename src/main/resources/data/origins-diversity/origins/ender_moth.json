@@ -1,0 +1,20 @@
+{
+  "name": "Ender Moth",
+  "description": "A fragile creature drawn irresistibly toward light in a realm that rejects it.",
+  "icon": {
+    "id": "minecraft:ender_eye"
+  },
+  "impact": 3,
+  "powers": [
+    "origins-diversity:ender_moth/etherealwings",
+    "origins-diversity:ender_moth/endborn_sight",
+    "origins-diversity:ender_moth/photophilic",
+    "origins-diversity:ender_moth/moth_to_the_flame",
+    "origins-diversity:ender_moth/excess_of_radiance",
+    "origins-diversity:ender_moth/when_light_breaks",
+    "origins-diversity:ender_moth/light_addiction",
+    "origins-diversity:ender_moth/brittle_bones",
+    "origins-diversity:ender_moth/height",
+    "origins-diversity:ender_moth/particles"
+  ]
+}

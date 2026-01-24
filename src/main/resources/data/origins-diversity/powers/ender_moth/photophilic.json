@@ -1,0 +1,38 @@
+{
+  "name": "Photophilic",
+  "description": "Under a high source of light, your body starts improving its capabilities.",
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effects": [
+          {
+            "id": "minecraft:haste",
+            "duration": 60,
+            "show_icon": false,
+            "show_particles": false
+          },
+          {
+            "id": "minecraft:regeneration",
+            "duration": 60,
+            "show_icon": false,
+            "show_particles": false
+          },
+          {
+            "id": "minecraft:speed",
+            "duration": 60,
+            "show_icon": false,
+            "show_particles": false
+          }
+        ]
+      }
+    ]
+  },
+  "condition": {
+    "type": "origins:brightness",
+    "comparison": ">=",
+    "compare_to": 0.75
+  }
+}

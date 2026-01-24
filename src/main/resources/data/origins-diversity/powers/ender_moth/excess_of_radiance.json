@@ -1,0 +1,15 @@
+{
+  "name": "Excess of Radiance",
+  "description": "Enemies glowing with shine deal reduced damage to you",
+  "type": "origins:modify_damage_taken",
+  "bientity_condition": {
+    "type": "origins:actor_condition",
+    "condition": {
+      "type": "origins:glowing"
+    }
+  },
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": -0.375
+  }
+}

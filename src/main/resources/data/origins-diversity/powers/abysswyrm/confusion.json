@@ -1,0 +1,49 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "confusedmovement": {
+    "type": "origins:modify_velocity",
+    "modifier": {
+      "amount": -2,
+      "operation": "multiply_total_multiplicative"
+    },
+    "axes": [
+      "x",
+      "z"
+    ]
+  },
+  "confusedcamera": {
+    "type": "origins:shader",
+    "shader": "minecraft:shaders/post/invert.json",
+    "toggleable": false
+  },
+  "removeondeath": {
+    "type": "origins:action_on_death",
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "origins:remove_power",
+        "power": "origins-diversity:abysswyrm/confusion"
+      }
+    }
+  },
+  "tauntedbar": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 6,
+    "start_value": 6,
+    "min_action": {
+      "type": "origins:remove_power",
+      "power": "origins-diversity:abysswyrm/confusion"
+    }
+  },
+  "tauntedtimer": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "origins-diversity:abysswyrm/confusion_tauntedbar",
+      "change": -1
+    }
+  }
+}

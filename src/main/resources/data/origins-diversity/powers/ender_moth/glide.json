@@ -1,0 +1,29 @@
+{
+  "type": "origins:multiple",
+  "falling": {
+    "type": "origins:modify_falling",
+    "velocity": 0.001,
+    "take_fall_damage": false
+  },
+  "wings": {
+    "type": "origins:elytra_flight",
+    "render_elytra": true,
+    "texture_location": "origins-diversity:textures/elytra_moth.png"
+  },
+  "preventwings": {
+    "type": "origins:prevent_elytra_flight"
+  },
+  "remover": {
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:remove_power",
+          "power": "origins-diversity:ender_moth/glide"
+        }
+      ]
+    },
+    "execute_chosen_when_orb": true
+  }
+}

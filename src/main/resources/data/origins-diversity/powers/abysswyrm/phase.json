@@ -1,0 +1,82 @@
+{
+  "name": "Unstable Body",
+  "description": "Enter an unknown state, the world itself rejects it, making you unable to interact with anything nor be interacted to.",
+  "type": "origins:multiple",
+  "preventdamage": {
+    "type": "origins:modify_damage_dealt",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    },
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": -1
+    }
+  },
+  "preventblockbreak": {
+    "type": "origins:modify_break_speed",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    },
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": -1
+    }
+  },
+  "screeneffect": {
+    "type": "origins:shader",
+    "shader": "minecraft:shaders/post/sobel.json",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    }
+  },
+  "phasebody": {
+    "type": "origins:model_color",
+    "alpha": 0.45,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    }
+  },
+  "invulnerable": {
+    "type": "origins:invulnerability",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    }
+  },
+  "isphasing": {
+    "type": "origins:phasing",
+    "blacklist": true,
+    "render_type": "blindness",
+    "view_distance": 5,
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "origins:unphasable"
+    },
+    "phase_down_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:sneaking"
+        },
+        {
+          "type": "origins:on_block"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    }
+  },
+  "phasingtoggle": {
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+      "key": "key.origins.primary_active"
+    }
+  }
+}

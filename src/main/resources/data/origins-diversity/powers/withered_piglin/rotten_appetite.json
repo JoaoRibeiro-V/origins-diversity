@@ -2,6 +2,44 @@
   "name": "Rotten Appetite",
   "description": "Only spoiled and cursed food can sustain your decayed body.",
   "type": "origins:multiple",
+  "modifyrottenfood": {
+    "type": "origins:modify_food",
+    "item_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "tag": "origins-diversity:rotten_food"
+          }
+        },{
+          "type": "origins:ingredient",
+          "ingredient": [
+            {
+              "item": "minecraft:rotten_flesh"
+            },
+            {
+              "item": "minecraft:spider_eye"
+            },
+            {
+              "item": "minecraft:poisonous_potato"
+            }
+          ],
+          "inverted": true
+        }
+      ]
+
+    },
+    "food_modifier": {
+      "operation": "multiply_base_additive",
+      "amount": 0.4
+    },
+    "saturation_modifier": {
+      "operation": "multiply_base_additive",
+      "amount": 0.3
+    },
+    "prevent_effects": true
+  },
   "modifyrottenflesh": {
     "type": "origins:modify_food",
     "item_condition": {

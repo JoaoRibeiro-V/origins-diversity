@@ -1,0 +1,23 @@
+{
+  "name": "Venom of the Void",
+  "description": "Your strikes carry the essence of the void, sapping the strength of all you touch. Even the strongest warriors falter under your bite",
+  "type": "origins:action_on_hit",
+  "cooldown": 300,
+  "bientity_action": {
+    "type": "origins:target_action",
+    "action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:weakness",
+        "duration": 200,
+        "amplifier": 0,
+        "show_icon": false
+      }
+    }
+  },
+  "bientity_condition": {
+    "type": "origins:distance",
+    "comparison": "<=",
+    "compare_to": 5
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "name": "Like a Moth to the Flame",
+  "description": "Hitting enemies directly looking at you has extra properties.",
+  "type": "origins:modify_damage_dealt",
+  "bientity_condition": {
+    "type": "origins:relative_rotation",
+    "actor_rotation": "head",
+    "target_rotation": "body",
+    "comparison": ">=",
+    "compare_to": -0.8
+  },
+  "target_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:chance",
+        "chance": 0.2,
+        "action": {
+          "type": "origins:apply_effect",
+          "effect": {
+            "id": "minecraft:glowing",
+            "duration": 400,
+            "show_particles": false,
+            "show_icon": false
+          }
+        }
+      },
+      {
+        "type": "origins:chance",
+        "chance": 0.05,
+        "action": {
+          "type": "origins:apply_effect",
+          "effect": {
+            "id": "minecraft:wither",
+            "duration": 80,
+            "amplifier": 1,
+            "show_particles": false,
+            "show_icon": false
+          }
+        }
+      },
+      {
+        "type": "origins:chance",
+        "chance": 0.125,
+        "action": {
+          "type": "origins:apply_effect",
+          "effect": {
+            "id": "minecraft:slowness",
+            "duration": 240,
+            "show_particles": false,
+            "show_icon": false
+          }
+        }
+      },
+      {
+        "type": "origins:chance",
+        "chance": 0.35,
+        "action": {
+          "type": "origins:add_velocity",
+          "y": 1.25
+        }
+      },
+      {
+        "type": "origins:chance",
+        "chance": 0.325,
+        "action": {
+          "type": "origins:set_on_fire",
+          "duration": 10
+        }
+      }
+    ]
+  },
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": 0.15
+  }
+}

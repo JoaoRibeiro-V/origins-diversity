@@ -1,0 +1,111 @@
+{
+  "name": "When Light Breaks",
+  "description": "When you are wreathed in light, striking those already burning may cause their flames to erupt in a violent burst of radiance.",
+  "type": "origins:action_on_hit",
+  "bientity_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:actor_condition",
+        "condition": {
+          "type": "origins:or",
+          "conditions": [
+            {
+              "type": "origins:glowing"
+            },
+            {
+              "type": "origins:brightness",
+              "comparison": ">=",
+              "compare_to": 0.95
+            }
+          ]
+        }
+      },
+      {
+        "type": "origins:target_condition",
+        "condition": {
+          "type": "origins:on_fire"
+        }
+      }
+    ]
+  },
+  "bientity_action": {
+    "type": "origins:chance",
+    "chance": 0.2,
+    "action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:actor_action",
+          "action": {
+            "type": "origins:explode",
+            "power": 3,
+            "damage_self": false,
+            "destruction_type": "KEEP",
+            "create_fire": true
+          }
+        },
+        {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:extinguish"
+              },
+              {
+                "type": "origins:spawn_particles",
+                "particle": "minecraft:gust",
+                "count": 2,
+                "speed": 0.0,
+                "force": true,
+                "spread": {
+                  "x": 0.75,
+                  "y": 0.25,
+                  "z": 0.75
+                }
+              },
+              {
+                "type": "origins:spawn_particles",
+                "particle": "minecraft:flash",
+                "count": 1,
+                "speed": 0.0,
+                "force": true,
+                "spread": {
+                  "x": 0.1,
+                  "y": 0.1,
+                  "z": 0.1
+                }
+              },
+              {
+                "type": "origins:spawn_particles",
+                "particle": "minecraft:crit",
+                "count": 10,
+                "speed": 0.1,
+                "offset_y": 0.8,
+                "spread": {
+                  "x": 0.8,
+                  "y": 0.6,
+                  "z": 0.8
+                }
+              },
+              {
+                "type": "origins:spawn_particles",
+                "particle": "minecraft:end_rod",
+                "count": 6,
+                "speed": 0.25,
+                "offset_y": 0.75,
+                "spread": {
+                  "x": 1.25,
+                  "y": 0.5,
+                  "z": 1.25
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "cooldown": 300
+}

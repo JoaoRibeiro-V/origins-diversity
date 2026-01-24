@@ -1,0 +1,24 @@
+{
+  "name": "Ethereal Wings",
+  "description": "Your wings are too fragile for flight, you can use your moth wings to glide in air.",
+  "type": "origins:multiple",
+  "controller": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:power",
+        "power": "origins-diversity:ender_moth/glide"
+      },
+      "if_action": {
+        "type": "origins:remove_power",
+        "power": "origins-diversity:ender_moth/glide"
+      },
+      "else_action": {
+        "type": "origins:grant_power",
+        "power": "origins-diversity:ender_moth/glide",
+        "source": "origins-diversity:ender_moth_controller"
+      }
+    }
+  }
+}

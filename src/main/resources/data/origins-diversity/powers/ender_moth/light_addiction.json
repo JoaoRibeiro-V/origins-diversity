@@ -1,0 +1,69 @@
+{
+  "name": "Light Addiction",
+  "description": "Without enough light your body functions start shutting down.",
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effects": [
+          {
+            "id": "minecraft:blindness",
+            "duration": 40,
+            "show_icon": false,
+            "show_particles": false
+          },
+          {
+            "id": "minecraft:mining_fatigue",
+            "duration": 40,
+            "show_icon": false,
+            "show_particles": false
+          },
+          {
+            "id": "minecraft:weakness",
+            "duration": 40,
+            "show_icon": false,
+            "show_particles": false
+          }
+        ]
+      }
+    ]
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:brightness",
+        "comparison": "<=",
+        "compare_to": 0.2
+      },
+      {
+        "type": "origins:or",
+        "inverted": true,
+        "conditions": [
+          {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+              "type": "origins:ingredient",
+              "ingredient": {
+                "tag": "origins-diversity:light_source"
+              }
+            }
+          },
+          {
+            "type": "origins:equipped_item",
+            "equipment_slot": "offhand",
+            "item_condition": {
+              "type": "origins:ingredient",
+              "ingredient": {
+                "tag": "origins-diversity:light_source"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
