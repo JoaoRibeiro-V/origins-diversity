@@ -1,0 +1,61 @@
+{
+  "name": "Strict Diet",
+  "description": "Your body no longer recognizes earthly sustenance.",
+  "type": "origins:multiple",
+  "chorusfruits": {
+    "type": "origins:modify_food",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:chorus_fruit"
+      }
+    },
+    "always_edible": false,
+    "nutrition_modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": 1.25
+    },
+    "food_modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": 1.25
+    },
+    "saturation_modifier": {
+      "operation": "set_total",
+      "amount": 9.0
+    }
+  },
+  "strict": {
+    "name": "Strict Diet",
+    "description": "Your body no longer recognizes earthly sustenance.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:food"
+        },
+        {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "item": "minecraft:chorus_fruit"
+          },
+          "inverted": true
+        }
+      ]
+    }
+  },
+  "preventeatingwhenfull": {
+    "name": "Full",
+    "description": "You are full!",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {"item": "minecraft:chorus_fruit"}
+    },
+    "condition": {
+      "type": "origins:food_level",
+      "comparison": ">=",
+      "compare_to": 20
+    }
+  }
+}

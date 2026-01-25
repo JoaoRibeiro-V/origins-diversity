@@ -4,8 +4,8 @@
   "type": "origins:self_action_when_hit",
   "entity_action": {
     "type": "origins:random_teleport",
-    "area_width": 9,
-    "area_height": 3,
+    "area_width": 2,
+    "area_height": 2,
     "success_action": {
       "type": "origins:and",
       "actions": [

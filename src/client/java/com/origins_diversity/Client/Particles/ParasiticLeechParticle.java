@@ -1,51 +1,69 @@
 package com.origins_diversity.Client.Particles;
+
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.*;
 import net.minecraft.core.particles.SimpleParticleType;
 import org.jetbrains.annotations.NotNull;
 
-public class OwlFeatherParticle extends TextureSheetParticle {
+public class ParasiticLeechParticle extends TextureSheetParticle {
+
     private final float spinSpeed;
     private final float initialSize;
+    private final float pulseOffset;
+    private final SpriteSet sprites;
 
-    protected OwlFeatherParticle(
+    protected ParasiticLeechParticle(
             ClientLevel level,
             double x, double y, double z,
-            double vx, double vy, double vz
+            double vx, double vy, double vz,
+            SpriteSet sprites
     ) {
         super(level, x, y, z, vx, vy, vz);
+        this.sprites = sprites;
+        this.gravity = 0.0f;
+        this.lifetime = 40 + this.random.nextInt(-30,35);
 
-        this.gravity = 0.03f;
-        this.lifetime = 100 + this.random.nextInt(-70,80);
-        this.setSize(0.08f, 0.08f);
-        this.quadSize = 0.135f * Math.max(this.random.nextFloat(), 0.6f);
+        this.quadSize = 0.075f * (0.7f + this.random.nextFloat() * 0.72f);
         this.initialSize = this.quadSize;
         this.roll = random.nextFloat() * 360f;
         this.oRoll = this.roll;
-        this.spinSpeed = (this.random.nextFloat() - 0.5f) * 0.2f;
+        this.spinSpeed = (this.random.nextFloat() - 0.5f) * 0.05f;
+
+        this.pulseOffset = random.nextFloat() * 6.67f;
+
+        // Slow initial drift
+        this.xd *= 0.15;
+        this.yd *= 0.15;
+        this.zd *= 0.15;
+
+        this.setSpriteFromAge(this.sprites);
     }
 
     @Override
     public void tick() {
         super.tick();
 
-        // Save previous rotation
-        this.oRoll = this.roll;
+        this.setSpriteFromAge(this.sprites);
 
-        // Apply spin
+        this.oRoll = this.roll;
         this.roll += this.spinSpeed;
 
-        // Feather sway
-        double sway = Math.sin(this.age * 0.15) * 0.01;
-        this.xd += sway;
+        float life = (float) this.age / (float) this.lifetime;
 
-        // Air drag
-        this.xd *= 0.96;
-        this.zd *= 0.96;
+        // Subtle organic pulse
+        float pulse = 1.0f + 0.08f * (float)Math.sin(this.age * 0.35f + pulseOffset);
+        this.quadSize = this.initialSize * pulse;
 
-        // Tween Out
-        float lifeProgress = (float) this.age / (float) this.lifetime;
-        this.quadSize = this.initialSize * (1.0f - lifeProgress);
+        // Collapse inward near death
+        if (life > 0.75f) {
+            float collapse = 1.0f - ((life - 0.75f) / 0.25f);
+            this.quadSize *= collapse;
+        }
+
+        // Slight inward drag
+        this.xd *= 0.92;
+        this.yd *= 0.92;
+        this.zd *= 0.92;
     }
 
     @Override
@@ -74,11 +92,8 @@ public class OwlFeatherParticle extends TextureSheetParticle {
                 double x, double y, double z,
                 double vx, double vy, double vz
         ) {
-            OwlFeatherParticle particle =
-                    new OwlFeatherParticle(level, x, y, z, vx, vy, vz);
-            particle.pickSprite(this.sprites);
-            return particle;
+            return new ParasiticLeechParticle(level, x, y, z, vx, vy, vz, sprites);
         }
     }
-
 }
+

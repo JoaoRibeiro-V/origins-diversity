@@ -1,6 +1,7 @@
 package com.origins_diversity.Client;
 
 import com.origins_diversity.Client.Particles.OwlFeatherParticle;
+import com.origins_diversity.Client.Particles.ParasiticLeechParticle;
 import com.origins_diversity.Extra.Particles;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.minecraft.core.particles.SimpleParticleType;
@@ -25,6 +26,7 @@ public class ParticleFactories {
     // === FACTORY DEFINITIONS ===
     static {
         register(Particles.OWL_FEATHER, OwlFeatherParticle.Factory::new);
+        register(Particles.PARASITIC_LEECH, ParasiticLeechParticle.Factory::new);
     }
 
     // === CLIENT REGISTRATION LOOP ===

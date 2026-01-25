@@ -1,0 +1,11 @@
+{
+  "name": "Brittle Body",
+  "description": "§rYou have §creduced§r health.",
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:chorus_leech_health",
+    "attribute": "minecraft:generic.max_health",
+    "amount": -8.0,
+    "operation": "ADD_VALUE"
+  }
+}

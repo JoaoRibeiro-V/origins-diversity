@@ -1,0 +1,69 @@
+{
+  "name": "Chorus Crafter",
+  "description": "You can force mundane materials to resonate with the End, transmuting them into chorus fruits, chorus flowers, and end stone.",
+  "type": "origins:multiple",
+  "endstonecraft": {
+    "type": "origins:recipe",
+    "recipe": {
+      "id": "origins-diversity:chorus_leech/end_stone_crafting",
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:stone"
+        }
+      ],
+      "result": {
+        "id": "minecraft:end_stone"
+      }
+    }
+  },
+  "chorusflowercraft": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "id": "origins-diversity:chorus_leech/chorus_flower_crafting",
+      "pattern": [
+        " # ",
+        "#F#",
+        " # "
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:purpur_block"
+        },
+        "F": {
+          "item": "minecraft:chorus_fruit"
+        }
+      },
+      "result": {
+        "id": "minecraft:chorus_flower"
+      }
+    }
+  },
+  "chorusfruitcraft": {
+    "type": "origins:recipe",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "id": "origins-diversity:chorus_leech/chorus_fruit_crafting",
+      "pattern": [
+        " P ",
+        "SAS",
+        " P "
+      ],
+      "key": {
+        "S": {
+          "item": "minecraft:sugar"
+        },
+        "A": {
+          "item": "minecraft:apple"
+        },
+        "P": {
+          "item": "minecraft:purple_dye"
+        }
+      },
+      "result": {
+        "id": "minecraft:chorus_fruit"
+      }
+    }
+  }
+}

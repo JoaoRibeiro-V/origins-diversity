@@ -23,6 +23,8 @@ public class Particles {
     // PARTICLE DEFINITIONS
     public static final SimpleParticleType OWL_FEATHER =
             create("owl_feather");
+    public static final SimpleParticleType PARASITIC_LEECH =
+            create("parasitic_leech");
 
     // COMMON REGISTRATION
     public static void register() {

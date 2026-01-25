@@ -1,0 +1,111 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "leecheffect1": {
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": -0.15
+    },
+    "target_condition": {
+      "type": "origins:origin",
+      "origin": "origins-diversity:chorus_leech"
+    }
+  },
+  "leecheffect2": {
+    "type": "origins:attacker_action_when_hit",
+    "cooldown": 100,
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:origin",
+        "origin": "origins-diversity:chorus_leech"
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:feed",
+            "food": 3,
+            "nutrition": 3,
+            "saturation": 1
+          },
+          {
+            "type": "origins:heal",
+            "amount": 2
+          }
+        ]
+      }
+    },
+    "damage_condition": {
+      "type": "origins:projectile",
+      "inverted": true
+    }
+  },
+  "particles1": {
+    "type": "origins:particle",
+    "particle": "origins-diversity:parasitic_leech",
+    "frequency": 6,
+    "visible_in_first_person": true,
+    "spread": {
+      "x": 0.3,
+      "y": 0.5,
+      "z": 0.3
+    },
+    "count": 1,
+    "offset_y": 0
+  },
+  "particles2": {
+    "type": "origins:particle",
+    "particle": "origins-diversity:parasitic_leech",
+    "frequency": 30,
+    "visible_in_first_person": true,
+    "spread": {
+      "x": 0.4,
+      "y": 0.5,
+      "z": 0.4
+    },
+    "count": 2,
+    "offset_y": 0
+  },
+  "vulnerablefire": {
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+      "type": "origins:remove_power",
+      "power": "origins-diversity:chorus_leech/parasitic_leech"
+    },
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "minecraft:is_fire"
+    }
+  },
+  "removeondeath": {
+    "type": "origins:action_on_death",
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "origins:remove_power",
+        "power": "origins-diversity:chorus_leech/parasitic_leech"
+      }
+    }
+  },
+  "bar": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 25,
+    "start_value": 25,
+    "min_action": {
+      "type": "origins:remove_power",
+      "power": "origins-diversity:chorus_leech/parasitic_leech"
+    }
+  },
+  "timer": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "origins-diversity:chorus_leech/parasitic_leech_bar",
+      "change": -1
+    }
+  }
+}

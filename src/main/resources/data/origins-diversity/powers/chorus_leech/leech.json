@@ -1,0 +1,53 @@
+{
+  "name": "Parasitic Leech",
+  "description": "Your strikes may infest a target with a parasitic echo.\nLeeched enemies deal reduced damage to you and feed you whenever you strike them.\nThis parasitic leech is vulnerable to heat, removing the parasite whenever the target is set on fire.\n\nThose claimed by the parasite cannot hide.",
+  "type": "origins:multiple",
+  "healonhitnormal": {
+    "type": "origins:self_action_on_hit",
+    "entity_action": {
+      "type": "origins:chance",
+      "action": {
+        "type": "origins:heal",
+        "amount": 1
+      },
+      "chance": 0.2
+    },
+    "cooldown": 40,
+    "damage_condition": {
+      "type": "origins:projectile",
+      "inverted": true
+    }
+  },
+  "highlightleeched": {
+    "type": "origins:entity_glow",
+    "entity_condition": {
+      "type": "origins:power",
+      "power": "origins-diversity:chorus_leech/parasitic_leech"
+    },
+    "bientity_condition": {
+      "type": "origins:distance",
+      "comparison": "<=",
+      "compare_to": 15
+    },
+    "red": 1.0,
+    "blue": 0.1,
+    "green": 0.15
+  },
+  "procleech": {
+    "type": "origins:target_action_on_hit",
+    "entity_action": {
+      "type": "origins:chance",
+      "chance": 0.2,
+      "action": {
+        "type": "origins:grant_power",
+        "power": "origins-diversity:chorus_leech/parasitic_leech",
+        "source": "origins-diversity:chorus_leech_parasitic_leech_hit"
+      }
+    },
+    "cooldown": 60,
+    "damage_condition": {
+      "type": "origins:projectile",
+      "inverted": true
+    }
+  }
+}

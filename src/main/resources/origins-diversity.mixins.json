@@ -10,6 +10,7 @@
   "package": "com.origins_diversity.Mixins",
   "mixins": [
     "LivingEntityMixin",
-    "PiglinAiMixin"
+    "PiglinAiMixin",
+    "ChorusFruitMixin"
   ]
 }
