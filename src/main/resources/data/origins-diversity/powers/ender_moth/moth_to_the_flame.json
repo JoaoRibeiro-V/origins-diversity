@@ -57,7 +57,7 @@
         "chance": 0.35,
         "action": {
           "type": "origins:add_velocity",
-          "y": 1.25
+          "y": 0.375
         }
       },
       {

@@ -1,0 +1,40 @@
+{
+  "name": "Parasite Infection",
+  "description": "Chorus Leeches do not fight alone. They cling, burrow, and feed — turning allies into vessels.\nThose who you infect are granted several benefits, but once they are on fire, the link breaks.",
+  "type": "origins:multiple",
+  "invisibility": {
+    "type": "origins:model_color",
+    "alpha": 0.1,
+    "condition": {
+      "type": "origins:riding"
+    }
+  },
+  "mount": {
+    "type": "origins:action_on_entity_use",
+    "bientity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:mount"
+        },
+        {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:grant_power",
+            "power": "origins-diversity:chorus_leech/parasite",
+            "source": "origins-diversity:chorus_leech_parasite_infection"
+          }
+        }
+      ]
+    },
+    "bientity_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:attacker",
+          "inverted": true
+        }
+      ]
+    }
+  }
+}

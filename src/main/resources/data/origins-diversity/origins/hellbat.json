@@ -21,6 +21,7 @@
     "origins-diversity:hellbat/fire_wings",
     "origins-diversity:hellbat/fragile",
     "origins-diversity:hellbat/squeal",
-    "origins-diversity:hellbat/jump_height"
+    "origins-diversity:hellbat/jump_height",
+    "origins-diversity:hellbat/fall_damage"
   ]
 }

@@ -9,8 +9,8 @@
       "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
     },
     "modifier": {
-      "operation": "multiply_total_multiplicative",
-      "amount": -1
+      "operation": "set_total",
+      "amount": 0
     }
   },
   "preventblockbreak": {

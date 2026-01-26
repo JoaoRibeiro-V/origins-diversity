@@ -8,11 +8,15 @@
     "origins-diversity:chorus_leech/erratic_blink",
     "origins-diversity:chorus_leech/leech_name",
     "origins-diversity:chorus_leech/leech",
+    "origins-diversity:chorus_leech/parasite_infection",
     "origins-diversity:chorus_leech/end_crafting",
     "origins-diversity:chorus_leech/strict_diet",
     "origins-diversity:chorus_leech/brittle_body",
     "origins-diversity:chorus_leech/fire_vulnerability",
-    "origins-diversity:chorus_leech/water_burn"
+    "origins-diversity:chorus_leech/water_burn",
+    "origins-diversity:chorus_leech/height",
+    "origins-diversity:chorus_leech/jump_height",
+    "origins-diversity:chorus_leech/fall_damage"
   ],
   "impact": 3
 }

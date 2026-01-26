@@ -96,6 +96,7 @@
     "prevent_effects": true
   },
   "preventfood": {
+    "name": "Rotten Appetite",
     "type": "origins:prevent_item_use",
     "item_condition": {
       "type": "origins:and",

@@ -1,0 +1,125 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "leecheffect1": {
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": 0.125
+    }
+  },
+  "leecheffect2": {
+    "type": "origins:attribute",
+    "modifiers": [
+      {
+        "id": "origins-diversity:parasite_atckspeed",
+        "attribute": "minecraft:generic.attack_speed",
+        "amount": 0.175,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      },
+      {
+        "id": "origins-diversity:parasite_jump_fall",
+        "attribute": "minecraft:generic.safe_fall_distance",
+        "amount": 2.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "id": "origins-diversity:parasite_health",
+        "attribute": "minecraft:generic.max_health",
+        "amount": 2.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "id": "origins-diversity:parasite_speed",
+        "attribute": "minecraft:generic.movement_speed",
+        "amount": 0.075,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      }
+    ]
+  },
+  "vulnerablefire": {
+    "type": "origins:action_when_damage_taken",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:remove_power",
+          "power": "origins-diversity:chorus_leech/parasite"
+        },
+        {
+          "type": "origins:passenger_action",
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:dismount"
+              },
+              {
+                "type": "origins:apply_effect",
+                "effect": {
+                  "id": "minecraft:hunger",
+                  "duration": 100,
+                  "amplifier": 1
+                }
+              },
+              {
+                "type": "origins:apply_effect",
+                "effect": {
+                  "id": "minecraft:weakness",
+                  "duration": 40,
+                  "amplifier": 1
+                }
+              },
+              {
+                "type": "origins:apply_effect",
+                "effect": {
+                  "id": "minecraft:nausea",
+                  "duration": 200,
+                  "amplifier": 1
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "damage_condition": {
+      "type": "origins:in_tag",
+      "tag": "minecraft:is_fire"
+    }
+  },
+  "removeondeath": {
+    "type": "origins:action_on_death",
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "origins:remove_power",
+        "power": "origins-diversity:chorus_leech/parasite"
+      }
+    }
+  },
+  "controller": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:passenger",
+        "bientity_condition": {
+          "type": "origins:actor_condition",
+          "condition": {
+            "type": "origins:origin",
+            "origin": "origins-diversity:chorus_leech"
+          }
+        }
+      },
+      "if_action": {
+        "type": "origins:add_xp",
+        "points": 1
+      },
+      "else_action": {
+        "type": "origins:remove_power",
+        "power": "origins-diversity:chorus_leech/parasite"
+      }
+    }
+  }
+}

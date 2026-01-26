@@ -1,0 +1,10 @@
+{
+  "hidden": true,
+  "type": "origins:attribute",
+  "modifier": {
+    "id": "origins-diversity:chorus_jump_fall",
+    "attribute": "minecraft:generic.safe_fall_distance",
+    "amount": 1.0,
+    "operation": "ADD_VALUE"
+  }
+}

@@ -5,8 +5,8 @@
   "entity_action": {
     "type": "origins:random_teleport",
     "area_width": 12,
-    "area_height": 4,
-    "heightmap": "motion_blocking"
+    "area_height": 2,
+    "heightmap": "world_surface"
   },
   "cooldown": 300,
   "hud_render": {
