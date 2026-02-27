@@ -14,8 +14,7 @@
   },
   "confusedcamera": {
     "type": "origins:shader",
-    "shader": "minecraft:shaders/post/invert.json",
-    "toggleable": false
+    "shader": "minecraft:shaders/post/invert.json"
   },
   "removeondeath": {
     "type": "origins:action_on_death",

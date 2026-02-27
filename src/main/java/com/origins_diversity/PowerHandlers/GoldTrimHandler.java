@@ -21,10 +21,7 @@ public class GoldTrimHandler {
 
         CompoundTag myTags = nbt.contains(ROOT_KEY) ? nbt.getCompound(ROOT_KEY) : new CompoundTag();
 
-        boolean hasGoldTrim =
-                trim != null
-                        &&
-                        trim.material().is(TrimMaterials.GOLD);
+        boolean hasGoldTrim =  trim != null && trim.material().is(TrimMaterials.GOLD);
         if (hasGoldTrim) {
             myTags.putBoolean("has_gold_trim", true);
         } else {

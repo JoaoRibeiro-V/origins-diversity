@@ -32,9 +32,80 @@
       "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
     }
   },
+  "phaseentities": {
+    "name": "Phase",
+    "type": "origins:prevent_entity_collision",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    }
+  },
+  "preventpickup": {
+    "name": "Phase",
+    "type": "origins:prevent_item_pickup",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    }
+  },
+  "preventblockuse": {
+    "name": "Phase",
+    "type": "origins:prevent_block_use",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    }
+  },
+  "preventbeingused": {
+    "name": "Phase",
+    "type": "origins:prevent_being_used",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    }
+  },
+  "preventevent": {
+    "name": "Phase",
+    "type": "origins:prevent_game_event",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    }
+  },
+  "preventuse": {
+    "name": "Phase",
+    "type": "origins:prevent_entity_use",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    }
+  },
+  "preventblockplace": {
+    "name": "Phase",
+    "type": "origins:prevent_block_place",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    }
+  },
+  "preventitemuse": {
+    "name": "Phase",
+    "type": "origins:prevent_item_use",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    }
+  },
+  "disableregen": {
+    "type": "origins:disable_regen",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:abysswyrm/phase_phasingtoggle"
+    }
+  },
   "phasebody": {
     "type": "origins:model_color",
-    "alpha": 0.45,
+    "alpha": 0.32,
     "condition": {
       "type": "origins:power_active",
       "power": "origins-diversity:abysswyrm/phase_phasingtoggle"

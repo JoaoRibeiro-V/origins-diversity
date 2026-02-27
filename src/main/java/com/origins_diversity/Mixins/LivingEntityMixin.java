@@ -1,5 +1,6 @@
 package com.origins_diversity.Mixins;
 
+import com.origins_diversity.Extra.OriginsUtil;
 import com.origins_diversity.PowerHandlers.GoldTrimHandler;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;

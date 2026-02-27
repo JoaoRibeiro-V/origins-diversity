@@ -1,0 +1,12 @@
+{
+  "name": "Spirit Tails",
+  "description": "You manifest tails made of willpower and flames, representing ur current strength based on experience.",
+  "type": "origins:resource",
+  "min": 1,
+  "max": 9,
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins-diversity:textures/gui/resource_bar_kitsune_tails.png",
+    "bar_index": 0
+  }
+}

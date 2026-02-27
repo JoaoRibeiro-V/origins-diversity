@@ -2,7 +2,7 @@
   "name": "Decay Art",
   "description": "Upon killing a creature, burst their body into a rotten and withered cloud, infecting nearby creatures.",
   "type": "origins:self_action_on_kill",
-  "cooldown": 100,
+  "cooldown": 400,
   "entity_action": {
     "type": "origins:and",
     "actions": [

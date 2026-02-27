@@ -5,7 +5,7 @@
   "cooldown": 750,
   "entity_action": {
     "type": "origins:area_of_effect",
-    "include_actor": true,
+    "include_actor": false,
     "radius": 8.0,
     "shape": "sphere",
     "bientity_action": {

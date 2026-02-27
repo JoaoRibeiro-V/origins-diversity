@@ -1,0 +1,5 @@
+{
+  "type": "origins:simple",
+  "name": "Will'o Wisp",
+  "description": "Upon striking ur foes, have a chance to inflict spiritual flames that cannot be extinguished upon them, weakening their attacks, but increasing their resistances.\n- This flame inflicts damage based on their max health.\n- Increase chances of inflicting Will'o Wisp depending on the amount of Spiritual Wisps you currently have."
+}

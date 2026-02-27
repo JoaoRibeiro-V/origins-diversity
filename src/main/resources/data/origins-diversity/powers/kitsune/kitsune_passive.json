@@ -1,0 +1,54 @@
+{
+  "hidden": false,
+  "name": "Fox Spirits",
+  "description": "You can make spirit tails out of 25 experience levels. Lose one of your wisps upon death.",
+  "type": "origins:multiple",
+  "loseondeath": {
+    "type": "origins:action_on_death",
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "origins:change_resource",
+        "change": -1,
+        "operation": "add",
+        "resource": "origins-diversity:kitsune/kitsune_tails"
+      }
+    }
+  },
+  "basehp": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:kitsune_hearts",
+      "attribute": "minecraft:generic.max_health",
+      "amount": -10.0,
+      "operation": "ADD_VALUE"
+    }
+  },
+  "active": {
+    "hidden": false,
+    "name": "Spirit Generation",
+    "description": "You can make spirit tails out of 25 experience levels.",
+    "type": "origins:active_self",
+    "condition": {
+      "type": "origins:xp_levels",
+      "comparison": ">=",
+      "compare_to": 25
+    },
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:add_xp",
+          "levels": -25
+        },
+        {
+          "type": "origins:change_resource",
+          "change": 1,
+          "operation": "add",
+          "resource": "origins-diversity:kitsune/kitsune_tails"
+        }
+      ]
+    },
+    "cooldown": 200
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "icon": { "id": "minecraft:red_dye" },
+  "name": "Kitsune",
+  "description": "A fox lineage displaying abnormal intelligence and adaptation.",
+  "powers": [
+    "origins-diversity:kitsune/kitsune_tails",
+    "origins-diversity:kitsune/kitsune_passive",
+    "origins-diversity:kitsune/kitsune_tailhp"
+  ],
+  "impact": 3
+}
