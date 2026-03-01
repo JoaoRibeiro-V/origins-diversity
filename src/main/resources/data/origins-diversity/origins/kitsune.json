@@ -1,11 +1,16 @@
 {
   "icon": { "id": "minecraft:red_dye" },
   "name": "Kitsune",
-  "description": "A fox lineage displaying abnormal intelligence and adaptation.",
+  "description": "A spiritual fox lineage displaying abnormal intelligence.",
   "powers": [
+    "origins-diversity:kitsune/high_intelligence",
+    "origins-diversity:kitsune/exhaustion",
     "origins-diversity:kitsune/kitsune_tails",
     "origins-diversity:kitsune/kitsune_passive",
-    "origins-diversity:kitsune/kitsune_tailhp"
+    "origins-diversity:kitsune/illusory_realm",
+    "origins-diversity:kitsune/kitsune_tailhp",
+    "origins-diversity:kitsune/willo_wisp",
+    "origins-diversity:kitsune/willo_wisp_cooldown"
   ],
   "impact": 3
 }

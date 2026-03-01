@@ -1,0 +1,61 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "particle1": {
+    "type": "origins:particle",
+    "particle": "minecraft:soul",
+    "frequency": 40,
+    "count": 2
+  },
+  "preventrender": {
+    "type": "origins:prevent_entity_render",
+    "bientity_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:equal",
+          "inverted": true
+        },
+        {
+          "type": "origins:target_condition",
+          "condition": {
+            "type": "origins:sprinting",
+            "inverted": true
+          }
+        },
+        {
+          "type": "origins:target_condition",
+          "condition": {
+            "type": "origins:origin",
+            "origin": "origins-diversity:kitsune"
+          }
+        }
+      ]
+
+    }
+  },
+  "bar": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 9,
+    "start_value": 9,
+    "min_action": {
+      "type": "origins:remove_power",
+      "power": "origins-diversity:kitsune/illusion_affect"
+    }
+  },
+  "timer": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "origins-diversity:kitsune/illusion_affect_bar",
+          "change": -1
+        }
+      ]
+    }
+  }
+}

@@ -9,6 +9,7 @@
   },
   "package": "com.origins_diversity.mixin",
   "mixins": [
-    "CameraMixin"
+    "CameraMixin",
+    "LivingEntityRendererMixin"
   ]
 }

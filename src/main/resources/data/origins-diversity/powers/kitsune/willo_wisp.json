@@ -1,5 +1,311 @@
 {
-  "type": "origins:simple",
+  "type": "origins:action_on_hit",
   "name": "Will'o Wisp",
-  "description": "Upon striking ur foes, have a chance to inflict spiritual flames that cannot be extinguished upon them, weakening their attacks, but increasing their resistances.\n- This flame inflicts damage based on their max health.\n- Increase chances of inflicting Will'o Wisp depending on the amount of Spiritual Wisps you currently have."
+  "description": "Upon striking ur foes, have a chance to inflict spiritual flames that cannot be extinguished upon them, weakening their attacks, but increasing their resistances.\n- This flame inflicts damage based on their max health.\n- Increase chances of inflicting Will'o Wisp depending on the amount of Spiritual Wisps you currently have.",
+  "cooldown": 40,
+  "bientity_action": {
+    "type": "origins:if_else_list",
+    "actions": [
+      {
+        "condition": {
+          "type": "origins:actor_condition",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "origins-diversity:kitsune/kitsune_tails",
+            "comparison": "==",
+            "compare_to": 2
+          }
+        },
+        "action": {
+          "type": "origins:chance",
+          "chance": 0.05,
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:target_action",
+                "action": {
+                  "type": "origins:grant_power",
+                  "power": "origins-diversity:kitsune/willo_wisp_target",
+                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                }
+              },
+              {
+                "type": "origins:actor_action",
+                "action": {
+                  "type": "origins:trigger_cooldown",
+                  "power": "origins-diversity:kitsune/willo_wisp_cooldown"
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      {
+        "condition": {
+          "type": "origins:actor_condition",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "origins-diversity:kitsune/kitsune_tails",
+            "comparison": "==",
+            "compare_to": 3
+          }
+        },
+        "action": {
+          "type": "origins:chance",
+          "chance": 0.075,
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:target_action",
+                "action": {
+                  "type": "origins:grant_power",
+                  "power": "origins-diversity:kitsune/willo_wisp_target",
+                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                }
+              },
+              {
+                "type": "origins:actor_action",
+                "action": {
+                  "type": "origins:trigger_cooldown",
+                  "power": "origins-diversity:kitsune/willo_wisp_cooldown"
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      {
+        "condition": {
+          "type": "origins:actor_condition",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "origins-diversity:kitsune/kitsune_tails",
+            "comparison": "==",
+            "compare_to": 4
+          }
+        },
+        "action": {
+          "type": "origins:chance",
+          "chance": 0.10,
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:target_action",
+                "action": {
+                  "type": "origins:grant_power",
+                  "power": "origins-diversity:kitsune/willo_wisp_target",
+                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                }
+              },
+              {
+                "type": "origins:actor_action",
+                "action": {
+                  "type": "origins:trigger_cooldown",
+                  "power": "origins-diversity:kitsune/willo_wisp_cooldown"
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      {
+        "condition": {
+          "type": "origins:actor_condition",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "origins-diversity:kitsune/kitsune_tails",
+            "comparison": "==",
+            "compare_to": 5
+          }
+        },
+        "action": {
+          "type": "origins:chance",
+          "chance": 0.1175,
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:target_action",
+                "action": {
+                  "type": "origins:grant_power",
+                  "power": "origins-diversity:kitsune/willo_wisp_target",
+                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                }
+              },
+              {
+                "type": "origins:actor_action",
+                "action": {
+                  "type": "origins:trigger_cooldown",
+                  "power": "origins-diversity:kitsune/willo_wisp_cooldown"
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      {
+        "condition": {
+          "type": "origins:actor_condition",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "origins-diversity:kitsune/kitsune_tails",
+            "comparison": "==",
+            "compare_to": 6
+          }
+        },
+        "action": {
+          "type": "origins:chance",
+          "chance": 0.125,
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:target_action",
+                "action": {
+                  "type": "origins:grant_power",
+                  "power": "origins-diversity:kitsune/willo_wisp_target",
+                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                }
+              },
+              {
+                "type": "origins:actor_action",
+                "action": {
+                  "type": "origins:trigger_cooldown",
+                  "power": "origins-diversity:kitsune/willo_wisp_cooldown"
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      {
+        "condition": {
+          "type": "origins:actor_condition",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "origins-diversity:kitsune/kitsune_tails",
+            "comparison": "==",
+            "compare_to": 7
+          }
+        },
+        "action": {
+          "type": "origins:chance",
+          "chance": 0.1375,
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:target_action",
+                "action": {
+                  "type": "origins:grant_power",
+                  "power": "origins-diversity:kitsune/willo_wisp_target",
+                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                }
+              },
+              {
+                "type": "origins:actor_action",
+                "action": {
+                  "type": "origins:trigger_cooldown",
+                  "power": "origins-diversity:kitsune/willo_wisp_cooldown"
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      {
+        "condition": {
+          "type": "origins:actor_condition",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "origins-diversity:kitsune/kitsune_tails",
+            "comparison": "==",
+            "compare_to": 8
+          }
+        },
+        "action": {
+          "type": "origins:chance",
+          "chance": 0.15,
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:target_action",
+                "action": {
+                  "type": "origins:grant_power",
+                  "power": "origins-diversity:kitsune/willo_wisp_target",
+                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                }
+              },
+              {
+                "type": "origins:actor_action",
+                "action": {
+                  "type": "origins:trigger_cooldown",
+                  "power": "origins-diversity:kitsune/willo_wisp_cooldown"
+                }
+              }
+            ]
+          }
+        }
+      },
+
+      {
+        "condition": {
+          "type": "origins:actor_condition",
+          "condition": {
+            "type": "origins:resource",
+            "resource": "origins-diversity:kitsune/kitsune_tails",
+            "comparison": "==",
+            "compare_to": 9
+          }
+        },
+        "action": {
+          "type": "origins:chance",
+          "chance": 0.175,
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:target_action",
+                "action": {
+                  "type": "origins:grant_power",
+                  "power": "origins-diversity:kitsune/willo_wisp_target",
+                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                }
+              },
+              {
+                "type": "origins:actor_action",
+                "action": {
+                  "type": "origins:trigger_cooldown",
+                  "power": "origins-diversity:kitsune/willo_wisp_cooldown"
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "damage_condition": {
+    "type": "origins:projectile",
+    "inverted": true
+  },
+  "bientity_condition": {
+    "type": "origins:actor_condition",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "origins-diversity:kitsune/willo_wisp_cooldown",
+      "comparison": "<=",
+      "compare_to": 0
+    }
+  }
 }

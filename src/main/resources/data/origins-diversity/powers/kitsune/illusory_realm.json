@@ -1,0 +1,26 @@
+{
+  "name": "Trickster",
+  "description": "Apply an illusion to everyone around you, making them not able to see you while not sprinting and constantly see fake decoys.",
+  "type": "origins:active_self",
+  "cooldown": 1000,
+  "entity_action": {
+    "type": "origins:area_of_effect",
+    "radius": 6,
+    "shape": "sphere",
+    "bientity_action": {
+      "type": "origins:target_action",
+      "action": {
+        "type": "origins:grant_power",
+        "power": "origins-diversity:kitsune/illusion_affect",
+        "source": "origins-diversity:kitsune_illusory_realm_proc"
+      }
+    }
+  },
+  "hud_render": {
+    "should_render": true,
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+    "bar_index": 0,
+    "icon_index": 2,
+    "order": 2
+  }
+}
