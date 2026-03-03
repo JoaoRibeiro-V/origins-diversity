@@ -26,29 +26,54 @@
   },
   "active": {
     "hidden": false,
-    "name": "Spirit Generation",
-    "description": "You can make spirit tails out of 25 experience levels.",
+    "name": "Spirit Manipulation",
+    "description": "You can shapeshift into a fox.\nAdditionally, you can make spirit tails out of 25 experience levels if you sneak.",
     "type": "origins:active_self",
-    "condition": {
-      "type": "origins:xp_levels",
-      "comparison": ">=",
-      "compare_to": 25
-    },
     "entity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:add_xp",
-          "levels": -25
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:sneaking"
+      },
+      "if_action": {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:xp_levels",
+          "comparison": ">=",
+          "compare_to": 25
         },
-        {
-          "type": "origins:change_resource",
-          "change": 1,
-          "operation": "add",
-          "resource": "origins-diversity:kitsune/kitsune_tails"
+        "if_action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:add_xp",
+              "levels": -25
+            },
+            {
+              "type": "origins:change_resource",
+              "change": 1,
+              "operation": "add",
+              "resource": "origins-diversity:kitsune/kitsune_tails"
+            }
+          ]
         }
-      ]
+      },
+      "else_action": {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:power",
+          "power": "origins-diversity:kitsune/kitsune_fox_form"
+        },
+        "if_action": {
+          "type": "origins:remove_power",
+          "power": "origins-diversity:kitsune/kitsune_fox_form"
+        },
+        "else_action": {
+          "type": "origins:grant_power",
+          "power": "origins-diversity:kitsune/kitsune_fox_form",
+          "source": "origins-diversity:kitsune_fox_form_toggle"
+        }
+      }
     },
-    "cooldown": 200
+    "cooldown": 40
   }
 }

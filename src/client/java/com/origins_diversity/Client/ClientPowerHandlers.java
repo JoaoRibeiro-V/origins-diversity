@@ -19,5 +19,13 @@ public class ClientPowerHandlers {
             KitsuneIllusionManager.tick(mc);
             KitsuneIllusionRenderer.render(context);
         });
+
+        WorldRenderEvents.AFTER_ENTITIES.register(context ->{
+            Minecraft mc = Minecraft.getInstance();
+            if(mc.player == null || mc.level == null) return;
+            boolean hasKitsuneForm = PowerReference.of(ResourceLocation.fromNamespaceAndPath("origins-diversity","kitsune/kitsune_fox_form")).isActive(mc.player);
+            if(!hasKitsuneForm) return;
+
+        });
     }
 }

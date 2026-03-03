@@ -1,0 +1,18 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "whenhit": {
+    "type": "origins:self_action_when_hit",
+    "entity_action": {
+      "type": "origins:remove_power",
+      "power": "origins-diversity:kitsune/kitsune_fox_form"
+    },
+    "damage_condition": {
+      "type": "origins:attacker"
+    }
+  },
+  "model": {
+    "type": "origins:model_color",
+    "alpha": 0.0
+  }
+}
