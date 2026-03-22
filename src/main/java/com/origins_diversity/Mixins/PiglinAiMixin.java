@@ -8,6 +8,7 @@ import net.minecraft.world.entity.monster.piglin.Piglin;
 import net.minecraft.world.entity.monster.piglin.PiglinAi;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -43,8 +44,18 @@ public abstract class PiglinAiMixin {
             ItemStack stack,
             CallbackInfoReturnable<Boolean> cir
     ) {
-
-        if (!(piglin.getTarget() instanceof Player player)) return;
+        Player player = (Player) piglin.getTarget();
+        Level level = piglin.level();
+        if (player == null){
+           player = level.getNearestPlayer(
+                    piglin.getX(),
+                    piglin.getY(),
+                    piglin.getZ(),
+                    12.0,
+                    foundPlayer -> getShouldAttack((Player) foundPlayer)
+            );
+        };
+        if (player == null) return;
         if (getShouldAttack(player)) {
             piglin.setAggressive(true);
             piglin.setTarget(player);
