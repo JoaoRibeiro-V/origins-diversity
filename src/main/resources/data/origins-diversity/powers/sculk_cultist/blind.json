@@ -7,5 +7,6 @@
     "type": "origins:brightness",
     "comparison": ">=",
     "compare_to": 0.1267
-  }
+  },
+  "toggleable": false
 }

@@ -4,7 +4,12 @@
   "description": "Once a human who thrived for studying the sculk, all that knowledge has corrupted your mind, now you serve on spreading the sculk.",
   "powers": [
     "origins-diversity:sculk_cultist/blind",
-    "origins-diversity:sculk_cultist/nightvision"
+    "origins-diversity:sculk_cultist/nightvision",
+    "origins-diversity:sculk_cultist/sculk_gather",
+    "origins-diversity:sculk_cultist/on_kill",
+    "origins-diversity:sculk_cultist/xp_gain",
+    "origins-diversity:sculk_cultist/odium",
+    "origins-diversity:sculk_cultist/shaking"
   ],
   "impact": 3
 }

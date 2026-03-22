@@ -9,6 +9,7 @@ import net.minecraft.world.entity.monster.piglin.PiglinAi;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
@@ -27,10 +28,11 @@ public abstract class PiglinAiMixin {
             CallbackInfoReturnable<Boolean> cir
     ) {
         if (!(entity instanceof Player player)) return;
-        if(OriginsUtil.hasOrigin(player, "origins-diversity","withered_piglin")){
+        if (getShouldAttack(player)) {
             cir.setReturnValue(false);
         }
     }
+
     @Inject(
             method = "wantsToPickup",
             at = @At("HEAD"),
@@ -43,11 +45,16 @@ public abstract class PiglinAiMixin {
     ) {
 
         if (!(piglin.getTarget() instanceof Player player)) return;
-        if(OriginsUtil.hasOrigin(player, "origins-diversity","withered_piglin")){
+        if (getShouldAttack(player)) {
             piglin.setAggressive(true);
             piglin.setTarget(player);
-            cir.setReturnValue(false); // no gold pickup → no barter
+            cir.setReturnValue(false);
             return;
         }
+    }
+
+    @Unique
+    private static boolean getShouldAttack(Player player) {
+        return OriginsUtil.hasOrigin(player, "origins-diversity", "withered_piglin") || OriginsUtil.hasOrigin(player, "origins-diversity", "sculk_cultist");
     }
 }

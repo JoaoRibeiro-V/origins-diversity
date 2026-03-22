@@ -1,0 +1,9 @@
+{
+  "name": "Forbidden Knowledge",
+  "description": "Your understanding of sculk grants you a deeper look into experience.\nYou have increased XP Gain.",
+  "type": "origins:modify_xp_gain",
+  "modifier": {
+    "operation": "multiply_total_multiplicative",
+    "amount": 0.125
+  }
+}

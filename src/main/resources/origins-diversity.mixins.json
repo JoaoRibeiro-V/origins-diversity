@@ -12,6 +12,8 @@
     "LivingEntityMixin",
     "PiglinAiMixin",
     "ChorusFruitMixin",
-    "WolfAiMixin"
+    "WolfAiMixin",
+    "IronGolemAiMixin",
+    "VillagerAiMixin"
   ]
 }
