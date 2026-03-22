@@ -1,6 +1,6 @@
 {
   "name": "Silent Movement",
-  "description": "§rYour movement produces almost no sound.\n§rYou do not emit §bfootstep§7 vibrations, making you extremely hard to track.",
+  "description": "§rYour movement produces almost no sound.\n§rYou do not emit §bfootstep§r vibrations, making you extremely hard to track.",
   "type": "origins:multiple",
   "owl_step": {
     "type": "origins:prevent_game_event",

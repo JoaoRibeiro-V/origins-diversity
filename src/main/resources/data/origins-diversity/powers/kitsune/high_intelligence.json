@@ -1,6 +1,6 @@
 {
   "name": "High Intelligence",
-  "description": "Your neural structure allows experience to be integrated more efficiently.\nYou have increased XP Gain.",
+  "description": "Your neural structure allows experience to be collected more efficiently.\nYou have increased XP Gain.",
   "type": "origins:modify_xp_gain",
   "modifier": {
     "operation": "multiply_total_multiplicative",

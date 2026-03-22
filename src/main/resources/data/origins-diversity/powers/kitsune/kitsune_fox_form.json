@@ -14,5 +14,16 @@
   "model": {
     "type": "origins:model_color",
     "alpha": 0.0
+  },
+  "preventshielduse": {
+    "name": "Fox Form",
+    "description": "You can't use shields.",
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "origins:shields"
+      }
+    }
   }
 }

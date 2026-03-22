@@ -1,4 +1,5 @@
 {
+  "hidden": true,
   "name": "Blizzard Barrage",
   "description": "§rUnleash a wave of snowballs that §bslow§r and §fcontrol§r enemies.",
   "type": "origins:fire_projectile",

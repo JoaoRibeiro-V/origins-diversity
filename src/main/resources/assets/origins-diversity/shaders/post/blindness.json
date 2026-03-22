@@ -1,0 +1,138 @@
+{
+  "targets": [
+    "water",
+    "translucent",
+    "itemEntity",
+    "particles",
+    "clouds",
+    "weather",
+    "swap",
+    "final"
+  ],
+  "passes": [
+    {
+      "name": "transparency",
+      "intarget": "minecraft:main",
+      "outtarget": "final",
+      "auxtargets": [
+        {
+          "name": "DiffuseDepthSampler",
+          "id": "minecraft:main:depth"
+        },
+        {
+          "name": "TranslucentSampler",
+          "id": "translucent"
+        },
+        {
+          "name": "TranslucentDepthSampler",
+          "id": "translucent:depth"
+        },
+        {
+          "name": "ItemEntitySampler",
+          "id": "itemEntity"
+        },
+        {
+          "name": "ItemEntityDepthSampler",
+          "id": "itemEntity:depth"
+        },
+        {
+          "name": "ParticlesSampler",
+          "id": "particles"
+        },
+        {
+          "name": "ParticlesDepthSampler",
+          "id": "particles:depth"
+        },
+        {
+          "name": "CloudsSampler",
+          "id": "clouds"
+        },
+        {
+          "name": "CloudsDepthSampler",
+          "id": "clouds:depth"
+        },
+        {
+          "name": "WeatherSampler",
+          "id": "weather"
+        },
+        {
+          "name": "WeatherDepthSampler",
+          "id": "weather:depth"
+        }
+      ]
+    },
+    {
+      "name": "blit",
+      "intarget": "final",
+      "outtarget": "minecraft:main"
+    },
+    {
+      "name": "invert",
+      "intarget": "minecraft:main",
+      "outtarget": "final",
+      "uniforms": [
+        {
+          "name": "InverseAmount",
+          "values": [ 0.17167 ]
+        }
+      ]
+    },
+    {
+      "name": "origins-diversity:notch",
+      "intarget": "final",
+      "outtarget": "minecraft:main",
+      "auxtargets": [
+        {
+          "name": "DitherSampler",
+          "id": "dither",
+          "width": 8,
+          "height": 8,
+          "bilinear": true
+        }
+      ]
+    },
+
+    {
+      "name": "color_convolve",
+      "intarget": "minecraft:main",
+      "outtarget": "final",
+      "uniforms": [
+        {
+          "name": "RedMatrix",
+          "values": [ 1.8267, 0.06967, 0.06967 ]
+        },
+        {
+          "name": "GreenMatrix",
+          "values": [ 0.06967, 0.60567, 0.06967 ]
+        },
+        {
+          "name": "BlueMatrix",
+          "values": [ 0.06967, 0.25067, 2.16967 ]
+        },
+        {
+          "name": "ColorScale",
+          "values": [0.425,0.4,0.425]
+        },
+        {
+          "name": "Saturation",
+          "values": [ 0.56967 ]
+        }
+      ]
+    },
+    {
+      "name": "bits",
+      "intarget": "final",
+      "outtarget": "minecraft:main",
+      "uniforms": [
+        {
+          "name": "Resolution",
+          "values": [ 4.0 ]
+        },
+        {
+          "name": "MosaicSize",
+          "values": [ 1.0 ]
+        }
+      ]
+    }
+  ]
+}

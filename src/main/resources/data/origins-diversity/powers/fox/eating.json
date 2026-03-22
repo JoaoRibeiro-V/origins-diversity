@@ -1,0 +1,11 @@
+{
+  "hidden": true,
+  "type": "origins:action_on_item_use",
+  "entity_action": {
+    "type": "origins:play_sound",
+    "sound": "minecraft:entity.fox.eat"
+  },
+  "item_condition": {
+    "type": "origins:food"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "hidden": true,
+  "type": "origins:night_vision",
+  "name": "Night Vision",
+  "description": "Your eyes are adapted to darkness, allowing you to see where others cannot.",
+  "strength": 0.3
+}

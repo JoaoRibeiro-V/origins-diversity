@@ -1,6 +1,6 @@
 {
   "name": "Night Watcher",
-  "description": "§rYou watch from the dark.\n§rAt §9night§r you gain §bNight Vision§r§r, armor penetration and §rincreased §cattack speed§r\n\n§rStriking enemies from above deals §abonus§r damage and §cslows§r them down.",
+  "description": "§rYou watch from the dark.\n§rAt §9night§r you gain §bNight Vision§r, armor penetration and increased attack speed\n\nStriking enemies from above deals §abonus§r damage and §cslows§r them down.",
   "type": "origins:action_over_time",
   "interval": 20,
   "entity_action": {

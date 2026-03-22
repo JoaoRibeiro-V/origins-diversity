@@ -1,0 +1,10 @@
+{
+  "icon": { "id": "minecraft:sculk_catalyst" },
+  "name": "Sculk Cultist",
+  "description": "Once a human who thrived for studying the sculk, all that knowledge has corrupted your mind, now you serve on spreading the sculk.",
+  "powers": [
+    "origins-diversity:sculk_cultist/blind",
+    "origins-diversity:sculk_cultist/nightvision"
+  ],
+  "impact": 3
+}

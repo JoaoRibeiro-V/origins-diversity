@@ -42,7 +42,7 @@
           "type": "origins:apply_effect",
           "effect": {
             "id": "minecraft:weakness",
-            "duration": 60,
+            "duration": 150,
             "amplifier": 0,
             "show_particles": false
           }
