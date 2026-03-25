@@ -1,0 +1,26 @@
+{
+  "name": "Paranoia",
+  "description": "You've become paranoid, not allowing you to sleep while not holding a weapon. Phantoms also seem to disturb you more often.",
+  "type": "origins:multiple",
+  "ticks": {
+    "type": "origins:modify_imsomnia_ticks",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": 1.0
+    }
+  },
+  "preventsleep": {
+    "type": "origins:prevent_sleep",
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "minecraft:swords"
+        }
+      },
+      "inverted": true
+    }
+  }
+}

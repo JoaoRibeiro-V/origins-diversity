@@ -1,0 +1,23 @@
+{
+  "name": "Sculk Summoning",
+  "description": "With this treasure...\nGather all your sculk to unleash a powerful beast.",
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:resource",
+      "resource": "origins-diversity:sculk_cultist/sculk_gather",
+      "comparison": ">=",
+      "compare_to": 199
+    },
+    "if_action": {
+      "type": "origins:spawn_entity",
+      "entity_type": "minecraft:warden",
+      "tag": "{SculkCultistSummon:1b}"
+    }
+  },
+  "cooldown": 1,
+  "hud_render": {
+    "should_render": false
+  }
+}

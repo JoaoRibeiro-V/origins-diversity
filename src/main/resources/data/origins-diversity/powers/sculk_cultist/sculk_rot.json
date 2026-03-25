@@ -1,0 +1,51 @@
+{
+  "type": "origins:multiple",
+  "toggle": {
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {
+      "key": {"key": "key.origins.secondary_active"}
+    }
+  },
+  "onhit": {
+    "type": "origins:action_on_hit",
+    "damage_condition": {
+      "type": "origins:projectile",
+      "inverted": true
+    },
+    "cooldown": 100,
+    "bientity_condition": {
+      "type": "origins:actor_condition",
+      "condition": {
+        "type": "origins:resource",
+        "resource": "origins-diversity:sculk_cultist/sculk_gather",
+        "comparison": ">",
+        "compare_to": 0
+      }
+    },
+    "bientity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:actor_action",
+          "action": {
+            "type": "origins:change_resource",
+            "resource": "origins-diversity:sculk_cultist/sculk_gather",
+            "change": 20
+          }
+        },
+        {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:apply_effect",
+            "effect": {
+              "id": "minecraft:darkness",
+              "duration": 160,
+              "show_particles": false
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -9,7 +9,11 @@
     "origins-diversity:sculk_cultist/on_kill",
     "origins-diversity:sculk_cultist/xp_gain",
     "origins-diversity:sculk_cultist/odium",
-    "origins-diversity:sculk_cultist/shaking"
+    "origins-diversity:sculk_cultist/imsomnia",
+    "origins-diversity:sculk_cultist/shaking",
+    "origins-diversity:sculk_cultist/makora",
+    "origins-diversity:sculk_cultist/immunities"
+
   ],
   "impact": 3
 }

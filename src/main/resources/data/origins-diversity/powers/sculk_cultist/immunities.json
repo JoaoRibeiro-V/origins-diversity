@@ -1,0 +1,10 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "darkness": {
+    "type": "origins:effect_immunity",
+    "effect": [
+      "minecraft:darkness"
+    ]
+  }
+}

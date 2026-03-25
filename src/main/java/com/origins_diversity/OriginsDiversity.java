@@ -2,9 +2,9 @@ package com.origins_diversity;
 
 import com.origins_diversity.Extra.Particles;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 
 public class OriginsDiversity implements ModInitializer {
 	public static final String MOD_ID = "origins-diversity";
