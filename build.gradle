@@ -17,7 +17,7 @@ base {
 
 repositories {
 	mavenCentral()
-
+    maven { url = "https://jitpack.io" }
     exclusiveContent {
         forRepository {
             maven {
@@ -84,8 +84,9 @@ dependencies {
     modRuntimeOnly "maven.modrinth:Adega8YN:d1TKoLnB"
     modCompileOnly "maven.modrinth:twkfQtEc:XAvedFDj"
     modRuntimeOnly "maven.modrinth:twkfQtEc:XAvedFDj"
-
-
+    modApi("com.github.Virtuoel:Pehkui:${pehkui_version}", {
+        exclude group: "net.fabricmc.fabric-api"
+    })
 
 }
 

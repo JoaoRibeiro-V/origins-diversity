@@ -11,9 +11,18 @@
       "compare_to": 199
     },
     "if_action": {
-      "type": "origins:spawn_entity",
-      "entity_type": "minecraft:warden",
-      "tag": "{SculkCultistSummon:1b}"
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "tag @s add sculk_cultist_ritual_pending"
+        }
+      ]
+
+    },
+    "else_action": {
+      "type": "origins:execute_command",
+      "command": "title @s actionbar {\"text\":\"Not enough Sculk...\",\"color\":\"dark_aqua\"}"
     }
   },
   "cooldown": 1,

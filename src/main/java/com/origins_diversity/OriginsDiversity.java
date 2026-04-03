@@ -1,6 +1,7 @@
 package com.origins_diversity;
 
 import com.origins_diversity.Extra.Particles;
+import com.origins_diversity.PowerHandlers.SculkSummonListener;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import org.slf4j.Logger;
@@ -24,5 +25,6 @@ public class OriginsDiversity implements ModInitializer {
 
         // Register our custom particle type in the mod initializer.
         Particles.register();
+        SculkSummonListener.register();
 	}
 }
