@@ -1,6 +1,6 @@
 {
   "name": "Sculk Ritual",
-  "description": "On dealing a fatal blow, gather sculk off those who have fell upon you.",
+  "description": "On dealing a fatal blow, gather sculk off those who have fell upon you.\nSome experience, however, is lost due to this conversion.",
   "type": "origins:self_action_on_kill",
   "entity_action": {
     "type": "origins:choice",

@@ -3,7 +3,7 @@
   "description": "You've become paranoid, not allowing you to sleep while not holding a weapon. Phantoms also seem to disturb you more often.",
   "type": "origins:multiple",
   "ticks": {
-    "type": "origins:modify_imsomnia_ticks",
+    "type": "origins:modify_insomnia_ticks",
     "modifier": {
       "operation": "multiply_total_multiplicative",
       "amount": 1.0
