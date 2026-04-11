@@ -4,5 +4,16 @@
   "darkness": {
     "type": "origins:effect_immunity",
     "effect": "minecraft:darkness"
+  },
+  "sculkzombies": {
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+      "amount": -0.65,
+      "operation": "multiply_total_multiplicative"
+    },
+    "target_condition": {
+      "type": "origins:entity_type",
+      "entity_type": "origins-diversity:sculk_zombie"
+    }
   }
 }

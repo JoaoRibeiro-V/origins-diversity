@@ -1,7 +1,8 @@
 package com.origins_diversity.PowerHandlers;
 
-import com.origins_diversity.Entities.SculkServantEntity;
 import com.origins_diversity.Entities.ModEntities;
+import com.origins_diversity.Entities.SculkServantEntity;
+import com.origins_diversity.Entities.SculkZombieEntity;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
@@ -27,31 +28,36 @@ public class SculkSummonListener {
 
     private static final double SPAWN_BEHIND_DISTANCE = -3.5;
 
-    private static final List<long[]>   taskTicks     = new ArrayList<>();
+    private static final List<long[]> taskTicks = new ArrayList<>();
     private static final List<Runnable> taskRunnables = new ArrayList<>();
 
     // Dust particle colors
-    private static final DustParticleOptions DUST_DARK_PURPLE =
-            new DustParticleOptions(new Vector3f(0.25f, 0.0f, 0.35f), 1.4f);
-    private static final DustParticleOptions DUST_DEEP_VIOLET =
-            new DustParticleOptions(new Vector3f(0.15f, 0.0f, 0.25f), 1.0f);
-    private static final DustParticleOptions DUST_BLACK_PURPLE =
-            new DustParticleOptions(new Vector3f(0.08f, 0.0f, 0.12f), 1.8f);
-    private static final DustParticleOptions DUST_PILLAR =
-            new DustParticleOptions(new Vector3f(0.20f, 0.0f, 0.30f), 1.2f);
-
+    private static final DustParticleOptions DUST_DARK_PURPLE = new DustParticleOptions(new Vector3f(0.25f, 0.0f, 0.35f), 1.4f);
+    private static final DustParticleOptions DUST_DEEP_VIOLET = new DustParticleOptions(new Vector3f(0.15f, 0.0f, 0.25f), 1.0f);
+    private static final DustParticleOptions DUST_BLACK_PURPLE = new DustParticleOptions(new Vector3f(0.08f, 0.0f, 0.12f), 1.8f);
+    private static final DustParticleOptions DUST_PILLAR = new DustParticleOptions(new Vector3f(0.20f, 0.0f, 0.30f), 1.2f);
+    private static final DustParticleOptions DUST_ZOMBIE_RING = new DustParticleOptions(new Vector3f(0.1f, 0.0f, 0.2f), 0.6f);
     public static void register() {
         ServerTickEvents.END_SERVER_TICK.register(server -> {
-
             for (ServerLevel level : server.getAllLevels()) {
                 for (ServerPlayer player : level.players()) {
+
                     if (player.getTags().contains("sculk_cultist_ritual_pending")) {
                         player.removeTag("sculk_cultist_ritual_pending");
                         spawnAndStartRitual(player, level);
                     }
+
+                    if (player.getTags().contains("sculk_zombie_summon")) {
+                        player.removeTag("sculk_zombie_summon");
+                        double x = player.getX() + 1;
+                        double y = player.getY();
+                        double z = player.getZ() + 1;
+                        triggerZombieSummon(level, player, x, y, z);
+                    }
                 }
             }
 
+            // Tick scheduled tasks
             if (!taskTicks.isEmpty()) {
                 Iterator<long[]>   tickIter = taskTicks.iterator();
                 Iterator<Runnable> runIter  = taskRunnables.iterator();
@@ -77,6 +83,64 @@ public class SculkSummonListener {
         taskRunnables.add(task);
     }
 
+    /*
+     *Sculk Zombie summon
+    */
+
+    private static void triggerZombieSummon(ServerLevel level, ServerPlayer player, double x, double y, double z) {
+        // Expanding then contracting dark circle over 60 ticks, zombie spawns at the end
+        scheduleTask(0, new Runnable() {
+            int tick = 0;
+
+            @Override
+            public void run() {
+                if (tick > 60) {
+                    SculkZombieEntity zombie = new SculkZombieEntity(ModEntities.SCULK_ZOMBIE, level);
+                    zombie.setSummoner(player);
+                    zombie.moveTo(x, y, z, 0, 0);
+                    level.addFreshEntity(zombie);
+
+                    for (int i = 0; i < 30; i++) {
+                        double angle = Math.random() * Math.PI * 2;
+                        level.sendParticles(ParticleTypes.REVERSE_PORTAL,
+                                x + Math.cos(angle) * 0.5, y + 0.5, z + Math.sin(angle) * 0.5,
+                                1, 0, 0.1, 0, 0.05);
+                    }
+                    return;
+                }
+
+                double radius = tick < 30
+                        ? (tick / 30.0) * 1.5
+                        : ((60 - tick) / 30.0) * 1.5;
+
+                // Dark ring
+                for (int i = 0; i < 36; i++) {
+                    double angle = (2 * Math.PI / 36) * i;
+                    level.sendParticles(DUST_ZOMBIE_RING,
+                            x + Math.cos(angle) * radius, y + 0.05, z + Math.sin(angle) * radius,
+                            1, 0, 0, 0, 0);
+                }
+
+                // Rising smoke after initial buildup
+                if (tick > 20) {
+                    for (int i = 0; i < 3; i++) {
+                        level.sendParticles(ParticleTypes.LARGE_SMOKE,
+                                x + (Math.random() - 0.5) * radius,
+                                y + (tick - 20) / 40.0 * 2,
+                                z + (Math.random() - 0.5) * radius,
+                                1, 0, 0.02, 0, 0.01);
+                    }
+                }
+
+                tick++;
+                scheduleTask(1, this);
+            }
+        });
+    }
+
+    /*
+     *Sculk servant summon
+     */
     private static void setScale(Warden warden, float scale) {
         ScaleData scaleData = ScaleTypes.BASE.getScaleData(warden);
         scaleData.setScale(scale);
@@ -110,8 +174,7 @@ public class SculkSummonListener {
         scheduleTask(1, () -> {
             if (warden.isRemoved()) return;
             warden.setInvisible(false);
-            level.playSound(null, player.getX(), player.getY(), player.getZ(),
-                    SoundEvents.AMETHYST_BLOCK_RESONATE, SoundSource.MASTER, 2f, 0.5f);
+            level.playSound(null, x, y, z, SoundEvents.AMETHYST_BLOCK_RESONATE, SoundSource.MASTER, 2f, 0.5f);
             triggerRitualCutscene(warden, new Vec3(x, y, z), level, player);
         });
     }
@@ -122,7 +185,7 @@ public class SculkSummonListener {
         level.getPlayers(p -> p.distanceToSqr(pos.x, pos.y, pos.z) < 400)
                 .forEach(p -> p.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 160, 1, false, false)));
 
-        // Ambient swirling particles — dark purple dust pulled toward the warden
+        // Ambient swirling particles pulled toward the warden
         scheduleTask(0, new Runnable() {
             int life = 120;
 
@@ -140,18 +203,14 @@ public class SculkSummonListener {
                     double py = pos.y + offsetY;
                     double pz = pos.z + offsetZ;
 
-                    // Pull velocity toward center
                     double dx = (pos.x - px) * 0.03;
                     double dz = (pos.z - pz) * 0.03;
 
-                    // Alternate between two dust shades for depth
                     DustParticleOptions dust = (life % 2 == 0) ? DUST_DARK_PURPLE : DUST_BLACK_PURPLE;
                     level.sendParticles(dust, px, py, pz, 1, dx, 0.01, dz, 0);
 
-                    // Sparse smoke wisps mixed in
                     if (i == 0) {
-                        level.sendParticles(ParticleTypes.SMOKE,
-                                px, py, pz, 1, dx * 0.5, 0.01, dz * 0.5, 0.005);
+                        level.sendParticles(ParticleTypes.SMOKE, px, py, pz, 1, dx * 0.5, 0.01, dz * 0.5, 0.005);
                     }
                 }
 
@@ -159,9 +218,9 @@ public class SculkSummonListener {
             }
         });
 
-        // Main rise + grow loop
+        // Rise and grow loop
         for (int i = 0; i <= 80; i++) {
-            final int   tick  = i;
+            final int    tick  = i;
             final double riseY = pos.y + (tick / 80.0);
             final float  scale = 0.1f + (tick / 80.0f) * 1.499f;
 
@@ -176,32 +235,18 @@ public class SculkSummonListener {
                 setScale(warden, scale);
 
                 if (tick % 3 == 0) {
-                    // Dark purple dust rising from the body
-                    level.sendParticles(DUST_DARK_PURPLE,
-                            warden.getX(), warden.getY() + 0.5, warden.getZ(),
-                            3, 0.3, 0.15, 0.3, 0.02);
-
-                    // Deep violet smaller particles
-                    level.sendParticles(DUST_DEEP_VIOLET,
-                            warden.getX(), warden.getY(), warden.getZ(),
-                            2, 0.4, 0.1, 0.4, 0.03);
-
-                    // Black smoke from the base
-                    level.sendParticles(ParticleTypes.LARGE_SMOKE,
-                            warden.getX(), warden.getY(), warden.getZ(),
-                            1, 0.3, 0.0, 0.3, 0.01);
+                    level.sendParticles(DUST_DARK_PURPLE, warden.getX(), warden.getY() + 0.5, warden.getZ(), 3, 0.3, 0.15, 0.3, 0.02);
+                    level.sendParticles(DUST_DEEP_VIOLET, warden.getX(), warden.getY(),        warden.getZ(), 2, 0.4, 0.1,  0.4, 0.03);
+                    level.sendParticles(ParticleTypes.LARGE_SMOKE, warden.getX(), warden.getY(), warden.getZ(), 1, 0.3, 0.0, 0.3, 0.01);
                 }
 
-                // Reverse portal rising effect every 5 ticks
                 if (tick % 5 == 0) {
-                    level.sendParticles(ParticleTypes.REVERSE_PORTAL,
-                            warden.getX(), warden.getY() + 0.2, warden.getZ(),
-                            4, 0.5, 0.3, 0.5, 0.06);
+                    level.sendParticles(ParticleTypes.REVERSE_PORTAL, warden.getX(), warden.getY() + 0.2, warden.getZ(), 4, 0.5, 0.3, 0.5, 0.06);
                 }
             });
         }
 
-        // Shadow pillars — dark purple dust columns
+        // Shadow pillars
         for (int p = 0; p < 4; p++) {
             double angle = p * (Math.PI / 2.0);
             double px    = pos.x + Math.cos(angle) * 4.5;
@@ -210,40 +255,26 @@ public class SculkSummonListener {
             for (int h = 0; h < 20; h++) {
                 final double height = h;
                 scheduleTask(30 + (h * 2), () -> {
-                    // Pillar dust
-                    level.sendParticles(DUST_PILLAR,
-                            px, pos.y + height * 0.45, pz,
-                            2, 0.06, 0.0, 0.06, 0.01);
-                    // Smoke wisps alongside pillars
-                    level.sendParticles(ParticleTypes.SMOKE,
-                            px, pos.y + height * 0.45, pz,
-                            1, 0.03, 0.02, 0.03, 0.005);
+                    level.sendParticles(DUST_PILLAR, px, pos.y + height * 0.45, pz, 2, 0.06, 0.0, 0.06, 0.01);
+                    level.sendParticles(ParticleTypes.SMOKE, px, pos.y + height * 0.45, pz, 1, 0.03, 0.02, 0.03, 0.005);
                 });
             }
         }
 
-        // Witch sparks burst at pillar base when they start
+        // Witch sparks at pillar bases
         scheduleTask(30, () -> {
             for (int p = 0; p < 4; p++) {
                 double angle = p * (Math.PI / 2.0);
-                double px    = pos.x + Math.cos(angle) * 4.5;
-                double pz    = pos.z + Math.sin(angle) * 4.5;
                 level.sendParticles(ParticleTypes.WITCH,
-                        px, pos.y + 0.5, pz,
+                        pos.x + Math.cos(angle) * 4.5, pos.y + 0.5, pos.z + Math.sin(angle) * 4.5,
                         12, 0.2, 0.3, 0.2, 0.05);
             }
         });
 
-        // Sounds
-        scheduleTask(40, () ->
-                level.playSound(null, pos.x, pos.y, pos.z,
-                        SoundEvents.WARDEN_SONIC_BOOM, SoundSource.HOSTILE, 2f, 0.5f));
+        scheduleTask(40, () -> level.playSound(null, pos.x, pos.y, pos.z, SoundEvents.WARDEN_SONIC_BOOM, SoundSource.HOSTILE, 2f, 0.5f));
+        scheduleTask(70, () -> level.playSound(null, pos.x, pos.y, pos.z, SoundEvents.WARDEN_ROAR,      SoundSource.HOSTILE, 2.5f, 0.8f));
 
-        scheduleTask(70, () ->
-                level.playSound(null, pos.x, pos.y, pos.z,
-                        SoundEvents.WARDEN_ROAR, SoundSource.HOSTILE, 2.5f, 0.8f));
-
-        // Awaken — big dark purple explosion burst
+        // Awaken
         scheduleTask(105, () -> {
             if (warden.isRemoved()) return;
 
@@ -253,34 +284,17 @@ public class SculkSummonListener {
             warden.setNoAi(false);
             warden.removeTag("sculk_ritual_active");
 
-            // Burst of dark dust outward
             for (int i = 0; i < 3; i++) {
-                level.sendParticles(DUST_BLACK_PURPLE,
-                        warden.getX(), warden.getY() + 1.0, warden.getZ(),
-                        20, 1.0, 0.5, 1.0, 0.15);
-                level.sendParticles(DUST_DARK_PURPLE,
-                        warden.getX(), warden.getY() + 1.0, warden.getZ(),
-                        15, 0.8, 0.4, 0.8, 0.2);
+                level.sendParticles(DUST_BLACK_PURPLE, warden.getX(), warden.getY() + 1.0, warden.getZ(), 20, 1.0, 0.5, 1.0, 0.15);
+                level.sendParticles(DUST_DARK_PURPLE,  warden.getX(), warden.getY() + 1.0, warden.getZ(), 15, 0.8, 0.4, 0.8, 0.2);
             }
 
-            // Large smoke cloud
-            level.sendParticles(ParticleTypes.LARGE_SMOKE,
-                    warden.getX(), warden.getY() + 1, warden.getZ(),
-                    20, 0.8, 0.5, 0.8, 0.05);
+            level.sendParticles(ParticleTypes.LARGE_SMOKE,     warden.getX(), warden.getY() + 1, warden.getZ(), 20, 0.8, 0.5, 0.8, 0.05);
+            level.sendParticles(ParticleTypes.WITCH,           warden.getX(), warden.getY() + 1, warden.getZ(), 30, 1.0, 0.5, 1.0, 0.1);
+            level.sendParticles(ParticleTypes.EXPLOSION_EMITTER, warden.getX(), warden.getY() + 1, warden.getZ(), 1, 0, 0, 0, 0);
 
-            // Witch sparks ring
-            level.sendParticles(ParticleTypes.WITCH,
-                    warden.getX(), warden.getY() + 1, warden.getZ(),
-                    30, 1.0, 0.5, 1.0, 0.1);
+            level.playSound(null, warden.getX(), warden.getY(), warden.getZ(), SoundEvents.WARDEN_EMERGE, SoundSource.HOSTILE, 3f, 1f);
 
-            level.sendParticles(ParticleTypes.EXPLOSION_EMITTER,
-                    warden.getX(), warden.getY() + 1, warden.getZ(),
-                    1, 0, 0, 0, 0);
-
-            level.playSound(null, warden.getX(), warden.getY(), warden.getZ(),
-                    SoundEvents.WARDEN_EMERGE, SoundSource.HOSTILE, 3f, 1f);
-
-            // Second darkness wave on awakening
             level.getPlayers(p -> p.distanceToSqr(warden.getX(), warden.getY(), warden.getZ()) < 400)
                     .forEach(p -> p.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 60, 1, false, false)));
         });

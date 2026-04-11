@@ -1,6 +1,6 @@
 {
   "name": "Sculk Summoning",
-  "description": "With this treasure...\nGather all your sculk to unleash a powerful beast.",
+  "description": "You can gather your sculk to summon zombies that attack those in sight.\n\nAlternatively, upon gathering an immense amount of sculk and sneaking, perform a sculk ritual, unleashing an untamed beast seeking destruction.",
   "type": "origins:active_self",
   "entity_action": {
     "type": "origins:if_else",
@@ -36,6 +36,30 @@
                 {
                   "type": "origins:trigger_cooldown",
                   "power": "origins-diversity:sculk_cultist/summon_cooldown"
+                }
+              ]
+            }
+          },
+          "else_action": {
+            "type": "origins:if_else",
+            "condition": {
+              "type": "origins:resource",
+              "resource": "origins-diversity:sculk_cultist/sculk_gather",
+              "comparison": ">=",
+              "compare_to": 49
+            },
+            "if_action": {
+              "type": "origins:and",
+              "actions": [
+                {
+                  "type": "origins:execute_command",
+                  "command": "tag @s add sculk_zombie_summon"
+                },
+                {
+                  "type": "origins:change_resource",
+                  "resource": "origins-diversity:sculk_cultist/summon_cooldown",
+                  "change": 200,
+                  "operation": "set"
                 }
               ]
             }
