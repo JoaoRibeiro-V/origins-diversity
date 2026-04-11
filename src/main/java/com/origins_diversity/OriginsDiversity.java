@@ -1,6 +1,9 @@
 package com.origins_diversity;
 
+import com.origins_diversity.Entities.ModEntities;
+import com.origins_diversity.Entities.ModEntityAttributes;
 import com.origins_diversity.Entities.SculkServantEntity;
+import com.origins_diversity.Events.ModEntityEvents;
 import com.origins_diversity.Extra.Particles;
 import com.origins_diversity.Data.SculkServantTameData;
 import com.origins_diversity.PowerHandlers.SculkSummonListener;
@@ -12,8 +15,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.monster.warden.Warden;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.UUID;
 
 public class OriginsDiversity implements ModInitializer {
 	public static final String MOD_ID = "origins-diversity";
@@ -31,19 +32,12 @@ public class OriginsDiversity implements ModInitializer {
         // This DefaultParticleType gets called when you want to use your particle in code.
 
 
-        // Register our custom particle type in the mod initializer.
+        // Register mod stuff
         Particles.register();
         SculkSummonListener.register();
-        ServerLivingEntityEvents.AFTER_DEATH.register((entity, source) -> {
-            if (!(entity instanceof SculkServantEntity servant)) return;
-            if (!(entity.level() instanceof ServerLevel serverLevel)) return;
-            if (!(source.getEntity() instanceof ServerPlayer killer)) return;
-            String summonerTag = "summoner_" + killer.getStringUUID();
-            if (servant.getTags().contains(summonerTag)) {
-                SculkServantTameData.get(serverLevel.getServer()).markTamed(killer.getUUID(), serverLevel.getServer());
-            }
-        });
-        FabricDefaultAttributeRegistry.register(ModEntities.SCULK_SERVANT, Warden.createAttributes());
-	}
+        ModEntities.register();
+        ModEntityAttributes.register();
+        ModEntityEvents.register();
+    }
 
 }

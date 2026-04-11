@@ -6,23 +6,48 @@
     "type": "origins:if_else",
     "condition": {
       "type": "origins:resource",
-      "resource": "origins-diversity:sculk_cultist/sculk_gather",
-      "comparison": ">=",
-      "compare_to": 199
+      "resource": "origins-diversity:sculk_cultist/summon_cooldown",
+      "comparison": "<=",
+      "compare_to": 0
     },
     "if_action": {
       "type": "origins:and",
       "actions": [
         {
-          "type": "origins:execute_command",
-          "command": "tag @s add sculk_cultist_ritual_pending"
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:sneaking"
+          },
+          "if_action": {
+            "type": "origins:if_else",
+            "condition": {
+              "type": "origins:resource",
+              "resource": "origins-diversity:sculk_cultist/sculk_gather",
+              "comparison": ">=",
+              "compare_to": 599
+            },
+            "if_action": {
+              "type": "origins:and",
+              "actions": [
+                {
+                  "type": "origins:execute_command",
+                  "command": "tag @s add sculk_cultist_ritual_pending"
+                },
+                {
+                  "type": "origins:trigger_cooldown",
+                  "power": "origins-diversity:sculk_cultist/summon_cooldown"
+                }
+              ]
+            }
+          }
         }
+
       ]
 
     },
     "else_action": {
       "type": "origins:execute_command",
-      "command": "title @s actionbar {\"text\":\"Not enough Sculk...\",\"color\":\"dark_aqua\"}"
+      "command": "title @s actionbar {\"text\":\"On cooldown...\",\"color\":\"red\"}"
     }
   },
   "cooldown": 1,

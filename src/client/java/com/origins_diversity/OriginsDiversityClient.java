@@ -4,6 +4,7 @@ import com.origins_diversity.Client.ClientPowerHandlers;
 import com.origins_diversity.Client.ParticleFactories;
 import com.origins_diversity.Client.PowerHandlers.Kitsune.KitsuneIllusionManager;
 import com.origins_diversity.Client.PowerHandlers.Kitsune.KitsuneIllusionRenderer;
+import com.origins_diversity.Renderer.ModEntityRenderers;
 import com.origins_diversity.Renderer.SculkServantRenderer;
 import io.github.apace100.apoli.power.PowerReference;
 import net.fabricmc.api.ClientModInitializer;
@@ -21,6 +22,6 @@ public class OriginsDiversityClient implements ClientModInitializer {
         // For this example, we will use the end rod particle behaviour.
         ParticleFactories.registerAll();
         ClientPowerHandlers.registerPowers();
-        EntityRendererRegistry.register(ModEntities.SCULK_SERVANT, SculkServantRenderer::new);
+        ModEntityRenderers.register();
 	}
 }
