@@ -2,17 +2,10 @@ package com.origins_diversity;
 
 import com.origins_diversity.Entities.ModEntities;
 import com.origins_diversity.Entities.ModEntityAttributes;
-import com.origins_diversity.Entities.SculkServantEntity;
 import com.origins_diversity.Events.ModEntityEvents;
-import com.origins_diversity.Extra.Particles;
-import com.origins_diversity.Data.SculkServantTameData;
+import com.origins_diversity.Extra.ModParticles;
 import com.origins_diversity.PowerHandlers.SculkSummonListener;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.entity.monster.warden.Warden;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -33,7 +26,7 @@ public class OriginsDiversity implements ModInitializer {
 
 
         // Register mod stuff
-        Particles.register();
+        ModParticles.register();
         SculkSummonListener.register();
         ModEntities.register();
         ModEntityAttributes.register();

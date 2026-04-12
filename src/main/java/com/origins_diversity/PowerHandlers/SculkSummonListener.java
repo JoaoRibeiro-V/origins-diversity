@@ -3,6 +3,8 @@ package com.origins_diversity.PowerHandlers;
 import com.origins_diversity.Entities.ModEntities;
 import com.origins_diversity.Entities.SculkServantEntity;
 import com.origins_diversity.Entities.SculkZombieEntity;
+import com.origins_diversity.Extra.EmissiveParticleOptions;
+import com.origins_diversity.Extra.ModParticles;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
@@ -23,6 +25,7 @@ import virtuoel.pehkui.api.ScaleTypes;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Random;
 
 public class SculkSummonListener {
 
@@ -32,11 +35,12 @@ public class SculkSummonListener {
     private static final List<Runnable> taskRunnables = new ArrayList<>();
 
     // Dust particle colors
+    private static final EmissiveParticleOptions SCULK_1 = ModParticles.emissive(ModParticles.BUBBLE_POP, 0.6f, 0.0f, 1.0f, 0.182f, 4);
+    private static final EmissiveParticleOptions SCULK_2 = ModParticles.emissive(ModParticles.BUBBLE_POP, 0.15f, 0.0f, 0.25f, 0.25f, 12);
     private static final DustParticleOptions DUST_DARK_PURPLE = new DustParticleOptions(new Vector3f(0.25f, 0.0f, 0.35f), 1.4f);
     private static final DustParticleOptions DUST_DEEP_VIOLET = new DustParticleOptions(new Vector3f(0.15f, 0.0f, 0.25f), 1.0f);
     private static final DustParticleOptions DUST_BLACK_PURPLE = new DustParticleOptions(new Vector3f(0.08f, 0.0f, 0.12f), 1.8f);
     private static final DustParticleOptions DUST_PILLAR = new DustParticleOptions(new Vector3f(0.20f, 0.0f, 0.30f), 1.2f);
-    private static final DustParticleOptions DUST_ZOMBIE_RING = new DustParticleOptions(new Vector3f(0.1f, 0.0f, 0.2f), 0.6f);
     public static void register() {
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             for (ServerLevel level : server.getAllLevels()) {
@@ -114,11 +118,14 @@ public class SculkSummonListener {
                         : ((60 - tick) / 30.0) * 1.5;
 
                 // Dark ring
-                for (int i = 0; i < 36; i++) {
-                    double angle = (2 * Math.PI / 36) * i;
-                    level.sendParticles(DUST_ZOMBIE_RING,
-                            x + Math.cos(angle) * radius, y + 0.05, z + Math.sin(angle) * radius,
-                            1, 0, 0, 0, 0);
+                if (tick % 2 == 0) {
+                    for (int i = 0; i < 20; i++) {
+                        double angle = (2 * Math.PI / 20) * i;
+                        double px = x + Math.cos(angle) * radius;
+                        double pz = z + Math.sin(angle) * radius;
+                        level.sendParticles(ModParticles.emissive(ModParticles.SCULK_CHARGE_POP, 0.6f, 0.0f, 1.0f, 0.12f, new Random().nextInt(4,12)),
+                                px, y + 0.05, pz, 1, 0, 0, 0, 0);
+                    }
                 }
 
                 // Rising smoke after initial buildup
@@ -206,7 +213,7 @@ public class SculkSummonListener {
                     double dx = (pos.x - px) * 0.03;
                     double dz = (pos.z - pz) * 0.03;
 
-                    DustParticleOptions dust = (life % 2 == 0) ? DUST_DARK_PURPLE : DUST_BLACK_PURPLE;
+                    EmissiveParticleOptions dust = (life % 2 == 0) ? SCULK_1 : SCULK_2;
                     level.sendParticles(dust, px, py, pz, 1, dx, 0.01, dz, 0);
 
                     if (i == 0) {
