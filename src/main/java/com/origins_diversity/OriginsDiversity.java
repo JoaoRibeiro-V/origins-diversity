@@ -1,5 +1,6 @@
 package com.origins_diversity;
 
+import com.origins_diversity.Block.ModBlocks;
 import com.origins_diversity.Entities.ModEntities;
 import com.origins_diversity.Entities.ModEntityAttributes;
 import com.origins_diversity.Events.ModEntityEvents;
@@ -31,6 +32,7 @@ public class OriginsDiversity implements ModInitializer {
         ModEntities.register();
         ModEntityAttributes.register();
         ModEntityEvents.register();
+        ModBlocks.registerModBlocks();
     }
 
 }

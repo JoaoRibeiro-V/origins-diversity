@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "origins-diversity:block/purple_sculk_block"
+  }
+}

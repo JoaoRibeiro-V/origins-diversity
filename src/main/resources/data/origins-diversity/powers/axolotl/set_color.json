@@ -10,7 +10,7 @@
           "power": "origins-diversity:axolotl/colors/color1",
           "source": "origins-diversity:axolotl_color_set"
         },
-        "weight": 1
+        "weight": 300
       },
       {
         "element": {
@@ -18,21 +18,21 @@
           "power": "origins-diversity:axolotl/colors/color2",
           "source": "origins-diversity:axolotl_color_set"
         },
-        "weight": 1
+        "weight": 300
       },{
         "element": {
           "type": "origins:grant_power",
           "power": "origins-diversity:axolotl/colors/color3",
           "source": "origins-diversity:axolotl_color_set"
         },
-        "weight": 1
+        "weight": 300
       },{
         "element": {
           "type": "origins:grant_power",
           "power": "origins-diversity:axolotl/colors/color4",
           "source": "origins-diversity:axolotl_color_set"
         },
-        "weight": 1
+        "weight": 299
       },
       {
         "element": {

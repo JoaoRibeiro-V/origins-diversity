@@ -1,0 +1,39 @@
+{
+  "type": "origins:multiple",
+  "formtoggle": {
+    "type": "origins:toggle",
+    "active_by_default": false,
+    "key": {"key": "key.origins.secondary_active"}
+  },
+  "entitycolor": {
+    "type": "origins:model_color",
+    "red": 0.831,
+    "green": 0.72,
+    "blue": 0.922,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:sculk_cultist/sculk_interaction_formtoggle"
+    }
+  },
+  "phasesculk": {
+    "type": "origins:phasing",
+    "view_distance": 16.0,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "origins-diversity:sculk_cultist/sculk_interaction_formtoggle"
+    },
+    "block_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:block",
+          "block": "minecraft:sculk"
+        },
+        {
+          "type": "origins:block",
+          "block": "origins-diversity:purple_sculk_block"
+        }
+      ]
+    }
+  }
+}

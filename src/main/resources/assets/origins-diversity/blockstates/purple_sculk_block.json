@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "origins-diversity:block/purple_sculk_block"
+      },
+      {
+        "model": "origins-diversity:block/purple_sculk_block_mirrored"
+      },
+      {
+        "model": "origins-diversity:block/purple_sculk_block",
+        "y": 180
+      },
+      {
+        "model": "origins-diversity:block/purple_sculk_block_mirrored",
+        "y": 180
+      }
+    ]
+  }
+}
