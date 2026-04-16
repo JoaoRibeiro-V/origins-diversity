@@ -15,6 +15,52 @@
       "power": "origins-diversity:sculk_cultist/sculk_interaction_formtoggle"
     }
   },
+  "convert": {
+    "type": "origins:action_on_block_use",
+    "block_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:set_block",
+          "block": "origins-diversity:purple_sculk_block"
+        }
+      ]
+
+    },
+    "entity_action": {
+      "type": "origins:swing_hand"
+    },
+    "block_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:in_tag",
+          "tag": "origins-diversity:sculk_convert"
+        },
+        {
+          "type": "origins:in_tag",
+          "tag": "origins-diversity:sculk_immune",
+          "inverted": true
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:power_active",
+          "power": "origins-diversity:sculk_cultist/sculk_interaction_formtoggle"
+        },
+        {
+          "type": "origins:resource",
+          "resource": "origins-diversity:sculk_cultist/sculk_gather",
+          "comparison": ">=",
+          "compare_to": 5
+        }
+      ]
+
+    }
+  },
   "phasesculk": {
     "type": "origins:phasing",
     "view_distance": 16.0,

@@ -20,6 +20,7 @@ public class ModBlocks {
     public static final Block SCULK_BLOCK = registerBlock("purple_sculk_block", new Block(
            BlockBehaviour.Properties.ofFullCopy(Blocks.SCULK.defaultBlockState().getBlock())
     ));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name,block);
         return Registry.register(BuiltInRegistries.BLOCK, ResourceLocation.fromNamespaceAndPath(OriginsDiversity.MOD_ID, name), block);

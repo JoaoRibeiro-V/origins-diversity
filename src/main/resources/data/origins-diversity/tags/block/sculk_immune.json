@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:logs",
+    "#minecraft:planks",
+    "#minecraft:leaves",
+
+    "#minecraft:doors",
+    "#minecraft:trapdoors",
+
+    "#minecraft:beacon_base_blocks",
+
+    "minecraft:chest",
+    "minecraft:barrel",
+    "minecraft:spawner",
+    "minecraft:bedrock",
+    "minecraft:end_portal_frame",
+    "minecraft:enchanting_table"
+  ]
+}
