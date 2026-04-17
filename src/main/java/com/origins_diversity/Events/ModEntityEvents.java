@@ -27,18 +27,16 @@ import java.util.UUID;
 public class ModEntityEvents {
     public static void register() {
         UseBlockCallback.EVENT.register((player, world, hand, blockHitResult) -> {
-            /*
-                CURRENTLY this went off even after turning a block with sculk
-                using the sculk cultist passive...
-                Plan to recode or add something to stop that
-
-             */
             if (!(world instanceof ServerLevel level)) return InteractionResult.PASS;
             if (!(player instanceof ServerPlayer serverPlayer)) return InteractionResult.PASS;
             if (player.isCrouching()) return InteractionResult.PASS;
-            if (PowerReference.of(ResourceLocation.fromNamespaceAndPath("origins-diversity", "sculk_cultist/sculk_interaction_formtoggle")).isActive(player)) return InteractionResult.PASS;
             if (!OriginsUtil.hasOrigin(serverPlayer, "origins-diversity", "sculk_cultist")) return InteractionResult.PASS;
 
+            // If a conversion just happened on this click, skip storage and clear the tag
+            if (serverPlayer.getTags().contains("sculk_just_converted")) {
+                serverPlayer.removeTag("sculk_just_converted");
+                return InteractionResult.PASS;
+            }
             BlockState blockState = world.getBlockState(blockHitResult.getBlockPos());
             if (!(blockState.is(Blocks.SCULK) || blockState.is(ModBlocks.SCULK_BLOCK))) return InteractionResult.PASS;
 

@@ -1,4 +1,6 @@
 {
+  "name": "Sculk Enhancing",
+  "description": "Upon toggle, you let the sculk dive deeper to your body, making you able to:\n- Turn convertible blocks into Sculk by right clicking on them and spending the sculk contained within you.\n- Phase through Sculk blocks\n- Inflict darkness on those who you hit",
   "type": "origins:multiple",
   "formtoggle": {
     "type": "origins:toggle",
@@ -15,6 +17,52 @@
       "power": "origins-diversity:sculk_cultist/sculk_interaction_formtoggle"
     }
   },
+  "onhit": {
+    "type": "origins:action_on_hit",
+    "damage_condition": {
+      "type": "origins:projectile",
+      "inverted": true
+    },
+    "bientity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:target_action",
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:apply_effect",
+                "effect": {
+                  "id": "minecraft:darkness",
+                  "duration": 80
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "bientity_condition": {
+      "type": "origins:actor_condition",
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:power_active",
+            "power": "origins-diversity:sculk_cultist/sculk_interaction_formtoggle"
+          },
+          {
+            "type": "origins:resource",
+            "resource": "origins-diversity:sculk_cultist/sculk_gather",
+            "comparison": ">=",
+            "compare_to": 5
+          }
+        ]
+      }
+    }
+
+  },
   "convert": {
     "type": "origins:action_on_block_use",
     "block_action": {
@@ -28,7 +76,11 @@
 
     },
     "entity_action": {
-      "type": "origins:swing_hand"
+      "type": "origins:and",
+      "actions": [
+        {"type": "origins:swing_hand"},
+        {"type": "origins:execute_command", "command": "tag @s add sculk_just_converted"}
+      ]
     },
     "block_condition": {
       "type": "origins:and",
