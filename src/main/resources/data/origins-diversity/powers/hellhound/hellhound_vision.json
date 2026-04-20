@@ -1,5 +1,5 @@
 {
   "hidden": true,
   "type": "origins:shader",
-  "shader": "origins-diversity:post_effects/hellhound_vision.json"
+  "shader": "origins-diversity:shaders/post/redtint.json"
 }

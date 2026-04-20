@@ -4,8 +4,8 @@
     "srcrgb": "one",
     "dstrgb": "zero"
   },
-  "vertex": "origins-diversity:sobel",
-  "fragment": "origins-diversity:sobel",
+  "vertex": "od_sobel",
+  "fragment": "od_sobel",
   "attributes": [ "Position" ],
   "samplers": [
     { "name": "DiffuseSampler" }

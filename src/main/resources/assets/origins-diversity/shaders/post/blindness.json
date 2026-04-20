@@ -78,7 +78,7 @@
       ]
     },
     {
-      "name": "origins-diversity:notch",
+      "name": "od_notch",
       "intarget": "final",
       "outtarget": "minecraft:main",
       "auxtargets": [

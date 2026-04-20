@@ -1,0 +1,18 @@
+{
+  "targets": [ "final" ],
+  "passes": [
+    {
+      "name": "od_redtint",
+      "intarget": "minecraft:main",
+      "outtarget": "final",
+      "uniforms": [
+        { "name": "RedAmount", "values": [ 0.15 ] }
+      ]
+    },
+    {
+      "name": "blit",
+      "intarget": "final",
+      "outtarget": "minecraft:main"
+    }
+  ]
+}
