@@ -1,0 +1,24 @@
+{
+  "name": "Starborn",
+  "description": "Children of the night sky, fragile, but carry the light of the cosmos.",
+  "icon": {
+    "id": "minecraft:nether_star"
+  },
+  "impact": 3,
+  "powers": [
+    "origins-diversity:starborn/starlight_energy",
+    "origins-diversity:starborn/starlight_energy_regen_day",
+    "origins-diversity:starborn/starlight_energy_regen_night",
+    "origins-diversity:starborn/celestial_link",
+    "origins-diversity:starborn/starlight_pulse",
+    "origins-diversity:starborn/lunar_empowerment",
+    "origins-diversity:starborn/supernova",
+    "origins-diversity:starborn/light_body",
+    "origins-diversity:starborn/fragile_body",
+    "origins-diversity:starborn/stellar_sight",
+    "origins-diversity:starborn/day_nerf"
+  ],
+  "layers": [
+    "origins:origin"
+  ]
+}

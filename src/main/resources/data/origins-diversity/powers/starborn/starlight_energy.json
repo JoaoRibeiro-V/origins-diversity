@@ -1,0 +1,12 @@
+{
+  "type": "origins:resource",
+  "min": 0,
+  "max": 100,
+  "start_value": 25,
+  "hud_render": {
+    "bar_index": 1,
+    "should_render": true
+  },
+  "name": "Starlight Energy",
+  "description": "Your celestial power.\nPassively regain starlight around, recovers faster at night."
+}

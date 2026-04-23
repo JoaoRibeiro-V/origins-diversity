@@ -1,0 +1,28 @@
+{
+  "type": "origins:action_over_time",
+  "interval": 50,
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "origins-diversity:starborn/starlight_energy",
+    "change": 1
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:time_of_day",
+        "comparison": ">",
+        "compare_to": 12300
+      },
+      {
+        "type": "origins:resource",
+        "resource": "origins-diversity:starborn/starlight_energy",
+        "comparison": "<",
+        "compare_to": 100
+      }
+    ]
+  },
+  "name": "Starlight Regen (Night)",
+  "description": "Rapidly recover energy at night.",
+  "hidden": true
+}

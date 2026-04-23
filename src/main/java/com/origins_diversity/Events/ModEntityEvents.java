@@ -6,12 +6,9 @@ import com.origins_diversity.Entities.SculkServantEntity;
 import com.origins_diversity.Data.SculkServantTameData;
 import com.origins_diversity.Entities.SculkZombieEntity;
 import com.origins_diversity.Extra.OriginsUtil;
-import io.github.apace100.apoli.condition.type.entity.PowerActiveEntityConditionType;
-import io.github.apace100.apoli.power.PowerReference;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionResult;
@@ -26,6 +23,8 @@ import java.util.UUID;
 
 public class ModEntityEvents {
     public static void register() {
+        KitsuneEvents.register();
+        StarbornEvents.register();
         UseBlockCallback.EVENT.register((player, world, hand, blockHitResult) -> {
             if (!(world instanceof ServerLevel level)) return InteractionResult.PASS;
             if (!(player instanceof ServerPlayer serverPlayer)) return InteractionResult.PASS;

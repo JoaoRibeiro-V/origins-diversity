@@ -1,0 +1,40 @@
+{
+  "type": "origins:multiple",
+  "name": "Light Body",
+  "description": "Weightless at night, you have slow falling and jump boost when the moon rises.",
+
+  "0": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:light_body_jump",
+      "attribute": "minecraft:generic.jump_strength",
+      "operation": "add_multiplied_base",
+      "amount": 0.15
+    },
+    "condition": {
+      "type": "origins:time_of_day",
+      "comparison": ">",
+      "compare_to": 12300
+    }
+  },
+
+  "1": {
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:slow_falling",
+        "amplifier": 0,
+        "duration": 60,
+        "ambient": true,
+        "show_particles": false
+      }
+    },
+    "condition": {
+      "type": "origins:time_of_day",
+      "comparison": ">",
+      "compare_to": 12300
+    }
+  }
+}

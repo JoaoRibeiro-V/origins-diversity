@@ -1,0 +1,56 @@
+{
+  "type": "origins:multiple",
+  "name": "Solar Weakness",
+  "description": "You are weakened during the day. Without energy, you falter further.",
+
+  "0": {
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:weakness",
+        "amplifier": 0,
+        "duration": 60,
+        "ambient": true,
+        "show_particles": false
+      }
+    },
+    "condition": {
+      "type": "origins:time_of_day",
+      "comparison": "<=",
+      "compare_to": 12300
+    }
+  },
+
+  "1": {
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:slowness",
+        "amplifier": 0,
+        "duration": 60,
+        "ambient": true,
+        "show_particles": false
+      }
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:time_of_day",
+          "comparison": "<=",
+          "compare_to": 12300
+        },
+        {
+          "type": "origins:resource",
+          "resource": "origins-diversity:starborn/starlight_energy",
+          "comparison": "<=",
+          "compare_to": 0
+        }
+      ]
+    }
+  }
+}

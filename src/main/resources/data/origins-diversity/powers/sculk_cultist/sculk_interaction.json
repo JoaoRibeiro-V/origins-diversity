@@ -37,6 +37,12 @@
                   "id": "minecraft:darkness",
                   "duration": 80
                 }
+              },
+              {
+                "type": "origins:change_resource",
+                "resource": "origins-diversity:sculk_cultist/sculk_gather",
+                "change": -5,
+                "operation": "add"
               }
             ]
           }
@@ -79,7 +85,13 @@
       "type": "origins:and",
       "actions": [
         {"type": "origins:swing_hand"},
-        {"type": "origins:execute_command", "command": "tag @s add sculk_just_converted"}
+        {"type": "origins:execute_command", "command": "tag @s add sculk_just_converted"},
+        {
+          "type": "origins:change_resource",
+          "resource": "origins-diversity:sculk_cultist/sculk_gather",
+          "change": -5,
+          "operation": "add"
+        }
       ]
     },
     "block_condition": {

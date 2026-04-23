@@ -34,6 +34,12 @@
                   "command": "tag @s add sculk_cultist_ritual_pending"
                 },
                 {
+                  "type": "origins:change_resource",
+                  "resource": "origins-diversity:sculk_cultist/sculk_gather",
+                  "change": 0,
+                  "operation": "set"
+                },
+                {
                   "type": "origins:trigger_cooldown",
                   "power": "origins-diversity:sculk_cultist/summon_cooldown"
                 }
@@ -54,6 +60,12 @@
                 {
                   "type": "origins:execute_command",
                   "command": "tag @s add sculk_zombie_summon"
+                },
+                {
+                  "type": "origins:change_resource",
+                  "resource": "origins-diversity:sculk_cultist/sculk_gather",
+                  "change": -50,
+                  "operation": "add"
                 },
                 {
                   "type": "origins:change_resource",
