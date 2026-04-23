@@ -25,6 +25,8 @@ public class ModEntityEvents {
     public static void register() {
         KitsuneEvents.register();
         StarbornEvents.register();
+        ParasiteEvents.register();
+        HellhoundEvents.register();
         UseBlockCallback.EVENT.register((player, world, hand, blockHitResult) -> {
             if (!(world instanceof ServerLevel level)) return InteractionResult.PASS;
             if (!(player instanceof ServerPlayer serverPlayer)) return InteractionResult.PASS;

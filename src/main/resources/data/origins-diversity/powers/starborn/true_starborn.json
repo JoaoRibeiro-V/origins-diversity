@@ -1,0 +1,147 @@
+{
+  "hidden": false,
+  "name": "True Starborn",
+  "description": "Pinnacle of stars, you now can:\n- Regain starlight from the sun.\n- Reach complete destructive power when the sun reaches its peak, but take increased damage.\n\nThis power makes your energy dependency increase, making you have a huge decrease in power when low on starlight.",
+  "type": "origins:multiple",
+  "resetascension": {
+    "type": "origins:action_on_callback",
+    "lost": {
+      "type": "origins:remove_power",
+      "power": "origins-diversity:starborn/true_starborn"
+    }
+  },
+  "hp": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:fragile_body_health",
+      "attribute": "minecraft:generic.max_health",
+      "operation": "ADD_VALUE",
+      "amount": 2.0
+    }
+  },
+  "dayregen": {
+    "hidden": false,
+    "name": "True Starborn",
+    "description": "Pinnacle of stars, you now can:\n- Regain starlight from the sun.\n- Reach complete destructive power when the sun reaches its peak, but take increased damage.\n\nThis power makes your energy dependency increase, making you have a huge decrease in power when low on starlight.",
+    "type": "origins:action_over_time",
+    "interval": 100,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "origins-diversity:starborn/starlight_energy",
+      "change": 1
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:time_of_day",
+          "comparison": "<=",
+          "compare_to": 12300
+        },
+        {
+          "type": "origins:resource",
+          "resource": "origins-diversity:starborn/starlight_energy",
+          "comparison": "<",
+          "compare_to": 100
+        }
+      ]
+    }
+  },
+
+  "midday_strength": {
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "id": "minecraft:strength",
+        "amplifier": 2,
+        "duration": 60,
+        "ambient": true,
+        "show_particles": false
+      }
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:time_of_day",
+          "comparison": ">=",
+          "compare_to": 5500
+        },
+        {
+          "type": "origins:time_of_day",
+          "comparison": "<=",
+          "compare_to": 7500
+        }
+      ]
+    }
+  },
+  "midday_defense_debuff": {
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": 0.25
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:time_of_day",
+          "comparison": ">=",
+          "compare_to": 5500
+        },
+        {
+          "type": "origins:time_of_day",
+          "comparison": "<=",
+          "compare_to": 7500
+        }
+      ]
+    }
+  },
+  "lowenergy": {
+    "type": "origins:action_over_time",
+    "interval": 10,
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "id": "minecraft:weakness",
+            "amplifier": 0,
+            "duration": 60,
+            "ambient": true,
+            "show_particles": false
+          }
+        },
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "id": "minecraft:slowness",
+            "amplifier": 0,
+            "duration": 60,
+            "ambient": true,
+            "show_particles": false
+          }
+        },
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+            "id": "minecraft:mining_fatigue",
+            "amplifier": 0,
+            "duration": 60,
+            "ambient": true,
+            "show_particles": false
+          }
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "origins-diversity:starborn/starlight_energy",
+      "comparison": "<=",
+      "compare_to": 25
+    }
+  }
+}

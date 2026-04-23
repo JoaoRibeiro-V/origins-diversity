@@ -44,23 +44,25 @@ public abstract class PiglinAiMixin {
             ItemStack stack,
             CallbackInfoReturnable<Boolean> cir
     ) {
-        Player player = (Player) piglin.getTarget();
         Level level = piglin.level();
-        if (player == null){
-           player = level.getNearestPlayer(
+
+        Player player = (piglin.getTarget() instanceof Player p) ? p : null;
+
+        if (player == null) {
+            player = level.getNearestPlayer(
                     piglin.getX(),
                     piglin.getY(),
                     piglin.getZ(),
                     12.0,
                     foundPlayer -> getShouldAttack((Player) foundPlayer)
             );
-        };
+        }
+
         if (player == null) return;
         if (getShouldAttack(player)) {
             piglin.setAggressive(true);
             piglin.setTarget(player);
             cir.setReturnValue(false);
-            return;
         }
     }
 

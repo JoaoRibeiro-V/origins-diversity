@@ -61,15 +61,21 @@ public final class KitsuneIllusionManager {
 
     private static void spawn(Minecraft mc) {
         assert mc.player != null;
-        List<Entity> candidates = mc.level.getEntities(mc.player,mc.player.getBoundingBox().inflate(16),e -> isValidIllusionTarget(e, mc.player));
+        List<Entity> candidates = mc.level.getEntities(
+                mc.player,
+                mc.player.getBoundingBox().inflate(16),
+                e -> isValidIllusionTarget(e, mc.player)
+        );
 
         Entity ebase;
 
-        if(!candidates.isEmpty()){
-            ebase = candidates.get(mc.level.random.nextInt(candidates.size()));
-        }else{
+        if (!candidates.isEmpty()) {
+            Entity candidate = candidates.get(mc.level.random.nextInt(candidates.size()));
+            ebase = candidate.getType().create(mc.level);
+            if (ebase == null) return;
+        } else {
             ebase = createExampleEntity(mc);
-            if(ebase == null) return;
+            if (ebase == null) return;
         }
 
         ebase.setInvisible(false);

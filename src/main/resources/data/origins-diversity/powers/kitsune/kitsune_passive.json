@@ -15,15 +15,6 @@
       }
     }
   },
-  "basehp": {
-    "type": "origins:attribute",
-    "modifier": {
-      "id": "origins-diversity:kitsune_hearts",
-      "attribute": "minecraft:generic.max_health",
-      "amount": -10.0,
-      "operation": "ADD_VALUE"
-    }
-  },
   "active": {
     "hidden": false,
     "name": "Spirit Manipulation",

@@ -17,9 +17,19 @@
       }
     },
     "condition": {
-      "type": "origins:time_of_day",
-      "comparison": "<=",
-      "compare_to": 12300
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:time_of_day",
+          "comparison": "<=",
+          "compare_to": 12300
+        },
+        {
+          "type": "origins:power",
+          "power": "origins-diversity:starborn/true_starborn",
+          "inverted": true
+        }
+      ]
     }
   },
 
@@ -49,6 +59,11 @@
           "resource": "origins-diversity:starborn/starlight_energy",
           "comparison": "<=",
           "compare_to": 0
+        },
+        {
+          "type": "origins:power",
+          "power": "origins-diversity:starborn/true_starborn",
+          "inverted": true
         }
       ]
     }

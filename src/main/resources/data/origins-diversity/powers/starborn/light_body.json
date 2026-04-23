@@ -19,18 +19,8 @@
   },
 
   "1": {
-    "type": "origins:action_over_time",
-    "interval": 10,
-    "entity_action": {
-      "type": "origins:apply_effect",
-      "effect": {
-        "id": "minecraft:slow_falling",
-        "amplifier": 0,
-        "duration": 60,
-        "ambient": true,
-        "show_particles": false
-      }
-    },
+    "type": "origins:modify_falling",
+    "velocity": 0.06,
     "condition": {
       "type": "origins:time_of_day",
       "comparison": ">",

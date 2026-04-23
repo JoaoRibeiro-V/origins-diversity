@@ -5,6 +5,7 @@ import com.origins_diversity.Entities.ModEntities;
 import com.origins_diversity.Entities.ModEntityAttributes;
 import com.origins_diversity.Events.ModEntityEvents;
 import com.origins_diversity.Extra.ModParticles;
+import com.origins_diversity.GameRules.ModGameRules;
 import com.origins_diversity.PowerHandlers.SculkSummonListener;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -33,6 +34,7 @@ public class OriginsDiversity implements ModInitializer {
         ModEntityAttributes.register();
         ModEntityEvents.register();
         ModBlocks.registerModBlocks();
+        ModGameRules.register();
     }
 
 }

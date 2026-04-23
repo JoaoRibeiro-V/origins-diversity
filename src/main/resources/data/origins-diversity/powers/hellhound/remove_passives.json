@@ -3,7 +3,7 @@
   "type": "origins:action_on_callback",
   "entity_action_chosen": {
     "type": "origins:execute_command",
-    "command": "execute in minecraft:the_nether run teleport @s ~ ~ ~"
+    "command": "tag @s add hellhound_nether_spawn"
   },
   "entity_action_lost": {
     "type": "origins:and",

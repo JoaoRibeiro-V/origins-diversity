@@ -9,6 +9,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Mob;
 
 import java.util.*;
 
@@ -17,7 +18,7 @@ public class CelestialLinkHandler {
     private static final ResourceLocation CELESTIAL_LINK =
             ResourceLocation.fromNamespaceAndPath("origins-diversity", "starborn/celestial_link");
 
-    private static final float SHARED_RATIO = 0.25f;
+    private static final float SHARED_RATIO = 0.4f;
     private static final int LINK_COOLDOWN_TICKS = 40;
 
     private static final Map<UUID, UUID> linkedAllies = new HashMap<>();
@@ -125,9 +126,16 @@ public class CelestialLinkHandler {
         return null;
     }
 
+    private static final Set<UUID> processingDamage = new HashSet<>();
+
     public static void onEntityHurt(LivingEntity victim, DamageSource source, float amount) {
         if (victim.level().isClientSide()) return;
         if (!(victim.level() instanceof ServerLevel serverLevel)) return;
+        if (processingDamage.contains(victim.getUUID())) return;
+
+        DamageSource sharedSource = (source.getEntity() instanceof Mob mob)
+                ? serverLevel.damageSources().mobAttack(mob)
+                : serverLevel.damageSources().generic();
 
         for (ServerPlayer starborn : serverLevel.getServer().getPlayerList().getPlayers()) {
             if (!hasCelestialLink(starborn)) continue;
@@ -136,14 +144,16 @@ public class CelestialLinkHandler {
             if (linkedTarget == null) continue;
 
             if (linkedTarget.getUUID().equals(victim.getUUID())) {
-                // linked target got hurt, starborn absorbs a portion
-                starborn.hurt(serverLevel.damageSources().generic(), amount * SHARED_RATIO);
+                processingDamage.add(starborn.getUUID());
+                starborn.hurt(sharedSource, amount * SHARED_RATIO);
+                processingDamage.remove(starborn.getUUID());
                 return;
             }
 
             if (starborn.getUUID().equals(victim.getUUID())) {
-                // starborn got hurt, linked target also takes a portion
-                linkedTarget.hurt(linkedTarget.level().damageSources().generic(), amount * SHARED_RATIO);
+                processingDamage.add(linkedTarget.getUUID());
+                linkedTarget.hurt(sharedSource, amount * SHARED_RATIO);
+                processingDamage.remove(linkedTarget.getUUID());
             }
         }
     }

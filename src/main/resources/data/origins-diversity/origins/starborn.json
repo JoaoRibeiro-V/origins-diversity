@@ -7,7 +7,6 @@
   "impact": 3,
   "powers": [
     "origins-diversity:starborn/starlight_energy",
-    "origins-diversity:starborn/starlight_energy_regen_day",
     "origins-diversity:starborn/starlight_energy_regen_night",
     "origins-diversity:starborn/celestial_link",
     "origins-diversity:starborn/starlight_pulse",
@@ -16,7 +15,8 @@
     "origins-diversity:starborn/light_body",
     "origins-diversity:starborn/fragile_body",
     "origins-diversity:starborn/stellar_sight",
-    "origins-diversity:starborn/day_nerf"
+    "origins-diversity:starborn/day_nerf",
+    "origins-diversity:starborn/star_consumption"
   ],
   "layers": [
     "origins:origin"
