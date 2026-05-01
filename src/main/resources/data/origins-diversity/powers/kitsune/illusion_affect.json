@@ -37,8 +37,8 @@
   "bar": {
     "type": "origins:resource",
     "min": 0,
-    "max": 9,
-    "start_value": 9,
+    "max": 12,
+    "start_value": 12,
     "min_action": {
       "type": "origins:remove_power",
       "power": "origins-diversity:kitsune/illusion_affect"

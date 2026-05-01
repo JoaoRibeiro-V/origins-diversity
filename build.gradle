@@ -36,7 +36,6 @@ repositories {
 
 	// Ladysnake (Origins, Apoli, Calio)
 	maven { url = "https://maven.ladysnake.org/releases" }
-
 	// Cloth Config
 	maven { url = "https://maven.shedaniel.me/" }
 

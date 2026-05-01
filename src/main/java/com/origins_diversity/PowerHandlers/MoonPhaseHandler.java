@@ -70,7 +70,7 @@ public class MoonPhaseHandler {
         }
 
         // share active buffs with linked target
-        CelestialLinkHandler.syncEffectsToLinkedTarget(player);
+        CelestialLinkHandler.syncEffectsToLinkedTargets(player);
     }
 
     private static void removeLunarEffects(ServerPlayer player) {

@@ -1,5 +1,6 @@
 package com.origins_diversity.Events;
 
+import com.origins_diversity.Extra.OriginsUtil;
 import io.github.apace100.apoli.component.PowerHolderComponent;
 import io.github.apace100.apoli.power.PowerReference;
 import io.github.apace100.apoli.power.type.ResourcePowerType;
@@ -22,10 +23,14 @@ public class KitsuneEvents {
     private static final Map<UUID, Integer> lastTailCount = new HashMap<>();
 
     private static final Map<UUID, Integer> pendingRefresh = new HashMap<>();
+    private static void putOnQueue(ServerPlayer player) {
+        if(!OriginsUtil.hasOrigin(player, "origins-diversity","kitsune")) return;
+        pendingRefresh.put(player.getUUID(), 5);
+    }
 
     public static void register() {
         ServerPlayerEvents.AFTER_RESPAWN.register((oldPlayer, newPlayer, alive) ->
-                pendingRefresh.put(newPlayer.getUUID(), 5));
+                putOnQueue(newPlayer));
 
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             List<UUID> toRefresh = new ArrayList<>();

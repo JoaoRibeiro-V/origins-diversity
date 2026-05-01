@@ -27,10 +27,8 @@ public final class KitsuneIllusionRenderer {
         Vec3 camPos = camera.getPosition();
         List<FakeIllusionEntity> illusions = KitsuneIllusionManager.getActive();
         for (FakeIllusionEntity illusion : illusions) {
-            Entity fake = illusion.base;
-
-            double y = getGroundY(mc, fake.getX(), fake.getZ(), fake.getY());
-            fake.setPos(fake.getX(), y, fake.getZ());
+            illusion.tick(mc);
+            Entity fake = illusion.renderEntity;
 
             if (!illusion.hasSetYaw) {
                 assert mc.level != null;
@@ -43,11 +41,7 @@ public final class KitsuneIllusionRenderer {
 
                 illusion.hasSetYaw = true;
             }
-            fake.baseTick();
-            fake.setDeltaMovement(Vec3.ZERO);
-
             Vec3 relPos = fake.position().subtract(camPos);
-
             assert poseStack != null;
             poseStack.pushPose();
             EntityRenderDispatcher dispatcher = mc.getEntityRenderDispatcher();
@@ -67,24 +61,5 @@ public final class KitsuneIllusionRenderer {
         }
 
         buffers.endBatch();
-    }
-    private static double getGroundY(Minecraft mc, double x, double z, double startY) {
-        Vec3 from = new Vec3(x, startY + 4, z);
-        Vec3 to   = new Vec3(x, startY - 20, z);
-
-        assert mc.level != null;
-        assert mc.player != null;
-        BlockHitResult hit = mc.level.clip(new ClipContext(
-                from,
-                to,
-                ClipContext.Block.COLLIDER,
-                ClipContext.Fluid.NONE,
-                mc.player
-        ));
-
-        if (hit.getType() == BlockHitResult.Type.BLOCK) {
-            return hit.getLocation().y;
-        }
-        return startY; // fallback if no block hit
     }
 }

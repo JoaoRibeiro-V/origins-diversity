@@ -47,6 +47,41 @@
           "power": "origins-diversity:chorus_leech/parasite"
         },
         {
+          "type": "origins:riding_action",
+          "action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:dismount"
+              },
+              {
+                "type": "origins:apply_effect",
+                "effect": {
+                  "id": "minecraft:hunger",
+                  "duration": 100,
+                  "amplifier": 1
+                }
+              },
+              {
+                "type": "origins:apply_effect",
+                "effect": {
+                  "id": "minecraft:weakness",
+                  "duration": 40,
+                  "amplifier": 1
+                }
+              },
+              {
+                "type": "origins:apply_effect",
+                "effect": {
+                  "id": "minecraft:nausea",
+                  "duration": 200,
+                  "amplifier": 1
+                }
+              }
+            ]
+          }
+        },
+        {
           "type": "origins:passenger_action",
           "action": {
             "type": "origins:and",
@@ -100,6 +135,7 @@
   },
   "controller": {
     "type": "origins:action_over_time",
+    "interval": 60,
     "entity_action": {
       "type": "origins:if_else",
       "condition": {
