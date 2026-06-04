@@ -3,51 +3,55 @@
 > Descriptions emphasize flavor and identity rather than exact mechanics.
 
 ---
+
+<summary><strong>Table of Contents</strong></summary>
+
 ## Table of Contents
 
 <a id="Table of Contents"></a>
 
 ### ⭐ Impact 1
-- [Axolotl](#axolotl)
-- [Cow](#cow)
-- [Dodo Bird](#dodo-bird)
-- [Dryad](#dryad)
-- [Frog](#frog)
-- [Horse](#horse)
-- [Monkey](#monkey)
-- [Panda](#panda)
-- [Penguin](#penguin)
-- [Platypus](#platypus)
-- [Raccoon](#raccoon)
-- [Reptile](#reptile)
+- [Axolotl](#-axolotl)
+- [Cow](#-cow)
+- [Dodo Bird](#-dodo-bird)
+- [Dryad](#-dryad)
+- [Frog](#-frog)
+- [Horse](#-horse)
+- [Monkey](#-monkey)
+- [Panda](#-panda)  
+- [Penguin](#-penguin)
+- [Platypus](#-platypus)
+- [Raccoon](#-raccoon)
+- [Reptile](#-reptile)
 
 ### ⭐⭐ Impact 2
-- [Bee](#bee)
-- [Chameleon](#chameleon)
-- [Fox](#fox)
-- [Golem](#golem)
-- [Owl](#owl)
-- [Phoenix](#phoenix)
-- [Shark](#shark)
-- [Snail](#snail)
+- [Bee](#-bee)
+- [Chameleon](#-chameleon)
+- [Fox](#-fox)
+- [Golem](#-golem)
+- [Owl](#-owl)
+- [Phoenix](#-phoenix)
+- [Shark](#-shark)
+- [Snail](#-snail)
 
 ### ⭐⭐⭐ Impact 3
-- [Abysswyrm](#abysswyrm)
-- [Chorus Leech](#chorus-leech)
-- [Ender Moth](#ender-moth)
-- [Hellbat](#hellbat)
-- [Hellhound](#hellhound)
-- [Kitsune](#kitsune)
-- [Sculk Cultist](#sculk-cultist)
-- [Starborn](#starborn)
-- [Withered Piglin](#withered-piglin)
+- [Abysswyrm](#-abysswyrm)
+- [Chorus Leech](#-chorus-leech)
+- [Ender Moth](#-ender-moth)
+- [Hellbat](#-hellbat)
+- [Hellhound](#-hellhound)
+- [Kitsune](#-kitsune)
+- [Sculk Cultist](#-sculk-cultist)
+- [Starborn](#-starborn)
+- [Withered Piglin](#-withered-piglin)
+
 ---
 
 # Origins
 
 ---
 
-<details>
+<details open>
 <summary><strong>Axolotl</strong></summary>
 
 ## Axolotl
@@ -79,7 +83,7 @@
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Cow</strong></summary>
 
 ## Cow
@@ -110,7 +114,7 @@
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Dodo Bird</strong></summary>
 
 ## Dodo Bird
@@ -145,7 +149,7 @@
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Dryad</strong></summary>
 
 ## Dryad
@@ -178,7 +182,7 @@
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Frog</strong></summary>
 
 ## Frog
@@ -208,7 +212,7 @@ None significant beyond moisture management.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Horse</strong></summary>
 
 ## Horse
@@ -241,7 +245,7 @@ None significant beyond moisture management.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Monkey</strong></summary>
 
 ## Monkey
@@ -274,7 +278,7 @@ None significant beyond moisture management.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Panda</strong></summary>
 
 ## Panda
@@ -306,7 +310,7 @@ None significant beyond moisture management.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Penguin</strong></summary>
 
 ## Penguin
@@ -337,7 +341,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Platypus</strong></summary>
 
 ## Platypus
@@ -368,7 +372,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Raccoon</strong></summary>
 
 ## Raccoon
@@ -400,7 +404,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Reptile</strong></summary>
 
 ## Reptile
@@ -435,7 +439,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Bee</strong></summary>
 
 ## Bee
@@ -471,7 +475,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Chameleon</strong></summary>
 
 ## Chameleon
@@ -500,7 +504,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Fox</strong></summary>
 
 ## Fox
@@ -532,7 +536,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Golem</strong></summary>
 
 ## Golem
@@ -571,7 +575,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Owl</strong></summary>
 
 ## Owl
@@ -604,7 +608,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Phoenix</strong></summary>
 
 ## Phoenix
@@ -637,7 +641,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Shark</strong></summary>
 
 ## Shark
@@ -669,7 +673,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Snail</strong></summary>
 
 ## Snail
@@ -704,7 +708,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Abysswyrm</strong></summary>
 
 ## Abysswyrm
@@ -736,7 +740,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Chorus Leech</strong></summary>
 
 ## Chorus Leech
@@ -770,7 +774,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Ender Moth</strong></summary>
 
 ## Ender Moth
@@ -803,7 +807,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Hellbat</strong></summary>
 
 ## Hellbat
@@ -840,7 +844,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Hellhound</strong></summary>
 
 ## Hellhound
@@ -873,7 +877,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Kitsune</strong></summary>
 
 ## Kitsune
@@ -906,7 +910,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Sculk Cultist</strong></summary>
 
 ## Sculk Cultist
@@ -940,7 +944,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Starborn</strong></summary>
 
 ## Starborn
@@ -975,7 +979,7 @@ None significant — a low-impact support origin.
 
 </details>
 
-<details>
+<details open>
 <summary><strong>Withered Piglin</strong></summary>
 
 ## Withered Piglin
