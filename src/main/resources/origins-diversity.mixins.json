@@ -9,11 +9,12 @@
   },
   "package": "com.origins_diversity.Mixins",
   "mixins": [
+    "ChorusFruitMixin",
+    "IronGolemAiMixin",
     "LivingEntityMixin",
     "PiglinAiMixin",
-    "ChorusFruitMixin",
-    "WolfAiMixin",
-    "IronGolemAiMixin",
-    "VillagerAiMixin"
+    "PlayerAttackMixin",
+    "VillagerAiMixin",
+    "WolfAiMixin"
   ]
 }
