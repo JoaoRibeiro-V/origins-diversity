@@ -67,7 +67,7 @@
 |---|---|
 | **Aquatic Grace** | Increased swim speed. |
 | **Gills** | Holds breath much longer underwater. |
-| **Healing Aid** | All healing received is 25% more effective. |
+| **Healing Aid** | All healing received is **moderately more effective**. |
 | **Healing Splash** *(Primary Active, underwater only)* | Grant Regeneration to all players within a short distance. |
 | **Smol** | smaller in stature, harder to hit. |
 | **Water Blessing** | Regenerates a short distance every a short distance while submerged. |
@@ -76,7 +76,7 @@
 
 | Power | Description |
 |---|---|
-| **Pacifist** | Deals increased 32.5% less damage to living creatures. |
+| **Pacifist** | Deals **moderately less damage** to living creatures. |
 
 ---
 
@@ -99,13 +99,13 @@
 |---|---|
 | **Milkable** | Others can milk you with a bucket, giving both parties Regeneration. |
 | **Self Milking** | Use a bucket on yourself to produce a milk bucket and gain Regeneration. |
-| **Sturdy Build** | +25% knockback resistance. |
+| **Sturdy Build** | **Modest resistance** to knockback. |
 
 ### Weaknesses
 
 | Power | Description |
 |---|---|
-| **Ravenous** | Hunger depletes 35% faster. |
+| **Ravenous** | Hunger depletes **significantly faster**. |
 | **Slow Mover** | Reduced movement speed. |
 | **Vegetarian** | Follows a herbivorous diet. |
 
@@ -130,18 +130,18 @@
 |---|---|
 | **Environmental Adaptability** | Passively adapt to your current biome: |
 | | 🔥 Hot biomes: +a short distance and fire immunity. |
-| | ❄ Cold biomes: +1 attack damage, -20% hunger loss. |
-| | 🌊 Ocean biomes: +1.5 oxygen bonus, +20% swim speed, +35% knockback resistance. |
-| | 🌿 Plains: speed burst after hitting enemies, -25% hunger loss. |
-| | 🪵 Swamps: immune to Poison and Hunger, +20% knockback resistance. |
-| | ⛰ Mountains: -25% fall damage, -20% projectile damage, +15% jump height, +25% knockback resistance. |
+| | ❄ Cold biomes: +1 attack damage, **minor reduction** to hunger loss. |
+| | 🌊 Ocean biomes: +1.5 oxygen bonus, **modest increase** to swim speed, **modest resistance** to knockback. |
+| | 🌿 Plains: speed burst after hitting enemies, **moderate reduction** to hunger loss. |
+| | 🪵 Swamps: immune to Poison and Hunger, **modest resistance** to knockback. |
+| | ⛰ Mountains: **moderate reduction** to fall damage, **minor decrease** to projectile damage, **slightly higher** jump height, **modest resistance** to knockback. |
 | **Tail Feather Flap** | Sneak while falling to slow fall and negate fall damage. |
 
 ### Weaknesses
 
 | Power | Description |
 |---|---|
-| **Slow Learner** | -32.5% XP gain. |
+| **Slow Learner** | **Moderately reduced** XP gain. |
 | **Slow on the Draw** | Takes more damage when hit while the attacker is using a shield. |
 
 ---
@@ -163,19 +163,19 @@
 
 | Power | Description |
 |---|---|
-| **Animal Leader** | You deal 50% less damage to your own tamed animals. |
-| **Forest Dependency** | In forests and jungles: +4 max health and +10% damage resistance. |
-| **Forest Dweller** | In forests and jungles: +15% attack speed, +7.5% attack damage, +12.5% movement speed. |
-| **Forest Wisdom** | In forests and jungles: +25% XP gain. |
-| **Wild Bond** | Tamed animals deal +13.75% more damage. |
+| **Animal Leader** | You deal **significantly less damage** to your own tamed animals. |
+| **Forest Dependency** | In forests and jungles: +4 max health and a **minor boost** to damage resistance. |
+| **Forest Dweller** | In forests and jungles: **slightly faster** attack speed, **marginal increase** to attack damage, and a **minor bump** to movement speed. |
+| **Forest Wisdom** | In forests and jungles: **modest increase** to XP gain. |
+| **Wild Bond** | Tamed animals deal **slightly more** damage. |
 
 ### Weaknesses
 
 | Power | Description |
 |---|---|
 | **Arboreal Grace** | Chopping trees is slower in forests and jungles. |
-| **Fire Vulnerability** | +60% fire damage taken. |
-| **Forest Dependency** | Outside forests/jungles: -4 max health and -10% damage resistance. |
+| **Fire Vulnerability** | **Substantially higher** fire damage taken. |
+| **Forest Dependency** | Outside forests/jungles: -4 max health and a **minor decrease** to damage resistance. |
 
 ---
 
@@ -198,10 +198,10 @@
 |---|---|
 | **Aquatic Agility** | Slightly faster swimming. |
 | **Jump Boost** | Increased jump height. |
-| **Moisture** | Moisture bar (0–300). Replenish in water, rain, or by drinking potions. While moisturized: +12% damage dealt, -10% damage taken, -35% hunger loss. |
+| **Moisture** | Moisture bar (0–300). Replenish in water, rain, or by drinking potions. While moisturized: **slightly higher** damage dealt, **minor decrease** to damage taken, **moderate reduction** to hunger loss. |
 | **Safe Landing** | +5 safe fall distance. |
 | **Short Leap** *(Primary Active)* | Leap forward a short distance. |
-| **Slippery** | +20% ranged damage resistance. |
+| **Slippery** | **Modest resistance** to ranged damage. |
 
 ### Weaknesses
 
@@ -226,9 +226,9 @@ None significant beyond moisture management.
 
 | Power | Description |
 |---|---|
-| **Gallop** *(Secondary Active)* | Toggle galloping: +42.5% speed while sprinting. |
+| **Gallop** *(Secondary Active)* | Toggle galloping: **significantly faster** speed while sprinting. |
 | **Long Stride** | Jump height increased while galloping. |
-| **Momentum Strike** | Hitting enemies while galloping deals +20% damage and applies Nausea. |
+| **Momentum Strike** | Hitting enemies while galloping deals **modest bonus damage** and applies Nausea. |
 | **Packed Gear** | Personal chest inventory that drops on death. |
 | **Tiny Steed** | Other players can mount you. |
 
@@ -259,19 +259,19 @@ None significant beyond moisture management.
 
 | Power | Description |
 |---|---|
-| **Agile Leap** | +20% jump height. |
-| **Curiosity** | +30% XP gain. |
+| **Agile Leap** | **Modest boost** to jump height. |
+| **Curiosity** | **Modest increase** to XP gain. |
 | **Leaf Camouflage** | Harder to detect by mobs while standing on leaves. |
-| **Natural Balance** | +40% knockback resistance while standing on leaves. |
-| **Nimble Movement** | +12% movement speed. |
-| **Taunt** | 12.5% chance on hit to apply a taunt: taunted enemies deal slightly more damage to you but take more from you. |
+| **Natural Balance** | **Substantial resistance** to knockback while standing on leaves. |
+| **Nimble Movement** | **Slightly faster** movement speed. |
+| **Taunt** | Low chance on hit to apply a taunt: taunted enemies deal slightly more damage to you but take more from you. |
 | **Tree Acrobat** | Cannot die from fall damage. Landing on leaves heals and grants Absorption. |
 
 ### Weaknesses
 
 | Power | Description |
 |---|---|
-| **Tease** | -40% stealth — mobs aggro onto you more often. |
+| **Tease** | **Moderately reduced** stealth — mobs aggro onto you more often. |
 
 ---
 
@@ -294,7 +294,7 @@ None significant beyond moisture management.
 |---|---|
 | **Bamboo Empower** | Eating bamboo in a jungle grants Strength. |
 | **Bamboo Feast** | Can eat bamboo (4 hunger, 6 saturation). |
-| **Bamboo Homeland** | +11.5% damage in bamboo jungles and jungles. |
+| **Bamboo Homeland** | **Slightly higher** damage in bamboo jungles and jungles. |
 | **Bulky Build** | smaller in stature. |
 | **Gentle Giant** | +3 max health. |
 
@@ -302,8 +302,8 @@ None significant beyond moisture management.
 
 | Power | Description |
 |---|---|
-| **Lazy** | -12% movement speed. |
-| **Slowpoke Strikes** | -10% attack speed. |
+| **Lazy** | **Slightly slower** movement speed. |
+| **Slowpoke Strikes** | **Slightly reduced** attack speed. |
 
 ---
 
@@ -324,9 +324,9 @@ None significant beyond moisture management.
 
 | Power | Description |
 |---|---|
-| **Cold Affinity** | -20% damage taken in snowy biomes. |
+| **Cold Affinity** | **Modest reduction** to damage taken in snowy biomes. |
 | **Cold Strength** | +1 attack damage in cold biomes. |
-| **Fish Gourmet** | Fish provide +3 hunger and +2.5 saturation. |
+| **Fish Gourmet** | Fish provide extra hunger and saturation. |
 | **Huddle Warmth** | Nearby players periodically gain hunger and saturation. |
 | **Little Buddy** | Right-click a player to mount them. |
 | **Small Stature** | smaller in stature. |
@@ -356,16 +356,16 @@ None significant — a low-impact support origin.
 | Power | Description |
 |---|---|
 | **Electroreception** *(Active)* | Highlight all submerged entities within a short distance in cyan for a duration. |
-| **River Forager** | Fish provide +40% more saturation. |
+| **River Forager** | Fish provide **substantially higher** saturation. |
 | **Steel Fur** | +a short distance. |
-| **Waterborne Agility** | +27.5% swim speed. |
-| **Weak Venom** | 12.5% chance on hit to apply Poison. |
+| **Waterborne Agility** | **Modest boost** to swim speed. |
+| **Weak Venom** | Low chance on hit to apply Poison. |
 
 ### Weaknesses
 
 | Power | Description |
 |---|---|
-| **River Forager** | Non-fish food provides 30% less saturation. |
+| **River Forager** | Non-fish food provides **moderately less** saturation. |
 
 ---
 
@@ -388,16 +388,16 @@ None significant — a low-impact support origin.
 |---|---|
 | **Night Vision** | Partial night vision (0.3 strength). |
 | **Quick Dash** *(Secondary Active)* | Short forward burst of speed. |
-| **Scavenger** | +10 luck and +5 bonus rare loot rolls — better drops from chests, mobs, and fishing. |
+| **Scavenger** | High luck and bonus rare loot rolls — better drops from chests, mobs, and fishing. |
 | **Scavenger's Purse** | Personal hopper-sized inventory. |
-| **Steady Feet** | -25% fall damage. |
-| **Stealthy** | Becomes 80% transparent while sneaking. |
+| **Steady Feet** | **Modest reduction** to fall damage. |
+| **Stealthy** | Becomes nearly transparent while sneaking. |
 
 ### Weaknesses
 
 | Power | Description |
 |---|---|
-| **Thin Fur** | -32.5% armor effectiveness. |
+| **Thin Fur** | **Moderately lower** armor effectiveness. |
 
 ---
 
@@ -418,9 +418,9 @@ None significant — a low-impact support origin.
 
 | Power | Description |
 |---|---|
-| **Agile** | +7.5% movement speed. |
-| **Camouflage** | +35% stealth — harder for mobs to detect you. |
-| **Fire Resistance** | -50% fire damage taken. |
+| **Agile** | **Marginal increase** to movement speed. |
+| **Camouflage** | **Modest boost** to stealth — harder for mobs to detect you. |
+| **Fire Resistance** | **Significantly less** fire damage taken. |
 | **Molting** *(Active)* | Clear all status effects, extinguish fire, and heal a short distance. |
 | **Reptile Scales** | +a short distance toughness. |
 
@@ -428,7 +428,7 @@ None significant — a low-impact support origin.
 
 | Power | Description |
 |---|---|
-| **Overexertion** | 30% chance to lose hunger when hit in combat. |
+| **Overexertion** | Moderate chance to lose hunger when hit in combat. |
 
 ---
 
@@ -490,13 +490,13 @@ None significant — a low-impact support origin.
 | Power | Description |
 |---|---|
 | **Adaptive Camouflage** | Crouching for ~a short distance triggers invisibility. Being hit or attacking removes it and starts a cooldown. |
-| **Camouflaged Hunter** | While camouflaged: +42.5% melee damage, +60% damage resistance. Attacking breaks camouflage and applies Weakness to the target. |
+| **Camouflaged Hunter** | While camouflaged: **significantly higher** melee damage and **immense resistance** to incoming damage. Attacking breaks camouflage and applies Weakness to the target. |
 
 ### Weaknesses
 
 | Power | Description |
 |---|---|
-| **Cold-Blooded** | Slowness in cold biomes (temperature ≤ 0.15). |
+| **Cold-Blooded** | Slowness in cold biomes. |
 | **Ectothermic Fragility** | -2 max health. |
 
 ---
@@ -519,8 +519,8 @@ None significant — a low-impact support origin.
 | Power | Description |
 |---|---|
 | **Fox Focus** | While focused, backstabs deal bonus damage. |
-| **Nocturnal Predator** | At night: Night Vision, +20% attack speed, +11% movement speed, silent footsteps. |
-| **Opportunistic Strike** | Hitting an enemy not looking at you grants Focus: +12% melee damage, +5% attack speed, bonus backstab damage. |
+| **Nocturnal Predator** | At night: Night Vision, **modest increase** to attack speed, **slight bump** to movement speed, silent footsteps. |
+| **Opportunistic Strike** | Hitting an enemy not looking at you grants Focus: **slightly higher** melee damage, **minor boost** to attack speed, bonus backstab damage. |
 | **Small Stature** | smaller in stature, harder to hit. |
 
 ### Weaknesses
@@ -551,14 +551,14 @@ None significant — a low-impact support origin.
 | Power | Description |
 |---|---|
 | **Cold Regeneration** | Slowly restore hunger in cold biomes or near snow blocks. |
-| **Construct Body** | Cannot eat normal food. Consumes iron ingots instead (3 hunger, yields a nugget). |
+| **Construct Body** | Cannot eat normal food. Consumes iron ingots instead. |
 | **Reconfigure Body** *(Secondary Active)* | Toggle between Iron and Snow Golem forms. |
 | **Shifting Skill** *(Primary Active)* | Ability changes depending on current form. |
 
 ### Iron Form
 *Tanky, heavy, devastating in melee.*
 
-- +a short distance, +60% knockback resistance, +52.5% melee damage.
+- +a short distance, **immense resistance** to knockback, and **substantial bonus** to melee damage.
 - Movement speed and attack speed significantly reduced.
 - **Iron Slam** *(Primary Active)* — Slam the ground, launching nearby enemies and applying Weakness.
 
@@ -568,7 +568,7 @@ None significant — a low-impact support origin.
 - Slightly increased movement speed, -4 max health.
 - Snowballs thrown slow enemies on hit.
 - Takes extra fire damage. Takes damage in very hot biomes over time.
-- **Blizzard Barrage** *(Primary Active)* — Fire 12 snowballs in a spread, slowing enemies.
+- **Blizzard Barrage** *(Primary Active)* — Fire multiple snowballs in a spread, slowing enemies.
 
 ---
 
@@ -589,7 +589,7 @@ None significant — a low-impact support origin.
 
 | Power | Description |
 |---|---|
-| **Night Watcher** | At night: full Night Vision, +12.5% attack speed, +17.5% armor penetration, +50% stealth. |
+| **Night Watcher** | At night: full Night Vision, **minor boost** to attack speed, **modest increase** to armor penetration, and **significantly higher** stealth. |
 | **Owl Wings** | Elytra flight with custom owl wing texture. |
 | **Silent Movement** | No footstep or landing vibrations — undetectable by Sculk sensors. |
 | **Strike From Above** | While gliding: bonus melee damage and hits slow enemies. |
@@ -632,7 +632,7 @@ None significant — a low-impact support origin.
 | Power | Description |
 |---|---|
 | **Ashen Body** | Water and rain deal damage over time. |
-| **Burning Metabolism** | Hunger depletes 65% faster. |
+| **Burning Metabolism** | Hunger depletes **massively faster**. |
 | **Netherite Aversion** | Cannot wear any Netherite armor. |
 | **Scorched Earth** | Movement speed reduced in cold biomes. |
 
@@ -655,7 +655,7 @@ None significant — a low-impact support origin.
 
 | Power | Description |
 |---|---|
-| **Blood In Water** | While submerged: wounded enemies (≤35% HP) glow red, +45% swim speed, +20% armor penetration, and you can feed on weakened targets. |
+| **Blood In Water** | While submerged: wounded enemies glow red, **substantially higher** swim speed, **modest increase** to armor penetration, and you can feed on weakened targets. |
 | **Hydration** | Drinking a water bottle temporarily prevents the Beached debuff. |
 | **Ram Ventilation** | Breathe only while actively swimming underwater. Stopping underwater causes suffocation. |
 | **Tough Skin** | +a short distance. |
@@ -664,7 +664,7 @@ None significant — a low-impact support origin.
 
 | Power | Description |
 |---|---|
-| **Beached** | Out of water and not recently hydrated: -18% movement speed and -50% attack speed. |
+| **Beached** | Out of water and not recently hydrated: **modest decrease** to movement speed and **half** attack speed. |
 | **Carnivore Diet** | Requires a carnivorous diet. |
 | **Suffocation** | Slowly loses air while submerged but not actively swimming. |
 
@@ -687,7 +687,7 @@ None significant — a low-impact support origin.
 
 | Power | Description |
 |---|---|
-| **Retreat Shell** | Getting hit while sneaking withdraws into your shell: +3 temporary armor, -45% damage taken, movement nearly stopped. Ends when you stop sneaking. |
+| **Retreat Shell** | Getting hit while sneaking withdraws into your shell: temporary armor, **moderate reduction** to damage taken, movement nearly stopped. Ends when you stop sneaking. |
 | **Shell Armor** | +a short distance and +a short distance toughness. |
 | **Slime Resistance** | Immune to Slowness and Poison. |
 
@@ -695,9 +695,9 @@ None significant — a low-impact support origin.
 
 | Power | Description |
 |---|---|
-| **Desiccation Sensitivity** | In non-humid biomes: -40% melee damage. |
+| **Desiccation Sensitivity** | In non-humid biomes: **substantially reduced** melee damage. |
 | **Shell Dependency** | Struggles to use shields. |
-| **Slow Movement** | -17.5% movement speed. |
+| **Slow Movement** | **Modest decrease** to movement speed. |
 
 ---
 
@@ -722,18 +722,18 @@ None significant — a low-impact support origin.
 
 | Power | Description |
 |---|---|
-| **Empty Physiology** | All status effects on you last 65% shorter. |
+| **Empty Physiology** | All status effects on you pass **massively faster**. |
 | **Mirror of the Abyss** *(Secondary Active)* | Invert the movement of all enemies within a short distance for a short distance. |
 | **Phase** *(Primary Toggle)* | Phase through most blocks, become invulnerable and semi-transparent, but cannot deal damage, interact with anything, or regenerate. |
-| **Shadow Shift** | When hit, teleport randomly within a short distance and gain Nausea (90s cooldown). |
-| **Sharp Fangs** | +30% melee damage. |
-| **Venom of the Void** | Melee hits within a short distance apply Weakness to the target (15s cooldown). |
+| **Shadow Shift** | When hit, teleport randomly within a short distance and gain Nausea. |
+| **Sharp Fangs** | **Modest increase** to melee damage. |
+| **Venom of the Void** | Melee hits within a short distance apply Weakness to the target. |
 
 ### Weaknesses
 
 | Power | Description |
 |---|---|
-| **Fragile Scales** | +75% damage from projectiles. |
+| **Fragile Scales** | **Massively higher** damage from projectiles. |
 
 ---
 
@@ -756,17 +756,17 @@ None significant — a low-impact support origin.
 |---|---|
 | **Blink** *(Primary Active)* | Teleport randomly within a short distance horizontally. |
 | **Chorus Crafter** | Craft End Stone, Chorus Flowers, and Chorus Fruit from mundane materials. |
-| **Parasite Infection** | Right-click a player to mount them and grant them buffs (+speed, +health, +attack speed). Fire breaks the link violently. |
-| **Parasitic Leech** | 20% chance on melee hit to infect a target: they glow red, deal 15% less damage to you, and feed you when hit. Fire removes the parasite. |
-| **Strict Diet** | Chorus Fruit only: 125% more hunger and saturation. |
+| **Parasite Infection** | Right-click a player to mount them and grant them buffs. |
+| **Parasitic Leech** | Moderate chance on melee hit to infect a target: they glow red, deal **minorly reduced** damage to you, and feed you when hit. Fire removes the parasite. |
+| **Strict Diet** | Chorus Fruit only: **massively more** hunger and saturation. |
 
 ### Weaknesses
 
 | Power | Description |
 |---|---|
 | **Brittle Body** | -4 max health. |
-| **Combustible Flesh** | +32.5% fire damage taken. |
-| **Hydrophobic** | Water and rain deal 1 damage per second. |
+| **Combustible Flesh** | **Modest increase** to fire damage taken. |
+| **Hydrophobic** | Water and rain deal constant damage. |
 | **Tiny Stature** | smaller in stature. |
 
 ---
@@ -789,10 +789,10 @@ None significant — a low-impact support origin.
 | Power | Description |
 |---|---|
 | **Ethereal Wings** *(Primary Active)* | Toggle gliding with moth wings. Prevents fall damage while active. |
-| **Excess of Radiance** | -37.5% damage taken from glowing enemies. |
-| **Like a Moth to the Flame** | Hitting enemies facing you deals +15% damage with chances to: apply Glowing (20%), Wither (5%), Slowness (12.5%), launch upward (35%), or ignite (32.5%). |
-| **Photophilic** | In bright light (≥ 0.75): Haste, Regeneration, and Speed. |
-| **When Light Breaks** | While glowing or at max brightness, hitting a burning enemy has a 20% chance to trigger an explosion and extinguish them. |
+| **Excess of Radiance** | **Modest reduction** to damage taken from glowing enemies. |
+| **Like a Moth to the Flame** | Hitting enemies facing you deals **minor bonus damage** with chances to trigger various mystical status ailments or disruptions. |
+| **Photophilic** | In bright light: Haste, Regeneration, and Speed. |
+| **When Light Breaks** | While glowing or at max brightness, hitting a burning enemy has a moderate chance to trigger an explosion and extinguish them. |
 
 ### Weaknesses
 
@@ -825,9 +825,9 @@ None significant — a low-impact support origin.
 | **Blood Tease** | Landing quick strikes grants Absorption and restores hunger. |
 | **Clingy Pest** | Cling to walls and ceilings while sneaking. |
 | **Fire Immunity** | Naturally immune to fire. |
-| **Night Vision** | Near-perfect vision in the dark (0.95 strength). |
+| **Night Vision** | Near-perfect vision in the dark. |
 | **Shrill Screech** *(Active)* | Apply Nausea and Darkness to all enemies within a short distance. |
-| **Wing Buffet** | Attacks deal 65% less damage but violently knock enemies away. |
+| **Wing Buffet** | Attacks deal **massively lower** damage but violently knock enemies away. |
 | **Wings of the Abyss** | Elytra flight with custom hellbat wing texture. |
 
 ### Weaknesses
@@ -859,8 +859,8 @@ None significant — a low-impact support origin.
 | Power | Description |
 |---|---|
 | **Blood in the Maw** | Striking enemies while hungry charges Feral Rage faster. |
-| **Feral Rage** | Resource (0–100). 25+: speed boost. 50+: attack speed boost. 75+: +32.5% damage. Eating resets rage. |
-| **Infernal Hide** | Fire immune. Lava deals 90% less damage. |
+| **Feral Rage** | Resource tracking mechanics that build into increased speed, faster attack rate, and **moderately higher** damage. |
+| **Infernal Hide** | Fire immune. Lava deals **massively lower** damage. |
 | **Netherbound** | In the Nether: passive health regeneration, increased speed. Spawn point set to the Nether. |
 | **Scent of Prey** *(Active)* | Mark all nearby creatures through walls with a red glow. |
 
@@ -868,9 +868,9 @@ None significant — a low-impact support origin.
 
 | Power | Description |
 |---|---|
-| **Frozen Blood** | +35% damage taken in cold biomes. |
-| **Hydrophobic** | Water and rain deal 1.5 damage per second. |
-| **Out of Hell** | -12.5% movement speed and -25% damage outside the Nether. |
+| **Frozen Blood** | **Modest increase** to damage taken in cold biomes. |
+| **Hydrophobic** | Water and rain deal substantial damage over time. |
+| **Out of Hell** | **Slightly slower** movement speed and **modest reduction** to damage outside the Nether. |
 
 ---
 
@@ -891,19 +891,19 @@ None significant — a low-impact support origin.
 
 | Power | Description |
 |---|---|
-| **Berry is Yummy** | Sweet berries and glow berries grant 275% more hunger/nutrition and give Strength. |
-| **Fox Spirits** *(Primary Active)* | Shapeshift into a fox (invisible, cannot use shields). Hit while transformed to revert. Sneak to spend 25 XP levels for a tail. |
-| **High Intelligence** | +52.5% XP gain. |
-| **Spirit Tails** | Resource (1–9). Lose one on death. More tails scale Will'o Wisp proc chance. |
-| **Trickster** *(Secondary Active)* | Nearby players cannot see you while standing still and see fake decoys for ~a short distance. |
-| **Will'o Wisp** | Melee hits have a scaling chance (5–17.5%) to inflict spiritual flames: target deals ~30% less damage and takes HP%-based damage per tick. |
+| **Berry is Yummy** | Sweet berries and glow berries grant **immensely higher** hunger/nutrition and give Strength. |
+| **Fox Spirits** *(Primary Active)* | Shapeshift into a fox. |
+| **High Intelligence** | **Substantially higher** XP gain. |
+| **Spirit Tails** | Resource mechanic scaling spiritual flames. |
+| **Trickster** *(Secondary Active)* | Nearby players cannot see you while standing still and see fake decoys. |
+| **Will'o Wisp** | Melee hits have a small, scaling chance to inflict spiritual flames: target deals **modest reduction** to damage and takes health-based damage over time. |
 
 ### Weaknesses
 
 | Power | Description |
 |---|---|
-| **Hypermetabolism** | Hunger depletes 125% faster. |
-| **Nocturnal** | Stacking Weakness during daytime (up to Weakness). |
+| **Hypermetabolism** | Hunger depletes **massively faster**. |
+| **Nocturnal** | Stacking Weakness during daytime. |
 
 ---
 
@@ -925,16 +925,16 @@ None significant — a low-impact support origin.
 | Power | Description |
 |---|---|
 | **Night Vision** | Partial vision in the dark. |
-| **Sculk** | Resource (0–600) gathered by killing entities (1–7 per kill). |
-| **Sculk Enhancing** *(Secondary Toggle)* | Convert blocks into sculk, phase through sculk blocks, and inflict Darkness on melee hits (costs 5 sculk per action). |
+| **Sculk** | Resource gathered by harvesting vital energy from defeated entities. |
+| **Sculk Enhancing** *(Secondary Toggle)* | Convert blocks into sculk, phase through sculk blocks, and inflict Darkness on melee hits. |
 | **Sculk Seer** | Custom visual shader in bright environments. Immune to Darkness. |
-| **Sculk Summoning** *(Active)* | Spend 50 sculk to summon a Sculk Zombie. Sneak + activate with 600 sculk to perform a ritual summoning an untamed beast. |
+| **Sculk Summoning** *(Active)* | Spend sculk to summon a Sculk Zombie or perform a grand ritual summoning an untamed beast. |
 
 ### Weaknesses
 
 | Power | Description |
 |---|---|
-| **Forbidden Knowledge** | -27.5% XP gain. |
+| **Forbidden Knowledge** | **Moderately reduced** XP gain. |
 | **Odium** | Cannot trade with Villagers. |
 | **Paranoia** | Cannot sleep without holding a sword. Phantoms spawn twice as fast. |
 | **Shaking** | Screen shakes in lit areas. |
@@ -958,12 +958,12 @@ None significant — a low-impact support origin.
 
 | Power | Description |
 |---|---|
-| **Celestial Link** | Shift + right-click a player to link fates: shared pain and shared strength. |
+| **Celestial Link** | Link fates with a player: shared pain and shared strength. |
 | **Light Body** | Slow falling and increased jump height at night. |
 | **Lunar Empowerment** | Moon phase modifies your power at night. |
-| **Star Ascension** | Consume a Nether Star to unlock True Starborn: gain energy from the sun, Strength at solar noon (+25% damage taken at midday), severe debuffs when energy drops below 25. |
-| **Starlight Energy** | Resource (0–100). Regenerates at night. |
-| **Starlight Pulse** *(Secondary Active)* | Spend 40 energy to heal all players within a short distance for a short distance. |
+| **Star Ascension** | Consume a Nether Star to unlock True Starborn: gain energy from the sun, Strength at solar noon (**modest reduction** to defenses at midday), severe debuffs when energy drops low. |
+| **Starlight Energy** | Resource that regenerates at night. |
+| **Starlight Pulse** *(Secondary Active)* | Spend energy to heal all nearby players. |
 | **Stellar Sight** | Full night vision. |
 | **Supernova** | Dying at max starlight triggers a light-filled explosion. |
 
@@ -994,20 +994,20 @@ None significant — a low-impact support origin.
 | Power | Description |
 |---|---|
 | **Decay Art** | On kill, burst the corpse into a withering cloud applying Wither to nearby enemies. |
-| **Gold Crafting** | Craft a gold ingot from only 4 nuggets. |
-| **Gold Obsessed** | Each gold or gold-trimmed armor piece grants a bonus: Helmet → +25% ranged damage. Chestplate → -20% damage taken. Leggings → +50% XP gain. Boots → +8.75% speed. |
+| **Gold Crafting** | Craft a gold ingot from fewer resources. |
+| **Gold Obsessed** | Each gold or gold-trimmed armor piece grants a bonus: Helmet → **modest increase** to ranged damage. Chestplate → **minor reduction** to damage taken. Leggings → **substantially higher** XP gain. Boots → **minor bump** to speed. |
 | **Loot Hoarder** | Personal chest inventory that drops on death. |
-| **Rotten Appetite** | Rotten flesh (5 hunger), spider eyes (6 hunger), and poisonous potatoes (9 hunger) are proper food with no negative effects. Golden foods work normally. |
+| **Rotten Appetite** | Rotten foods are proper food with no negative effects. Golden foods work normally. |
 | **Withered Resistance** | Immune to Wither and Poison. |
-| **Withered Touch** | 32.5% chance on melee hit to inflict Wither. |
+| **Withered Touch** | Moderate chance on melee hit to inflict Wither. |
 
 ### Weaknesses
 
 | Power | Description |
 |---|---|
-| **Fading Embers** | Hunger II every a short distance outside the Nether. |
+| **Fading Embers** | Severe hunger penalties outside the Nether. |
 | **Outcast of the Bastions** | Cannot trade with Villagers. Piglins are always hostile. |
-| **Unstable Flesh** | All healing 65% less effective. |
+| **Unstable Flesh** | All healing **massively less effective**. |
 | **Withered Body** | -3 max health. |
 
 </details>
