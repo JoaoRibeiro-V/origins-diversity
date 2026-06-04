@@ -1,1 +1,1011 @@
+# Origins: Diversity
+> A lore-focused guide to every origin available in Origins: Diversity.
+> Descriptions emphasize flavor and identity rather than exact mechanics.
 
+---
+## Table of Contents
+
+<a id="Table of Contents"></a>
+
+### ⭐ Impact 1
+- [Axolotl](#-axolotl)
+- [Cow](#-cow)
+- [Dodo Bird](#-dodo-bird)
+- [Dryad](#-dryad)
+- [Frog](#-frog)
+- [Horse](#-horse)
+- [Monkey](#-monkey)
+- [Panda](#-panda)
+- [Penguin](#-penguin)
+- [Platypus](#-platypus)
+- [Raccoon](#-raccoon)
+- [Reptile](#-reptile)
+
+### ⭐⭐ Impact 2
+- [Bee](#-bee)
+- [Chameleon](#-chameleon)
+- [Fox](#-fox)
+- [Golem](#-golem)
+- [Owl](#-owl)
+- [Phoenix](#-phoenix)
+- [Shark](#-shark)
+- [Snail](#-snail)
+
+### ⭐⭐⭐ Impact 3
+- [Abysswyrm](#-abysswyrm)
+- [Chorus Leech](#-chorus-leech)
+- [Ender Moth](#-ender-moth)
+- [Hellbat](#-hellbat)
+- [Hellhound](#-hellhound)
+- [Kitsune](#-kitsune)
+- [Sculk Cultist](#-sculk-cultist)
+- [Starborn](#-starborn)
+- [Withered Piglin](#-withered-piglin)
+
+---
+
+# Origins
+
+---
+
+<details>
+<summary><strong>Axolotl</strong></summary>
+
+## Axolotl
+
+<a id="Axolotl"></a>
+
+> *A peaceful aquatic creature that regenerates slowly in water.*
+
+**Impact:** ⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Aquatic Grace** | Increased swim speed. |
+| **Gills** | Holds breath much longer underwater. |
+| **Healing Aid** | All healing received is 25% more effective. |
+| **Healing Splash** *(Primary Active, underwater only)* | Grant Regeneration to all players within a short distance. |
+| **Smol** | smaller in stature, harder to hit. |
+| **Water Blessing** | Regenerates a short distance every a short distance while submerged. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Pacifist** | Deals increased 32.5% less damage to living creatures. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Cow</strong></summary>
+
+## Cow
+
+<a id="Cow"></a>
+
+> *A sturdy herbivore with a slow pace and a unique ability.*
+
+**Impact:** ⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Milkable** | Others can milk you with a bucket, giving both parties Regeneration. |
+| **Self Milking** | Use a bucket on yourself to produce a milk bucket and gain Regeneration. |
+| **Sturdy Build** | +25% knockback resistance. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Ravenous** | Hunger depletes 35% faster. |
+| **Slow Mover** | Reduced movement speed. |
+| **Vegetarian** | Follows a herbivorous diet. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Dodo Bird</strong></summary>
+
+## Dodo Bird
+
+<a id="Dodo Bird"></a>
+
+> *A quirky, flightless bird with curious instincts and playful movements.*
+
+**Impact:** ⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Environmental Adaptability** | Passively adapt to your current biome: |
+| | 🔥 Hot biomes: +a short distance and fire immunity. |
+| | ❄ Cold biomes: +1 attack damage, -20% hunger loss. |
+| | 🌊 Ocean biomes: +1.5 oxygen bonus, +20% swim speed, +35% knockback resistance. |
+| | 🌿 Plains: speed burst after hitting enemies, -25% hunger loss. |
+| | 🪵 Swamps: immune to Poison and Hunger, +20% knockback resistance. |
+| | ⛰ Mountains: -25% fall damage, -20% projectile damage, +15% jump height, +25% knockback resistance. |
+| **Tail Feather Flap** | Sneak while falling to slow fall and negate fall damage. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Slow Learner** | -32.5% XP gain. |
+| **Slow on the Draw** | Takes more damage when hit while the attacker is using a shield. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Dryad</strong></summary>
+
+## Dryad
+
+<a id="Dryad"></a>
+
+> *A spirit of the forest, attuned to nature and the creatures that dwell within it.*
+
+**Impact:** ⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Animal Leader** | You deal 50% less damage to your own tamed animals. |
+| **Forest Dependency** | In forests and jungles: +4 max health and +10% damage resistance. |
+| **Forest Dweller** | In forests and jungles: +15% attack speed, +7.5% attack damage, +12.5% movement speed. |
+| **Forest Wisdom** | In forests and jungles: +25% XP gain. |
+| **Wild Bond** | Tamed animals deal +13.75% more damage. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Arboreal Grace** | Chopping trees is slower in forests and jungles. |
+| **Fire Vulnerability** | +60% fire damage taken. |
+| **Forest Dependency** | Outside forests/jungles: -4 max health and -10% damage resistance. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Frog</strong></summary>
+
+## Frog
+
+<a id="Frog"></a>
+
+> *A small amphibian that jumps high and swims well.*
+
+**Impact:** ⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Aquatic Agility** | Slightly faster swimming. |
+| **Jump Boost** | Increased jump height. |
+| **Moisture** | Moisture bar (0–300). Replenish in water, rain, or by drinking potions. While moisturized: +12% damage dealt, -10% damage taken, -35% hunger loss. |
+| **Safe Landing** | +5 safe fall distance. |
+| **Short Leap** *(Primary Active)* | Leap forward a short distance. |
+| **Slippery** | +20% ranged damage resistance. |
+
+### Weaknesses
+
+None significant beyond moisture management.
+
+---
+
+</details>
+
+<details>
+<summary><strong>Horse</strong></summary>
+
+## Horse
+
+<a id="Horse"></a>
+
+> *A swift, powerful creature built for mobility and endurance.*
+
+**Impact:** ⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Gallop** *(Secondary Active)* | Toggle galloping: +42.5% speed while sprinting. |
+| **Long Stride** | Jump height increased while galloping. |
+| **Momentum Strike** | Hitting enemies while galloping deals +20% damage and applies Nausea. |
+| **Packed Gear** | Personal chest inventory that drops on death. |
+| **Tiny Steed** | Other players can mount you. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Fast Metabolism** | Hunger depletes faster while sprinting. |
+| **Fatigue** | Fatigue bar (0–400) drains while galloping. Hitting 0 forces gallop off and applies Nausea and Slowness. |
+| **Vegetarian** | Follows a herbivorous diet. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Monkey</strong></summary>
+
+## Monkey
+
+<a id="Monkey"></a>
+
+> *A playful and curious animal.*
+
+**Impact:** ⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Agile Leap** | +20% jump height. |
+| **Curiosity** | +30% XP gain. |
+| **Leaf Camouflage** | Harder to detect by mobs while standing on leaves. |
+| **Natural Balance** | +40% knockback resistance while standing on leaves. |
+| **Nimble Movement** | +12% movement speed. |
+| **Taunt** | 12.5% chance on hit to apply a taunt: taunted enemies deal slightly more damage to you but take more from you. |
+| **Tree Acrobat** | Cannot die from fall damage. Landing on leaves heals and grants Absorption. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Tease** | -40% stealth — mobs aggro onto you more often. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Panda</strong></summary>
+
+## Panda
+
+<a id="Panda"></a>
+
+> *A gentle giant.*
+
+**Impact:** ⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Bamboo Empower** | Eating bamboo in a jungle grants Strength. |
+| **Bamboo Feast** | Can eat bamboo (4 hunger, 6 saturation). |
+| **Bamboo Homeland** | +11.5% damage in bamboo jungles and jungles. |
+| **Bulky Build** | smaller in stature. |
+| **Gentle Giant** | +3 max health. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Lazy** | -12% movement speed. |
+| **Slowpoke Strikes** | -10% attack speed. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Penguin</strong></summary>
+
+## Penguin
+
+<a id="Penguin"></a>
+
+> *A cold-adapted aquatic cute bird.*
+
+**Impact:** ⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Cold Affinity** | -20% damage taken in snowy biomes. |
+| **Cold Strength** | +1 attack damage in cold biomes. |
+| **Fish Gourmet** | Fish provide +3 hunger and +2.5 saturation. |
+| **Huddle Warmth** | Nearby players periodically gain hunger and saturation. |
+| **Little Buddy** | Right-click a player to mount them. |
+| **Small Stature** | smaller in stature. |
+| **Waterborne Agility** | Faster swimming. |
+
+### Weaknesses
+
+None significant — a low-impact support origin.
+
+---
+
+</details>
+
+<details>
+<summary><strong>Platypus</strong></summary>
+
+## Platypus
+
+<a id="Platypus"></a>
+
+> *A platypus?*
+
+**Impact:** ⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Electroreception** *(Active)* | Highlight all submerged entities within a short distance in cyan for a duration. |
+| **River Forager** | Fish provide +40% more saturation. |
+| **Steel Fur** | +a short distance. |
+| **Waterborne Agility** | +27.5% swim speed. |
+| **Weak Venom** | 12.5% chance on hit to apply Poison. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **River Forager** | Non-fish food provides 30% less saturation. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Raccoon</strong></summary>
+
+## Raccoon
+
+<a id="Raccoon"></a>
+
+> *A clever and agile nocturnal animal.*
+
+**Impact:** ⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Night Vision** | Partial night vision (0.3 strength). |
+| **Quick Dash** *(Secondary Active)* | Short forward burst of speed. |
+| **Scavenger** | +10 luck and +5 bonus rare loot rolls — better drops from chests, mobs, and fishing. |
+| **Scavenger's Purse** | Personal hopper-sized inventory. |
+| **Steady Feet** | -25% fall damage. |
+| **Stealthy** | Becomes 80% transparent while sneaking. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Thin Fur** | -32.5% armor effectiveness. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Reptile</strong></summary>
+
+## Reptile
+
+<a id="Reptile"></a>
+
+> *A patient, cold-blooded survivor.*
+
+**Impact:** ⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Agile** | +7.5% movement speed. |
+| **Camouflage** | +35% stealth — harder for mobs to detect you. |
+| **Fire Resistance** | -50% fire damage taken. |
+| **Molting** *(Active)* | Clear all status effects, extinguish fire, and heal a short distance. |
+| **Reptile Scales** | +a short distance toughness. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Overexertion** | 30% chance to lose hunger when hit in combat. |
+
+---
+
+# ⭐⭐ Impact 2
+
+---
+
+</details>
+
+<details>
+<summary><strong>Bee</strong></summary>
+
+## Bee
+
+<a id="Bee"></a>
+
+> *A tiny, buzzing ball of energy. Lives for flowers and occasionally makes very bad combat decisions.*
+
+**Impact:** ⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Delicate Wings** | Elytra flight with custom bee wing texture. |
+| **Honey Production** | Sneak + use a glass bottle to convert 1 nectar into a special honey bottle granting Regeneration and Strength. |
+| **Honey Storage** | HUD bar tracking nectar stored (0–6). |
+| **Nectar Gathering** | Passively generate up to 6 nectar every a short distance near flowers while not hungry. |
+| **Pollinator** | Regain hunger only near 2+ flowers within a short distance. Gain brief speed boost near flowers. |
+| **Smol** | smaller in stature, harder to hit. |
+| **Stinger** *(Primary Toggle)* | Extend your stinger: bonus damage and Poison II on hit, but drains hunger and applies Weakness to yourself. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Fragile Body** | -5 max health. |
+| **Grounded** | In rain or water: flight disabled, movement slowed, attack speed reduced. |
+| **Pollinator Diet** | Can only eat honey bottles. |
+| **Thunder Scares You** | Shakes and cannot sleep during thunderstorms. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Chameleon</strong></summary>
+
+## Chameleon
+
+<a id="Chameleon"></a>
+
+> *Cold-blooded ambush predators that rely on patience, camouflage, and precise strikes rather than brute force.*
+
+**Impact:** ⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Adaptive Camouflage** | Crouching for ~a short distance triggers invisibility. Being hit or attacking removes it and starts a cooldown. |
+| **Camouflaged Hunter** | While camouflaged: +42.5% melee damage, +60% damage resistance. Attacking breaks camouflage and applies Weakness to the target. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Cold-Blooded** | Slowness in cold biomes (temperature ≤ 0.15). |
+| **Ectothermic Fragility** | -2 max health. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Fox</strong></summary>
+
+## Fox
+
+<a id="Fox"></a>
+
+> *Agile nocturnal opportunistic hunters that rely on cunning and speed.*
+
+**Impact:** ⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Fox Focus** | While focused, backstabs deal bonus damage. |
+| **Nocturnal Predator** | At night: Night Vision, +20% attack speed, +11% movement speed, silent footsteps. |
+| **Opportunistic Strike** | Hitting an enemy not looking at you grants Focus: +12% melee damage, +5% attack speed, bonus backstab damage. |
+| **Small Stature** | smaller in stature, harder to hit. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Carnivore Diet** | Can only eat meat and berries. |
+| **Lightweight Frame** | -2 max health. |
+| **Weak Paws** | Struggles to use shields. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Golem</strong></summary>
+
+## Golem
+
+<a id="Golem"></a>
+
+> *A constructed being capable of reconfiguration. Iron for strength. Snow for speed.*
+
+**Impact:** ⭐⭐
+
+### Core Powers
+
+| Power | Description |
+|---|---|
+| **Cold Regeneration** | Slowly restore hunger in cold biomes or near snow blocks. |
+| **Construct Body** | Cannot eat normal food. Consumes iron ingots instead (3 hunger, yields a nugget). |
+| **Reconfigure Body** *(Secondary Active)* | Toggle between Iron and Snow Golem forms. |
+| **Shifting Skill** *(Primary Active)* | Ability changes depending on current form. |
+
+### Iron Form
+*Tanky, heavy, devastating in melee.*
+
+- +a short distance, +60% knockback resistance, +52.5% melee damage.
+- Movement speed and attack speed significantly reduced.
+- **Iron Slam** *(Primary Active)* — Slam the ground, launching nearby enemies and applying Weakness.
+
+### Snow Form
+*Quick and tricky, but fragile.*
+
+- Slightly increased movement speed, -4 max health.
+- Snowballs thrown slow enemies on hit.
+- Takes extra fire damage. Takes damage in very hot biomes over time.
+- **Blizzard Barrage** *(Primary Active)* — Fire 12 snowballs in a spread, slowing enemies.
+
+---
+
+</details>
+
+<details>
+<summary><strong>Owl</strong></summary>
+
+## Owl
+
+<a id="Owl"></a>
+
+> *Silent nocturnal hunters with unmatched perception.*
+
+**Impact:** ⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Night Watcher** | At night: full Night Vision, +12.5% attack speed, +17.5% armor penetration, +50% stealth. |
+| **Owl Wings** | Elytra flight with custom owl wing texture. |
+| **Silent Movement** | No footstep or landing vibrations — undetectable by Sculk sensors. |
+| **Strike From Above** | While gliding: bonus melee damage and hits slow enemies. |
+| **Wing Burst** *(Primary Active, while flying)* | Propel forward while in flight. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Brittle Bones** | Takes extra damage from flying into walls. |
+| **Fragile Body** | -2.5 max health. |
+| **Insomnia** | Cannot sleep. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Phoenix</strong></summary>
+
+## Phoenix
+
+<a id="Phoenix"></a>
+
+> *A legendary being born of fire and rebirth.*
+
+**Impact:** ⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Everlasting** | Keep your hotbar and armor slots on death. |
+| **Fiery Strikes** | Every melee attack sets the target on fire. |
+| **Flame Body** | Completely immune to fire. |
+| **Burning Rebirth** *(Primary Active)* | Activate a rebirth window. If killed while active, survive with Regeneration, Absorption, and Resistance — then suffer prolonged Weakness. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Ashen Body** | Water and rain deal damage over time. |
+| **Burning Metabolism** | Hunger depletes 65% faster. |
+| **Netherite Aversion** | Cannot wear any Netherite armor. |
+| **Scorched Earth** | Movement speed reduced in cold biomes. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Shark</strong></summary>
+
+## Shark
+
+<a id="Shark"></a>
+
+> *Relentless ocean predators built for constant motion, brutal attacks, and underwater dominance.*
+
+**Impact:** ⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Blood In Water** | While submerged: wounded enemies (≤35% HP) glow red, +45% swim speed, +20% armor penetration, and you can feed on weakened targets. |
+| **Hydration** | Drinking a water bottle temporarily prevents the Beached debuff. |
+| **Ram Ventilation** | Breathe only while actively swimming underwater. Stopping underwater causes suffocation. |
+| **Tough Skin** | +a short distance. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Beached** | Out of water and not recently hydrated: -18% movement speed and -50% attack speed. |
+| **Carnivore Diet** | Requires a carnivorous diet. |
+| **Suffocation** | Slowly loses air while submerged but not actively swimming. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Snail</strong></summary>
+
+## Snail
+
+<a id="Snail"></a>
+
+> *Slow but resilient creatures that rely on their shell and patience.*
+
+**Impact:** ⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Retreat Shell** | Getting hit while sneaking withdraws into your shell: +3 temporary armor, -45% damage taken, movement nearly stopped. Ends when you stop sneaking. |
+| **Shell Armor** | +a short distance and +a short distance toughness. |
+| **Slime Resistance** | Immune to Slowness and Poison. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Desiccation Sensitivity** | In non-humid biomes: -40% melee damage. |
+| **Shell Dependency** | Struggles to use shields. |
+| **Slow Movement** | -17.5% movement speed. |
+
+---
+
+# ⭐⭐⭐ Impact 3
+
+---
+
+</details>
+
+<details>
+<summary><strong>Abysswyrm</strong></summary>
+
+## Abysswyrm
+
+<a id="Abysswyrm"></a>
+
+> *Born of the void, its body thrums with unstable energy.*
+
+**Impact:** ⭐⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Empty Physiology** | All status effects on you last 65% shorter. |
+| **Mirror of the Abyss** *(Secondary Active)* | Invert the movement of all enemies within a short distance for a short distance. |
+| **Phase** *(Primary Toggle)* | Phase through most blocks, become invulnerable and semi-transparent, but cannot deal damage, interact with anything, or regenerate. |
+| **Shadow Shift** | When hit, teleport randomly within a short distance and gain Nausea (90s cooldown). |
+| **Sharp Fangs** | +30% melee damage. |
+| **Venom of the Void** | Melee hits within a short distance apply Weakness to the target (15s cooldown). |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Fragile Scales** | +75% damage from projectiles. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Chorus Leech</strong></summary>
+
+## Chorus Leech
+
+<a id="Chorus Leech"></a>
+
+> *A malformed lifeform sustained by instability.*
+
+**Impact:** ⭐⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Blink** *(Primary Active)* | Teleport randomly within a short distance horizontally. |
+| **Chorus Crafter** | Craft End Stone, Chorus Flowers, and Chorus Fruit from mundane materials. |
+| **Parasite Infection** | Right-click a player to mount them and grant them buffs (+speed, +health, +attack speed). Fire breaks the link violently. |
+| **Parasitic Leech** | 20% chance on melee hit to infect a target: they glow red, deal 15% less damage to you, and feed you when hit. Fire removes the parasite. |
+| **Strict Diet** | Chorus Fruit only: 125% more hunger and saturation. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Brittle Body** | -4 max health. |
+| **Combustible Flesh** | +32.5% fire damage taken. |
+| **Hydrophobic** | Water and rain deal 1 damage per second. |
+| **Tiny Stature** | smaller in stature. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Ender Moth</strong></summary>
+
+## Ender Moth
+
+<a id="Ender Moth"></a>
+
+> *A fragile creature drawn irresistibly toward light in a realm that rejects it.*
+
+**Impact:** ⭐⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Ethereal Wings** *(Primary Active)* | Toggle gliding with moth wings. Prevents fall damage while active. |
+| **Excess of Radiance** | -37.5% damage taken from glowing enemies. |
+| **Like a Moth to the Flame** | Hitting enemies facing you deals +15% damage with chances to: apply Glowing (20%), Wither (5%), Slowness (12.5%), launch upward (35%), or ignite (32.5%). |
+| **Photophilic** | In bright light (≥ 0.75): Haste, Regeneration, and Speed. |
+| **When Light Breaks** | While glowing or at max brightness, hitting a burning enemy has a 20% chance to trigger an explosion and extinguish them. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Brittle Body** | -3 max health. |
+| **Light Addiction** | In darkness without a light source in hand: Blindness, Mining Fatigue, and Weakness. |
+| **Small Stature** | smaller in stature. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Hellbat</strong></summary>
+
+## Hellbat
+
+<a id="Hellbat"></a>
+
+> *Born of the Nether's skies, aerial predators that thrive in darkness.*
+
+**Impact:** ⭐⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Bat Squeak** *(Secondary Active)* | Let out a bat squeak. No cooldown. |
+| **Blood Tease** | Landing quick strikes grants Absorption and restores hunger. |
+| **Clingy Pest** | Cling to walls and ceilings while sneaking. |
+| **Fire Immunity** | Naturally immune to fire. |
+| **Night Vision** | Near-perfect vision in the dark (0.95 strength). |
+| **Shrill Screech** *(Active)* | Apply Nausea and Darkness to all enemies within a short distance. |
+| **Wing Buffet** | Attacks deal 65% less damage but violently knock enemies away. |
+| **Wings of the Abyss** | Elytra flight with custom hellbat wing texture. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Fragile** | -5 max health. |
+| **Hydrophobic** | Water and rain deal rapid damage. |
+| **Light Sensitivity** | Blindness and Weakness while in bright light. |
+| **Tiny Stature** | smaller in stature. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Hellhound</strong></summary>
+
+## Hellhound
+
+<a id="Hellhound"></a>
+
+> *A feral beast born of the Nether, driven by fire and the hunt.*
+
+**Impact:** ⭐⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Blood in the Maw** | Striking enemies while hungry charges Feral Rage faster. |
+| **Feral Rage** | Resource (0–100). 25+: speed boost. 50+: attack speed boost. 75+: +32.5% damage. Eating resets rage. |
+| **Infernal Hide** | Fire immune. Lava deals 90% less damage. |
+| **Netherbound** | In the Nether: passive health regeneration, increased speed. Spawn point set to the Nether. |
+| **Scent of Prey** *(Active)* | Mark all nearby creatures through walls with a red glow. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Frozen Blood** | +35% damage taken in cold biomes. |
+| **Hydrophobic** | Water and rain deal 1.5 damage per second. |
+| **Out of Hell** | -12.5% movement speed and -25% damage outside the Nether. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Kitsune</strong></summary>
+
+## Kitsune
+
+<a id="Kitsune"></a>
+
+> *A spiritual fox lineage.*
+
+**Impact:** ⭐⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Berry is Yummy** | Sweet berries and glow berries grant 275% more hunger/nutrition and give Strength. |
+| **Fox Spirits** *(Primary Active)* | Shapeshift into a fox (invisible, cannot use shields). Hit while transformed to revert. Sneak to spend 25 XP levels for a tail. |
+| **High Intelligence** | +52.5% XP gain. |
+| **Spirit Tails** | Resource (1–9). Lose one on death. More tails scale Will'o Wisp proc chance. |
+| **Trickster** *(Secondary Active)* | Nearby players cannot see you while standing still and see fake decoys for ~a short distance. |
+| **Will'o Wisp** | Melee hits have a scaling chance (5–17.5%) to inflict spiritual flames: target deals ~30% less damage and takes HP%-based damage per tick. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Hypermetabolism** | Hunger depletes 125% faster. |
+| **Nocturnal** | Stacking Weakness during daytime (up to Weakness). |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Sculk Cultist</strong></summary>
+
+## Sculk Cultist
+
+<a id="Sculk Cultist"></a>
+
+> *Once a human who thrived studying the sculk — now fully corrupted.*
+
+**Impact:** ⭐⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Night Vision** | Partial vision in the dark. |
+| **Sculk** | Resource (0–600) gathered by killing entities (1–7 per kill). |
+| **Sculk Enhancing** *(Secondary Toggle)* | Convert blocks into sculk, phase through sculk blocks, and inflict Darkness on melee hits (costs 5 sculk per action). |
+| **Sculk Seer** | Custom visual shader in bright environments. Immune to Darkness. |
+| **Sculk Summoning** *(Active)* | Spend 50 sculk to summon a Sculk Zombie. Sneak + activate with 600 sculk to perform a ritual summoning an untamed beast. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Forbidden Knowledge** | -27.5% XP gain. |
+| **Odium** | Cannot trade with Villagers. |
+| **Paranoia** | Cannot sleep without holding a sword. Phantoms spawn twice as fast. |
+| **Shaking** | Screen shakes in lit areas. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Starborn</strong></summary>
+
+## Starborn
+
+<a id="Starborn"></a>
+
+> *Children of the night sky — fragile, but carry the light of the cosmos.*
+
+**Impact:** ⭐⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Celestial Link** | Shift + right-click a player to link fates: shared pain and shared strength. |
+| **Light Body** | Slow falling and increased jump height at night. |
+| **Lunar Empowerment** | Moon phase modifies your power at night. |
+| **Star Ascension** | Consume a Nether Star to unlock True Starborn: gain energy from the sun, Strength at solar noon (+25% damage taken at midday), severe debuffs when energy drops below 25. |
+| **Starlight Energy** | Resource (0–100). Regenerates at night. |
+| **Starlight Pulse** *(Secondary Active)* | Spend 40 energy to heal all players within a short distance for a short distance. |
+| **Stellar Sight** | Full night vision. |
+| **Supernova** | Dying at max starlight triggers a light-filled explosion. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Fragile Body** | -4 max health. |
+| **Solar Weakness** | Weakness and Slowness during daytime when not True Starborn. Low energy adds further debuffs. |
+
+---
+
+</details>
+
+<details>
+<summary><strong>Withered Piglin</strong></summary>
+
+## Withered Piglin
+
+<a id="Withered Piglin"></a>
+
+> *A Piglin twisted by decay and rejection. Sustained by rot, empowered by gold.*
+
+**Impact:** ⭐⭐⭐
+
+### Strengths
+
+| Power | Description |
+|---|---|
+| **Decay Art** | On kill, burst the corpse into a withering cloud applying Wither to nearby enemies. |
+| **Gold Crafting** | Craft a gold ingot from only 4 nuggets. |
+| **Gold Obsessed** | Each gold or gold-trimmed armor piece grants a bonus: Helmet → +25% ranged damage. Chestplate → -20% damage taken. Leggings → +50% XP gain. Boots → +8.75% speed. |
+| **Loot Hoarder** | Personal chest inventory that drops on death. |
+| **Rotten Appetite** | Rotten flesh (5 hunger), spider eyes (6 hunger), and poisonous potatoes (9 hunger) are proper food with no negative effects. Golden foods work normally. |
+| **Withered Resistance** | Immune to Wither and Poison. |
+| **Withered Touch** | 32.5% chance on melee hit to inflict Wither. |
+
+### Weaknesses
+
+| Power | Description |
+|---|---|
+| **Fading Embers** | Hunger II every a short distance outside the Nether. |
+| **Outcast of the Bastions** | Cannot trade with Villagers. Piglins are always hostile. |
+| **Unstable Flesh** | All healing 65% less effective. |
+| **Withered Body** | -3 max health. |
+
+</details>
