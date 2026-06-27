@@ -1,91 +1,52 @@
-ORIGINS: DIVERSITY
-=================
+# ORIGINS: DIVERSITY
 
-Origins: Diversity is an addon for the Origins mod that introduces a growing
-collection of carefully designed animal- and nature-inspired origins.
+> A Fabric addon for the [Origins Mod](https://modrinth.com/mod/origins) introducing a growing collection of carefully designed origins, each built around a clear ecological or mythological concept with meaningful trade-offs.
 
-Each origin focuses on environmental adaptation, behavioral mechanics,
-and balanced gameplay rather than raw stat boosts.
+---
 
+## Features
 
-FEATURES
---------
-• Distinct Origins  
-  Every origin is built around a clear biological or ecological concept,
-  including mythological or speculative creatures.
+- **Distinct Origins** — Each origin is built around a clear biological or mythological concept.
+- **Environmental Adaptation** — Some origins dynamically change behavior based on biome, dimension, or time of day.
+- **Meaningful Trade-offs** — Every strength comes with a clear weakness.
+- **Data-Driven** — Fully implemented using Origins power JSON alongside Java event handling.
 
-• Environmental Adaptation  
-  Some origins dynamically adapt to their surroundings and biomes.
+---
 
-• Meaningful Trade-offs  
-  Strengths always come with clear weaknesses to ensure balanced gameplay.
+## Requirements
 
-• Data-Driven  
-  Fully implemented using Origins power JSON — no hardcoding.
+| Dependency | Link |
+|---|---|
+| Fabric API | [Modrinth](https://modrinth.com/mod/fabric-api) |
+| Origins Mod | [Modrinth](https://modrinth.com/mod/origins) |
+| Pehkui *(optional, required for scaling)* | [Modrinth](https://modrinth.com/mod/pehkui) |
+| Pufferfish's Attributes *(optional)* | [Modrinth](https://modrinth.com/mod/attributes) |
 
+---
 
-CURRENT ORIGINS
----------------
-The mod currently includes the following playable origins:
+## Current Origins
+→ See [ORIGINS.md](ORIGINS.md) for a full breakdown of every origin's powers and mechanics.
 
-• Panda
-• Cow
-• Platypus
-• Axolotl
-• Frog
-• Reptile
-• Raccoon
-• Penguin
-• Monkey
-• Dryad
-• Dodo
+---
 
-Each origin features:
-• Unique powers
-• Clear strengths and weaknesses
-• Mechanics tied to movement, combat, or the environment
+## Installation
 
-
-REQUIREMENTS
-------------
-Required:
-• Minecraft (Fabric)
-• Fabric API
-• Origins Mod
-
-Optional (supported):
-• Pehkui
-  https://modrinth.com/mod/pehkui
-
-• Pufferfish's Attributes
-  https://modrinth.com/mod/attributes
-
-
-INSTALLATION
-------------
 1. Install Fabric Loader
 2. Install Fabric API
 3. Install the Origins mod
 4. Place Origins: Diversity into your mods folder
 5. Launch the game and choose an origin
 
+---
 
-COMPATIBILITY
--------------
-• Designed to work alongside most Origins addons
-• Does not overwrite vanilla origins
-• Uses fully namespaced powers to avoid conflicts
+## Compatibility
 
+- Designed to work alongside most Origins addons.
+- Does not overwrite vanilla origins.
+- Uses fully namespaced powers to avoid conflicts.
 
-DEVELOPMENT NOTES
------------------
-• All powers are implemented using JSON
-• Uses controllers, cooldowns, and callbacks correctly
-• Biome-based adaptations clean up properly on death and origin change
-• No permanent or lingering powers remain after removal
+---
 
+## License
 
-FEEDBACK & CONTRIBUTIONS
-------------------------
-Feedback, balance suggestions, and bug reports are welcome.
-Feel free to open an issue or submit a pull request.
+[CC0-1.0](LICENSE) — Public Domain
