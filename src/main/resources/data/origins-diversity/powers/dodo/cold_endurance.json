@@ -1,32 +1,22 @@
 {
   "name": "Cold Endurance",
-  "description": "§rCold climates harden your muscles and slow your metabolism - gain §aincreased§r damage and §areduced§r hunger loss.",
+  "description": "§rCold climates harden your muscles and slow your metabolism — gain §aincreased§r damage and §areduced§r hunger loss.",
   "type": "origins:multiple",
-
-    "modify_exhaustion": {
-      "type": "origins:modify_exhaustion",
-      "modifier": {
-        "operation": "multiply_total_multiplicative",
-        "amount": -0.2,
-        "resource": "cold_endurance"
-      }
-
-
-    },
-
-   "cold_strength": {
-      "type": "origins:attribute",
-      "modifier": {
-        "id": "origins-diversity:dodo_cold_strength",
-        "attribute": "minecraft:generic.attack_damage",
-        "amount": 1.0,
-        "operation": "ADD_VALUE"
-      }
-
-
-   }
-
-
-
-
+  "modify_exhaustion": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": -0.2,
+      "resource": "cold_endurance"
+    }
+  },
+  "cold_strength": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:dodo_cold_strength",
+      "attribute": "minecraft:generic.attack_damage",
+      "amount": 1.0,
+      "operation": "ADD_VALUE"
+    }
+  }
 }

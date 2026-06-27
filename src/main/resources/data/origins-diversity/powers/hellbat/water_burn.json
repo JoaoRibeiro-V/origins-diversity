@@ -1,7 +1,7 @@
 {
   "type": "origins:action_over_time",
   "name": "Hydrophobic",
-  "description": "Water burns your hellish body.",
+  "description": "§rWater §cburns§r your hellish body.",
   "interval": 4,
   "entity_action": {
     "type": "origins:damage",

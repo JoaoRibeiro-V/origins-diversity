@@ -1,7 +1,7 @@
 {
   "type": "origins:modify_damage_dealt",
   "name": "Wing Buffet",
-  "description": "Your weak strikes deal little damage, but the violent gust from your wings sends enemies flying.",
+  "description": "§rYour weak strikes deal §clittle§r damage, but the violent gust from your wings sends enemies §cflying§r.",
   "bientity_action": {
     "type": "origins:add_velocity",
     "z": 3,

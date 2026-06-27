@@ -1,6 +1,6 @@
 {
   "name": "Parasitic Leech",
-  "description": "Your strikes may infest a target with a parasitic echo.\nLeeched enemies deal reduced damage to you and feed you whenever you strike them.\nThis parasitic leech is vulnerable to heat, removing the parasite whenever the target is set on fire.\n\nThose claimed by the parasite cannot hide.",
+  "description": "§rYour strikes may infest a target with a §5parasitic echo§r.\nLeeched enemies §cdeal reduced damage§r to you and §afeed§r you whenever you strike them.\nThis §5parasitic leech§r is §cvulnerable§r to §6heat§r — the parasite is removed when the target is set on fire.\n\nThose claimed by the §5parasite§r §ccannot hide§r.",
   "type": "origins:multiple",
   "healonhitnormal": {
     "type": "origins:self_action_on_hit",

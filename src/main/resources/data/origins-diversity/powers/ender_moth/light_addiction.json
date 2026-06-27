@@ -1,6 +1,6 @@
 {
   "name": "Light Addiction",
-  "description": "Without enough light your body functions start shutting down.",
+  "description": "§rWithout enough §elight§r your body functions start §cshutting down§r.",
   "type": "origins:action_over_time",
   "entity_action": {
     "type": "origins:and",

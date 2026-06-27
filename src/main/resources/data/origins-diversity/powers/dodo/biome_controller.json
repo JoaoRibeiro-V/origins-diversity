@@ -1,6 +1,6 @@
 {
   "name": "Environmental Adaptability",
-  "description": "Your physiology responds directly to environmental stressors:\n\n§6🔥 Hot Biomes§r — Prolonged heat causes your body to retain moisture and harden skin layers, increasing natural protection.\n\n§b❄ Cold Biomes§r — Low temperatures trigger muscle tightening and energy conservation, reducing hunger loss and increasing physical strength.\n\n§3🌊 Ocean Biomes§r — Increased lung efficiency and buoyancy improve underwater breathing, swimming speed, and stability in water.\n\n§a🌿 Plains§r — Stable, open terrain promotes balanced endurance and sustained activity.\n\n§2🪵 Swamps§r — Constant exposure to toxins strengthens internal resistance and improves balance in unstable ground.\n\n§r⛰ Mountains§r — Thin air and steep terrain condition your body to resist falls, projectiles, and altitude strain.",
+  "description": "§rYour physiology responds directly to environmental stressors:\n\n§6🔥 Hot Biomes§r — Prolonged heat causes your body to retain moisture and harden skin layers, §aincreasing§r natural protection.\n\n§b❄ Cold Biomes§r — Low temperatures trigger muscle tightening and energy conservation, §areducing§r hunger loss and §aincreasing§r physical strength.\n\n§3🌊 Ocean Biomes§r — Increased lung efficiency and buoyancy §aimprove§r underwater breathing, swimming speed, and stability in water.\n\n§a🌿 Plains§r — Stable, open terrain promotes balanced endurance and sustained activity.\n\n§2🪵 Swamps§r — Constant exposure to toxins §astrengthens§r internal resistance and improves balance.\n\n§r⛰ Mountains§r — Thin air and steep terrain condition your body to §aresist§r falls, projectiles, and altitude strain.",
   "type": "origins:action_over_time",
   "interval": 20,
   "entity_action": {
@@ -68,7 +68,6 @@
           "source": "origins-diversity:dodo_biome_adaptation"
         }
       },
-
       {
         "type": "origins:if_else",
         "condition": {

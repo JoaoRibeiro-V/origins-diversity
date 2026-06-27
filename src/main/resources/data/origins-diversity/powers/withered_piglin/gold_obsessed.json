@@ -1,6 +1,6 @@
 {
   "name": "Gold Obsessed",
-  "description": "Even in decay, gold calls to you. Gilded armor rekindles your strength, rewarding those who wear its shine.\nEach adorned piece awakens a different echo of power:\n\nThe helm sharpens intent, the chest steels the body, the leggings draw richer spoils, and gilded steps carry you onward.",
+  "description": "§rEven in decay, §6gold§r calls to you. Gilded armor rekindles your strength, rewarding those who wear its shine.\nEach adorned piece awakens a different echo of power:\n\nThe §6helm§r sharpens intent, the §6chest§r steels the body, the §6leggings§r draw richer spoils, and §6gilded steps§r carry you onward.",
   "type": "origins:multiple",
   "goldenhelmet": {
     "type": "origins:modify_projectile_damage",

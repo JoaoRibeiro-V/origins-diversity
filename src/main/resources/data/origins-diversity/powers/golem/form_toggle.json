@@ -1,6 +1,6 @@
 {
   "name": "Reconfigure Body",
-  "description": "§rShift between §fIron§r and §bSnow§r golem forms.",
+  "description": "§rShift between §fIron§r and §bSnow§r golem forms.\n§fIron Form:§r Heavier and stronger, enhances your attacks greatly\n§bSnow Form:§r Quicker and more fragile, applies frost on hit.",
   "type": "origins:toggle",
   "key": {
     "key": "key.origins.secondary_active",

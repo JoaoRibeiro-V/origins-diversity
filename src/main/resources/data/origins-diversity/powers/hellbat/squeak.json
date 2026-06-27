@@ -1,7 +1,7 @@
 {
   "type": "origins:active_self",
   "name": "Bat Squeak",
-  "description": "You can let out an annoying little squeak, asserting dominance.",
+  "description": "§rYou can let out an annoying little squeak, asserting dominance.",
   "cooldown": 0,
   "hud_render": {
     "should_render": false

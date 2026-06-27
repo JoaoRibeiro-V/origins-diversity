@@ -1,6 +1,6 @@
 {
   "name": "Like a Moth to the Flame",
-  "description": "Hitting enemies directly looking at you has extra properties.",
+  "description": "§rHitting enemies directly §elooking at you§r has §aextra§r properties.",
   "type": "origins:modify_damage_dealt",
   "bientity_condition": {
     "type": "origins:relative_rotation",

@@ -1,7 +1,7 @@
 {
   "type": "origins:climbing",
   "name": "Clingy Pest",
-  "description": "You can cling to walls and ceilings, slowing your fall and allowing you to skitter around like an annoying pest.",
+  "description": "§rYou can cling to §awalls§r and §aceilings§r, slowing your fall and allowing you to skitter around like an annoying pest.",
   "velocity": 0,
   "take_fall_damage": false,
   "condition": {

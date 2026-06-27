@@ -1,8 +1,7 @@
 {
   "type": "origins:multiple",
   "name": "Solar Weakness",
-  "description": "You are weakened during the day. Without energy, you falter further.",
-
+  "description": "§rYou are §cweakened§r during the §eday§r. Without §9energy§r, you §cfalter§r further.",
   "0": {
     "type": "origins:action_over_time",
     "interval": 10,
@@ -32,7 +31,6 @@
       ]
     }
   },
-
   "1": {
     "type": "origins:action_over_time",
     "interval": 10,

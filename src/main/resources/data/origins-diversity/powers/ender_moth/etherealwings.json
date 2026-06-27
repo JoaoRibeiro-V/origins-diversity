@@ -1,6 +1,6 @@
 {
   "name": "Ethereal Wings",
-  "description": "Your wings are too fragile for flight, you can use your moth wings to glide in air.",
+  "description": "§rYour wings are too §cfragile§r for flight. You can use your moth wings to §aglide§r through the air.",
   "type": "origins:multiple",
   "controller": {
     "type": "origins:active_self",

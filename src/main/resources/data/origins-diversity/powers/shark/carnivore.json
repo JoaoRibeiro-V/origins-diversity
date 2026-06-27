@@ -10,7 +10,9 @@
         "conditions": [
           {
             "type": "origins:ingredient",
-            "ingredient": { "tag": "origins:meat" }
+            "ingredient": {
+              "tag": "origins:meat"
+            }
           }
         ],
         "inverted": true
@@ -20,7 +22,9 @@
       },
       {
         "type": "origins:ingredient",
-        "ingredient": { "tag": "origins:ignore_diet" },
+        "ingredient": {
+          "tag": "origins:ignore_diet"
+        },
         "inverted": true
       }
     ]

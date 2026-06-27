@@ -1,6 +1,6 @@
 {
   "name": "Photophilic",
-  "description": "Under a high source of light, your body starts improving its capabilities.",
+  "description": "§rUnder a high source of §elight§r, your body starts §aimproving§r its capabilities.",
   "type": "origins:action_over_time",
   "entity_action": {
     "type": "origins:and",

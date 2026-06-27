@@ -1,7 +1,7 @@
 {
   "type": "origins:attribute",
   "name": "Fragile Body",
-  "description": "-4 max hearts.",
+  "description": "§rYou have §creduced§r max health.",
   "modifier": {
     "id": "origins-diversity:fragile_body_health",
     "attribute": "minecraft:generic.max_health",

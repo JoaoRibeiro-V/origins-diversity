@@ -1,6 +1,6 @@
 {
   "name": "Gold Crafting",
-  "description": "You can craft gold ingots with 4 gold nuggets",
+  "description": "§rYou can craft §6gold ingots§r with 4 gold nuggets.",
   "type": "origins:multiple",
   "goldennuggetreturn": {
     "type": "origins:modify_crafting",

@@ -1,5 +1,5 @@
 {
   "name": "Fire Immunity",
-  "description": "§rYou are immune to fire damage. ",
+  "description": "§rYou are §aimmune§r to §6fire§r damage.",
   "type": "origins:fire_immunity"
 }

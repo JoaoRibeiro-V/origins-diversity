@@ -1,6 +1,6 @@
 {
   "name": "Unstable Body",
-  "description": "Enter an unknown state, the world itself rejects it, making you unable to interact with anything nor be interacted to.",
+  "description": "§rEnter an unknown state — the world itself §crejects§r it, making you unable to interact with anything, nor be interacted with.",
   "type": "origins:multiple",
   "preventdamage": {
     "type": "origins:modify_damage_dealt",

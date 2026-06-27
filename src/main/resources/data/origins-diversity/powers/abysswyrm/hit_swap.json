@@ -1,6 +1,6 @@
 {
   "name": "Shadow Shift",
-  "description": "When struck, you vanish into the void, slipping through shadows and reappearing a short distance away. But every shift leaves you disoriented.",
+  "description": "§rWhen struck, you vanish into the §dvoid§r, slipping through shadows and reappearing a short distance away. But every shift leaves you §cdisoriented§r.",
   "type": "origins:self_action_when_hit",
   "entity_action": {
     "type": "origins:random_teleport",

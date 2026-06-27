@@ -1,6 +1,6 @@
 {
   "name": "Withered Body",
-  "description": "You have reduced health.",
+  "description": "§rYou have §creduced§r health.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:withered_piglin_health",

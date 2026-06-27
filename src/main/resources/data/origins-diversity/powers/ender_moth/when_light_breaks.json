@@ -1,6 +1,6 @@
 {
   "name": "When Light Breaks",
-  "description": "When you are wreathed in light, striking those already burning may cause their flames to erupt in a violent burst of radiance.",
+  "description": "§rWhen you are wreathed in §elight§r, striking those already §6burning§r may cause their flames to erupt in a violent burst of §eradiance§r.",
   "type": "origins:action_on_hit",
   "bientity_condition": {
     "type": "origins:and",

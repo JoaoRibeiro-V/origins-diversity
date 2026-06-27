@@ -1,6 +1,6 @@
 {
   "name": "Fading Embers",
-  "description": "The Overworld offers no sustenance to your withered form. Away from the Nether, your body slowly starves, gnawed by an unending hunger.",
+  "description": "§rThe Overworld offers §cno sustenance§r to your withered form. Away from the §6Nether§r, your body slowly §cstarves§r, gnawed by an unending hunger.",
   "type": "origins:action_over_time",
   "interval": 600,
   "entity_action": {

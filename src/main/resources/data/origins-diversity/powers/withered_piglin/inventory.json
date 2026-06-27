@@ -1,6 +1,6 @@
 {
   "name": "Loot Hoarder",
-  "description": "Even in death, treasures call to you.",
+  "description": "§rEven in death, treasures call to you.",
   "type": "origins:inventory",
   "container_type": "chest",
   "title": "Loot Hoarder"

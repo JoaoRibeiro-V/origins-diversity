@@ -1,6 +1,6 @@
 {
   "name": "Unstable Flesh",
-  "description": "Your body struggles to hold itself together, healing is way less effective.",
+  "description": "§rYour body struggles to hold itself together — healing is §cfar less effective§r.",
   "type": "origins:modify_healing",
   "modifier": {
     "operation": "multiply_total_multiplicative",

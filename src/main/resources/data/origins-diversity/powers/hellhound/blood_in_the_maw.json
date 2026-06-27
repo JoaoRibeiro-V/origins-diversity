@@ -1,7 +1,6 @@
 {
-
   "name": "Blood in the Maw",
-  "description": "Striking prey while hungry fuels your feral rage.",
+  "description": "§rStriking prey while §chunger§r fuels your §cferal rage§r.",
   "type": "origins:multiple",
   "feral_gain": {
     "type": "origins:self_action_on_hit",

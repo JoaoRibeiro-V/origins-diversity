@@ -1,7 +1,7 @@
 {
   "type": "origins:resource",
   "name": "Feral Rage",
-  "description": "Hunger and bloodshed fuel a rising feral fury.",
+  "description": "§rHunger and bloodshed fuel a rising §cferal fury§r.",
   "min": 0,
   "max": 100,
   "start_value": 0,

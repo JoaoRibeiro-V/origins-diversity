@@ -1,6 +1,6 @@
 {
   "name": "Sculk Seer",
-  "description": "The sculk has corrupted your mind, you no longer see things the way they used to, though the darkness seems to steady ur sight.",
+  "description": "§rThe §5sculk§r has corrupted your mind. You no longer see things the way they used to, though the §9darkness§r seems to steady your sight.",
   "type": "origins:shader",
   "shader": "origins-diversity:shaders/post/blindness.json",
   "condition": {

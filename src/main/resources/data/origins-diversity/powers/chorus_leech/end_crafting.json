@@ -1,6 +1,6 @@
 {
   "name": "Chorus Crafter",
-  "description": "You can force mundane materials to resonate with the End, transmuting them into chorus fruits, chorus flowers, and end stone.",
+  "description": "§rYou can force mundane materials to resonate with the §5End§r, transmuting them into §5chorus fruits§r, §5chorus flowers§r, and §5end stone§r.",
   "type": "origins:multiple",
   "endstonecraft": {
     "type": "origins:recipe",

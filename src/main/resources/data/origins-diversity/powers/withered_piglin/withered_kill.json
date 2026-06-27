@@ -1,6 +1,6 @@
 {
   "name": "Decay Art",
-  "description": "Upon killing a creature, burst their body into a rotten and withered cloud, infecting nearby creatures.",
+  "description": "§rUpon killing a creature, burst their body into a §5rotten and withered cloud§r, §cinfecting§r nearby creatures.",
   "type": "origins:self_action_on_kill",
   "cooldown": 400,
   "entity_action": {
@@ -16,7 +16,8 @@
           "duration": 40
         },
         "duration": 100
-      },{
+      },
+      {
         "type": "origins:area_of_effect",
         "radius": 8,
         "bientity_action": {

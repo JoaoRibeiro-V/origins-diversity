@@ -1,6 +1,6 @@
 {
   "name": "Withered Touch",
-  "description": "Your decayed strikes sometimes inflict the withering curse upon your enemies.",
+  "description": "§rYour decayed strikes sometimes inflict the §5withering curse§r upon your enemies.",
   "type": "origins:target_action_on_hit",
   "entity_action": {
     "type": "origins:chance",

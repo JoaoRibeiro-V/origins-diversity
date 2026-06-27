@@ -1,6 +1,6 @@
 {
   "name": "Hydration",
-  "description": "§rDrinking water temporarily keeps your skin moist, allowing you to function on land.",
+  "description": "§rDrinking §bwater§r temporarily keeps your skin moist, allowing you to function on land.",
   "type": "origins:action_on_item_use",
   "item_condition": {
     "type": "origins:ingredient",

@@ -1,6 +1,6 @@
 {
   "name": "Fragile",
-  "description": "Your hollow bones make your body extremely fragile.",
+  "description": "§rYour hollow bones make your body extremely §cfragile§r.",
   "type": "origins:attribute",
   "modifier": {
     "id": "origins-diversity:fox_hearts",

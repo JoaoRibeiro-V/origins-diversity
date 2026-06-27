@@ -1,6 +1,6 @@
 {
   "name": "Blink",
-  "description": "You can force your unstable body to rupture space, blinking to an unpredictable location.",
+  "description": "§rYou can force your unstable body to rupture space, §ablinking§r to an unpredictable location.",
   "type": "origins:active_self",
   "entity_action": {
     "type": "origins:random_teleport",

@@ -1,6 +1,6 @@
 {
   "name": "Infernal Hide",
-  "description": "Your body is forged by hellfire, rendering flames harmless and lava far less deadly.",
+  "description": "§rYour body is forged by §6hellfire§r, rendering flames §aharmless§r and lava far §aless deadly§r.",
   "type": "origins:modify_damage_taken",
   "damage_condition": {
     "type": "origins:and",

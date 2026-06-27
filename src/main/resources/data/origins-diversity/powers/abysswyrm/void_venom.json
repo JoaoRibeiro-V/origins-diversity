@@ -1,6 +1,6 @@
 {
   "name": "Venom of the Void",
-  "description": "Your strikes carry the essence of the void, sapping the strength of all you touch. Even the strongest warriors falter under your bite",
+  "description": "§rYour strikes carry the essence of the §dvoid§r, sapping the §cstrength§r of all you touch. Even the strongest warriors §cfalter§r under your bite.",
   "type": "origins:action_on_hit",
   "cooldown": 300,
   "bientity_action": {

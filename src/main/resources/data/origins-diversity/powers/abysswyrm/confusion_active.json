@@ -1,6 +1,6 @@
 {
   "name": "Mirror of the Abyss",
-  "description": "The abyss reaches into flesh and mind, inverting the motions of intruders as if they were marionettes of the void itself.",
+  "description": "§rThe §5abyss§r reaches into flesh and mind, inverting the motions of intruders as if they were marionettes of the §dvoid§r itself.",
   "type": "origins:active_self",
   "cooldown": 750,
   "entity_action": {

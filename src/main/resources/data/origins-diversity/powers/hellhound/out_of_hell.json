@@ -1,6 +1,6 @@
 {
   "name": "Out of Hell",
-  "description": "Away from the Nether, your body weakens and struggles to endure unfamiliar realms.",
+  "description": "§rAway from the §6Nether§r, your body §cweakens§r and struggles to endure unfamiliar realms.",
   "type": "origins:conditioned_attribute",
   "attribute": "minecraft:generic.movement_speed",
   "modifier": {

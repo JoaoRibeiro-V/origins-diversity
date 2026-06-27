@@ -1,7 +1,7 @@
 {
   "type": "origins:action_over_time",
   "name": "Hydrophobic",
-  "description": "Water disrupts the parasitic resonance within, damaging you over time.",
+  "description": "§rWater disrupts the §5parasitic resonance§r within, §cdamaging§r you over time.",
   "interval": 20,
   "entity_action": {
     "type": "origins:damage",

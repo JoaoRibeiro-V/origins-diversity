@@ -1,6 +1,6 @@
 {
   "name": "Beached",
-  "description": "§rOut of water, your body begins to fail.\nYou grow sluggish and fight poorly.\n\n§rRe-entering water or §bhydrating§r yourself stabilizes you.",
+  "description": "§rOut of §bwater§r, your body begins to §cfail§r.\nYou grow §csluggish§r and fight §cpoorly§r.\n\nRe-entering §bwater§r or §bhydrating§r yourself stabilizes you.",
   "type": "origins:action_over_time",
   "interval": 20,
   "entity_action": {

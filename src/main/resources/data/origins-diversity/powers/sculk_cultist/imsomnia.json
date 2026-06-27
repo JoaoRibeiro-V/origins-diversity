@@ -1,6 +1,6 @@
 {
   "name": "Paranoia",
-  "description": "You've become paranoid, not allowing you to sleep while not holding a weapon. Phantoms also seem to disturb you more often.",
+  "description": "§rYou've become §cparanoid§r, not allowing you to sleep while not holding a weapon. Phantoms also seem to §cdisturb§r you more often.",
   "type": "origins:multiple",
   "ticks": {
     "type": "origins:modify_insomnia_ticks",

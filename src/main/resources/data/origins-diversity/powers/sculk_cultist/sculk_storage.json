@@ -1,5 +1,5 @@
 {
   "type": "origins:simple",
   "name": "Sculk Storage",
-  "description": "You have access to a storage within the sculk to call forth items you buried upon it."
+  "description": "§rYou have access to a §5storage§r within the sculk to call forth items you buried upon it."
 }

@@ -1,6 +1,6 @@
 {
   "name": "Sculk Summoning",
-  "description": "You can gather your sculk to summon zombies that attack those in sight.\n\nAlternatively, upon gathering an immense amount of sculk and sneaking, perform a sculk ritual, unleashing an untamed beast seeking destruction.",
+  "description": "§rYou can gather your §5sculk§r to summon §czombies§r that attack those in sight.\n\nAlternatively, upon gathering an immense amount of §5sculk§r and sneaking, perform a §5sculk ritual§r, unleashing an untamed beast seeking destruction.",
   "type": "origins:active_self",
   "entity_action": {
     "type": "origins:if_else",
@@ -77,9 +77,7 @@
             }
           }
         }
-
       ]
-
     },
     "else_action": {
       "type": "origins:execute_command",

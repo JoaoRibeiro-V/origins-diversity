@@ -3,32 +3,28 @@
   "description": "§rOpen terrain lets you reposition quickly after striking an enemy.\nWide open lands §afavor§r your movement and stamina.",
   "type": "origins:multiple",
   "speed_on_hit": {
-      "type": "origins:action_on_hit",
-      "cooldown": 80,
-      "bientity_action": {
-        "type": "origins:actor_action",
-        "action": {
-          "type": "origins:apply_effect",
-          "effect": {
-            "id": "minecraft:speed",
-            "duration": 40,
-            "amplifier": 0,
-            "show_particles": false,
-            "show_icon": false
-          }
+    "type": "origins:action_on_hit",
+    "cooldown": 80,
+    "bientity_action": {
+      "type": "origins:actor_action",
+      "action": {
+        "type": "origins:apply_effect",
+        "effect": {
+          "id": "minecraft:speed",
+          "duration": 40,
+          "amplifier": 0,
+          "show_particles": false,
+          "show_icon": false
         }
       }
-
-
-  },
-    "modify_exhaustion": {
-      "type": "origins:modify_exhaustion",
-      "modifier": {
-        "operation": "multiply_total_multiplicative",
-        "amount": -0.25,
-        "resource": "plains_endurance"
-      }
-
-
     }
+  },
+  "modify_exhaustion": {
+    "type": "origins:modify_exhaustion",
+    "modifier": {
+      "operation": "multiply_total_multiplicative",
+      "amount": -0.25,
+      "resource": "plains_endurance"
+    }
+  }
 }

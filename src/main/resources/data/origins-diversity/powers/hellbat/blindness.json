@@ -1,7 +1,7 @@
 {
   "type": "origins:action_over_time",
   "name": "Light Sensitivity",
-  "description": "Bright light overwhelms your heightened senses, leaving you disoriented and weak.",
+  "description": "§rBright §elight§r overwhelms your heightened senses, leaving you §cdisoriented§r and §cweak§r.",
   "entity_action": {
     "type": "origins:and",
     "actions": [

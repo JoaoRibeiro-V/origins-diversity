@@ -1,11 +1,13 @@
 {
   "name": "Sculk Enhancing",
-  "description": "Upon toggle, you let the sculk dive deeper to your body, making you able to:\n- Turn convertible blocks into Sculk by right clicking on them and spending the sculk contained within you.\n- Phase through Sculk blocks\n- Inflict darkness on those who you hit",
+  "description": "§rUpon toggle, you let the §5sculk§r dive deeper into your body, making you able to:\n- Turn convertible blocks into §5Sculk§r by right clicking on them.\n- §aPhase§r through §5Sculk§r blocks.\n- Inflict §9darkness§r on those you hit.",
   "type": "origins:multiple",
   "formtoggle": {
     "type": "origins:toggle",
     "active_by_default": false,
-    "key": {"key": "key.origins.secondary_active"}
+    "key": {
+      "key": "key.origins.secondary_active"
+    }
   },
   "entitycolor": {
     "type": "origins:model_color",
@@ -67,7 +69,6 @@
         ]
       }
     }
-
   },
   "convert": {
     "type": "origins:action_on_block_use",
@@ -79,13 +80,17 @@
           "block": "origins-diversity:purple_sculk_block"
         }
       ]
-
     },
     "entity_action": {
       "type": "origins:and",
       "actions": [
-        {"type": "origins:swing_hand"},
-        {"type": "origins:execute_command", "command": "tag @s add sculk_just_converted"},
+        {
+          "type": "origins:swing_hand"
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "tag @s add sculk_just_converted"
+        },
         {
           "type": "origins:change_resource",
           "resource": "origins-diversity:sculk_cultist/sculk_gather",
@@ -122,7 +127,6 @@
           "compare_to": 5
         }
       ]
-
     }
   },
   "phasesculk": {

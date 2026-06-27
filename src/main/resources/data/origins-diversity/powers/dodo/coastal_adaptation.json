@@ -1,33 +1,32 @@
 {
   "name": "Coastal Adaptation",
-  "description": "§rYou breathe efficiently and move more naturally through §nwater§r§r.",
+  "description": "§rYou breathe §aefficiently§r and move more naturally through §bwater§r.",
   "type": "origins:multiple",
-    "oxygen_bonus": {
-      "type": "origins:attribute",
-      "modifier": {
-        "id": "origins-diversity:dodo_oxygen_bonus",
-        "attribute": "minecraft:generic.oxygen_bonus",
-        "amount": 1.5,
-        "operation": "ADD_VALUE"
-      }
-    },
-    "swim_speed": {
-      "type": "origins:attribute",
-      "modifier": {
-        "id": "origins-diversity:dodo_swim_speed",
-        "attribute": "additionalentityattributes:generic.water_speed",
-        "amount": 0.2,
-        "operation": "ADD_MULTIPLIED_TOTAL"
-      }
-    },
-    "water_stability": {
-      "type": "origins:attribute",
-      "modifier": {
-        "id": "origins-diversity:dodo_water_knockback",
-        "attribute": "minecraft:generic.knockback_resistance",
-        "amount": 0.35,
-        "operation": "ADD_VALUE"
-      }
+  "oxygen_bonus": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:dodo_oxygen_bonus",
+      "attribute": "minecraft:generic.oxygen_bonus",
+      "amount": 1.5,
+      "operation": "ADD_VALUE"
     }
-
+  },
+  "swim_speed": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:dodo_swim_speed",
+      "attribute": "additionalentityattributes:generic.water_speed",
+      "amount": 0.2,
+      "operation": "ADD_MULTIPLIED_TOTAL"
+    }
+  },
+  "water_stability": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:dodo_water_knockback",
+      "attribute": "minecraft:generic.knockback_resistance",
+      "amount": 0.35,
+      "operation": "ADD_VALUE"
+    }
+  }
 }

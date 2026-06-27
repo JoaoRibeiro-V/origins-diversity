@@ -1,6 +1,6 @@
 {
   "name": "Hypermetabolism",
-  "description": "High energy consumption makes your hunger bar deplete faster.",
+  "description": "§rHigh energy consumption makes your hunger bar §cdeplete faster§r.",
   "type": "origins:modify_exhaustion",
   "modifier": {
     "operation": "multiply_total_multiplicative",

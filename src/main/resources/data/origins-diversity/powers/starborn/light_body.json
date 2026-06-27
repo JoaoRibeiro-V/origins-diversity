@@ -1,8 +1,7 @@
 {
   "type": "origins:multiple",
   "name": "Light Body",
-  "description": "Weightless at night, you have slow falling and jump boost when the moon rises.",
-
+  "description": "§rWeightless at §9night§r — you have §aslow falling§r and §ajump boost§r when the moon rises.",
   "0": {
     "type": "origins:attribute",
     "modifier": {
@@ -17,7 +16,6 @@
       "compare_to": 12300
     }
   },
-
   "1": {
     "type": "origins:modify_falling",
     "velocity": 0.06,

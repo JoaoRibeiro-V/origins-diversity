@@ -1,6 +1,6 @@
 {
   "name": "Netherbound",
-  "description": "The Nether is your true home. Its heat strengthens you, while other realms feel... чужд.",
+  "description": "§rThe §6Nether§r is your true home. Its heat §astrengthens§r you, while other realms feel foreign.",
   "type": "origins:modify_player_spawn",
   "dimension": "minecraft:the_nether"
 }

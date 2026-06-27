@@ -1,6 +1,6 @@
 {
   "name": "Nocturnal",
-  "description": "You gain weakness on daytime.",
+  "description": "§rYou gain §cweakness§r during §edaytime§r.",
   "type": "origins:stacking_status_effect",
   "min_stacks": 0,
   "max_stacks": 5,

@@ -1,29 +1,21 @@
 {
   "name": "Bog Resilience",
-  "description": "§r§nMud, rot, and toxins§r§r have §alittle§r effect on you.",
+  "description": "§rMud, rot, and toxins have §alittle§r effect on you.",
   "type": "origins:multiple",
-
   "effect_immunity": {
-      "type": "origins:effect_immunity",
-      "effects": [
-        "minecraft:poison",
-        "minecraft:hunger"
-      ]
-
-
+    "type": "origins:effect_immunity",
+    "effects": [
+      "minecraft:poison",
+      "minecraft:hunger"
+    ]
   },
-
-    "swamp_knockback": {
-      "type": "origins:attribute",
-      "modifier": {
-        "id": "origins-diversity:dodo_swamp_knockback",
-        "attribute": "minecraft:generic.knockback_resistance",
-        "amount": 0.2,
-        "operation": "ADD_VALUE"
-      }
-
-
+  "swamp_knockback": {
+    "type": "origins:attribute",
+    "modifier": {
+      "id": "origins-diversity:dodo_swamp_knockback",
+      "attribute": "minecraft:generic.knockback_resistance",
+      "amount": 0.2,
+      "operation": "ADD_VALUE"
     }
-
-
+  }
 }

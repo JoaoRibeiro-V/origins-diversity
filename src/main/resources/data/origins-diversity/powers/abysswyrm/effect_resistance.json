@@ -1,6 +1,6 @@
 {
   "name": "Empty Physiology",
-  "description": "Your body rejects any status effects applied to you, making them last for much shorter periods of time.",
+  "description": "§rYour body §arejects§r any status effects applied to you, making them last for much §ashorter§r periods of time.",
   "type": "origins:modify_status_effect_duration",
   "modifier": {
     "operation": "multiply_base_multiplicative",

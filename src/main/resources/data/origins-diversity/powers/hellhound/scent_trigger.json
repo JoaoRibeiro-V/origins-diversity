@@ -1,6 +1,6 @@
 {
   "name": "Scent of Prey",
-  "description": "You inhale deeply, marking all nearby creatures through walls.",
+  "description": "§rYou inhale deeply, §amarking§r all nearby creatures through walls.",
   "cooldown": 600,
   "type": "origins:active_self",
   "entity_action": {

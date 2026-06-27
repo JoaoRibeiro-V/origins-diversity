@@ -1,7 +1,7 @@
 {
   "hidden": false,
   "name": "True Starborn",
-  "description": "Pinnacle of stars, you now can:\n- Regain starlight from the sun.\n- Reach complete destructive power when the sun reaches its peak, but take increased damage.\n\nThis power makes your energy dependency increase, making you have a huge decrease in power when low on starlight.",
+  "description": "§rPinnacle of stars — you now can:\n- Regain §9starlight§r from the §esun§r.\n- Reach complete destructive power when the sun reaches its §epeak§r, but take §cincreased damage§r.\n\nThis power makes your energy dependency §cincrease§r, causing a huge §cdecrease§r in power when low on §9starlight§r.",
   "type": "origins:multiple",
   "resetascension": {
     "type": "origins:action_on_callback",
@@ -47,7 +47,6 @@
       ]
     }
   },
-
   "midday_strength": {
     "type": "origins:action_over_time",
     "interval": 10,

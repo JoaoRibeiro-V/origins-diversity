@@ -1,7 +1,7 @@
 {
   "name": "Berry is Yummy.",
   "type": "origins:modify_food",
-  "description": "Eating berries grants more hunger and saturation as well as giving you a temporary buff.",
+  "description": "§rEating §aberries§r grants more hunger and saturation as well as giving you a temporary §abuff§r.",
   "item_condition": {
     "type": "origins:ingredient",
     "ingredient": [
@@ -41,6 +41,5 @@
         }
       }
     ]
-
   }
 }

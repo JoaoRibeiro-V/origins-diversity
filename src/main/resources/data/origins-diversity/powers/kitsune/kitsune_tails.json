@@ -1,6 +1,6 @@
 {
   "name": "Spirit Tails",
-  "description": "You manifest tails made of willpower and flames, representing ur current strength based on experience.",
+  "description": "§rYou manifest §dtails§r made of willpower and flames, representing your current strength based on experience.",
   "type": "origins:resource",
   "min": 1,
   "max": 9,

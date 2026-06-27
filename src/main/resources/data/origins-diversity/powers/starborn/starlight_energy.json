@@ -8,5 +8,5 @@
     "should_render": true
   },
   "name": "Starlight Energy",
-  "description": "Your celestial power.\nPassively regain starlight around, recovers faster at night."
+  "description": "§rYour celestial power.\nPassively regain §9starlight§r around you, recovers §afaster§r at §9night§r."
 }

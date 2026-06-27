@@ -1,7 +1,7 @@
 {
   "type": "origins:active_self",
   "name": "Shrill Screech",
-  "description": "You release a piercing screech that disorients nearby creatures.",
+  "description": "§rYou release a piercing §cscreech§r that §cdisorientsroots§r nearby creatures.",
   "cooldown": 600,
   "hud_render": {
     "should_render": true,

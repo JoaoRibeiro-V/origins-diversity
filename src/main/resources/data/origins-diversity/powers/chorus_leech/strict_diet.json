@@ -1,6 +1,6 @@
 {
   "name": "Strict Diet",
-  "description": "Your body no longer recognizes earthly sustenance.",
+  "description": "§rYour body no longer recognizes §cearthly sustenance§r.",
   "type": "origins:multiple",
   "chorusfruits": {
     "type": "origins:modify_food",
@@ -50,7 +50,9 @@
     "type": "origins:prevent_item_use",
     "item_condition": {
       "type": "origins:ingredient",
-      "ingredient": {"item": "minecraft:chorus_fruit"}
+      "ingredient": {
+        "item": "minecraft:chorus_fruit"
+      }
     },
     "condition": {
       "type": "origins:food_level",

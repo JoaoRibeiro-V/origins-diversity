@@ -1,6 +1,6 @@
 {
   "name": "Sculk",
-  "description": "You can store the sculk gathered from sources that should've been forgotten.",
+  "description": "§rYou can store the §5sculk§r gathered from sources that should've been forgotten.",
   "type": "origins:resource",
   "min": 0,
   "max": 600,

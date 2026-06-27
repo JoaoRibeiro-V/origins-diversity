@@ -1,6 +1,6 @@
 {
   "name": "Odium",
-  "description": "Your curiosity towards the sculk has spread through all the realms, making those who once greeted you with friendliness now show hostility and avoidance.\n\nYou can no longer trade with entities, creatures who once protected you now show hostility.",
+  "description": "§rYour curiosity towards the §5sculk§r has spread through all the realms, making those who once greeted you with friendliness now show §chostility§r and §cavoidance§r.\n\nYou can §cno longer trade§r with villagers, and creatures who once protected you now show §caggression§r.",
   "type": "origins:prevent_entity_use",
   "bientity_condition": {
     "type": "origins:target_condition",

@@ -1,6 +1,6 @@
 {
   "name": "Rotten Appetite",
-  "description": "Only spoiled and cursed food can sustain your decayed body.",
+  "description": "§rOnly §cspoiled§r and cursed food can sustain your decayed body.",
   "type": "origins:multiple",
   "modifyrottenfood": {
     "type": "origins:modify_food",
@@ -12,7 +12,8 @@
           "ingredient": {
             "tag": "origins-diversity:rotten_food"
           }
-        },{
+        },
+        {
           "type": "origins:ingredient",
           "ingredient": [
             {
@@ -28,7 +29,6 @@
           "inverted": true
         }
       ]
-
     },
     "food_modifier": {
       "operation": "multiply_base_additive",

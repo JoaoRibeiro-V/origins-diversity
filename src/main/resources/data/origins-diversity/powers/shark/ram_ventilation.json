@@ -1,6 +1,6 @@
 {
   "name": "Ram Ventilation",
-  "description": "§rYour gills rely on constant water flow.\n\n§rWhile swimming, you breathe normally.\n§rStopping underwater causes you to §csuffocate§r.",
+  "description": "§rYour gills rely on constant water flow.\n\nWhile §aswimming§r, you breathe normally.\n§cStopping§r underwater causes you to §csuffocate§r.",
   "type": "origins:action_over_time",
   "interval": 10,
   "entity_action": {
@@ -8,8 +8,13 @@
     "condition": {
       "type": "origins:and",
       "conditions": [
-        { "type": "origins:submerged_in", "fluid": "minecraft:water" },
-        { "type": "origins:swimming"}
+        {
+          "type": "origins:submerged_in",
+          "fluid": "minecraft:water"
+        },
+        {
+          "type": "origins:swimming"
+        }
       ]
     },
     "if_action": {

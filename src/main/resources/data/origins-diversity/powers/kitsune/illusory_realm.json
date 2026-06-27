@@ -1,6 +1,6 @@
 {
   "name": "Trickster",
-  "description": "Apply an illusion to everyone around you, making them not able to see you while not sprinting and constantly see fake decoys.",
+  "description": "§rApply an §dillusion§r to everyone around you, making them unable to see you while not sprinting and constantly see fake §ddecoys§r.",
   "type": "origins:active_self",
   "cooldown": 5000,
   "entity_action": {

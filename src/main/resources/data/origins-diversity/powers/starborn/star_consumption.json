@@ -1,6 +1,6 @@
 {
   "name": "Star Ascension",
-  "description": "Consuming a Nether Star will awaken your true potential:\n\n- Regain starlight from the sun.\n- Reach complete destructive power when the sun reaches its peak, but take increased damage.\n\nThis ascension makes your energy dependency increase, making you have a huge decrease in power when low on starlight.",
+  "description": "§rConsuming a §eNether Star§r will awaken your true potential:\n\n- Regain §9starlight§r from the §esun§r.\n- Reach complete destructive power when the sun reaches its peak, but take §cincreased damage§r.\n\nThis ascension makes your energy dependency §cincrease§r, causing a huge §cdecrease§r in power when low on §9starlight§r.",
   "type": "origins:edible_item",
   "item_condition": {
     "type": "origins:ingredient",
