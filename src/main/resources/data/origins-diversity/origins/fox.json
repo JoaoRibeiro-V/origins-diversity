@@ -2,7 +2,7 @@
   "name": "Fox",
   "description": "Agile nocturnal opportunistic hunters that rely on cunning and speed.",
   "icon": {
-    "id": "minecraft:sweet_berries"
+    "item": "minecraft:sweet_berries"
   },
   "impact": 2,
   "powers": [

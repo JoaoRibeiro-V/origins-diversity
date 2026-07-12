@@ -6,17 +6,17 @@
   "resetascension": {
     "type": "origins:action_on_callback",
     "lost": {
-      "type": "origins:remove_power",
-      "power": "origins-diversity:starborn/true_starborn"
-    }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:starborn/true_starborn"
+}
   },
   "hp": {
     "type": "origins:attribute",
     "modifier": {
       "id": "origins-diversity:fragile_body_health",
       "attribute": "minecraft:generic.max_health",
-      "operation": "ADD_VALUE",
-      "amount": 2.0
+      "operation": "addition",
+      "value": 2.0
     }
   },
   "dayregen": {
@@ -53,7 +53,7 @@
     "entity_action": {
       "type": "origins:apply_effect",
       "effect": {
-        "id": "minecraft:strength",
+        "effect": "minecraft:strength",
         "amplifier": 2,
         "duration": 60,
         "ambient": true,
@@ -80,7 +80,7 @@
     "type": "origins:modify_damage_taken",
     "modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": 0.25
+      "value": 0.25
     },
     "condition": {
       "type": "origins:and",
@@ -107,7 +107,7 @@
         {
           "type": "origins:apply_effect",
           "effect": {
-            "id": "minecraft:weakness",
+            "effect": "minecraft:weakness",
             "amplifier": 0,
             "duration": 60,
             "ambient": true,
@@ -117,7 +117,7 @@
         {
           "type": "origins:apply_effect",
           "effect": {
-            "id": "minecraft:slowness",
+            "effect": "minecraft:slowness",
             "amplifier": 0,
             "duration": 60,
             "ambient": true,
@@ -127,7 +127,7 @@
         {
           "type": "origins:apply_effect",
           "effect": {
-            "id": "minecraft:mining_fatigue",
+            "effect": "minecraft:mining_fatigue",
             "amplifier": 0,
             "duration": 60,
             "ambient": true,

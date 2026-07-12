@@ -3,12 +3,11 @@
   "name": "Light Body",
   "description": "§rWeightless at §9night§r — you have §aslow falling§r and §ajump boost§r when the moon rises.",
   "0": {
-    "type": "origins:attribute",
+    "type": "origins:modify_jump",
     "modifier": {
       "id": "origins-diversity:light_body_jump",
-      "attribute": "minecraft:generic.jump_strength",
-      "operation": "add_multiplied_base",
-      "amount": 0.15
+      "operation": "multiply_total",
+      "value": 0.15
     },
     "condition": {
       "type": "origins:time_of_day",

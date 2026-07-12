@@ -27,7 +27,7 @@
           {
             "type": "origins:grant_power",
             "power": "origins-diversity:bee/stinger_active",
-            "source": "origins-diversity:bee_stinger_controller"
+            "source": "origins-diversity"
           },
 
           {
@@ -48,10 +48,9 @@
         "type": "origins:and",
         "actions": [
           {
-            "type": "origins:revoke_power",
-            "power": "origins-diversity:bee/stinger_active",
-            "source": "origins-diversity:bee_stinger_controller"
-          },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:bee/stinger_active"
+},
           {
             "type": "origins:set_resource",
             "resource": "origins-diversity:bee/stinger_indicator",
@@ -59,7 +58,7 @@
           },
           {
             "type": "origins:play_sound",
-            "sound": "minecraft:block.cobweb.break"
+            "sound": "minecraft:entity.goat.horn_break"
           }
         ]
       }

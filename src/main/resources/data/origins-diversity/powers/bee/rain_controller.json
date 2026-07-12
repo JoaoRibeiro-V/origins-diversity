@@ -8,19 +8,17 @@
       "type": "origins:or",
       "conditions": [
         { "type": "origins:in_rain" },
-        { "type": "origins:submerged_in", "fluid": "minecraft:water" },
-        { "type": "origins:in_thunderstorm" }
+        { "type": "origins:submerged_in", "fluid": "minecraft:water" }
       ]
     },
     "if_action": {
       "type": "origins:grant_power",
       "power": "origins-diversity:bee/grounded",
-      "source": "origins-diversity:bee_grounding"
+      "source": "origins-diversity"
     },
     "else_action": {
-      "type": "origins:revoke_power",
-      "power": "origins-diversity:bee/grounded",
-      "source": "origins-diversity:bee_grounding"
-    }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:bee/grounded"
+}
   }
 }

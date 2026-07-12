@@ -8,7 +8,7 @@
       {
         "type": "origins:apply_effect",
         "effect": {
-          "id": "minecraft:blindness",
+          "effect": "minecraft:blindness",
           "duration": 60,
           "amplifier": 0,
           "show_particles": false,
@@ -18,7 +18,7 @@
       {
         "type": "origins:apply_effect",
         "effect": {
-          "id": "minecraft:weakness",
+          "effect": "minecraft:weakness",
           "duration": 60,
           "amplifier": 0,
           "show_particles": false,

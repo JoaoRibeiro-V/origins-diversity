@@ -1,21 +1,18 @@
 package com.origins_diversity.PowerHandlers;
 
 import com.origins_diversity.Extra.OriginsUtil;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.animal.IronGolem;
-import net.minecraft.world.entity.animal.Wolf;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.entity.ai.goal.ActiveTargetGoal;
+import net.minecraft.entity.mob.MobEntity;
+import net.minecraft.entity.player.PlayerEntity;
 
-public class AttackSculkCultistGoal extends NearestAttackableTargetGoal<Player> {
-    public AttackSculkCultistGoal(Mob entity, int chance){
+public class AttackSculkCultistGoal extends ActiveTargetGoal<PlayerEntity> {
+    public AttackSculkCultistGoal(MobEntity entity, int chance){
         super(entity,
-                Player.class,
+                PlayerEntity.class,
                 chance,
                 true,
                 false,
-                player -> OriginsUtil.hasOrigin((Player) player, "origins-diversity","sculk_cultist")
+                player -> OriginsUtil.hasOrigin((PlayerEntity) player, "origins-diversity","sculk_cultist")
         );
     }
 }

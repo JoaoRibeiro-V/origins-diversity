@@ -6,7 +6,7 @@
     "type": "origins:modify_damage_taken",
     "modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": -0.25,
+      "value": -0.25,
       "resource": "mountain_fall_damage"
     },
     "damage_condition": {
@@ -19,15 +19,15 @@
     "modifier": {
       "id": "origins-diversity:dodo_mountain_knockback",
       "attribute": "minecraft:generic.knockback_resistance",
-      "amount": 0.25,
-      "operation": "ADD_VALUE"
+      "value": 0.25,
+      "operation": "addition"
     }
   },
   "projectile_resistance": {
     "type": "origins:modify_damage_taken",
     "modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": -0.2,
+      "value": -0.2,
       "resource": "dodo-projectile-resistance"
     },
     "damage_condition": {
@@ -35,12 +35,11 @@
     }
   },
   "jump_buff": {
-    "type": "origins:attribute",
+    "type": "origins:modify_jump",
     "modifier": {
       "id": "origins-diversity:dodo_mountain_jump",
-      "attribute": "minecraft:generic.jump_strength",
-      "amount": 0.15,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": 0.15,
+      "operation": "multiply_total"
     }
   }
 }

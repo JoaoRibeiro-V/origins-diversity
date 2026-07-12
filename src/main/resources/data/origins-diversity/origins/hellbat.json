@@ -2,7 +2,7 @@
   "name": "Hellbat",
   "description": "Born of the Nether’s skies, aerial predators that thrive in darkness.",
   "icon": {
-    "id": "minecraft:ghast_tear"
+    "item": "minecraft:ghast_tear"
   },
   "impact": 3,
   "powers": [

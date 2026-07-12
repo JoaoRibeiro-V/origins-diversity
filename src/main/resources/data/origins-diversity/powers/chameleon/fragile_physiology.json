@@ -5,7 +5,7 @@
   "modifier": {
     "id": "origins-diversity:chameleon_fragile",
     "attribute": "minecraft:generic.max_health",
-    "amount": -4.0,
-    "operation": "ADD_VALUE"
+    "value": -4.0,
+    "operation": "addition"
   }
 }

@@ -5,7 +5,7 @@
   "modifier": {
     "id": "origins-diversity:reptile_agility",
     "attribute": "minecraft:generic.movement_speed",
-    "amount": 0.075,
-    "operation": "ADD_MULTIPLIED_TOTAL"
+    "value": 0.075,
+    "operation": "multiply_total"
   }
 }

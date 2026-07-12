@@ -4,7 +4,7 @@
   "confusedmovement": {
     "type": "origins:modify_velocity",
     "modifier": {
-      "amount": -2,
+      "value": -2,
       "operation": "multiply_total_multiplicative"
     },
     "axes": [
@@ -17,14 +17,11 @@
     "shader": "minecraft:shaders/post/invert.json"
   },
   "removeondeath": {
-    "type": "origins:action_on_death",
-    "bientity_action": {
-      "type": "origins:target_action",
-      "action": {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:abysswyrm/confusion"
-      }
-    }
+    "type": "origins:action_on_callback",
+    "entity_action_respawned": {
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:abysswyrm/confusion"
+}
   },
   "tauntedbar": {
     "type": "origins:resource",
@@ -32,9 +29,9 @@
     "max": 6,
     "start_value": 6,
     "min_action": {
-      "type": "origins:remove_power",
-      "power": "origins-diversity:abysswyrm/confusion"
-    }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:abysswyrm/confusion"
+}
   },
   "tauntedtimer": {
     "type": "origins:action_over_time",

@@ -2,7 +2,7 @@
   "name": "Owl",
   "description": "§7Silent nocturnal hunters with unmatched perception.",
   "icon": {
-    "id": "minecraft:feather"
+    "item": "minecraft:feather"
   },
   "impact": 2,
   "powers": [

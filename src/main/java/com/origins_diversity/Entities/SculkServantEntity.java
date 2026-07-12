@@ -1,44 +1,49 @@
 package com.origins_diversity.Entities;
 
 import com.origins_diversity.Data.SculkServantTameData;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.monster.warden.Warden;
-import net.minecraft.world.level.Level;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.attribute.DefaultAttributeContainer;
+import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.mob.HostileEntity;
+import net.minecraft.entity.mob.WardenEntity;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.world.World;
 
 import java.util.Objects;
 
-public class SculkServantEntity extends Warden {
-    public SculkServantEntity(EntityType<? extends Warden> type, Level level) {
+public class SculkServantEntity extends WardenEntity {
+    public SculkServantEntity(EntityType<? extends WardenEntity> type, World level) {
         super(type, level);
-        Objects.requireNonNull(this.getAttribute(Attributes.MAX_HEALTH)).setBaseValue(600.0);
-        this.setHealth(600.0f);
     }
 
     // Prevent actually hitting a tamed player
     @Override
-    public boolean doHurtTarget(Entity target) {
-        if (target instanceof ServerPlayer player
-                && level() instanceof ServerLevel serverLevel
-                && SculkServantTameData.get(serverLevel.getServer()).isTamed(player.getUUID())) {
+    public boolean tryAttack(Entity target) {
+        if (target instanceof ServerPlayerEntity player && getEntityWorld() instanceof ServerWorld serverLevel
+                && SculkServantTameData.get(serverLevel.getServer()).isTamed(player.getUuid())) {
             return false;
         }
-        return super.doHurtTarget(target);
+        return super.tryAttack(target);
     }
-
+    public static DefaultAttributeContainer.Builder createSculkServantAttributes() {
+        return HostileEntity.createHostileAttributes()
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 550.0D)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.35D)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 30.0D)
+                .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 1.0D);
+    }
     // Every tick, wipe anger toward any tamed player so it never chases them
     @Override
     public void tick() {
         super.tick();
 
-        if (!(level() instanceof ServerLevel serverLevel)) return;
+        if (!(getEntityWorld() instanceof ServerWorld serverLevel)) return;
         SculkServantTameData data = SculkServantTameData.get(serverLevel.getServer());
-        for (ServerPlayer player : serverLevel.players()) {
-            if (data.isTamed(player.getUUID())) {
-                getAngerManagement().clearAnger(player);
+        for (ServerPlayerEntity player : serverLevel.getPlayers()) {
+            if (data.isTamed(player.getUuid())) {
+                getAngerManager().removeSuspect(player);
             }
         }
     }

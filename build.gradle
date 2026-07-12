@@ -1,22 +1,19 @@
 plugins {
 	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
-    id 'fabric-loom' version '1.2.5'
-    id 'java'
 	id 'maven-publish'
 }
 
 version = project.mod_version
 group = project.maven_group
-def mcVersion = "1.21.1"
-def placeboVersion = "9.9.1"
-def attributesLibVersion = "2.9.0"
-
-base {
-	archivesName = project.archives_base_name
-}
 
 repositories {
-	mavenCentral()
+	// Add repositories to retrieve artifacts from in here.
+	// You should only use this when depending on other mods because
+	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
+	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
+	// for more information about repositories.
+
+    mavenCentral()
     maven { url = "https://jitpack.io" }
     exclusiveContent {
         forRepository {
@@ -25,30 +22,30 @@ repositories {
                 url = "https://api.modrinth.com/maven"
             }
         }
-
+        // forRepositories(fg.repository) // Uncomment when using ForgeGradle
         filter {
             includeGroup "maven.modrinth"
         }
     }
+    maven {
+        url = "https://maven.jamieswhiteshirt.com/libs-release/"
+    }
+    // Fabric
+    maven { url = "https://maven.fabricmc.net/" }
 
-	// Fabric
-	maven { url = "https://maven.fabricmc.net/" }
+    // Ladysnake (Origins, Apoli, Calio)
+    maven { url = "https://maven.ladysnake.org/releases" }
+    // Cloth Config
+    maven { url = "https://maven.shedaniel.me/" }
 
-	// Ladysnake (Origins, Apoli, Calio)
-	maven { url = "https://maven.ladysnake.org/releases" }
-	// Cloth Config
-	maven { url = "https://maven.shedaniel.me/" }
+    // Mod Menu
+    maven { url = "https://maven.terraformersmc.com/releases/" }
 
-	// Mod Menu
-	maven { url = "https://maven.terraformersmc.com/releases/" }
+    // Modrinth Maven (Additional Entity Attributes)
+    maven { url = "https://api.modrinth.com/maven" }
 
-	// Modrinth Maven (Additional Entity Attributes)
-	maven { url = "https://api.modrinth.com/maven" }
-
-	// Quilt (JSON parsers)
-	maven { url = "https://maven.quiltmc.org/repository/release/" }
-
-
+    // Quilt (JSON parsers)
+    maven { url = "https://maven.quiltmc.org/repository/release/" }
 }
 
 loom {
@@ -60,46 +57,43 @@ loom {
 			sourceSet sourceSets.client
 		}
 	}
-
 }
 
 dependencies {
+	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings loom.officialMojangMappings()
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	// Apoli (Fabric)
-	modImplementation "io.github.apace100:apoli:2.12.0-pre.1+mc.1.21.1"
+	// Fabric API. This is technically optional, but you probably want it anyway.
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
-	// Origins (Fabric)
-	modImplementation("io.github.apace100:origins-fabric:1.13.0-pre.1+mc.1.21.1") {
-		exclude group: "carpet", module: "fabric-carpet"
-	}
-
-    modCompileOnly "maven.modrinth:FCFcFw09:8lqoMfo7"
-    modRuntimeOnly "maven.modrinth:FCFcFw09:8lqoMfo7"
-    modCompileOnly "maven.modrinth:Adega8YN:d1TKoLnB"
-    modRuntimeOnly "maven.modrinth:Adega8YN:d1TKoLnB"
-    modCompileOnly "maven.modrinth:twkfQtEc:XAvedFDj"
-    modRuntimeOnly "maven.modrinth:twkfQtEc:XAvedFDj"
+    // Apoli (Fabric)
+    modApi "com.github.apace100:apoli:${project.apoli_version}"
+    include "com.github.apace100:apoli:${project.apoli_version}"
+    modImplementation("io.github.apace100:origins-fabric:${project.origins_version}")
+    modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
     modApi("com.github.Virtuoel:Pehkui:${pehkui_version}", {
         exclude group: "net.fabricmc.fabric-api"
     })
 
+    modImplementation("maven.modrinth:FCFcFw09:GoArx0qR")
+    modApi("maven.modrinth:FCFcFw09:GoArx0qR")
+    modCompileOnly "maven.modrinth:Adega8YN:6VosBxNt"
+    modRuntimeOnly "maven.modrinth:Adega8YN:6VosBxNt"
 }
 
-
 processResources {
-	inputs.property "version", project.version
+	def version = project.version
+	inputs.property "version", version
 
 	filesMatching("fabric.mod.json") {
-		expand "version": inputs.properties.version
+		expand "version": version
 	}
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 21
+	it.options.release = 17
 }
 
 java {
@@ -108,15 +102,16 @@ java {
 	// If you remove this line, sources will not be generated.
 	withSourcesJar()
 
-	sourceCompatibility = JavaVersion.VERSION_21
-	targetCompatibility = JavaVersion.VERSION_21
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
 }
 
 jar {
-	inputs.property "archivesName", project.base.archivesName
+	def projectName = project.name
+	inputs.property "projectName", projectName
 
 	from("LICENSE") {
-		rename { "${it}_${inputs.properties.archivesName}"}
+		rename { "${it}_$projectName"}
 	}
 }
 
@@ -124,7 +119,6 @@ jar {
 publishing {
 	publications {
 		create("mavenJava", MavenPublication) {
-			artifactId = project.archives_base_name
 			from components.java
 		}
 	}

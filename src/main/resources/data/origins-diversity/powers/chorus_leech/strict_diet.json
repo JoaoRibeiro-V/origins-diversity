@@ -13,15 +13,15 @@
     "always_edible": false,
     "nutrition_modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": 1.25
+      "value": 1.25
     },
     "food_modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": 1.25
+      "value": 1.25
     },
     "saturation_modifier": {
       "operation": "set_total",
-      "amount": 9.0
+      "value": 9.0
     }
   },
   "strict": {

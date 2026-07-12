@@ -4,15 +4,12 @@
   "description": "§rYou can make §dspirit tails§r out of §e25 experience levels§r. §cLose§r one of your wisps upon death.",
   "type": "origins:multiple",
   "loseondeath": {
-    "type": "origins:action_on_death",
-    "bientity_action": {
-      "type": "origins:target_action",
-      "action": {
+    "type": "origins:action_on_callback",
+    "entity_action_respawned": {
         "type": "origins:change_resource",
         "change": -1,
         "operation": "add",
         "resource": "origins-diversity:kitsune/kitsune_tails"
-      }
     }
   },
   "active": {
@@ -55,13 +52,13 @@
           "power": "origins-diversity:kitsune/kitsune_fox_form"
         },
         "if_action": {
-          "type": "origins:remove_power",
-          "power": "origins-diversity:kitsune/kitsune_fox_form"
-        },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:kitsune/kitsune_fox_form"
+},
         "else_action": {
           "type": "origins:grant_power",
           "power": "origins-diversity:kitsune/kitsune_fox_form",
-          "source": "origins-diversity:kitsune_fox_form_toggle"
+          "source": "origins-diversity"
         }
       }
     },

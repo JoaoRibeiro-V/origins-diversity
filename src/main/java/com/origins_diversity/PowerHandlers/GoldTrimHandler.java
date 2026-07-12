@@ -1,27 +1,25 @@
 package com.origins_diversity.PowerHandlers;
 
-import net.minecraft.core.component.DataComponents;
-import net.minecraft.world.item.component.CustomData;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.armortrim.ArmorTrim;
-import net.minecraft.world.item.armortrim.TrimMaterials;
+import net.minecraft.registry.DynamicRegistryManager;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.trim.ArmorTrim;
+import net.minecraft.item.trim.ArmorTrimMaterials;
 
-import javax.xml.crypto.Data;
+import java.util.Optional;
 
 public class GoldTrimHandler {
     private static final String ROOT_KEY = "origins_diversity";
 
-    public static void updateGoldTrim(ItemStack stack) {
+    public static void updateGoldTrim(ItemStack stack, DynamicRegistryManager registryAccess) {
         if (stack.isEmpty()) return;
-        ArmorTrim trim = stack.get(DataComponents.TRIM);
 
-        CustomData data = stack.get(DataComponents.CUSTOM_DATA);
-        CompoundTag nbt = data != null ? data.copyTag() : new CompoundTag();
+        Optional<ArmorTrim> trim = ArmorTrim.getTrim(registryAccess, stack);
 
-        CompoundTag myTags = nbt.contains(ROOT_KEY) ? nbt.getCompound(ROOT_KEY) : new CompoundTag();
+        NbtCompound nbt = stack.getOrCreateNbt();
+        NbtCompound myTags = nbt.contains(ROOT_KEY) ? nbt.getCompound(ROOT_KEY) : new NbtCompound();
 
-        boolean hasGoldTrim =  trim != null && trim.material().is(TrimMaterials.GOLD);
+        boolean hasGoldTrim = trim.isPresent() && trim.get().getMaterial().matchesKey(ArmorTrimMaterials.GOLD);
         if (hasGoldTrim) {
             myTags.putBoolean("has_gold_trim", true);
         } else {
@@ -33,12 +31,5 @@ public class GoldTrimHandler {
         } else {
             nbt.put(ROOT_KEY, myTags);
         }
-
-        if(nbt.isEmpty()){
-            stack.remove(DataComponents.CUSTOM_DATA);
-        } else{
-            stack.set(DataComponents.CUSTOM_DATA, CustomData.of(nbt));
-        }
     }
 }
-

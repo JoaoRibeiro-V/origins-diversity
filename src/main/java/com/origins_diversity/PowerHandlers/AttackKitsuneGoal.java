@@ -1,20 +1,19 @@
 package com.origins_diversity.PowerHandlers;
 
 import com.origins_diversity.Extra.OriginsUtil;
-import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
-import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.animal.Wolf;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.entity.ai.goal.ActiveTargetGoal;
+import net.minecraft.entity.passive.WolfEntity;
+import net.minecraft.entity.player.PlayerEntity;
 
-public class AttackKitsuneGoal extends NearestAttackableTargetGoal<Player> {
-    public AttackKitsuneGoal(Wolf wolf, int chance) {
+public class AttackKitsuneGoal extends ActiveTargetGoal<PlayerEntity> {
+    public AttackKitsuneGoal(WolfEntity wolf, int chance) {
         super(
                 wolf,
-                Player.class,
+                PlayerEntity.class,
                 chance,
                 true,
                 false,
-                player -> OriginsUtil.hasOrigin((Player) player, "origins-diversity","kitsune")
+                player -> OriginsUtil.hasOrigin((PlayerEntity) player, "origins-diversity","kitsune")
         );
     }
 }

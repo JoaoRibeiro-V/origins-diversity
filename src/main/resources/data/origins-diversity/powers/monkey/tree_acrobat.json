@@ -18,12 +18,12 @@
             "type": "origins:apply_effect",
             "effects": [
               {
-                "id": "minecraft:instant_health",
+                "effect": "minecraft:instant_health",
                 "amplifier": 1,
                 "duration": 1
               },
               {
-                "id": "minecraft:absorption",
+                "effect": "minecraft:absorption",
                 "amplifier": 0,
                 "duration": 100
               }

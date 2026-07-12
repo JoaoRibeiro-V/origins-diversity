@@ -2,7 +2,7 @@
   "name": "Panda",
   "description": "A gentle giant.",
   "icon": {
-    "id": "minecraft:bamboo"
+    "item": "minecraft:bamboo"
   },
   "impact": 1,
   "powers": [

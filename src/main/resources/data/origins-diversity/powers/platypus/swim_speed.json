@@ -1,11 +1,10 @@
 {
   "name": "Waterborne Agility",
   "description": "§rYou swim §afaster§r underwater.",
-  "type": "origins:attribute",
+  "type": "origins:modify_swim_speed",
   "modifier": {
     "id": "origins-diversity:platypus_swim_speed",
-    "attribute": "minecraft:generic.water_movement_efficiency",
-    "amount": 0.275,
-    "operation": "ADD_MULTIPLIED_TOTAL"
+    "value": 0.275,
+    "operation": "multiply_total"
   }
 }

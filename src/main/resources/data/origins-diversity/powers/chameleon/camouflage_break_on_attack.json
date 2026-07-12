@@ -8,10 +8,9 @@
       "type": "origins:and",
       "actions": [
         {
-          "type": "origins:revoke_power",
-          "power": "origins-diversity:chameleon/camouflaged",
-          "source": "origins-diversity:chameleon_camouflage"
-        },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:chameleon/camouflaged"
+},
         {
           "type": "origins:trigger_cooldown",
           "power": "origins-diversity:chameleon/camouflage_cooldown",

@@ -2,7 +2,7 @@
   "name": "Golem",
   "description": "§rA constructed being capable of reconfiguration.\n§fIron§r for strength.\n§bSnow§r for speed.",
   "icon": {
-    "id": "minecraft:carved_pumpkin"
+    "item": "minecraft:carved_pumpkin"
   },
   "impact": 2,
   "powers": [

@@ -1,5 +1,7 @@
 {
   "tag.item.origins-diversity.light_source": "Light Source",
 
-  "block.origins-diversity.purple_sculk_block": "Sculk?"
+  "block.origins-diversity.purple_sculk_block": "Sculk?",
+  "entity.origins-diversity.sculk_servant": "Sculk Servant",
+  "entity.origins-diversity.sculk_zombie": "Sculk Zombie"
 }

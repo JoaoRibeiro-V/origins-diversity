@@ -6,14 +6,14 @@
     "modifiers": [
       {
         "attribute": "puffish_attributes:melee_damage",
-        "operation": "ADD_MULTIPLIED_TOTAL",
-        "amount": 0.12,
+        "operation": "multiply_total",
+        "value": 0.12,
         "id": "origins-diversity:fox_attribute_1"
       },
       {
         "attribute": "minecraft:generic.attack_speed",
-        "operation": "ADD_MULTIPLIED_TOTAL",
-        "amount": 0.05,
+        "operation": "multiply_total",
+        "value": 0.05,
         "id": "origins-diversity:fox_attribute_2"
       }
     ],
@@ -54,11 +54,11 @@
     "modifiers": [
       {
         "operation": "add_base_early",
-        "amount": 1.0
+        "value": 1.0
       },
       {
         "operation": "multiply_total_multiplicative",
-        "amount": 0.15
+        "value": 0.15
       }
     ]
   }

@@ -4,7 +4,7 @@
     "type": "origins:modify_damage_dealt",
     "modifier": {
         "operation": "multiply_total_multiplicative",
-        "amount": 0.115
+        "value": 0.115
     },
     "condition": {
         "type": "apoli:biome",

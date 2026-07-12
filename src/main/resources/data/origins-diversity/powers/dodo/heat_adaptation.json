@@ -7,8 +7,8 @@
     "modifier": {
       "id": "origins-diversity:dodo_heat_armor",
       "attribute": "minecraft:generic.armor",
-      "amount": 1.5,
-      "operation": "ADD_VALUE"
+      "value": 1.5,
+      "operation": "addition"
     }
   },
   "fire_immunity": {

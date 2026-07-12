@@ -8,7 +8,7 @@
   "sculkzombies": {
     "type": "origins:modify_damage_dealt",
     "modifier": {
-      "amount": -0.65,
+      "value": -0.65,
       "operation": "multiply_total_multiplicative"
     },
     "target_condition": {

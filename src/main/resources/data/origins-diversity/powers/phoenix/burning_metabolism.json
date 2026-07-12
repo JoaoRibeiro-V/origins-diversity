@@ -2,7 +2,7 @@
   "type": "origins:modify_exhaustion",
   "modifier": {
     "operation": "multiply_total_multiplicative",
-    "amount": 0.65
+    "value": 0.65
   },
   "name": "Burning Metabolism",
   "description": "§rYour internal flame consumes energy rapidly.\n§cYou get hungry much faster."

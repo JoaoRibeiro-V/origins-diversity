@@ -10,7 +10,7 @@
         {
           "type": "origins:apply_effect",
           "effect": {
-            "id": "minecraft:wither",
+            "effect": "minecraft:wither",
             "duration": 100,
             "amplifier": 1,
             "show_particles": true,

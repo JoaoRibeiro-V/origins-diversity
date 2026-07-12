@@ -36,7 +36,7 @@
               {
                 "type": "origins:apply_effect",
                 "effect": {
-                  "id": "minecraft:darkness",
+                  "effect": "minecraft:darkness",
                   "duration": 80
                 }
               },

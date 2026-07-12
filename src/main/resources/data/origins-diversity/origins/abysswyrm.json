@@ -1,5 +1,5 @@
 {
-  "icon": { "id": "minecraft:obsidian" },
+  "icon": { "item": "minecraft:obsidian" },
   "name": "Abysswyrm",
   "description": "Born of the void, its body thrums with unstable energy.",
   "powers": [

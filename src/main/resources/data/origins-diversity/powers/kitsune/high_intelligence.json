@@ -4,6 +4,6 @@
   "type": "origins:modify_xp_gain",
   "modifier": {
     "operation": "multiply_total_multiplicative",
-    "amount": 0.525
+    "value": 0.525
   }
 }

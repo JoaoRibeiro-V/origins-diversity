@@ -2,7 +2,7 @@
   "name": "Bee",
   "description": "A tiny, buzzing ball of energy.\nLives for flowers and occasionally makes very bad combat decisions.",
   "icon": {
-    "id": "minecraft:honeycomb"
+    "item": "minecraft:honeycomb"
   },
   "impact": 2,
   "powers": [

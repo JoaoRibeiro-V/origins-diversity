@@ -6,8 +6,8 @@
     "modifiers": {
       "id": "origins-diversity:snail_dried",
       "attribute": "puffish_attributes:melee_damage",
-      "amount": -0.4,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": -0.4,
+      "operation": "multiply_total"
     }
   }
 }

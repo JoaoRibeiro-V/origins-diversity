@@ -13,7 +13,7 @@
             {
               "type": "apoli:equipped_item_action",
               "equipment_slot": "mainhand",
-              "item_action": {
+              "action": {
                 "type": "apoli:consume",
                 "amount": 1
               }
@@ -21,14 +21,14 @@
             {
               "type": "apoli:give",
               "stack": {
-                "id": "minecraft:milk_bucket",
+                "item": "minecraft:milk_bucket",
                 "count": 1
               }
             },
             {
               "type": "apoli:apply_effect",
               "effect": {
-                "id": "minecraft:regeneration",
+                "effect": "minecraft:regeneration",
                 "duration": 100,
                 "amplifier": 0
               }
@@ -47,7 +47,7 @@
         "action": {
           "type": "apoli:apply_effect",
           "effect": {
-            "id": "minecraft:regeneration",
+            "effect": "minecraft:regeneration",
             "duration": 100,
             "amplifier": 0
           }

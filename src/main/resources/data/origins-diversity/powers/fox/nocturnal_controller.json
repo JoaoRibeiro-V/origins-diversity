@@ -35,7 +35,7 @@
       "if_action": {
         "type": "origins:grant_power",
         "power": "origins-diversity:fox/nocturnal_predator",
-        "source": "origins-diversity:nocturnal_controller"
+        "source": "origins-diversity"
       }
     },
     "else_action": {
@@ -48,10 +48,9 @@
         "type": "origins:and",
         "actions": [
           {
-            "type": "origins:revoke_power",
-            "power": "origins-diversity:fox/nocturnal_predator",
-            "source": "origins-diversity:nocturnal_controller"
-          }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:fox/nocturnal_predator"
+}
         ]
       }
     }

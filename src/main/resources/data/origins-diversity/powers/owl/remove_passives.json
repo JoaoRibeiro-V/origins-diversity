@@ -5,9 +5,9 @@
     "type": "origins:and",
     "actions": [
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:owl/night_watcher_active"
-      }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:owl/night_watcher_active"
+}
     ]
   },
   "execute_chosen_when_orb": true

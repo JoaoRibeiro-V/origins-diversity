@@ -13,10 +13,6 @@
       "type": "origins:and",
       "conditions": [
         {
-          "type": "origins:equal",
-          "inverted": true
-        },
-        {
           "type": "origins:target_condition",
           "condition": {
             "type": "origins:sprinting",
@@ -40,9 +36,9 @@
     "max": 12,
     "start_value": 12,
     "min_action": {
-      "type": "origins:remove_power",
-      "power": "origins-diversity:kitsune/illusion_affect"
-    }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:kitsune/illusion_affect"
+}
   },
   "timer": {
     "type": "origins:action_over_time",

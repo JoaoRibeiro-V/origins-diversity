@@ -14,13 +14,12 @@
         {
           "type": "origins:grant_power",
           "power": "origins-diversity:golem/snow_form_active",
-          "source": "origins-diversity:golem_controller"
+          "source": "origins-diversity"
         },
         {
-          "type": "origins:revoke_power",
-          "power": "origins-diversity:golem/iron_form_active",
-          "source": "origins-diversity:golem_controller"
-        }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:golem/iron_form_active"
+}
       ]
     },
     "else_action": {
@@ -29,13 +28,12 @@
         {
           "type": "origins:grant_power",
           "power": "origins-diversity:golem/iron_form_active",
-          "source": "origins-diversity:golem_controller"
+          "source": "origins-diversity"
         },
         {
-          "type": "origins:revoke_power",
-          "power": "origins-diversity:golem/snow_form_active",
-          "source": "origins-diversity:golem_controller"
-        }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:golem/snow_form_active"
+}
       ]
     }
   }

@@ -12,6 +12,6 @@
   },
   "modifier": {
     "operation": "multiply_base_multiplicative",
-    "amount": -0.2
+    "value": -0.2
   }
 }

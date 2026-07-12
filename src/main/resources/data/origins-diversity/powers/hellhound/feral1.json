@@ -10,7 +10,7 @@
   "modifier": {
     "id": "origins-diversity:feral1_speed",
     "attribute": "minecraft:generic.movement_speed",
-    "amount": 0.145,
-    "operation": "ADD_MULTIPLIED_TOTAL"
+    "value": 0.145,
+    "operation": "multiply_total"
   }
 }

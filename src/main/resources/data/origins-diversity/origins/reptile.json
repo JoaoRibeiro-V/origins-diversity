@@ -1,7 +1,7 @@
 {
   "name": "Reptile",
   "description": "A patient, cold-blooded survivor.",
-  "icon": { "id": "minecraft:slime_block" },
+  "icon": { "item": "minecraft:slime_block" },
 
   "powers": [
     "origins-diversity:reptile/camouflage",

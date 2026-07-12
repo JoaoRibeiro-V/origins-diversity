@@ -2,7 +2,7 @@
   "name": "Ender Moth",
   "description": "A fragile creature drawn irresistibly toward light in a realm that rejects it.",
   "icon": {
-    "id": "minecraft:ender_eye"
+    "item": "minecraft:ender_eye"
   },
   "impact": 3,
   "powers": [

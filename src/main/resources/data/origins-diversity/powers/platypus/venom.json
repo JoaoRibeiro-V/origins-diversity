@@ -8,7 +8,7 @@
     "action": {
       "type": "origins:apply_effect",
       "effect": {
-        "id": "minecraft:poison",
+        "effect": "minecraft:poison",
         "duration": 100
       }
     }

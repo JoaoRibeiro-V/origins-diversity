@@ -5,26 +5,23 @@
     "type": "origins:modify_damage_dealt",
     "modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": -0.295
+      "value": -0.295
     }
   },
   "willowispeffect2": {
     "type": "origins:modify_damage_taken",
     "modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": -0.125
+      "value": -0.125
     }
   },
 
   "removeondeath": {
-    "type": "origins:action_on_death",
-    "bientity_action": {
-      "type": "origins:target_action",
-      "action": {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:kitsune/willo_wisp_target"
-      }
-    }
+    "type": "origins:action_on_callback",
+    "entity_action_respawned": {
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:kitsune/willo_wisp_target"
+}
   },
   "bar": {
     "type": "origins:resource",
@@ -32,9 +29,9 @@
     "max": 9,
     "start_value": 9,
     "min_action": {
-      "type": "origins:remove_power",
-      "power": "origins-diversity:kitsune/willo_wisp_target"
-    }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:kitsune/willo_wisp_target"
+}
   },
   "particle1": {
     "type": "origins:particle",
@@ -61,12 +58,8 @@
         {
             "type": "origins:damage",
             "damage_type": "minecraft:on_fire",
-          "modifiers": [
-            {
-              "operation": "multiply_total_multiplicative",
-              "amount": -0.963
-            }
-          ]
+          "amount": 0.8
+
         }
       ]
     }

@@ -5,15 +5,15 @@
   "modifiers": [
     {
       "id": "origins-diversity:raccoon_scavenger",
-      "attribute": "additionalentityattributes:player.bonus_rare_loot_rolls",
-      "amount": 5,
-      "operation": "ADD_VALUE"
+      "attribute": "additionalentityattributes:bonus_rare_loot_rolls",
+      "value": 5,
+      "operation": "addition"
     },
     {
       "id": "origins-diversity:raccoon_scavenger",
       "attribute": "minecraft:generic.luck",
-      "amount": 10,
-      "operation": "ADD_VALUE"
+      "value": 10,
+      "operation": "addition"
     }
   ]
 }

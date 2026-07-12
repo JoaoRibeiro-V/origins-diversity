@@ -1,11 +1,10 @@
 {
   "name": "Jump Boost",
   "description": "§rYou can jump §ahigher§r than normal.",
-  "type": "origins:attribute",
+  "type": "origins:modify_jump",
   "modifier": {
     "id": "origins-diversity:frog_jump_boost",
-    "attribute": "minecraft:generic.jump_strength",
-    "amount": 0.15,
-    "operation": "ADD_VALUE"
+    "value": 0.15,
+    "operation": "addition"
   }
 }

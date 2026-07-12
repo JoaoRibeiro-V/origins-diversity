@@ -5,9 +5,9 @@
     "type": "origins:and",
     "actions": [
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:fox/nocturnal_predator"
-      }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:fox/nocturnal_predator"
+}
     ]
   },
   "execute_chosen_when_orb": true

@@ -3,18 +3,18 @@
   "type": "origins:multiple",
   "armor_boost": {
     "type": "origins:attribute",
-    "modifiers": {
+    "modifier": {
       "id": "origins-diversity:snail_shell_armor_temp",
       "attribute": "minecraft:generic.armor",
-      "amount": 3.0,
-      "operation": "ADD_VALUE"
+      "value": 3.0,
+      "operation": "addition"
     }
   },
   "damage_reduction": {
     "type": "origins:modify_damage_taken",
     "modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": -0.45
+      "value": -0.45
     }
   },
   "extra_slowness": {
@@ -22,8 +22,8 @@
     "modifier": {
       "id": "origins-diversity:snail_slow_movement_extra",
       "attribute": "minecraft:generic.movement_speed",
-      "amount": -0.5,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": -0.5,
+      "operation": "multiply_total"
     }
   },
 
@@ -41,9 +41,9 @@
           "type": "origins:and",
           "actions": [
             {
-              "type": "origins:remove_power",
-              "power": "origins-diversity:snail/shell_armor_temp"
-            }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:snail/shell_armor_temp"
+}
           ]
         }
       }

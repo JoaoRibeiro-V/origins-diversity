@@ -5,7 +5,7 @@
     "type": "origins:modify_damage_dealt",
     "modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": 0.125
+      "value": 0.125
     }
   },
   "leecheffect2": {
@@ -14,26 +14,20 @@
       {
         "id": "origins-diversity:parasite_atckspeed",
         "attribute": "minecraft:generic.attack_speed",
-        "amount": 0.175,
-        "operation": "ADD_MULTIPLIED_TOTAL"
-      },
-      {
-        "id": "origins-diversity:parasite_jump_fall",
-        "attribute": "minecraft:generic.safe_fall_distance",
-        "amount": 2.0,
-        "operation": "ADD_VALUE"
+        "value": 0.175,
+        "operation": "multiply_total"
       },
       {
         "id": "origins-diversity:parasite_health",
         "attribute": "minecraft:generic.max_health",
-        "amount": 2.0,
-        "operation": "ADD_VALUE"
+        "value": 2.0,
+        "operation": "addition"
       },
       {
         "id": "origins-diversity:parasite_speed",
         "attribute": "minecraft:generic.movement_speed",
-        "amount": 0.075,
-        "operation": "ADD_MULTIPLIED_TOTAL"
+        "value": 0.075,
+        "operation": "multiply_total"
       }
     ]
   },
@@ -43,9 +37,9 @@
       "type": "origins:and",
       "actions": [
         {
-          "type": "origins:remove_power",
-          "power": "origins-diversity:chorus_leech/parasite"
-        },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:chorus_leech/parasite"
+},
         {
           "type": "origins:riding_action",
           "action": {
@@ -57,7 +51,7 @@
               {
                 "type": "origins:apply_effect",
                 "effect": {
-                  "id": "minecraft:hunger",
+                  "effect": "minecraft:hunger",
                   "duration": 100,
                   "amplifier": 1
                 }
@@ -65,7 +59,7 @@
               {
                 "type": "origins:apply_effect",
                 "effect": {
-                  "id": "minecraft:weakness",
+                  "effect": "minecraft:weakness",
                   "duration": 40,
                   "amplifier": 1
                 }
@@ -73,7 +67,7 @@
               {
                 "type": "origins:apply_effect",
                 "effect": {
-                  "id": "minecraft:nausea",
+                  "effect": "minecraft:nausea",
                   "duration": 200,
                   "amplifier": 1
                 }
@@ -92,7 +86,7 @@
               {
                 "type": "origins:apply_effect",
                 "effect": {
-                  "id": "minecraft:hunger",
+                  "effect": "minecraft:hunger",
                   "duration": 100,
                   "amplifier": 1
                 }
@@ -100,7 +94,7 @@
               {
                 "type": "origins:apply_effect",
                 "effect": {
-                  "id": "minecraft:weakness",
+                  "effect": "minecraft:weakness",
                   "duration": 40,
                   "amplifier": 1
                 }
@@ -108,7 +102,7 @@
               {
                 "type": "origins:apply_effect",
                 "effect": {
-                  "id": "minecraft:nausea",
+                  "effect": "minecraft:nausea",
                   "duration": 200,
                   "amplifier": 1
                 }
@@ -124,14 +118,11 @@
     }
   },
   "removeondeath": {
-    "type": "origins:action_on_death",
-    "bientity_action": {
-      "type": "origins:target_action",
-      "action": {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:chorus_leech/parasite"
-      }
-    }
+    "type": "origins:action_on_callback",
+    "entity_action_respawned": {
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:chorus_leech/parasite"
+}
   },
   "controller": {
     "type": "origins:action_over_time",
@@ -153,9 +144,9 @@
         "points": 1
       },
       "else_action": {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:chorus_leech/parasite"
-      }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:chorus_leech/parasite"
+}
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "Monkey",
   "description": "A playful and curious animal.",
-  "icon": { "id": "minecraft:jungle_leaves" },
+  "icon": { "item": "minecraft:jungle_leaves" },
 
   "powers": [
     "origins-diversity:monkey/taunt",
@@ -12,8 +12,7 @@
     "origins-diversity:monkey/tease",
     "origins-diversity:monkey/tree_acrobat",
     "origins-diversity:monkey/natural_balance",
-    "origins-diversity:monkey/curiosity",
-    "origins-diversity:monkey/fall_damage_resistance"
+    "origins-diversity:monkey/curiosity"
   ],
   "impact": 1
 }

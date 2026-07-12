@@ -6,7 +6,7 @@
     "entity_action": {
       "type": "origins:apply_effect",
       "effect": {
-        "id": "minecraft:regeneration",
+        "effect": "minecraft:regeneration",
         "duration": 60,
         "amplifier": 0,
         "show_particles": false,
@@ -19,8 +19,8 @@
     "modifier": {
       "id": "origins-diversity:netherbound_speed",
       "attribute": "minecraft:generic.movement_speed",
-      "amount": 0.067,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": 0.067,
+      "operation": "multiply_total"
     }
   }
 }

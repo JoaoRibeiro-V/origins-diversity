@@ -1,19 +1,17 @@
 {
-  "required": false,
-  "compatibilityLevel": "JAVA_21",
-  "injectors": {
-    "defaultRequire": 1
-  },
-  "overwrites": {
-    "requireAnnotations": true
-  },
-  "package": "com.origins_diversity.mixin",
-  "mixins": [
-    "CameraMixin",
-    "LivingEntityRendererMixin",
-    "PlayerEntityRendererMixin"
-  ],
-  "client": [
-    "GameRendererMixin"
-  ]
+	"required": true,
+	"package": "com.origins_diversity.client.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"CameraMixin",
+		"GameRendererMixin",
+		"LivingEntityRendererMixin",
+		"PlayerEntityRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
 }

@@ -15,7 +15,7 @@
       {
         "type": "origins:apply_effect",
         "effect": {
-          "id": "minecraft:hunger",
+          "effect": "minecraft:hunger",
           "duration": 300,
           "amplifier": 1,
           "show_particles": false,

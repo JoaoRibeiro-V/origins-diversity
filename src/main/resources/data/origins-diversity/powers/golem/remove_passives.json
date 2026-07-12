@@ -5,13 +5,13 @@
     "type": "origins:and",
     "actions": [
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:golem/iron_form_active"
-      },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:golem/iron_form_active"
+},
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:golem/snow_form_active"
-      }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:golem/snow_form_active"
+}
     ]
   },
   "execute_chosen_when_orb": true

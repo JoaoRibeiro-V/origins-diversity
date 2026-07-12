@@ -21,7 +21,7 @@
         },{
           "type": "origins:grant_power",
           "power": "origins-diversity:monkey/taunted",
-          "source": "origins-diversity:monkey_taunt"
+          "source": "origins-diversity"
         },
         {
           "type": "origins:play_sound",

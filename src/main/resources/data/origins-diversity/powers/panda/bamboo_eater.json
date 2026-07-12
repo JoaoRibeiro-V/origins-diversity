@@ -1,20 +1,51 @@
 {
   "name": "Bamboo Feast",
-  "description": "§rYou can eat bamboo to §aregain§r hunger. Eating bamboo §aempowers§r you in §nbamboo-rich§r§r biomes.",
-  "type": "origins:edible_item",
-  "item_condition": {
-    "type": "origins:ingredient",
-    "ingredient": { "item": "minecraft:bamboo"}
+  "description": "§rYou can sneak to eat bamboo to §aregain§r hunger. Eating bamboo §aempowers§r you in §nbamboo-rich§r§r biomes.",
+  "type": "origins:active_self",
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": { "item": "minecraft:bamboo"}
+        }
+      },
+      {
+        "type": "origins:sneaking"
+      }
+    ]
+
   },
-  "food_component": {
-    "hunger": 4,
-    "nutrition": 4,
-    "saturation": 6
+  "key": {
+    "key": "key.use",
+    "continuous": true
   },
+  "cooldown": 2,
   "entity_action": {
-    "type": "origins:play_sound",
-    "sound": "minecraft:entity.panda.eat",
-    "volume": 1.25
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.panda.eat",
+        "volume": 1.25
+      },
+      {
+        "type": "origins:feed",
+        "food": 4,
+        "saturation": 6
+      },
+      {
+        "type": "origins:equipped_item_action",
+        "equipment_slot": "mainhand",
+        "action": {
+          "type": "origins:consume",
+          "amount": 1
+        }
+      }
+    ]
   }
 }
 

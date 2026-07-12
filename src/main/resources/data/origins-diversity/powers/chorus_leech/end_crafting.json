@@ -21,7 +21,7 @@
         }
       },
       "result": {
-        "id": "minecraft:end_stone",
+        "item": "minecraft:end_stone",
         "amount": 8,
         "count": 8
       }
@@ -46,7 +46,7 @@
         }
       },
       "result": {
-        "id": "minecraft:chorus_flower"
+        "item": "minecraft:chorus_flower"
       }
     }
   },
@@ -72,7 +72,7 @@
         }
       },
       "result": {
-        "id": "minecraft:chorus_fruit"
+        "item": "minecraft:chorus_fruit"
       }
     }
   }

@@ -1,29 +1,36 @@
 package com.origins_diversity.Entities;
 
-import com.origins_diversity.Data.SculkServantTameData;
 import com.origins_diversity.Extra.OriginsUtil;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.monster.Zombie;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.level.Level;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.ai.TargetPredicate;
+import net.minecraft.entity.ai.goal.*;
+import net.minecraft.entity.attribute.DefaultAttributeContainer;
+import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.mob.MobEntity;
+import net.minecraft.entity.mob.ZombieEntity;
+import net.minecraft.entity.mob.ZombifiedPiglinEntity;
+import net.minecraft.entity.passive.IronGolemEntity;
+import net.minecraft.entity.passive.MerchantEntity;
+import net.minecraft.entity.passive.TurtleEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtElement;
+import net.minecraft.nbt.NbtHelper;
+import net.minecraft.world.World;
 
 import java.util.Objects;
 import java.util.UUID;
 
-public class SculkZombieEntity extends Zombie {
+public class SculkZombieEntity extends ZombieEntity {
 
     private UUID summonerUUID;
 
-    public void setSummoner(Player player) {
-        this.summonerUUID = player.getUUID();
+    public void setSummoner(PlayerEntity player) {
+        this.summonerUUID = player.getUuid();
     }
 
     public UUID getSummonerUUID() {
@@ -31,49 +38,89 @@ public class SculkZombieEntity extends Zombie {
     }
 
     @Override
-    public void addAdditionalSaveData(CompoundTag tag) {
-        super.addAdditionalSaveData(tag);
-        if (summonerUUID != null) tag.putUUID("SummonerUUID", summonerUUID);
-    }
+    public void writeCustomDataToNbt(NbtCompound tag) {
+        super.writeCustomDataToNbt(tag);
 
-    @Override
-    public void readAdditionalSaveData(CompoundTag tag) {
-        super.readAdditionalSaveData(tag);
-        if (tag.hasUUID("SummonerUUID")) summonerUUID = tag.getUUID("SummonerUUID");
-    }
-
-    public SculkZombieEntity(EntityType<? extends Zombie> entityType, Level level) {
-        super(entityType, level);
-        Objects.requireNonNull(this.getAttribute(Attributes.MAX_HEALTH)).setBaseValue(25.0);
-        Objects.requireNonNull(this.getAttribute(Attributes.ARMOR)).setBaseValue(6.0);
-        this.setHealth(25.0f);
-
-    }
-
-    @Override
-    public boolean isAlliedTo(Entity entity) {
-        if (entity instanceof Player player && OriginsUtil.hasOrigin(player, "origins-diversity", "sculk_cultist")) {
-            return true;
+        if (summonerUUID != null) {
+            tag.putUuid("SummonerUUID", summonerUUID);
         }
-        return super.isAlliedTo(entity);
+    }
+
+
+    @Override
+    public void readCustomDataFromNbt(NbtCompound tag) {
+        super.readCustomDataFromNbt(tag);
+
+        if (tag.containsUuid("SummonerUUID")) {
+            summonerUUID = tag.getUuid("SummonerUUID");
+        }
+    }
+
+    public static DefaultAttributeContainer.Builder createSculkZombieAttributes() {
+        return ZombieEntity.createZombieAttributes()
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 25.0D)
+                .add(EntityAttributes.GENERIC_ARMOR, 6.0D);
+    }
+    public SculkZombieEntity(EntityType<? extends ZombieEntity> entityType, World level) {
+        super(entityType, level);
+
     }
 
     @Override
-    protected int getBaseExperienceReward() {
-        return super.getBaseExperienceReward() * 3;
+    protected void initCustomGoals() {
+        this.goalSelector.add(2, new ZombieAttackGoal(this, 1.0D, false));
+        this.goalSelector.add(6, new MoveThroughVillageGoal(this, 1.0D, true, 4, this::canBreakDoors));
+        this.goalSelector.add(7, new WanderAroundFarGoal(this, 1.0D));
+
+        this.targetSelector.add(1,
+                (new RevengeGoal(this)).setGroupRevenge(ZombifiedPiglinEntity.class));
+
+        // Your custom player target goal
+        this.targetSelector.add(2, new ZombiePlayerTargetGoal(this));
+
+        this.targetSelector.add(3, new ActiveTargetGoal<>(this, MerchantEntity.class, false));
+        this.targetSelector.add(3, new ActiveTargetGoal<>(this, IronGolemEntity.class, true));
+        this.targetSelector.add(5, new ActiveTargetGoal<>(this, TurtleEntity.class, 10, true, false,
+                TurtleEntity.BABY_TURTLE_ON_LAND_FILTER));
     }
 
     @Override
-    public boolean doHurtTarget(Entity target) {
-        boolean result = super.doHurtTarget(target);
+    public int getXpToDrop() {
+        return super.getXpToDrop() * 3;
+    }
+
+    @Override
+    public boolean tryAttack(Entity target) {
+        boolean result = super.tryAttack(target);
         if (result && target instanceof LivingEntity living) {
-            living.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 80, 0)); // 3 seconds
+            living.addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 80, 0)); // 3 seconds
         }
         return result;
     }
 
     @Override
-    protected boolean isSunBurnTick() {
+    protected boolean burnsInDaylight() {
         return false;
+    }
+
+    public class ZombiePlayerTargetGoal extends ActiveTargetGoal<PlayerEntity> {
+
+        public ZombiePlayerTargetGoal(MobEntity mob) {
+            super(mob, PlayerEntity.class, true);
+        }
+
+        @Override
+        public boolean canStart() {
+            if (!super.canStart()) {
+                return false;
+            }
+
+            if (this.targetEntity instanceof PlayerEntity player &&
+                    OriginsUtil.hasOrigin(player, "origins-diversity", "sculk_cultist")) {
+                return false;
+            }
+
+            return true;
+        }
     }
 }

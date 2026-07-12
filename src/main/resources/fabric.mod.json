@@ -1,38 +1,39 @@
 {
-  "schemaVersion": 1,
-  "id": "origins-diversity",
-  "version": "${version}",
-  "name": "Origins: Diversity",
-  "description": "Addon to Origins mod adding new origins focused on diversity and inclusion.",
-  "authors": [
-    "GioTheDev"
-  ],
-  "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
-  },
-  "license": "CC0-1.0",
-  "icon": "assets/origins-diversity/icon.png",
-  "environment": "*",
+	"schemaVersion": 1,
+	"id": "origins-diversity",
+	"version": "${version}",
+	"name": "Origins Diversity",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/origins-diversity/icon.png",
+	"environment": "*",
   "entrypoints": {
     "main": [
       "com.origins_diversity.OriginsDiversity"
     ],
     "client": [
-      "com.origins_diversity.OriginsDiversityClient"
+      "com.origins_diversity.client.OriginsDiversityClient"
     ]
   },
-  "mixins": [
-    "origins-diversity.mixins.json",
-    "origins-diversity.client.mixins.json"
-  ],
-  "depends": {
-    "fabricloader": ">=0.18.3",
-    "minecraft": "~1.21.1",
-    "java": ">=21",
-    "fabric-api": "*"
-  },
-  "suggests": {
-    "attributes": ">=0.8.0"
-  }
+  "accessWidener": "origins-diversity.accesswidener",
+	"mixins": [
+		"origins-diversity.mixins.json",
+		{
+			"config": "origins-diversity.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
 }

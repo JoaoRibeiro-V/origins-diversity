@@ -18,23 +18,22 @@
         "type": "origins:apply_effect",
         "effects": [
           {
-            "id": "minecraft:nausea",
+            "effect": "minecraft:nausea",
             "duration": 200,
             "amplifier": 255,
             "show_particles": false
           },
           {
-            "id": "minecraft:slowness",
+            "effect": "minecraft:slowness",
             "duration": 100,
             "show_particles": false
           }
         ]
       },
       {
-        "type": "origins:revoke_power",
-        "power": "origins-diversity:horse/sprinting",
-        "source": "origins-diversity:sprint_toggle_horse"
-      },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:horse/sprinting"
+},
       {
         "type": "origins:play_sound",
         "sound": "minecraft:entity.horse.angry"

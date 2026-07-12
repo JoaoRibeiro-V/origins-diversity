@@ -6,11 +6,11 @@
     "modifiers": [
       {
         "operation": "add_base_early",
-        "amount": 1.0
+        "value": 1.0
       },
       {
         "operation": "multiply_total_multiplicative",
-        "amount": 0.25
+        "value": 0.25
       }
     ]
   },
@@ -19,7 +19,7 @@
     "entity_action": {
       "type": "origins:apply_effect",
       "effect": {
-        "id": "minecraft:poison",
+        "effect": "minecraft:poison",
         "duration": 40,
         "amplifier": 1
       }
@@ -41,7 +41,7 @@
         {
           "type": "origins:apply_effect",
           "effect": {
-            "id": "minecraft:weakness",
+            "effect": "minecraft:weakness",
             "duration": 150,
             "amplifier": 0,
             "show_particles": false

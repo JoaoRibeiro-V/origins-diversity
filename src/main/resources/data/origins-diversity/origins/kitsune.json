@@ -1,5 +1,5 @@
 {
-  "icon": { "id": "minecraft:red_dye" },
+  "icon": { "item": "minecraft:red_dye" },
   "name": "Kitsune",
   "description": "A spiritual fox lineage.",
   "powers": [

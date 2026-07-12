@@ -1,7 +1,7 @@
 {
   "name": "Snail",
   "description": "Slow but resilient creatures that rely on their shell and patience.",
-  "icon": { "id": "minecraft:slime_ball" },
+  "icon": { "item": "minecraft:slime_ball" },
   "impact": 2,
   "powers": [
     "origins-diversity:snail/snail_retreat_controller",

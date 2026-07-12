@@ -9,19 +9,19 @@
         "type": "origins:apply_effect",
         "effects": [
           {
-            "id": "minecraft:haste",
+            "effect": "minecraft:haste",
             "duration": 60,
             "show_icon": false,
             "show_particles": false
           },
           {
-            "id": "minecraft:regeneration",
+            "effect": "minecraft:regeneration",
             "duration": 60,
             "show_icon": false,
             "show_particles": false
           },
           {
-            "id": "minecraft:speed",
+            "effect": "minecraft:speed",
             "duration": 60,
             "show_icon": false,
             "show_particles": false

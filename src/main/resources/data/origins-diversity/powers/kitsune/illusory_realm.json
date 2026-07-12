@@ -12,7 +12,7 @@
       "action": {
         "type": "origins:grant_power",
         "power": "origins-diversity:kitsune/illusion_affect",
-        "source": "origins-diversity:kitsune_illusory_realm_proc"
+        "source": "origins-diversity"
       }
     }
   },

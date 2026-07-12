@@ -6,14 +6,14 @@
     {
       "id": "origins-diversity:snail_shell_armor",
       "attribute": "minecraft:generic.armor",
-      "amount": 3.0,
-      "operation": "ADD_VALUE"
+      "value": 3.0,
+      "operation": "addition"
     },
     {
       "id": "origins-diversity:snail_shell_toughness",
       "attribute": "minecraft:generic.armor_toughness",
-      "amount": 2.0,
-      "operation": "ADD_VALUE"
+      "value": 2.0,
+      "operation": "addition"
     }
   ]
 }

@@ -14,22 +14,22 @@
           "type": "origins:apply_effect",
           "effects": [
             {
-              "id": "minecraft:regeneration",
+              "effect": "minecraft:regeneration",
               "duration": 80,
               "amplifier": 4
             },
             {
-              "id": "minecraft:absorption",
+              "effect": "minecraft:absorption",
               "duration": 200,
               "amplifier": 0
             },
             {
-              "id": "minecraft:weakness",
+              "effect": "minecraft:weakness",
               "duration": 600,
               "amplifier": 0
             },
             {
-              "id": "minecraft:resistance",
+              "effect": "minecraft:resistance",
               "duration": 100,
               "amplifier": 0
             }

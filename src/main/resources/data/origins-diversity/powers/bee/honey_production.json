@@ -32,7 +32,7 @@
       {
         "type": "apoli:equipped_item_action",
         "equipment_slot": "mainhand",
-        "item_action": {
+        "action": {
           "type": "apoli:consume",
           "amount": 1
         }
@@ -40,7 +40,7 @@
       {
         "type": "apoli:give",
         "stack": {
-          "id": "minecraft:honey_bottle",
+          "item": "minecraft:honey_bottle",
           "count": 1,
           "tag": "{BeeHoney:1b}"
         },

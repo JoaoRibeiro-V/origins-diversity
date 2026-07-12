@@ -6,7 +6,7 @@
     "type": "origins:modify_projectile_damage",
     "modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": 0.25
+      "value": 0.25
     },
     "condition": {
       "type": "origins:equipped_item",
@@ -21,7 +21,7 @@
             }
           },
           {
-            "type": "origins:custom_data",
+            "type": "origins:nbt",
             "nbt": "{origins_diversity:{has_gold_trim:1b}}"
           }
         ]
@@ -32,7 +32,7 @@
     "type": "origins:modify_damage_taken",
     "modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": 0.2
+      "value": 0.2
     },
     "condition": {
       "type": "origins:equipped_item",
@@ -47,7 +47,7 @@
             }
           },
           {
-            "type": "origins:custom_data",
+            "type": "origins:nbt",
             "nbt": "{origins_diversity:{has_gold_trim:1b}}"
           }
         ]
@@ -58,7 +58,7 @@
     "type": "origins:modify_xp_gain",
     "modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": 0.5
+      "value": 0.5
     },
     "condition": {
       "type": "origins:equipped_item",
@@ -73,7 +73,7 @@
             }
           },
           {
-            "type": "origins:custom_data",
+            "type": "origins:nbt",
             "nbt": "{origins_diversity:{has_gold_trim:1b}}"
           }
         ]
@@ -85,8 +85,8 @@
     "modifier": {
       "id": "origins-diversity:withered_piglin_speed",
       "attribute": "minecraft:generic.movement_speed",
-      "amount": 0.0875,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": 0.0875,
+      "operation": "multiply_total"
     },
     "condition": {
       "type": "origins:equipped_item",
@@ -101,7 +101,7 @@
             }
           },
           {
-            "type": "origins:custom_data",
+            "type": "origins:nbt",
             "nbt": "{origins_diversity:{has_gold_trim:1b}}"
           }
         ]

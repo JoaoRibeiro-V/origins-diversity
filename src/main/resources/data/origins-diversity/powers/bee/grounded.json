@@ -9,8 +9,8 @@
     "modifier": {
       "id": "origins-diversity:bee_slow_movement",
       "attribute": "minecraft:generic.movement_speed",
-      "amount": -0.1,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": -0.1,
+      "operation": "multiply_total"
     }
   },
   "soaking_wet_particles": {
@@ -23,8 +23,8 @@
   "modifier": {
     "id": "origins-diversity:bee_slow_attack_speed",
     "attribute": "minecraft:generic.attack_speed",
-    "amount": -0.1,
-    "operation": "ADD_MULTIPLIED_TOTAL"
+    "value": -0.1,
+    "operation": "multiply_total"
   }
 }
 }

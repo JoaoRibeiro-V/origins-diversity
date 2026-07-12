@@ -2,7 +2,7 @@
   "name":"Chorus Leech",
   "description": "A malformed lifeform sustained by instability.",
   "icon": {
-    "id": "minecraft:chorus_fruit"
+    "item": "minecraft:chorus_fruit"
   },
   "powers": [
     "origins-diversity:chorus_leech/erratic_blink",

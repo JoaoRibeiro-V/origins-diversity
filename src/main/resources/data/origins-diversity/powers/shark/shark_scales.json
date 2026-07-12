@@ -5,7 +5,7 @@
   "modifier": {
     "id": "origins-diversity:shark_tough_skin",
     "attribute": "minecraft:generic.armor",
-    "amount": 5.0,
-    "operation": "ADD_VALUE"
+    "value": 5.0,
+    "operation": "addition"
   }
 }

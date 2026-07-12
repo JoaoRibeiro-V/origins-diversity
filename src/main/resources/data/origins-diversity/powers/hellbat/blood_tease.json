@@ -9,7 +9,7 @@
       {
         "type": "origins:apply_effect",
         "effect": {
-          "id": "minecraft:absorption",
+          "effect": "minecraft:absorption",
           "duration": 160,
           "amplifier": 0,
           "show_particles": false,

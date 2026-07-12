@@ -5,12 +5,12 @@
     "type": "origins:and",
     "actions": [
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:bee/grounded"
+        "type": "origins:execute_command",
+        "command": "power remove @s origins-diversity:bee/grounded"
       },
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:bee/stinger_active"
+        "type": "origins:execute_command",
+        "command": "power remove @s origins-diversity:bee/stinger_active"
       }
     ]
   },

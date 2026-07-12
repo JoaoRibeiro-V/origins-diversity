@@ -18,7 +18,7 @@
     "if_action": {
       "type": "origins:apply_effect",
       "effect": {
-        "id": "minecraft:strength",
+        "effect": "minecraft:strength",
         "duration": 200,
         "show_particles": false
       }

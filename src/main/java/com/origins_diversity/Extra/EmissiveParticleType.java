@@ -1,23 +1,16 @@
 package com.origins_diversity.Extra;
 
-import com.mojang.serialization.MapCodec;
-import net.minecraft.core.particles.ParticleType;
-import net.minecraft.network.RegistryFriendlyByteBuf;
-import net.minecraft.network.codec.StreamCodec;
+import com.mojang.serialization.Codec;
+import net.minecraft.particle.ParticleType;
 
 public class EmissiveParticleType extends ParticleType<EmissiveParticleOptions> {
 
     public EmissiveParticleType() {
-        super(false);
+        super(false, EmissiveParticleOptions.FACTORY);
     }
 
     @Override
-    public MapCodec<EmissiveParticleOptions> codec() {
-        return EmissiveParticleOptions.codec(this);
-    }
-
-    @Override
-    public StreamCodec<? super RegistryFriendlyByteBuf, EmissiveParticleOptions> streamCodec() {
-        return EmissiveParticleOptions.streamCodec(this);
+    public Codec<EmissiveParticleOptions> getCodec() {
+        return null;
     }
 }

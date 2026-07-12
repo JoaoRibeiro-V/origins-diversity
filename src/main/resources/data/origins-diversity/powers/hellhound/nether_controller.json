@@ -10,12 +10,11 @@
     "if_action": {
       "type": "origins:grant_power",
       "power": "origins-diversity:hellhound/netherbound_active",
-      "source": "origins-diversity:hellhound_nether_controller"
+      "source": "origins-diversity"
     },
     "else_action": {
-      "type": "origins:revoke_power",
-      "power": "origins-diversity:hellhound/netherbound_active",
-      "source": "origins-diversity:hellhound_nether_controller"
-    }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:hellhound/netherbound_active"
+}
   }
 }

@@ -9,13 +9,13 @@
     "type": "origins:and",
     "actions": [
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:hellhound/netherbound_active"
-      },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:hellhound/netherbound_active"
+},
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:hellhound/scent"
-      }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:hellhound/scent"
+}
     ]
   },
   "execute_chosen_when_orb": true

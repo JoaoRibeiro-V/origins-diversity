@@ -1,11 +1,18 @@
 {
   "name": "Gills",
   "description": "§rYou can hold your breath §alonger§r underwater.",
-  "type": "origins:attribute",
-  "modifier": {
-    "id": "origins-diversity:axolotl_water_resistance",
-    "attribute": "minecraft:generic.oxygen_bonus",
-    "amount": 3.0,
-    "operation": "ADD_VALUE"
-  }
+  "type": "origins:stacking_status_effect",
+  "min_stacks": 20,
+  "max_stacks": 361,
+  "duration_per_stack": 10,
+  "effect": {
+    "effect": "minecraft:water_breathing",
+    "show_particles": false
+  },
+    "condition": {
+      "type": "origins:fluid_height",
+      "fluid": "minecraft:water",
+      "comparison": ">=",
+      "compare_to": 0
+    }
 }

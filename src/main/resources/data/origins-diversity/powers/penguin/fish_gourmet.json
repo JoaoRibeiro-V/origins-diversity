@@ -11,11 +11,11 @@
   "food_modifier": {
     "name": "Increased food points",
     "operation": "add_base_early",
-    "amount": 3.0
+    "value": 3.0
   },
   "saturation_modifier": {
     "name": "Increased saturation points",
     "operation": "add_base_early",
-    "amount": 2.5
+    "value": 2.5
   }
 }

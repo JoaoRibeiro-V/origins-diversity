@@ -1,7 +1,7 @@
 {
   "name": "Platypus",
   "description": "A platypus?",
-  "icon": { "id": "minecraft:trident" },
+  "icon": { "item": "minecraft:trident" },
 
   "powers": [
     "origins-diversity:platypus/swim_speed",

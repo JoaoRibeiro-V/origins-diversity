@@ -6,8 +6,8 @@
   "modifier": {
     "id": "origins-diversity:netherbound_speed_flaw",
     "attribute": "minecraft:generic.movement_speed",
-    "amount": -0.125,
-    "operation": "ADD_MULTIPLIED_TOTAL"
+    "value": -0.125,
+    "operation": "multiply_total"
   },
   "condition": {
     "type": "origins:dimension",

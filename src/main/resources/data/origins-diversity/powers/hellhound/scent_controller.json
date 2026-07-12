@@ -20,7 +20,7 @@
       "if_action": {
         "type": "origins:grant_power",
         "power": "origins-diversity:hellhound/scent",
-        "source": "origins-diversity:hellhound_scent_controller"
+        "source": "origins-diversity"
       },
       "else_action": {
         "type": "origins:change_resource",
@@ -29,8 +29,8 @@
       }
     },
     "else_action": {
-      "type": "origins:remove_power",
-      "power": "origins-diversity:hellhound/scent"
-    }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:hellhound/scent"
+}
   }
 }

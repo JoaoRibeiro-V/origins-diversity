@@ -5,17 +5,17 @@
     "type": "origins:and",
     "actions": [
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:shark/beached_active"
-      },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:shark/beached_active"
+},
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:shark/ram_ventilation_active"
-      },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:shark/ram_ventilation_active"
+},
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:shark/blood_in_water_active"
-      }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:shark/blood_in_water_active"
+}
     ]
   },
   "execute_chosen_when_orb": true

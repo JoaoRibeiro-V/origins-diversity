@@ -21,8 +21,8 @@
     "modifier": {
       "id": "origins-diversity:chameleon_stealth",
       "attribute": "puffish_attributes:stealth",
-      "amount": 15.0,
-      "operation": "ADD_VALUE"
+      "value": 15.0,
+      "operation": "addition"
     }
   },
   "surprise_strike": {
@@ -30,16 +30,16 @@
     "type": "origins:modify_damage_dealt",
     "modifier": {
       "operation": "add_base_early",
-      "amount": 1.0,
+      "value": 1.0,
       "resource": "surprise_strike"
     },
     "self_action": {
         "type": "origins:and",
         "actions": [
             {
-            "type": "origins:remove_power",
-            "power": "origins-diversity:chameleon/camouflaged"
-            },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:chameleon/camouflaged"
+},
             {
             "type": "origins:trigger_cooldown",
             "power": "origins-diversity:chameleon/camouflage_cooldown",
@@ -53,7 +53,7 @@
         {
           "type": "origins:apply_effect",
           "effect": {
-            "id": "minecraft:weakness",
+            "effect": "minecraft:weakness",
             "duration": 100,
             "amplifier": 0
           }

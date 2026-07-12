@@ -4,7 +4,7 @@
   "type": "origins:modify_xp_gain",
   "modifier": {
     "operation": "multiply_total_multiplicative",
-    "amount": -0.325,
+    "value": -0.325,
     "resource": "dodo_slow_learner"
   }
 }

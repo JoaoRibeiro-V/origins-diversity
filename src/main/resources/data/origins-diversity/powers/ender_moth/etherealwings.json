@@ -11,13 +11,13 @@
         "power": "origins-diversity:ender_moth/glide"
       },
       "if_action": {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:ender_moth/glide"
-      },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:ender_moth/glide"
+},
       "else_action": {
         "type": "origins:grant_power",
         "power": "origins-diversity:ender_moth/glide",
-        "source": "origins-diversity:ender_moth_controller"
+        "source": "origins-diversity"
       }
     }
   }

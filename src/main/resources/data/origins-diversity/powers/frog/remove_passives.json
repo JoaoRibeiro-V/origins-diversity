@@ -5,9 +5,9 @@
     "type": "origins:and",
     "actions": [
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:frog/moisture"
-      }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:frog/moisture"
+}
     ]
   },
   "execute_chosen_when_orb": true

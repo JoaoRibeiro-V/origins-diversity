@@ -15,15 +15,15 @@
   },
   "food_modifier": {
     "operation": "multiply_total_multiplicative",
-    "amount": 2.75
+    "value": 2.75
   },
   "saturation_modifier": {
     "operation": "multiply_total_multiplicative",
-    "amount": 1.25
+    "value": 1.25
   },
   "nutrition_modifier": {
     "operation": "multiply_total_multiplicative",
-    "amount": 2.75
+    "value": 2.75
   },
   "entity_action": {
     "type": "origins:and",
@@ -35,7 +35,7 @@
       {
         "type": "origins:apply_effect",
         "effect": {
-          "id": "minecraft:strength",
+          "effect": "minecraft:strength",
           "duration": 100,
           "show_particles": false
         }

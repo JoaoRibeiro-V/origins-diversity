@@ -10,8 +10,8 @@
     "modifier": {
       "id": "origins-diversity:owl_attack_speed",
       "attribute": "minecraft:generic.attack_speed",
-      "amount": 0.125,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": 0.125,
+      "operation": "multiply_total"
     }
   },
   "armor_pen": {
@@ -19,8 +19,8 @@
     "modifier": {
       "id": "origins-diversity:owl_armor_pen",
       "attribute": "puffish_attributes:resistance_shred",
-      "amount": 0.175,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": 0.175,
+      "operation": "multiply_total"
     }
   },
   "strike_from_above": {
@@ -30,7 +30,7 @@
     },
     "modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": 0.1925
+      "value": 0.1925
     }
   },
   "strike_from_above2": {
@@ -41,9 +41,8 @@
     "modifier": {
       "id": "origins-diversity:owl_attack_buff",
       "attribute": "puffish_attributes:melee_damage",
-      "amount": 0.125,
       "value": 0.125,
-      "operation": "ADD_MULTIPLIED_BASE"
+      "operation": "MULTIPLY_BASE"
     }
   },
   "strike_from_above3": {
@@ -54,8 +53,8 @@
     "modifier": {
       "id": "origins-diversity:owl_attack_buff",
       "attribute": "minecraft:generic.attack_damage",
-      "amount": 1,
-      "operation": "ADD_VALUE"
+      "value": 1,
+      "operation": "addition"
     }
   },
   "slow_strike": {
@@ -72,7 +71,7 @@
       "action": {
         "type": "origins:apply_effect",
         "effect": {
-          "id": "minecraft:slowness",
+          "effect": "minecraft:slowness",
           "duration": 200,
           "amplifier": 0
         }
@@ -90,8 +89,8 @@
     "modifier": {
       "id": "origins-diversity:owl_stealth",
       "attribute": "puffish_attributes:stealth",
-      "amount": 0.5,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": 0.5,
+      "operation": "multiply_total"
     }
   }
 }

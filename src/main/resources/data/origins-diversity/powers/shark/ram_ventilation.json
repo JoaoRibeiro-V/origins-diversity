@@ -23,7 +23,7 @@
         {
           "type": "origins:grant_power",
           "power": "origins-diversity:shark/ram_ventilation_active",
-          "source": "origins-diversity:shark_ram_ventilation"
+          "source": "origins-diversity"
         }
       ]
     },
@@ -31,10 +31,9 @@
       "type": "origins:and",
       "actions": [
         {
-          "type": "origins:revoke_power",
-          "power": "origins-diversity:shark/ram_ventilation_active",
-          "source": "origins-diversity:shark_ram_ventilation"
-        }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:shark/ram_ventilation_active"
+}
       ]
     }
   }

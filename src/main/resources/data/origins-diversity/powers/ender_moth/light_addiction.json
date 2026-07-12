@@ -9,19 +9,19 @@
         "type": "origins:apply_effect",
         "effects": [
           {
-            "id": "minecraft:blindness",
+            "effect": "minecraft:blindness",
             "duration": 40,
             "show_icon": false,
             "show_particles": false
           },
           {
-            "id": "minecraft:mining_fatigue",
+            "effect": "minecraft:mining_fatigue",
             "duration": 40,
             "show_icon": false,
             "show_particles": false
           },
           {
-            "id": "minecraft:weakness",
+            "effect": "minecraft:weakness",
             "duration": 40,
             "show_icon": false,
             "show_particles": false

@@ -5,7 +5,7 @@
   "modifier": {
     "id": "origins-diversity:owl_fragility",
     "attribute": "minecraft:generic.max_health",
-    "amount": -5.0,
-    "operation": "ADD_VALUE"
+    "value": -5.0,
+    "operation": "addition"
   }
 }

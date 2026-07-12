@@ -30,7 +30,7 @@
         {
           "type": "origins:grant_power",
           "power": "origins-diversity:snail/shell_armor_temp",
-          "source": "origins-diversity:snail_retreat"
+          "source": "origins-diversity"
         },
         {
           "type": "origins:trigger_cooldown",

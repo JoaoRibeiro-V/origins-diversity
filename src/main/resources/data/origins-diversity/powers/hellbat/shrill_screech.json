@@ -19,13 +19,13 @@
             "type": "origins:apply_effect",
             "effects": [
               {
-                "id": "minecraft:nausea",
+                "effect": "minecraft:nausea",
                 "duration": 200,
                 "amplifier": 0,
                 "show_particles": false
               },
               {
-                "id": "minecraft:darkness",
+                "effect": "minecraft:darkness",
                 "duration": 100,
                 "amplifier": 0,
                 "show_particles": false

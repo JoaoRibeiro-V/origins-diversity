@@ -28,7 +28,7 @@
         {
           "type": "origins:apply_effect",
           "effect": {
-            "id": "minecraft:speed",
+            "effect": "minecraft:speed",
             "duration": 80,
             "amplifier": 0,
             "show_particles": false

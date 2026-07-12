@@ -17,12 +17,11 @@
     "if_action": {
       "type": "origins:grant_power",
       "power": "origins-diversity:shark/blood_in_water_active",
-      "source": "origins-diversity:shark_blood_in_water"
+      "source": "origins-diversity"
     },
     "else_action": {
-      "type": "origins:revoke_power",
-      "power": "origins-diversity:shark/blood_in_water_active",
-      "source": "origins-diversity:shark_blood_in_water"
-    }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:shark/blood_in_water_active"
+}
   }
 }

@@ -22,7 +22,7 @@
           "action": {
             "type": "origins:grant_power",
             "power": "origins-diversity:chorus_leech/parasite",
-            "source": "origins-diversity:chorus_leech_parasite_infection"
+            "source": "origins-diversity"
           }
         }
       ]

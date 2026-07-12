@@ -35,7 +35,7 @@
       "if_action": {
         "type": "origins:grant_power",
         "power": "origins-diversity:owl/night_watcher_active",
-        "source": "origins-diversity:night_watcher"
+        "source": "origins-diversity"
       }
     },
     "else_action": {
@@ -48,10 +48,9 @@
         "type": "origins:and",
         "actions": [
           {
-            "type": "origins:revoke_power",
-            "power": "origins-diversity:owl/night_watcher_active",
-            "source": "origins-diversity:night_watcher"
-          }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:owl/night_watcher_active"
+}
         ]
       }
     }

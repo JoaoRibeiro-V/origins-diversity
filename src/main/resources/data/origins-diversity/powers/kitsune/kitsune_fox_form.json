@@ -4,9 +4,9 @@
   "whenhit": {
     "type": "origins:self_action_when_hit",
     "entity_action": {
-      "type": "origins:remove_power",
-      "power": "origins-diversity:kitsune/kitsune_fox_form"
-    },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:kitsune/kitsune_fox_form"
+},
     "damage_condition": {
       "type": "origins:attacker"
     }

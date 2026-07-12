@@ -1,9 +1,8 @@
 package com.origins_diversity.Data;
 
-import net.minecraft.core.HolderLookup;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.level.saveddata.SavedData;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.world.PersistentState;
 import net.minecraft.server.MinecraftServer;
 
 import java.util.HashSet;
@@ -11,24 +10,21 @@ import java.util.Set;
 import java.util.UUID;
 
 
-public class SculkServantTameData extends SavedData {
+public class SculkServantTameData extends PersistentState {
 
     private static final String KEY = "sculk_servant_tamed";
     private final Set<UUID> tamedPlayers = new HashSet<>();
 
     public static SculkServantTameData get(MinecraftServer server) {
-        return server.overworld().getDataStorage()
-                .computeIfAbsent(
-                        new SavedData.Factory<>(
-                                SculkServantTameData::new,
-                                (tag, provider) -> load(tag),
-                                null
-                        ),
+        return server.getOverworld().getPersistentStateManager()
+                .getOrCreate(
+                        SculkServantTameData::load,
+                        SculkServantTameData::new,
                         KEY
                 );
     }
 
-    private static SculkServantTameData load(CompoundTag tag) {
+    private static SculkServantTameData load(NbtCompound tag) {
         SculkServantTameData data = new SculkServantTameData();
         String raw = tag.getString("tamed");
         if (!raw.isEmpty()) {
@@ -41,12 +37,12 @@ public class SculkServantTameData extends SavedData {
 
     public void markTamed(UUID playerUUID, MinecraftServer server) {
         tamedPlayers.add(playerUUID);
-        setDirty();
+        markDirty();
 
-        ServerPlayer player = server.getPlayerList().getPlayer(playerUUID);
+        ServerPlayerEntity player = server.getPlayerManager().getPlayer(playerUUID);
         if (player != null) {
-            player.displayClientMessage(
-                    net.minecraft.network.chat.Component.literal("✦ Sculk Servant Tamed ✦").withStyle(style -> style.withColor(net.minecraft.ChatFormatting.DARK_PURPLE).withBold(true)),true
+            player.sendMessage(
+                    net.minecraft.text.Text.literal("✦ Sculk Servant Tamed ✦").styled(style -> style.withColor(net.minecraft.util.Formatting.DARK_PURPLE).withBold(true)),true
             );
         }
     }
@@ -56,7 +52,7 @@ public class SculkServantTameData extends SavedData {
     }
 
     @Override
-    public CompoundTag save(CompoundTag tag, HolderLookup.Provider provider) {
+    public NbtCompound writeNbt(NbtCompound tag) {
         StringBuilder sb = new StringBuilder();
         for (UUID uuid : tamedPlayers) {
             if (sb.length() > 0) sb.append(",");

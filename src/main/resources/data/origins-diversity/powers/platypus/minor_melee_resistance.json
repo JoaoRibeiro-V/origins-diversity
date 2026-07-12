@@ -5,7 +5,7 @@
   "modifier": {
     "id": "origins-diversity:platypus_minor_melee_resistance",
     "attribute": "minecraft:generic.armor",
-    "amount": 2.0,
-    "operation": "ADD_VALUE"
+    "value": 2.0,
+    "operation": "addition"
   }
 }

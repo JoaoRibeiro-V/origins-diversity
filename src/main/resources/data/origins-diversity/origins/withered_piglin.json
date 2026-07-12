@@ -2,7 +2,7 @@
   "name": "Withered Piglin",
   "description": "A Piglin twisted by decay and rejection. Sustained by rot, empowered by gold.",
   "icon": {
-    "id": "minecraft:gold_ingot"
+    "item": "minecraft:gold_ingot"
   },
   "impact": 3,
   "powers": [

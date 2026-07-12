@@ -10,7 +10,7 @@
       "action": {
         "type": "origins:apply_effect",
         "effect": {
-          "id": "minecraft:speed",
+          "effect": "minecraft:speed",
           "duration": 40,
           "amplifier": 0,
           "show_particles": false,
@@ -23,7 +23,7 @@
     "type": "origins:modify_exhaustion",
     "modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": -0.25,
+      "value": -0.25,
       "resource": "plains_endurance"
     }
   }

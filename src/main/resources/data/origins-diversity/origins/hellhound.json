@@ -2,7 +2,7 @@
   "name": "Hellhound",
   "description": "A feral beast born of the Nether, driven by fire and the hunt.",
   "icon": {
-    "id": "minecraft:blaze_powder"
+    "item": "minecraft:blaze_powder"
   },
   "impact": 3,
   "powers": [

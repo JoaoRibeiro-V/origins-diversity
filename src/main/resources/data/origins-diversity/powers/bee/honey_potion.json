@@ -10,12 +10,12 @@
     "type": "origins:apply_effect",
     "effects": [
       {
-        "id": "minecraft:regeneration",
+        "effect": "minecraft:regeneration",
         "duration": 80,
         "amplifier": 0
       },
       {
-        "id": "minecraft:strength",
+        "effect": "minecraft:strength",
         "duration": 400,
         "amplifier": 0
       }

@@ -1,7 +1,7 @@
 {
   "name": "Dryad",
   "description": "A spirit of the forest, attuned to nature and the creatures that dwell within it.",
-  "icon": { "id": "minecraft:oak_sapling" },
+  "icon": { "item": "minecraft:oak_sapling" },
 
   "powers": [
     "origins-diversity:dryad/wild_bond",

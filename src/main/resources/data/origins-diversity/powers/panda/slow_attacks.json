@@ -5,7 +5,7 @@
   "modifier": {
     "id": "origins-diversity:panda_slow_attacks",
     "attribute": "minecraft:generic.attack_speed",
-    "amount": -0.1,
-    "operation": "ADD_MULTIPLIED_TOTAL"
+    "value": -0.1,
+    "operation": "multiply_total"
   }
 }

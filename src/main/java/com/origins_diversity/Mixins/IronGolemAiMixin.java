@@ -1,19 +1,20 @@
 package com.origins_diversity.Mixins;
 
 import com.origins_diversity.PowerHandlers.AttackSculkCultistGoal;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.animal.IronGolem;
-import net.minecraft.world.entity.animal.Wolf;
+import net.minecraft.entity.ai.goal.GoalSelector;
+import net.minecraft.entity.passive.IronGolemEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(IronGolem.class)
+@Mixin(IronGolemEntity.class)
 public abstract class IronGolemAiMixin {
-    @Inject(method = "registerGoals", at = @At("TAIL"))
+    @Inject(method = "initGoals", at = @At("TAIL"))
     private void addSculkCultistAttack(CallbackInfo ci){
-        IronGolem self = (IronGolem) (Object)this;
-        self.goalSelector.addGoal(1, new AttackSculkCultistGoal(self, 10));
+        IronGolemEntity self = (IronGolemEntity) (Object)this;
+        GoalSelector goalSelector =
+                ((MobEntityAccessor) self).getGoalSelector();
+       goalSelector.add(1, new AttackSculkCultistGoal(self, 10));
     }
 }

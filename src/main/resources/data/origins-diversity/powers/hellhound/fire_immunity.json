@@ -25,6 +25,6 @@
   },
   "modifier": {
     "operation": "multiply_total_multiplicative",
-    "amount": -1
+    "value": -1
   }
 }

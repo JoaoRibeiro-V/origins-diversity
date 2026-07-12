@@ -3,8 +3,8 @@
   "modifier": {
     "id": "origins-diversity:phoenix_slow_movement",
     "attribute": "minecraft:generic.movement_speed",
-    "amount": -0.12,
-    "operation": "ADD_MULTIPLIED_TOTAL"
+    "value": -0.12,
+    "operation": "multiply_total"
   },
   "condition": {
     "type": "origins:biome",

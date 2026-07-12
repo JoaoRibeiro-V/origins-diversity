@@ -18,7 +18,7 @@
         "action": {
           "type": "origins:apply_effect",
           "effect": {
-            "id": "minecraft:glowing",
+            "effect": "minecraft:glowing",
             "duration": 400,
             "show_particles": false,
             "show_icon": false
@@ -31,7 +31,7 @@
         "action": {
           "type": "origins:apply_effect",
           "effect": {
-            "id": "minecraft:wither",
+            "effect": "minecraft:wither",
             "duration": 80,
             "amplifier": 1,
             "show_particles": false,
@@ -45,7 +45,7 @@
         "action": {
           "type": "origins:apply_effect",
           "effect": {
-            "id": "minecraft:slowness",
+            "effect": "minecraft:slowness",
             "duration": 240,
             "show_particles": false,
             "show_icon": false
@@ -72,6 +72,6 @@
   },
   "modifier": {
     "operation": "multiply_total_multiplicative",
-    "amount": 0.15
+    "value": 0.15
   }
 }

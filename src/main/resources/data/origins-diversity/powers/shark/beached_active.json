@@ -6,8 +6,8 @@
     "modifier": {
       "id": "origins-diversity:snail_slow_movement",
       "attribute": "minecraft:generic.movement_speed",
-      "amount": -0.18,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": -0.18,
+      "operation": "multiply_total"
     }
   },
   "combat": {
@@ -15,8 +15,8 @@
     "modifier": {
       "id": "origins-diversity:shark_land_attack_speed",
       "attribute": "minecraft:generic.attack_speed",
-      "amount": -0.5,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": -0.5,
+      "operation": "multiply_total"
     }
   }
 }

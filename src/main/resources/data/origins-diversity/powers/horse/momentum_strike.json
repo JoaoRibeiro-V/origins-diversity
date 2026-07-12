@@ -4,12 +4,12 @@
   "type": "origins:modify_damage_dealt",
   "modifier": {
     "operation": "multiply_total_multiplicative",
-    "amount": 0.2
+    "value": 0.2
   },
   "target_action": {
     "type": "origins:apply_effect",
     "effect": {
-      "id": "minecraft:nausea",
+      "effect": "minecraft:nausea",
       "duration": 180,
       "amplifier": 1,
       "show_particles": false

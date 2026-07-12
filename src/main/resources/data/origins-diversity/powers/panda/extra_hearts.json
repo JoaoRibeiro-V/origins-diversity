@@ -5,7 +5,7 @@
   "modifier": {
     "id": "origins-diversity:panda_extra_hearts",
     "attribute": "minecraft:generic.max_health",
-    "amount": 6.0,
-    "operation": "ADD_VALUE"
+    "value": 6.0,
+    "operation": "addition"
   }
 }

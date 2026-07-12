@@ -8,7 +8,7 @@
     "action": {
       "type": "origins:apply_effect",
       "effect": {
-        "id": "minecraft:weakness",
+        "effect": "minecraft:weakness",
         "duration": 200,
         "amplifier": 0,
         "show_icon": false

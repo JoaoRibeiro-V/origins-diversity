@@ -20,7 +20,7 @@
       "if_action": {
         "type": "origins:grant_power",
         "power": "origins-diversity:platypus/electroreception",
-        "source": "origins-diversity:platypus_electroreception_controller"
+        "source": "origins-diversity"
       },
       "else_action": {
         "type": "origins:change_resource",
@@ -29,8 +29,8 @@
       }
     },
     "else_action": {
-      "type": "origins:remove_power",
-      "power": "origins-diversity:platypus/electroreception"
-    }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:platypus/electroreception"
+}
   }
 }

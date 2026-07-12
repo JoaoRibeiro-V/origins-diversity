@@ -5,8 +5,8 @@
   "modifier": {
     "id": "origins-diversity:dryad_forest_wisdom",
     "attribute": "puffish_attributes:axe_speed",
-    "amount": -0.5,
-    "operation": "ADD_MULTIPLIED_TOTAL"
+    "value": -0.5,
+    "operation": "multiply_total"
   },
   "tick-rate": 40,
   "condition": {

@@ -1,7 +1,7 @@
 {
   "name": "Penguin",
   "description": "A cold-adapted aquatic cute bird.",
-  "icon": { "id": "minecraft:blue_ice" },
+  "icon": { "item": "minecraft:blue_ice" },
 
   "powers": [
     "origins-diversity:penguin/huddle_warmth",

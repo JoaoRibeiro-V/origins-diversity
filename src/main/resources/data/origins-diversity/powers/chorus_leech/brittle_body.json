@@ -5,7 +5,7 @@
   "modifier": {
     "id": "origins-diversity:chorus_leech_health",
     "attribute": "minecraft:generic.max_health",
-    "amount": -8.0,
-    "operation": "ADD_VALUE"
+    "value": -8.0,
+    "operation": "addition"
   }
 }

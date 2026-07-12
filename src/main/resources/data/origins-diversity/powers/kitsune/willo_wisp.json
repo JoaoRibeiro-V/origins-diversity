@@ -27,7 +27,7 @@
                 "action": {
                   "type": "origins:grant_power",
                   "power": "origins-diversity:kitsune/willo_wisp_target",
-                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                  "source": "origins-diversity"
                 }
               },
               {
@@ -62,7 +62,7 @@
                 "action": {
                   "type": "origins:grant_power",
                   "power": "origins-diversity:kitsune/willo_wisp_target",
-                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                  "source": "origins-diversity"
                 }
               },
               {
@@ -97,7 +97,7 @@
                 "action": {
                   "type": "origins:grant_power",
                   "power": "origins-diversity:kitsune/willo_wisp_target",
-                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                  "source": "origins-diversity"
                 }
               },
               {
@@ -132,7 +132,7 @@
                 "action": {
                   "type": "origins:grant_power",
                   "power": "origins-diversity:kitsune/willo_wisp_target",
-                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                  "source": "origins-diversity"
                 }
               },
               {
@@ -167,7 +167,7 @@
                 "action": {
                   "type": "origins:grant_power",
                   "power": "origins-diversity:kitsune/willo_wisp_target",
-                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                  "source": "origins-diversity"
                 }
               },
               {
@@ -202,7 +202,7 @@
                 "action": {
                   "type": "origins:grant_power",
                   "power": "origins-diversity:kitsune/willo_wisp_target",
-                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                  "source": "origins-diversity"
                 }
               },
               {
@@ -237,7 +237,7 @@
                 "action": {
                   "type": "origins:grant_power",
                   "power": "origins-diversity:kitsune/willo_wisp_target",
-                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                  "source": "origins-diversity"
                 }
               },
               {
@@ -272,7 +272,7 @@
                 "action": {
                   "type": "origins:grant_power",
                   "power": "origins-diversity:kitsune/willo_wisp_target",
-                  "source": "origins-diversity:kitsune_willo_wisp_proc"
+                  "source": "origins-diversity"
                 }
               },
               {

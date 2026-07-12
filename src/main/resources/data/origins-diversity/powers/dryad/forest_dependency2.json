@@ -5,14 +5,14 @@
     {
       "id": "origins-diversity:dryad_forest_dependency2_res",
       "attribute": "puffish_attributes:resistance",
-      "amount": -0.1,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": -0.1,
+      "operation": "multiply_total"
     },
     {
       "id": "origins-diversity:dryad_forest_dependency2_health",
       "attribute": "minecraft:generic.max_health",
-      "amount": -4.0,
-      "operation": "ADD_VALUE"
+      "value": -4.0,
+      "operation": "addition"
     }
   ]
 }

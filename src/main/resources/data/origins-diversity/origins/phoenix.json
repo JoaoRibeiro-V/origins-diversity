@@ -2,7 +2,7 @@
   "name": "Phoenix",
   "description": "§7A legendary being born of §cfire§7 and §6rebirth§7.",
   "icon": {
-    "id": "minecraft:fire_charge"
+    "item": "minecraft:fire_charge"
   },
   "impact": 2,
   "powers": [

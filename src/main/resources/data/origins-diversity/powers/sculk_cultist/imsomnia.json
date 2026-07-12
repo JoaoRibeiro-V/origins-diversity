@@ -6,7 +6,7 @@
     "type": "origins:modify_insomnia_ticks",
     "modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": 1.0
+      "value": 1.0
     }
   },
   "preventsleep": {

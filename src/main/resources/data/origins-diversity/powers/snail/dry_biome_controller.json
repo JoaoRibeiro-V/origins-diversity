@@ -17,12 +17,11 @@
     "if_action": {
       "type": "origins:grant_power",
       "power": "origins-diversity:snail/dried",
-      "source": "origins-diversity:snail_dried"
+      "source": "origins-diversity"
     },
     "else_action": {
-        "type": "origins:revoke_power",
-        "power": "origins-diversity:snail/dried",
-        "source": "origins-diversity:snail_dried"
-    }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:snail/dried"
+}
   }
 }

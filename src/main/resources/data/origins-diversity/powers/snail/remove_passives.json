@@ -5,9 +5,9 @@
     "type": "origins:and",
     "actions": [
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:snail/dried"
-      }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:snail/dried"
+}
     ]
   },
   "execute_chosen_when_orb": true

@@ -1,75 +1,108 @@
 package com.origins_diversity.Data;
 
-import net.minecraft.core.HolderLookup;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.nbt.ListTag;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtList;
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.world.SimpleContainer;
-import net.minecraft.world.level.saveddata.SavedData;
+import net.minecraft.inventory.SimpleInventory;
+import net.minecraft.world.PersistentState;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
-public class SculkServantInventoryData extends SavedData {
+public class SculkServantInventoryData extends PersistentState {
+
     private static final String KEY = "sculk_servant_inventory";
-    private final Map<UUID, SimpleContainer> inventories = new HashMap<>();
+
+    private final Map<UUID, SimpleInventory> inventories = new HashMap<>();
+
 
     public static SculkServantInventoryData get(MinecraftServer server) {
-        return server.overworld().getDataStorage()
-                .computeIfAbsent(
-                        new SavedData.Factory<>(
-                                SculkServantInventoryData::new,
-                                SculkServantInventoryData::load, // now matches (tag, provider)
-                                null
-                        ),
+
+        return server.getOverworld()
+                .getPersistentStateManager()
+                .getOrCreate(
+                        SculkServantInventoryData::load,
+                        SculkServantInventoryData::new,
                         KEY
                 );
     }
 
-    private static SculkServantInventoryData load(CompoundTag tag, HolderLookup.Provider provider) {
+
+    private static SculkServantInventoryData load(NbtCompound tag) {
+
         SculkServantInventoryData data = new SculkServantInventoryData();
 
-        CompoundTag inventoriesTag = tag.getCompound("inventories");
+        NbtCompound inventoriesTag =
+                tag.getCompound("inventories");
 
-        for (String key : inventoriesTag.getAllKeys()) {
+
+        for (String key : inventoriesTag.getKeys()) {
+
             UUID uuid = UUID.fromString(key);
 
-            SimpleContainer container = new SimpleContainer(27);
+            SimpleInventory container =
+                    new SimpleInventory(27);
 
-            ListTag list = inventoriesTag.getList(key, 10); // 10 = CompoundTag
-            container.fromTag(list, provider);
+
+            NbtList list =
+                    inventoriesTag.getList(key, 10);
+
+
+            container.readNbtList(list);
+
 
             data.inventories.put(uuid, container);
         }
 
+
         return data;
     }
 
+
     @Override
-    public CompoundTag save(CompoundTag tag, HolderLookup.Provider provider) {
-        CompoundTag inventoriesTag = new CompoundTag();
+    public NbtCompound writeNbt(NbtCompound tag) {
 
-        for (Map.Entry<UUID, SimpleContainer> entry : inventories.entrySet()) {
-            ListTag list = entry.getValue().createTag(provider);
+        NbtCompound inventoriesTag =
+                new NbtCompound();
 
-            inventoriesTag.put(entry.getKey().toString(), list);
+
+        for (Map.Entry<UUID, SimpleInventory> entry : inventories.entrySet()) {
+
+            NbtList list =
+                    entry.getValue().toNbtList();
+
+
+            inventoriesTag.put(
+                    entry.getKey().toString(),
+                    list
+            );
         }
 
-        tag.put("inventories", inventoriesTag);
+
+        tag.put(
+                "inventories",
+                inventoriesTag
+        );
+
 
         return tag;
     }
 
-    public SimpleContainer getInventory(UUID uuid) {
-        return inventories.computeIfAbsent(uuid, u -> {
-            setDirty();
 
-            return new SimpleContainer(27) {
+    public SimpleInventory getInventory(UUID uuid) {
+
+        return inventories.computeIfAbsent(uuid, u -> {
+
+            markDirty();
+
+
+            return new SimpleInventory(27) {
+
                 @Override
-                public void setChanged() {
-                    super.setChanged();
-                    setDirty();
+                public void markDirty() {
+                    super.markDirty();
+                    SculkServantInventoryData.this.markDirty();
                 }
             };
         });

@@ -3,10 +3,24 @@
   "description": "§rYou can force your unstable body to rupture space, §ablinking§r to an unpredictable location.",
   "type": "origins:active_self",
   "entity_action": {
-    "type": "origins:random_teleport",
-    "area_width": 12,
-    "area_height": 2,
-    "heightmap": "world_surface"
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:spawn_particles",
+        "particle": "minecraft:portal",
+        "count": 30
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.enderman.teleport",
+        "volume": 1,
+        "pitch": 0.8
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "tag @s add chorus_random_teleport"
+      }
+    ]
   },
   "cooldown": 300,
   "hud_render": {

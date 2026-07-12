@@ -41,7 +41,7 @@
             "type": "origins:explode",
             "power": 3,
             "damage_self": false,
-            "destruction_type": "KEEP",
+            "destruction_type": "none",
             "create_fire": true
           }
         },
@@ -55,7 +55,7 @@
               },
               {
                 "type": "origins:spawn_particles",
-                "particle": "minecraft:gust",
+                "particle": "minecraft:cloud",
                 "count": 2,
                 "speed": 0.0,
                 "force": true,

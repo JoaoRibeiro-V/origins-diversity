@@ -1,5 +1,5 @@
 {
-  "icon": { "id": "minecraft:sculk_catalyst" },
+  "icon": { "item": "minecraft:sculk_catalyst" },
   "name": "Sculk Cultist",
   "description": "Once a human who thrived for studying the sculk, all that knowledge has corrupted your mind, now you serve on spreading the sculk.",
   "powers": [

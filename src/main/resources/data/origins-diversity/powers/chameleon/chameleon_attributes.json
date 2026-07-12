@@ -5,14 +5,14 @@
   "modifiers": [
     {
       "attribute": "puffish_attributes:melee_damage",
-      "operation": "ADD_MULTIPLIED_TOTAL",
-      "amount": 0.425,
+      "operation": "multiply_total",
+      "value": 0.425,
       "id": "origins-diversity:chameleon_attribute_1"
     },
     {
       "attribute": "puffish_attributes:resistance",
-      "operation": "ADD_MULTIPLIED_TOTAL",
-      "amount": 0.6,
+      "operation": "multiply_total",
+      "value": 0.6,
       "id": "origins-diversity:chameleon_attribute_2"
     }
   ],

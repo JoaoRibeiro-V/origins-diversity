@@ -1,11 +1,10 @@
 {
   "name": "Aquatic Grace",
   "description": "§rYou swim §afaster§r.",
-  "type": "origins:attribute",
+  "type": "origins:modify_swim_speed",
   "modifier": {
     "id": "origins-diversity:axolotl_swim_speed",
-    "attribute": "minecraft:generic.water_movement_efficiency",
-    "amount": 0.3,
-    "operation": "ADD_VALUE"
+    "value": 0.3,
+    "operation": "addition"
   }
 }

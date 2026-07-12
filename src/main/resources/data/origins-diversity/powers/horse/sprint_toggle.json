@@ -17,10 +17,9 @@
           "volume": 0.8
         },
         {
-          "type": "origins:revoke_power",
-          "power": "origins-diversity:horse/sprinting",
-          "source": "origins-diversity:sprint_toggle_horse"
-        }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:horse/sprinting"
+}
       ]
     },
     "else_action": {
@@ -34,7 +33,7 @@
         {
           "type": "origins:grant_power",
           "power": "origins-diversity:horse/sprinting",
-          "source": "origins-diversity:sprint_toggle_horse"
+          "source": "origins-diversity"
         }
       ]
 

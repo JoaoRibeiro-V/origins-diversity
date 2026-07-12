@@ -1,7 +1,7 @@
 {
   "name": "Chameleon",
   "description": "Cold-blooded ambush predators that rely on patience, camouflage, and precise strikes rather than brute force.",
-  "icon": { "id": "minecraft:lime_dye" },
+  "icon": { "item": "minecraft:lime_dye" },
   "impact": 2,
 
   "powers": [

@@ -19,9 +19,9 @@
       "type": "origins:and",
       "actions": [
         {
-          "type": "origins:remove_power",
-          "power": "origins-diversity:ender_moth/glide"
-        }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:ender_moth/glide"
+}
       ]
     },
     "execute_chosen_when_orb": true

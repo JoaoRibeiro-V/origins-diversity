@@ -30,9 +30,7 @@
         "type": "origins:spawn_particles",
         "particle": {
           "type": "minecraft:item",
-          "params": {
-            "item": "minecraft:green_concrete_powder"
-          }
+          "params": "minecraft:green_concrete_powder"
         },
         "count": 4,
         "spread": {"x": 0.5, "y": 1, "z": 0.5}

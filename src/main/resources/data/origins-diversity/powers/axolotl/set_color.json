@@ -8,7 +8,7 @@
         "element": {
           "type": "origins:grant_power",
           "power": "origins-diversity:axolotl/colors/color1",
-          "source": "origins-diversity:axolotl_color_set"
+          "source": "origins-diversity"
         },
         "weight": 300
       },
@@ -16,21 +16,21 @@
         "element": {
           "type": "origins:grant_power",
           "power": "origins-diversity:axolotl/colors/color2",
-          "source": "origins-diversity:axolotl_color_set"
+          "source": "origins-diversity"
         },
         "weight": 300
       },{
         "element": {
           "type": "origins:grant_power",
           "power": "origins-diversity:axolotl/colors/color3",
-          "source": "origins-diversity:axolotl_color_set"
+          "source": "origins-diversity"
         },
         "weight": 300
       },{
         "element": {
           "type": "origins:grant_power",
           "power": "origins-diversity:axolotl/colors/color4",
-          "source": "origins-diversity:axolotl_color_set"
+          "source": "origins-diversity"
         },
         "weight": 299
       },
@@ -38,7 +38,7 @@
         "element": {
           "type": "origins:grant_power",
           "power": "origins-diversity:axolotl/colors/color5",
-          "source": "origins-diversity:axolotl_color_set"
+          "source": "origins-diversity"
         },
         "weight": 1
       }
@@ -48,25 +48,25 @@
     "type": "origins:and",
     "actions": [
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:axolotl/colors/color1"
-      },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:axolotl/colors/color1"
+},
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:axolotl/colors/color2"
-      },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:axolotl/colors/color2"
+},
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:axolotl/colors/color3"
-      },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:axolotl/colors/color3"
+},
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:axolotl/colors/color4"
-      },
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:axolotl/colors/color4"
+},
       {
-        "type": "origins:remove_power",
-        "power": "origins-diversity:axolotl/colors/color5"
-      }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:axolotl/colors/color5"
+}
     ]
   }
 }

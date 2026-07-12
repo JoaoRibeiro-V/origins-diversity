@@ -10,12 +10,11 @@
     "if_action": {
       "type": "origins:grant_power",
       "power": "origins-diversity:chameleon/camouflaged",
-      "source": "origins-diversity:chameleon_camouflage"
+      "source": "origins-diversity"
     },
     "else_action": {
-      "type": "origins:revoke_power",
-      "power": "origins-diversity:chameleon/camouflage_sneak_timer",
-      "source": "origins-diversity:chameleon_camouflage"
-    }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:chameleon/camouflage_sneak_timer"
+}
   }
 }

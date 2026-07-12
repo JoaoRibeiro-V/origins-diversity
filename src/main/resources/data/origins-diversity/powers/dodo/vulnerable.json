@@ -16,7 +16,7 @@
   },
   "modifier": {
     "operation": "multiply_total_multiplicative",
-    "amount": -0.25,
+    "value": -0.25,
     "resource": "dodo_vulnerability"
   }
 }

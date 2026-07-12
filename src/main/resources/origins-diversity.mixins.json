@@ -1,20 +1,21 @@
 {
   "required": true,
-  "compatibilityLevel": "JAVA_21",
+  "package": "com.origins_diversity.Mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ChorusFruitMixin",
+    "IronGolemAiMixin",
+    "LivingEntityMixin",
+    "MobEntityAccessor",
+    "PiglinAiMixin",
+    "PlayerAttackMixin",
+    "VillagerAiMixin",
+    "WolfAiMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   },
   "overwrites": {
     "requireAnnotations": true
-  },
-  "package": "com.origins_diversity.Mixins",
-  "mixins": [
-    "ChorusFruitMixin",
-    "IronGolemAiMixin",
-    "LivingEntityMixin",
-    "PiglinAiMixin",
-    "PlayerAttackMixin",
-    "VillagerAiMixin",
-    "WolfAiMixin"
-  ]
+	}
 }

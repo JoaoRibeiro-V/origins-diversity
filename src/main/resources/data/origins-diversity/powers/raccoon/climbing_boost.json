@@ -1,11 +1,14 @@
 {
   "name": "Steady Feet",
   "description": "§rYou take §aless§r fall damage.",
-  "type": "origins:attribute",
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:from_falling"
+  },
   "modifier": {
     "id": "origins-diversity:raccoon_fall_damage_reduction",
     "attribute": "minecraft:generic.fall_damage_multiplier",
-    "amount": -0.25,
-    "operation": "ADD_MULTIPLIED_TOTAL"
+    "value": -0.25,
+    "operation": "multiply_total"
   }
 }

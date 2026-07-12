@@ -1,7 +1,7 @@
 {
   "name": "Axolotl",
   "description": "A peaceful aquatic creature that regenerates slowly in water.",
-  "icon": { "id": "minecraft:axolotl_bucket" },
+  "icon": { "item": "minecraft:axolotl_bucket" },
 
   "powers": [
     "origins-diversity:axolotl/healing_aid",

@@ -6,7 +6,7 @@
     "type": "origins:modify_exhaustion",
     "modifier": {
       "operation": "multiply_total_multiplicative",
-      "amount": -0.2,
+      "value": -0.2,
       "resource": "cold_endurance"
     }
   },
@@ -15,8 +15,8 @@
     "modifier": {
       "id": "origins-diversity:dodo_cold_strength",
       "attribute": "minecraft:generic.attack_damage",
-      "amount": 1.0,
-      "operation": "ADD_VALUE"
+      "value": 1.0,
+      "operation": "addition"
     }
   }
 }

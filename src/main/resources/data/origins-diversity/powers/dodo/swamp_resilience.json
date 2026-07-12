@@ -12,10 +12,10 @@
   "swamp_knockback": {
     "type": "origins:attribute",
     "modifier": {
-      "id": "origins-diversity:dodo_swamp_knockback",
+      "effect": "origins-diversity:dodo_swamp_knockback",
       "attribute": "minecraft:generic.knockback_resistance",
-      "amount": 0.2,
-      "operation": "ADD_VALUE"
+      "value": 0.2,
+      "operation": "addition"
     }
   }
 }

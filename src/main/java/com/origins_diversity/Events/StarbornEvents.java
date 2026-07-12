@@ -5,12 +5,11 @@ import com.origins_diversity.PowerHandlers.CelestialLinkHandler;
 import com.origins_diversity.PowerHandlers.MoonPhaseHandler;
 import com.origins_diversity.PowerHandlers.SupernovaHandler;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.util.Hand;
+import net.minecraft.util.ActionResult;
+import net.minecraft.entity.LivingEntity;
 
 public class StarbornEvents {
 
@@ -22,19 +21,21 @@ public class StarbornEvents {
 
     private static void onDeath() {
         ServerLivingEntityEvents.AFTER_DEATH.register((entity, source) -> {
-            if (!(entity instanceof ServerPlayer player)) return;
+            if (!(entity instanceof ServerPlayerEntity player)) return;
             SupernovaHandler.onDeath(player);
         });
     }
 
     private static void link() {
         ServerLivingEntityEvents.AFTER_DEATH.register((entity, source) -> {
-           if(CelestialLinkHandler.getStarbornLink(entity) instanceof ServerPlayer starborn) {
-               CelestialLinkHandler.unlink(starborn, entity);
-           }
+            ServerPlayerEntity starborn = CelestialLinkHandler.getStarbornLink(entity);
+
+            if (starborn != null) {
+                CelestialLinkHandler.unlink(starborn, entity);
+            }
         });
         ServerLivingEntityEvents.AFTER_DEATH.register((entity, source) -> {
-            if ((entity instanceof ServerPlayer target)){
+            if ((entity instanceof ServerPlayerEntity target)){
                 if (CelestialLinkHandler.hasCelestialLink(target)){
                     CelestialLinkHandler.unlinkAll(target);
                     OriginsDiversity.LOGGER.info("Unlinked Starborn links from death");
@@ -43,15 +44,15 @@ public class StarbornEvents {
 
         });
         UseEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
-            if (world.isClientSide()) return InteractionResult.PASS;
-            if (hand != InteractionHand.MAIN_HAND) return InteractionResult.PASS;
-            if (!player.isShiftKeyDown()) return InteractionResult.PASS;
-            if (!(player instanceof ServerPlayer starborn)) return InteractionResult.PASS;
-            if (!(entity instanceof LivingEntity target)) return InteractionResult.PASS;
-            if (!CelestialLinkHandler.hasCelestialLink(starborn)) return InteractionResult.PASS;
+            if (world.isClient()) return ActionResult.PASS;
+            if (hand != Hand.MAIN_HAND) return ActionResult.PASS;
+            if (!player.isSneaking()) return ActionResult.PASS;
+            if (!(player instanceof ServerPlayerEntity starborn)) return ActionResult.PASS;
+            if (!(entity instanceof LivingEntity target)) return ActionResult.PASS;
+            if (!CelestialLinkHandler.hasCelestialLink(starborn)) return ActionResult.PASS;
 
             CelestialLinkHandler.tryInteract(starborn, target);
-            return InteractionResult.SUCCESS;
+            return ActionResult.SUCCESS;
         });
     }
 }

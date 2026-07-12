@@ -1,27 +1,46 @@
 {
   "name": "Star Ascension",
   "description": "§rConsuming a §eNether Star§r will awaken your true potential:\n\n- Regain §9starlight§r from the §esun§r.\n- Reach complete destructive power when the sun reaches its peak, but take §cincreased damage§r.\n\nThis ascension makes your energy dependency §cincrease§r, causing a huge §cdecrease§r in power when low on §9starlight§r.",
-  "type": "origins:edible_item",
-  "item_condition": {
-    "type": "origins:ingredient",
-    "ingredient": {
-      "item": "minecraft:nether_star"
+  "type": "origins:active_self",
+  "condition": {
+    "type": "origins:equipped_item",
+    "equipment_slot": "mainhand",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": { "item": "minecraft:nether_star"}
     }
   },
-  "always_edible": true,
-  "food_component": {
-    "hunger": 20,
-    "saturation": 20,
-    "nutrition": 20,
-    "always_edible": true
+  "key": {
+    "key": "key.use",
+    "continuous": true
   },
-  "consuming_time_modifier": {
-    "operation": "multiply_total_multiplicative",
-    "value": 1.5
-  },
+  "cooldown": 2,
   "entity_action": {
-    "type": "origins:grant_power",
-    "power": "origins-diversity:starborn/true_starborn",
-    "source": "origins-diversity:true_starborn_ascension"
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:grant_power",
+        "power": "origins-diversity:starborn/true_starborn",
+        "source": "origins-diversity"
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.panda.eat",
+        "volume": 1.25
+      },
+      {
+        "type": "origins:feed",
+        "food": 20,
+        "saturation": 20
+      },
+      {
+        "type": "origins:equipped_item_action",
+        "equipment_slot": "mainhand",
+        "action": {
+          "type": "origins:consume",
+          "amount": 1
+        }
+      }
+    ]
   }
 }

@@ -2,30 +2,34 @@ package com.origins_diversity.Events;
 
 import com.origins_diversity.Extra.OriginsUtil;
 import io.github.apace100.apoli.component.PowerHolderComponent;
-import io.github.apace100.apoli.power.PowerReference;
-import io.github.apace100.apoli.power.type.ResourcePowerType;
+import io.github.apace100.apoli.power.PowerTypeReference;
+import io.github.apace100.apoli.power.ResourcePower;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.world.entity.ai.attributes.AttributeInstance;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.util.Identifier;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.entity.attribute.EntityAttributeInstance;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
 
 import java.util.*;
 
 public class KitsuneEvents {
 
-    private static final ResourceLocation TAILS_ID =
-            ResourceLocation.fromNamespaceAndPath("origins-diversity", "kitsune/kitsune_tails");
+    private static final Identifier TAILS_ID =
+            new Identifier("origins-diversity", "kitsune/kitsune_tails");
+
+    private static final PowerTypeReference<ResourcePower> TAILS_POWER = new PowerTypeReference<>(TAILS_ID);
+
+    private static final UUID KITSUNE_HEARTS_ID = UUID.nameUUIDFromBytes("origins-diversity:kitsune_hearts".getBytes());
 
     private static final Map<UUID, Integer> lastTailCount = new HashMap<>();
 
     private static final Map<UUID, Integer> pendingRefresh = new HashMap<>();
-    private static void putOnQueue(ServerPlayer player) {
+    private static void putOnQueue(ServerPlayerEntity player) {
         if(!OriginsUtil.hasOrigin(player, "origins-diversity","kitsune")) return;
-        pendingRefresh.put(player.getUUID(), 5);
+        pendingRefresh.put(player.getUuid(), 20);
     }
 
     public static void register() {
@@ -45,11 +49,11 @@ public class KitsuneEvents {
             });
 
             for (UUID uuid : toRefresh) {
-                ServerPlayer player = server.getPlayerList().getPlayer(uuid);
+                ServerPlayerEntity player = server.getPlayerManager().getPlayer(uuid);
                 if (player != null) refreshTails(player);
             }
 
-            for (ServerPlayer player : server.getPlayerList().getPlayers()) {
+            for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
                 checkTailChange(player);
             }
         });
@@ -58,73 +62,103 @@ public class KitsuneEvents {
                 refreshTails(handler.player));
 
         ServerPlayConnectionEvents.DISCONNECT.register((handler, server) -> {
-            lastTailCount.remove(handler.player.getUUID());
-            pendingRefresh.remove(handler.player.getUUID());
+            lastTailCount.remove(handler.player.getUuid());
+            pendingRefresh.remove(handler.player.getUuid());
         });
     }
 
-    private static void checkTailChange(ServerPlayer player) {
+    private static void checkTailChange(ServerPlayerEntity player) {
         PowerHolderComponent.KEY.maybeGet(player).ifPresent(holder -> {
-            ResourcePowerType resource = (ResourcePowerType) holder.getPowerType(
-                    PowerReference.resource(TAILS_ID).getPower());
-
-            if (resource == null) {
+            if (!holder.hasPower(TAILS_POWER)) {
                 // no longer kitsune, clean up if we were tracking them
-                if (lastTailCount.containsKey(player.getUUID())) {
-                    lastTailCount.remove(player.getUUID());
+                if (lastTailCount.containsKey(player.getUuid())) {
+                    lastTailCount.remove(player.getUuid());
                     removeAllTailModifiers(player);
                 }
                 return;
             }
 
+            ResourcePower resource = holder.getPower(TAILS_POWER);
+
+            if (resource == null)
+                return;
+
             int current = resource.getValue();
-            if (lastTailCount.getOrDefault(player.getUUID(), -1) != current) {
-                lastTailCount.put(player.getUUID(), current);
+            if (lastTailCount.getOrDefault(player.getUuid(), -1) != current) {
+                lastTailCount.put(player.getUuid(), current);
                 applyTailModifiers(player, current);
             }
         });
     }
 
-    private static void removeAllTailModifiers(ServerPlayer player) {
-        AttributeInstance attr = player.getAttribute(Attributes.MAX_HEALTH);
+    private static void removeAllTailModifiers(ServerPlayerEntity player) {
+        EntityAttributeInstance attr = player.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH);
         if (attr == null) return;
 
-        attr.removeModifier(ResourceLocation.fromNamespaceAndPath("origins-diversity", "kitsune_hearts"));
+        attr.removeModifier(KITSUNE_HEARTS_ID);
         for (int i = 1; i <= 9; i++) {
-            attr.removeModifier(ResourceLocation.fromNamespaceAndPath("origins-diversity", "kitsune_hearts" + i));
+            attr.removeModifier(UUID.nameUUIDFromBytes(("origins-diversity:kitsune_hearts" + i).getBytes()));
         }
     }
 
-    private static void refreshTails(ServerPlayer player) {
+    private static void refreshTails(ServerPlayerEntity player) {
         PowerHolderComponent.KEY.maybeGet(player).ifPresent(holder -> {
-            ResourcePowerType resource = (ResourcePowerType) holder.getPowerType(
-                    PowerReference.resource(TAILS_ID).getPower());
-            if (resource == null) return;
+
+            ResourcePower resource = holder.getPower(TAILS_POWER);
+
+            if(resource == null) {
+                System.out.println("TAIL POWER NULL");
+                return;
+            }
 
             int tails = resource.getValue();
-            lastTailCount.put(player.getUUID(), tails);
+
+            lastTailCount.put(player.getUuid(), tails);
             applyTailModifiers(player, tails);
         });
     }
 
-    private static void applyTailModifiers(ServerPlayer player, int tails) {
-        AttributeInstance attr = player.getAttribute(Attributes.MAX_HEALTH);
-        if (attr == null) return;
+    private static void applyTailModifiers(ServerPlayerEntity player, int tails) {
+
+        if(player.isDead()) return;
+
+        EntityAttributeInstance attr =
+                player.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH);
+
+        if(attr == null) return;
+
 
         removeAllTailModifiers(player);
 
-        attr.addPermanentModifier(new AttributeModifier(
-                ResourceLocation.fromNamespaceAndPath("origins-diversity", "kitsune_hearts"),
-                -10.0,
-                AttributeModifier.Operation.ADD_VALUE
-        ));
 
-        for (int i = 1; i <= tails; i++) {
-            attr.addPermanentModifier(new AttributeModifier(
-                    ResourceLocation.fromNamespaceAndPath("origins-diversity", "kitsune_hearts" + i),
-                    2.0,
-                    AttributeModifier.Operation.ADD_VALUE
-            ));
+        attr.addPersistentModifier(
+                new EntityAttributeModifier(
+                        KITSUNE_HEARTS_ID,
+                        "kitsune_hearts",
+                        -10.0,
+                        EntityAttributeModifier.Operation.ADDITION
+                )
+        );
+
+
+        for(int i = 1; i <= tails; i++) {
+
+            attr.addPersistentModifier(
+                    new EntityAttributeModifier(
+                            UUID.nameUUIDFromBytes(
+                                    ("origins-diversity:kitsune_hearts" + i).getBytes()
+                            ),
+                            "kitsune_hearts" + i,
+                            2.0,
+                            EntityAttributeModifier.Operation.ADDITION
+                    )
+            );
         }
+
+
+        player.setHealth(Math.min(
+                player.getHealth(),
+                player.getMaxHealth()
+        ));
     }
 }

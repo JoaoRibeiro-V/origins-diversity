@@ -5,7 +5,7 @@
   "modifier": {
     "id": "origins-diversity:reptile_camouflage",
     "attribute": "puffish_attributes:stealth",
-    "amount": 0.35,
-    "operation": "ADD_MULTIPLIED_TOTAL"
+    "value": 0.35,
+    "operation": "multiply_total"
   }
 }

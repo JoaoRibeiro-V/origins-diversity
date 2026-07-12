@@ -13,7 +13,7 @@
       "action": {
         "type": "origins:grant_power",
         "power": "origins-diversity:abysswyrm/confusion",
-        "source": "origins-diversity:abysswyrm_confusion_active"
+        "source": "origins-diversity"
       }
     }
   },

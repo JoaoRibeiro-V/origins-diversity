@@ -41,7 +41,7 @@
       "action": {
         "type": "origins:grant_power",
         "power": "origins-diversity:chorus_leech/parasitic_leech",
-        "source": "origins-diversity:chorus_leech_parasitic_leech_hit"
+        "source": "origins-diversity"
       }
     },
     "cooldown": 60,

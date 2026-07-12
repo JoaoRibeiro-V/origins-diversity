@@ -2,7 +2,7 @@
   "name": "Shark",
   "description": "Relentless ocean predators built for constant motion, brutal attacks, and underwater dominance. Sharks thrive in the depths, but struggle to survive on land.",
   "icon": {
-    "id": "minecraft:prismarine_shard"
+    "item": "minecraft:prismarine_shard"
   },
   "impact": 2,
 

@@ -8,7 +8,7 @@
     "entity_action": {
       "type": "origins:apply_effect",
       "effect": {
-        "id": "minecraft:weakness",
+        "effect": "minecraft:weakness",
         "amplifier": 0,
         "duration": 60,
         "ambient": true,
@@ -37,7 +37,7 @@
     "entity_action": {
       "type": "origins:apply_effect",
       "effect": {
-        "id": "minecraft:slowness",
+        "effect": "minecraft:slowness",
         "amplifier": 0,
         "duration": 60,
         "ambient": true,

@@ -14,8 +14,8 @@
     "modifier": {
       "id": "origins-diversity:fox_nocturnal_attack_speed",
       "attribute": "minecraft:generic.attack_speed",
-      "amount": 0.2,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": 0.2,
+      "operation": "multiply_total"
     }
   },
   "nocturnal_speed": {
@@ -23,8 +23,8 @@
     "modifier": {
       "id": "origins-diversity:fox_agile_speed",
       "attribute": "minecraft:generic.movement_speed",
-      "amount": 0.11,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": 0.11,
+      "operation": "multiply_total"
     }
   }
 }

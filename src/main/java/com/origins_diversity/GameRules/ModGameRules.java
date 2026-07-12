@@ -2,11 +2,11 @@ package com.origins_diversity.GameRules;
 
 import net.fabricmc.fabric.api.gamerule.v1.GameRuleFactory;
 import net.fabricmc.fabric.api.gamerule.v1.GameRuleRegistry;
-import net.minecraft.world.level.GameRules;
+import net.minecraft.world.GameRules;
 
 public class ModGameRules {
 
-    public static final GameRules.Key<GameRules.BooleanValue> PREVENT_MOUNT_DAMAGE =
+    public static final GameRules.Key<GameRules.BooleanRule> PREVENT_MOUNT_DAMAGE =
             GameRuleRegistry.register(
                     "preventMountDamage",
                     GameRules.Category.MOBS,

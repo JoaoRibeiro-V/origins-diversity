@@ -30,16 +30,16 @@
     "modifier": {
       "id": "origins-diversity:shark_armor_pen",
       "attribute": "puffish_attributes:resistance_shred",
-      "amount": 0.2,
-      "operation": "ADD_MULTIPLIED_TOTAL"
+      "value": 0.2,
+      "operation": "multiply_total"
     }
   },
   "swim_speed": {
     "type": "origins:modify_swim_speed",
     "modifier": {
       "id": "origins-diversity:shark_swim_speed",
-      "operation": "ADD_MULTIPLIED_TOTAL",
-      "amount": 0.45
+      "operation": "multiply_total",
+      "value": 0.45
     }
   },
   "feed_on_hit": {

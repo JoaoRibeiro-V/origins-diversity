@@ -1,20 +1,47 @@
 {
   "hidden": true,
-  "type": "origins:edible_item",
-  "item_condition": {
-    "type": "origins:ingredient",
-    "ingredient": {
-      "item": "minecraft:iron_ingot"
+  "type": "origins:active_self",
+  "condition": {
+    "type": "origins:equipped_item",
+    "equipment_slot": "mainhand",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": { "item": "minecraft:iron_ingot"}
     }
   },
-  "priority": 1,
-  "food_component": {
-    "hunger": 3,
-    "saturation": 3,
-    "nutrition": 3
+  "key": {
+    "key": "key.use",
+    "continuous": true
   },
-  "result_stack": {
-    "id": "minecraft:iron_nugget",
-    "amount": 1
+  "cooldown": 2,
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.panda.eat",
+        "volume": 1.25
+      },
+      {
+        "type": "origins:feed",
+        "food": 3,
+        "saturation": 3
+      },
+      {
+        "type": "origins:equipped_item_action",
+        "equipment_slot": "mainhand",
+        "action": {
+          "type": "origins:consume",
+          "amount": 1
+        }
+      },
+      {
+        "type": "origins:give",
+        "stack": {
+          "item": "minecraft:iron_nugget",
+          "amount": 1
+        }
+      }
+    ]
   }
 }

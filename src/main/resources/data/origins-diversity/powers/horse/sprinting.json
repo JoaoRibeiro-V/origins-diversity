@@ -4,8 +4,8 @@
   "type": "origins:conditioned_attribute",
   "modifier": {
     "attribute": "minecraft:generic.movement_speed",
-    "operation": "ADD_MULTIPLIED_TOTAL",
-    "amount": 0.425,
+    "operation": "multiply_total",
+    "value": 0.425,
     "id": "origins-diversity:horse_sprint"
   },
   "tick_rate": 5,

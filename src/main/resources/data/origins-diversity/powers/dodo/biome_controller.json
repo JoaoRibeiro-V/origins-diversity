@@ -19,13 +19,12 @@
         "if_action": {
           "type": "origins:grant_power",
           "power": "origins-diversity:dodo/heat_adaptation",
-          "source": "origins-diversity:dodo_biome_adaptation"
+          "source": "origins-diversity"
         },
         "else_action": {
-          "type": "origins:revoke_power",
-          "power": "origins-diversity:dodo/heat_adaptation",
-          "source": "origins-diversity:dodo_biome_adaptation"
-        }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:dodo/heat_adaptation"
+}
       },
       {
         "type": "origins:if_else",
@@ -40,13 +39,12 @@
         "if_action": {
           "type": "origins:grant_power",
           "power": "origins-diversity:dodo/cold_endurance",
-          "source": "origins-diversity:dodo_biome_adaptation"
+          "source": "origins-diversity"
         },
         "else_action": {
-          "type": "origins:revoke_power",
-          "power": "origins-diversity:dodo/cold_endurance",
-          "source": "origins-diversity:dodo_biome_adaptation"
-        }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:dodo/cold_endurance"
+}
       },
       {
         "type": "origins:if_else",
@@ -60,13 +58,12 @@
         "if_action": {
           "type": "origins:grant_power",
           "power": "origins-diversity:dodo/coastal_adaptation",
-          "source": "origins-diversity:dodo_biome_adaptation"
+          "source": "origins-diversity"
         },
         "else_action": {
-          "type": "origins:revoke_power",
-          "power": "origins-diversity:dodo/coastal_adaptation",
-          "source": "origins-diversity:dodo_biome_adaptation"
-        }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:dodo/coastal_adaptation"
+}
       },
       {
         "type": "origins:if_else",
@@ -80,13 +77,12 @@
         "if_action": {
           "type": "origins:grant_power",
           "power": "origins-diversity:dodo/plains_endurance",
-          "source": "origins-diversity:dodo_biome_adaptation"
+          "source": "origins-diversity"
         },
         "else_action": {
-          "type": "origins:revoke_power",
-          "power": "origins-diversity:dodo/plains_endurance",
-          "source": "origins-diversity:dodo_biome_adaptation"
-        }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:dodo/plains_endurance"
+}
       },
       {
         "type": "origins:if_else",
@@ -112,13 +108,12 @@
         "if_action": {
           "type": "origins:grant_power",
           "power": "origins-diversity:dodo/swamp_resilience",
-          "source": "origins-diversity:dodo_biome_adaptation"
+          "source": "origins-diversity"
         },
         "else_action": {
-          "type": "origins:revoke_power",
-          "power": "origins-diversity:dodo/swamp_resilience",
-          "source": "origins-diversity:dodo_biome_adaptation"
-        }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:dodo/swamp_resilience"
+}
       },
       {
         "type": "origins:if_else",
@@ -132,13 +127,12 @@
         "if_action": {
           "type": "origins:grant_power",
           "power": "origins-diversity:dodo/mountain_adaptation",
-          "source": "origins-diversity:dodo_biome_adaptation"
+          "source": "origins-diversity"
         },
         "else_action": {
-          "type": "origins:revoke_power",
-          "power": "origins-diversity:dodo/mountain_adaptation",
-          "source": "origins-diversity:dodo_biome_adaptation"
-        }
+  "type": "origins:execute_command",
+  "command": "power remove @s origins-diversity:dodo/mountain_adaptation"
+}
       }
     ]
   }

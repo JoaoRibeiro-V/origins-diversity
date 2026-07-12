@@ -5,7 +5,7 @@
   "modifier": {
     "id": "origins-diversity:cow_slow_movement",
     "attribute": "minecraft:generic.movement_speed",
-    "amount": -0.025,
-    "operation": "ADD_MULTIPLIED_TOTAL"
+    "value": -0.025,
+    "operation": "multiply_total"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "Horse",
   "description": "A swift, powerful creature built for mobility and endurance.",
-  "icon": { "id": "minecraft:saddle" },
+  "icon": { "item": "minecraft:saddle" },
 
   "powers": [
     "origins-diversity:horse/sprint_toggle",
