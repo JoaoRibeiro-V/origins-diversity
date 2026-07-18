@@ -4,7 +4,7 @@
   "type": "origins:modify_swim_speed",
   "modifier": {
     "id": "origins-diversity:penguin_swim_boost",
-    "value": 0.1,
-    "operation": "addition"
+    "value": 0.4,
+    "operation": "multiply_total"
   }
 }
