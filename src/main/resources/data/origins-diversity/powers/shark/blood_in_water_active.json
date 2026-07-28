@@ -4,8 +4,8 @@
   "glow_entities": {
     "type": "origins:entity_glow",
     "red": 1.0,
-    "green": 0.1,
-    "blue": 0.1,
+    "green": 0.5,
+    "blue": 0.5,
     "bientity_condition": {
       "type": "origins:and",
       "conditions": [
@@ -39,7 +39,7 @@
     "modifier": {
       "id": "origins-diversity:shark_swim_speed",
       "operation": "multiply_total",
-      "value": 0.45
+      "value": 0.85
     }
   },
   "feed_on_hit": {
@@ -48,16 +48,13 @@
     "entity_action": {
       "type": "origins:feed",
       "food": 4,
-      "saturation": 3,
-      "nutrition": 3
+      "saturation": 2,
+      "nutrition": 2
     },
     "damage_condition": {
       "type": "origins:and",
       "conditions": [
         {
-          "type": "origins:in_tag",
-          "tag": "minecraft:is_player_attack"
-        },{
           "type": "origins:projectile",
           "inverted": true
         }
@@ -66,7 +63,7 @@
     "entity_condition": {
       "type": "origins:relative_health",
       "comparison": "<=",
-      "compare_to": 0.5
+      "compare_to": 0.75
     },
     "hud_render": {
       "should_render": true,

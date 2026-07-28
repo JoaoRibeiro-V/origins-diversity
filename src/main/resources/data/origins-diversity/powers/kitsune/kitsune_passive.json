@@ -1,7 +1,7 @@
 {
   "hidden": false,
   "name": "Fox Spirits",
-  "description": "§rYou can make §dspirit tails§r out of §e25 experience levels§r. §cLose§r one of your wisps upon death.",
+  "description": "§rUpon activation you can shapeshift into a fox, getting hit will disable this.\n\n§rAdditionally, if used while crouching, you can make §dspirit tails§r out of §e25§r experience levels§r. §cLose§r one of your wisps upon death.",
   "type": "origins:multiple",
   "loseondeath": {
     "type": "origins:action_on_callback",

@@ -18,8 +18,10 @@
           "inverted": true
         },
         {
-          "type": "origins:power_active",
-          "power": "origins-diversity:shark/hydrated"
+          "type": "origins:resource",
+          "resource": "origins-diversity:shark/hydrated",
+          "comparison": "<=",
+          "compare_to": 0
         }
       ]
     },

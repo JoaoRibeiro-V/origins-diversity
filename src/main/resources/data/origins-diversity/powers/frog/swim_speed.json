@@ -4,7 +4,7 @@
   "type": "origins:modify_swim_speed",
   "modifier": {
     "id": "origins-diversity:frog_swim_speed",
-    "value": 0.275,
-    "operation": "addition"
+    "value": 0.475,
+    "operation": "multiply_total"
   }
 }

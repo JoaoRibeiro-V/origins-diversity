@@ -18,9 +18,10 @@
       }
     ],
     "condition": {
-      "type": "origins:power_active",
-      "power": "origins-diversity:fox/focus_cooldown",
-      "inverted": true
+      "type": "origins:resource",
+      "resource": "origins-diversity:fox/focus_cooldown",
+      "comparison": ">=",
+      "compare_to": 1
     }
   },
   "back_stab": {
@@ -37,9 +38,10 @@
         {
           "type": "origins:actor_condition",
           "condition": {
-            "type": "origins:power_active",
-            "power": "origins-diversity:fox/focus_cooldown",
-            "inverted": true
+            "type": "origins:resource",
+            "resource": "origins-diversity:fox/focus_cooldown",
+            "comparison": ">=",
+            "compare_to": 1
           }
         },
         {
@@ -53,7 +55,7 @@
     },
     "modifiers": [
       {
-        "operation": "add_base_early",
+        "operation": "add_base_late",
         "value": 1.0
       },
       {

@@ -44,7 +44,24 @@
           "type": "origins:consume",
           "amount": 1
         }
-      }
+      },
+      {"type": "origins:if_else",
+        "condition": {
+          "type": "origins:biome",
+          "biomes": [
+            "minecraft:bamboo_jungle",
+            "minecraft:jungle",
+            "minecraft:sparse_jungle"
+          ]
+        },
+        "if_action": {
+          "type": "origins:apply_effect",
+          "effect": {
+            "effect": "minecraft:strength",
+            "duration": 200,
+            "show_particles": false
+          }
+        }}
     ]
   }
 }
