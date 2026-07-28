@@ -892,7 +892,7 @@ None significant — a low-impact support origin.
 | Power | Description |
 |---|---|
 | **Berry is Yummy** | Sweet berries and glow berries grant **immensely higher** hunger/nutrition and give Strength. |
-| **Fox Spirits** *(Primary Active)* | Shapeshift into a fox. |
+| **Fox Spirits** *(Primary Active)* | Shapeshift into a fox. Additionally you can convert 25 exp levels into a Spiritual Tail if you hold Shift |
 | **High Intelligence** | **Substantially higher** XP gain. |
 | **Spirit Tails** | Resource mechanic scaling spiritual flames. |
 | **Trickster** *(Secondary Active)* | Nearby players cannot see you while standing still and see fake decoys. |
